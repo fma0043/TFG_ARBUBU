@@ -2,13 +2,13 @@ from django.db import models
 
 # Create your models here.
 class Familia(models.Model):
-    nombre = models.CharField('Nombre', max_length=80)
+    nombre = models.CharField('Nombres', max_length=80)
     descripcion = models.TextField('Descripcion', blank=True)
     ecologia = models.TextField('Ecologia',blank=True)
     distribucion = models.TextField('Distribucion',blank=True)
 
     def __str__(self):
-        return self.nombreFamilia
+        return self.nombre
 
 class Especie(models.Model):
     nombreEspecie = models.CharField('nombre_Especie', blank=False, max_length=80)
