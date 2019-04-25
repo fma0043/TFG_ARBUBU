@@ -9,7 +9,7 @@ class IndexView(TemplateView):
 
     template_name = "home/index.html"
 
-class ListaArboles(ListView):
+class ListaArbol(ListView):
 
     template_name = "home/lista.html"
     queryset = ['nogal','manzano','naranjo','peral']

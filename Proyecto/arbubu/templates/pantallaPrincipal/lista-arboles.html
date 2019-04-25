@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lista de arboles</title>
+  </head>
+  <body>
+    <h1> Arboles Registrados</h1>
+    <table border="1">
+      <thead>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Ecologia</th>
+        <th>Distribucion</th>
+        <th>Accion</th>
+      </thead>
+      <tbody>
+        {% for l in arbol %}
+        <tr>
+          <td>{{l.nombre}}</td>
+          <td>{{l.descripcion}}</td>
+          <td>{{l.ecologia}}</td>
+          <td>{{l.distribucion}}</td>
+          <td><a href="#">VER</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

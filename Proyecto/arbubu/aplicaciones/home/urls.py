@@ -6,5 +6,5 @@ app_name="home_app"
 
 urlpatterns = [
     path('index', views.IndexView.as_view(),name="index"),
-    path('arboles', views.ListaArboles.as_view(),name="lista"),
+    path('arboles', views.ListaArbol.as_view(),name="lista"),
 ]
