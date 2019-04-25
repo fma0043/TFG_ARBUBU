@@ -8,4 +8,12 @@ class Familia(models.Model):
     distribucion = models.CharField('Distribucion',blank=True, max_length=200)
 
     def __str__(self):
-        return self.nombre
+        return self.nombreFamilia
+
+class Especie(models.Model):
+    nombreEspecie = models.CharField('nombre_Especie', blank=False, max_length=80)
+    caracteristicas = models.TextField('Caracteristicas',blank=True)
+    familia = models.ForeignKey(Familia, on_delete=models.CASCADE)
+
+    def __str__(self):
+            return self.nombreEspecie
