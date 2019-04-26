@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lista de individuos</title>
+  </head>
+  <body>
+    <h1> Individuos Registrados</h1>
+    <table border="1">
+      <thead>
+        <th>Id</th>
+        <th>NombreIndividuos</th>
+        <th>Caracteristicas</th>
+        <th>Especie</th>
+      </thead>
+      <tbody>
+        {% for l in individuo %}
+        <tr>
+          <td>{{l.id}}</td>
+          <td>{{l.nombreIndividuos}}</td>
+          <td>{{l.caracteristicas}}</td>
+          <td>{{l.especie.nombreEspecie}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

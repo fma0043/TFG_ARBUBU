@@ -2,12 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Lista de arboles</title>
+    <title>Lista de familias</title>
   </head>
   <body>
     <h1> Arboles Registrados</h1>
     <table border="1">
       <thead>
+        <th>Id</th>
         <th>Nombre</th>
         <th>Descripcion</th>
         <th>Ecologia</th>
@@ -15,13 +16,14 @@
         <th>Accion</th>
       </thead>
       <tbody>
-        {% for l in arbol %}
+        {% for l in familia %}
         <tr>
+          <td>{{l.id}}</td>
           <td>{{l.nombre}}</td>
           <td>{{l.descripcion}}</td>
           <td>{{l.ecologia}}</td>
           <td>{{l.distribucion}}</td>
-          <td><a href="#">VER</a></td>
+          <td><a href="{% url 'pantallaPrincipal_app:lista-especies' l.id %}">Ver Familia</a></td>
         </tr>
         {% endfor %}
       </tbody>

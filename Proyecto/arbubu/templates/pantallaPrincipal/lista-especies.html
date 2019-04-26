@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lista de especies</title>
+  </head>
+  <body>
+    <h1> Especies Registradas</h1>
+    <table border="1">
+      <thead>
+        <th>Id</th>
+        <th>NombreEspecie</th>
+        <th>Caracteristicas</th>
+        <th>Familia</th>
+        <th>Accion</th>
+      </thead>
+      <tbody>
+        {% for l in especie %}
+        <tr>
+          <td>{{l.id}}</td>
+          <td>{{l.nombreEspecie}}</td>
+          <td>{{l.caracteristicas}}</td>
+          <td>{{l.familia.nombre}}</td>
+          <td><a href="{% url 'pantallaPrincipal_app:lista-individuos' l.id %}"> Ver Individuo</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
