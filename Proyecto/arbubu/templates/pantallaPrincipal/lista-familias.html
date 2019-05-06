@@ -5,14 +5,11 @@
     <title>Lista de familias</title>
   </head>
   <body>
-    <h1> Arboles Registrados</h1>
+    <h1> Familias Registradas</h1>
     <table border="1">
       <thead>
         <th>Id</th>
         <th>Nombre</th>
-        <th>Descripcion</th>
-        <th>Ecologia</th>
-        <th>Distribucion</th>
         <th>Accion</th>
       </thead>
       <tbody>
@@ -20,12 +17,10 @@
         <tr>
           <td>{{l.id}}</td>
           <td>{{l.nombre}}</td>
-          <td>{{l.descripcion}}</td>
-          <td>{{l.ecologia}}</td>
-          <td>{{l.distribucion}}</td>
-          <td><a href="{% url 'pantallaPrincipal_app:lista-especies' l.id %}">Ver Familia</a></td>
+          <td><a href="{% url 'pantallaPrincipal_app:lista-especies' l.id %}">Ver Especie</a></td>
         </tr>
         {% endfor %}
+        </div>
       </tbody>
     </table>
   </body>

@@ -7,6 +7,6 @@ app_name="pantallaPrincipal_app"
 urlpatterns = [
     path('', views.ListaArboles.as_view(),name="lista-familias"),
     path('especie/<pk>', views.ListaEspecies.as_view(),name="lista-especies"),
-    path('individuo/<pk>', views.ListaIndividuos.as_view(),name="lista-individuos"),
-    path('añadirIndividuo', views.AddIndividuo.as_view(), name="add-individuo"),
+    path('individuo', views.ListaIndividuos.as_view(),name="lista-individuo"),
+    #path('añadirIndividuo', views.AddIndividuo.as_view(), name="add-individuo"),
 ]

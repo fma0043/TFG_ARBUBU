@@ -1,11 +1,10 @@
 from django.shortcuts import render
 
 from django.views.generic import(
-    TemplateView,
     ListView,
     CreateView,
 )
-
+    
 from .models import Familia,Especie,Individuos
 # Create your views here.
 
@@ -31,22 +30,21 @@ class ListaEspecies(ListView):
 
 class ListaIndividuos(ListView):
 
-    template_name = "pantallaPrincipal/lista-individuos.html"
+    template_name = "pantallaPrincipal/lista-individuo.html"
+    model = Individuos
     context_object_name = 'individuo'
 
-    def get_queryset(self):
-        id = self.kwargs['pk']
-        lista = Individuos.objects.filter(
-            especie=id
-        )
+    #def get_queryset(self):
+    #    id = self.kwargs['pk']
+    #    lista = Individuos.objects.filter(
+    #        especie=id
+    #    )
         # devuelvo el resultado o la lista resultado
-        return lista
+    #    return lista
 
-class AddIndividuo(CreateView):
-    """ vista para registrar un nuevo Individuo """
-    template_name = 'pantallaPrincipal/add-individuo.html'
-    model = Individuos
-    fields = ['nombreIndividuos', 'caracteristicas','especie']
-    success_url = '/'
-
-#href="{% url 'pantallaPrincipal_app:lista-individuos' l.id %}"
+#class AddIndividuo(CreateView):
+#    """ vista para registrar un nuevo Individuo """
+#    template_name = 'pantallaPrincipal/add-individuo.html'
+#    model = Individuos
+#    fields = ['nombreIndividuos', 'caracteristicas','especie']
+#    success_url = '/'

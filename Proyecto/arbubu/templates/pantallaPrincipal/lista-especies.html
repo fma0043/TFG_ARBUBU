@@ -9,19 +9,28 @@
     <table border="1">
       <thead>
         <th>Id</th>
-        <th>NombreEspecie</th>
-        <th>Caracteristicas</th>
+        <th>Nombre Cientifico</th>
+        <th>Nombre Comun</th>
         <th>Familia</th>
+        <th>Autóctona</th>
+        <th>Distribución</th>
+        <th>Descripción</th>
+        <th>Ecologia</th>
+        <th>Más Información</th>
         <th>Accion</th>
       </thead>
       <tbody>
         {% for l in especie %}
         <tr>
           <td>{{l.id}}</td>
-          <td>{{l.nombreEspecie}}</td>
-          <td>{{l.caracteristicas}}</td>
+          <td>{{l.nombreCientifico}}</td>
+          <td>{{l.nombreComun}}</td>
           <td>{{l.familia.nombre}}</td>
-          <td><a href="{% url 'pantallaPrincipal_app:lista-individuos' l.id %}"> Ver Individuo</a></td>
+          <td>{{l.autoctona}}</td>
+          <td>{{l.distribucion}}</td>
+          <td>{{l.descripcion}}</td>
+          <td>{{l.ecologia}}</td>
+          <td>{{l.masInfo}}</td>
         </tr>
         {% endfor %}
       </tbody>
