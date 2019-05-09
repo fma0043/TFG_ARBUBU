@@ -1,43 +1,38 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Lista de individuos</title>
-  </head>
-  <body>
-    <h1> Individuos Registrados</h1>
-    <a><img src="C:\Users\felix\Desktop\github\TFG_ARBUBU\logo.png" alt="¿por que no sales nada?"></a>
-    <table border="1">
-      <thead>
-        <th>Id</th>
-        <th>Nombre</th>
-        <th>Motivo de Singularidad</th>
-        <th>X</th>
-        <th>Y</th>
-        <th>Foto del Arbol</th>
-        <th>Foto de las hojas</th>
-        <th>Foto del tronco</th>
-        <th>Foto de los frutos</th>
-        <th>Altura</th>
-        <th>Perimetro</th>
-      </thead>
-      <tbody>
-        {% for l in individuo %}
-        <tr>
-          <td>{{l.id}}</td>
-          <td>{{l.nombre}}</td>
-          <td>{{l.motivoSingular}}</td>
-          <td>{{l.x}}</td>
-          <td>{{l.y}}</td>
-          <td>{{l.fotoArbol}}</td>
-          <td>{{l.fotoHojas}}</td>
-          <td>{{l.fotoTronco}}</td>
-          <td>{{l.fotoFrutos}}</td>
-          <td>{{l.altura}}</td>
-          <td>{{l.perimetro}}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </body>
-</html>
+{% extends "base.html" %}
+{% block title %} {% endblock %}
+{% block content %}
+<h1> Individuos Registrados</h1>
+
+<table border="1">
+  <thead>
+    <th>Id</th>
+    <th>Nombre</th>
+    <th>Motivo de Singularidad</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>Especie</th>
+    <th>Foto del Arbol</th>
+    <th>Foto de las hojas</th>
+    <th>Foto del tronco</th>
+    <th>Foto de los frutos</th>
+    <th>Altura</th>
+    <th>Perimetro</th>
+  </thead>
+  <tbody>
+    {% for l in individuo %}
+    <tr>
+      <td>{{l.id}}</td>
+      <td>{{l.nombre}}</td>
+      <td>{{l.motivoSingular}}</td>
+      <td>{{l.x}}</td>
+      <td>{{l.y}}</td>
+      <td>{{l.especie.nombreComun}}</td>
+      <td><img src="{l.fotoArbol}" width="100" height="100"></td>
+      <td>{{l.fotoHojas}}</td>
+      <td>{{l.fotoTronco}}</td>
+      <td>{{l.fotoFrutos}}</td>
+      <td>{{l.altura}}</td>
+      <td>{{l.perimetro}}</td>
+    </tr>
+    {% endfor %}
+    {% endblock %}
