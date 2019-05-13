@@ -1,16 +1,17 @@
 {% extends "base.html" %}
 {% block title %} {% endblock %}
 {% block content %}
+
+  <body>
     <h1> Familias Registradas</h1>
+  </body>
     <table border="1">
       <thead>
-        <th>Id</th>
         <th>Nombre</th>
       </thead>
       <tbody>
         <tr>
         {% for l in familia %}
-          <td>{{l.id}}</td>
           <td>{{l.nombre}}</td>
         </tr>
         {% endfor %}

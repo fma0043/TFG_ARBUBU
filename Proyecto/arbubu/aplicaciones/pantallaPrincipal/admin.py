@@ -3,8 +3,8 @@ from .models import Familia, Especie, Individuos, Usuario
 # Register your models here.
 
 class FamiliaAdmin(admin.ModelAdmin):
-    list_display = ('nombre')
-    search_fields = ('nombre')
+    list_display = ('nombre',)
+    search_fields = ('nombre',)
 
 class EspecieAdmin(admin.ModelAdmin):
     list_display = ('nombreCientifico', 'nombreComun', 'familia', 'autoctona', 'distribucion', 'descripcion', 'ecologia', 'masInfo' )

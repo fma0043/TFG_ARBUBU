@@ -107,9 +107,11 @@ class Usuario(models.Model):
     def __str__(self):
             return self.nombre
 
-    def encriptarContrasenia(self):
-        contraseniaEncriptada=crypt.crypt(self.contrasenia, 'salt')
-        return contraseniaEncriptada
+    #def encriptarContrasenia(self):
+    #    byte[] bytes = System.Text.Encoding.UTF8.GetBytes(self.contrasenia);
+    #    SHA256 mySHA256 = SHA256.Create();
+    #    bytes = mySHA256.ComputeHash(bytes);
+    #    return (System.Text.Encoding.ASCII.GetString(bytes));
 
     def permisosAdmin(self):
         usuario = list()
