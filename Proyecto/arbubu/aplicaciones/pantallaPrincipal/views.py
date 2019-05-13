@@ -17,6 +17,7 @@ class ListaFamilias(ListView):
     model = Familia
     context_object_name = 'familia'
 
+
 class ListaEspecies(ListView):
 
     template_name = "pantallaPrincipal/lista-especies.html"

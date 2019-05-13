@@ -6,14 +6,12 @@
       <thead>
         <th>Id</th>
         <th>Nombre</th>
-        <th>Accion</th>
       </thead>
       <tbody>
-        {% for l in familia %}
         <tr>
+        {% for l in familia %}
           <td>{{l.id}}</td>
           <td>{{l.nombre}}</td>
-          <td><a href="{% url 'pantallaPrincipal_app:lista-especies' l.id %}">Ver Especie</a></td>
         </tr>
         {% endfor %}
 {% endblock %}
