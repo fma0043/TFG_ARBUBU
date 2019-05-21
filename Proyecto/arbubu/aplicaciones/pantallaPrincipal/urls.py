@@ -11,5 +11,6 @@ urlpatterns = [
     path('especie', views.ListaEspecies.as_view(),name="lista-especies"),
     path('individuo', views.ListaIndividuos.as_view(),name="lista-individuo"),
     path('usuario', views.ListaUsuarios.as_view(),name="lista-usuario"),
+    path('index', views.IndexView.as_view(),name="index"),
     #path('añadirIndividuo', views.AddIndividuo.as_view(), name="add-individuo"),
 ]

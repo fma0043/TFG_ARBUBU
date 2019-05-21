@@ -5,11 +5,16 @@ from aplicaciones.pantallaPrincipal.form import PruebaForm
 
 from django.views.generic import(
     ListView,
+    TemplateView,
     CreateView,
 )
 
 from .models import Familia,Especie,Individuos,Usuario
 # Create your views here.
+
+class IndexView(TemplateView):
+
+    template_name = "pantallaPrincipal/index.html"
 
 class ListaFamilias(ListView):
 

@@ -3,20 +3,20 @@ from .models import Familia, Especie, Individuos, Usuario
 # Register your models here.
 
 class FamiliaAdmin(admin.ModelAdmin):
-    list_display = ('nombre',)
-    search_fields = ('nombre',)
+    list_display = ('nombreFamilia',)
+    search_fields = ('nombreFamilia',)
 
 class EspecieAdmin(admin.ModelAdmin):
-    list_display = ('nombreCientifico', 'nombreComun', 'familia', 'autoctona', 'distribucion', 'descripcion', 'ecologia', 'masInfo' )
-    search_fields = ('nombreCientifico', 'nombreComun', 'familia')
+    list_display = ('nombreCientificoEspecie', 'nombreComunEspecie', 'familia', 'autoctona', 'distribucion', 'descripcion', 'ecologia', 'masInfo' )
+    search_fields = ('nombreCientificoEspecie', 'nombreComunEspecie', 'familia')
 
 class IndividuosAdmin(admin.ModelAdmin):
-    list_display = ( 'nombre','motivoSingular','x','y','tipoEspecie','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro' )
-    search_fields = ( 'nombre','motivoSingular','x','y','tipoEspecie','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro')
+    list_display = ( 'nombreComun','motivoSingular','explicacionMotivoSingular','x','y','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro' )
+    search_fields = ( 'nombreComun','motivoSingular','explicacionMotivoSingular','x','y','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro')
 
 class UsuarioAdmin(admin.ModelAdmin):
-    list_display = ('nombre','primerApellido','segundoApellido','email','contrasenia','tipo')
-    search_fields = ('nombre','primerApellido','segundoApellido','email','tipo')
+    list_display = ('nombreUsuario','primerApellido','segundoApellido','email','contrasenia','tipo')
+    search_fields = ('nombreUsuario','primerApellido','segundoApellido','email','tipo')
 
 
 

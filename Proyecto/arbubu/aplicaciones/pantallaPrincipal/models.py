@@ -9,21 +9,21 @@ motivo_singularidad=( ('Antigüedad','Antigüedad'), ('Elevado Diámetro','Eleva
 distribucion_predominante=( ('Asia','Asia'), ('Antártida','Antártida'), ('Europa','Europa'), ('África','África'), ('Oceanía','Oceanía'), ('América','América'),)
 
 class Familia(models.Model):
-    nombre = models.CharField('Nombre',unique=True,choices=familias, max_length=30,blank=False)
+    nombreFamilia = models.CharField('Nombre',unique=True,choices=familias, max_length=30,blank=False)
 
     def __str__(self):
-        return self.nombre
+        return self.nombreFamilia
 
     def devolverFamilia(self):
         familias = list()
-        for i in range (self.nombre):
+        for i in range (self.nombreFamilia):
             familias.append(i)
             #print(familias)
         return familias
 
 class Especie(models.Model):
-    nombreCientifico = models.CharField('Nombre Cientifico', unique=True,blank=False, max_length=30)
-    nombreComun = models.CharField('Nombre Común', unique=True,blank=False, max_length=30)
+    nombreCientificoEspecie = models.CharField('Nombre Cientifico', unique=True,blank=False, max_length=30)
+    nombreComunEspecie = models.CharField('Nombre Común', unique=True,blank=False, max_length=30)
     familia = models.ForeignKey(Familia, on_delete=models.CASCADE, blank=False)
     autoctona = models.BooleanField('Autóctona', default=False)
     distribucion = models.CharField('Distribucion', max_length=30,choices=distribucion_predominante,blank=False)
@@ -32,17 +32,17 @@ class Especie(models.Model):
     masInfo = models.TextField('Más Información', blank=False)
 
     def __str__(self):
-            return self.nombreCientifico
+            return self.nombreComunEspecie
 
     def devolverEspeciePorNombreCientifico(self):
         especies = list()
-        for i in range (self.nombreCientifico):
+        for i in range (self.nombreCientificoEspecie):
             especies.append(i)
         return especies
 
     def devolverEspeciePorNombreComun(self):
         especies = list()
-        for i in range (self.nombreComun):
+        for i in range (self.nombreComunEspecie):
             especies.append(i)
         return especies
 
@@ -55,11 +55,11 @@ class Especie(models.Model):
 
 
 class Individuos(models.Model):
-    nombre = models.CharField('Nombre',unique=True,blank=False,max_length=30)
+    nombreComun = models.ForeignKey(Especie, on_delete=models.CASCADE, blank=False)
     motivoSingular = models.CharField('Motivo de Singularidad',choices=motivo_singularidad, blank=False, max_length=30)
+    explicacionMotivoSingular = models.CharField('Explicacion',blank=False, max_length=30,default='')
     x = models.IntegerField('X',blank=False, default=1)
     y = models.IntegerField('Y',blank=False,default=1)
-    tipoEspecie = models.ForeignKey(Especie, on_delete=models.CASCADE, blank=False)
     fotoArbol = models.ImageField(upload_to='static/imagenes',blank=False)
     fotoHojas = models.ImageField(upload_to='static/imagenes',blank=True)
     fotoTronco = models.ImageField(upload_to='static/imagenes',blank=True)
@@ -68,11 +68,11 @@ class Individuos(models.Model):
     perimetro = models.IntegerField('Perimetro',blank=False, default=1)
 
     def __str__(self):
-            return self.nombre
+            return self.nombreComunEspecie
 
     def devolverIndividuoPorNombre(self):
         individuo = list()
-        for i in range (self.nombre):
+        for i in range (self.nombreComunEspecie):
             individuo.append(i)
         return individuo
 
@@ -97,7 +97,7 @@ class Individuos(models.Model):
 permisos=(('Administrador','Administrador'), ('Usuario','Usuario'),)
 
 class Usuario(models.Model):
-    nombre = models.CharField('Nombre',blank=False,max_length=30,unique=True)
+    nombreUsuario = models.CharField('Nombre',blank=False,max_length=30,unique=True)
     primerApellido = models.CharField('Primer Apellido',blank=False,max_length=30)
     segundoApellido = models.CharField('Segundo Apellido',blank=False,max_length=30)
     email = models.EmailField('E-mail',blank=False,unique=True)
@@ -105,7 +105,7 @@ class Usuario(models.Model):
     tipo = models.CharField('Tipo',blank=False,choices=permisos,max_length=30, default='Usuario')
 
     def __str__(self):
-            return self.nombre
+            return self.nombreUsuario
 
     #def encriptarContrasenia(self):
     #    byte[] bytes = System.Text.Encoding.UTF8.GetBytes(self.contrasenia);
