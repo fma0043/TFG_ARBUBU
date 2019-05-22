@@ -7,7 +7,7 @@ class FamiliaAdmin(admin.ModelAdmin):
     search_fields = ('nombreFamilia',)
 
 class EspecieAdmin(admin.ModelAdmin):
-    list_display = ('nombreCientificoEspecie', 'nombreComunEspecie', 'familia', 'autoctona', 'distribucion', 'descripcion', 'ecologia', 'masInfo' )
+    list_display = ('nombreCientificoEspecie', 'nombreComunEspecie', 'familia', 'autoctona', 'descripcion', 'ecologia')
     search_fields = ('nombreCientificoEspecie', 'nombreComunEspecie', 'familia')
 
 class IndividuosAdmin(admin.ModelAdmin):

@@ -1,12 +1,11 @@
 from django.db import models
+
 #import crypt
 
 
 familias=( ('Aceráceas','Aceráceas'), ('Anacardiáceas','Anacardiáceas'), ('Aquifoliáceas','Aquifoliáceas'), ('Betuláceas','Betuláceas'), ('Buxáceas','Buxáceas'), ('Caprifoliáceas','Caprifoliáceas'),('Celastráceas','Celastráceas'),('Cornáceas','Cornáceas'),('Cupresáceas','Cupresáceas'),('Eleagnáceas','Eleagnáceas'),('Ericácas','Ericácas'),('Fagáceas','Fagáceas'),('Juglandáceas','Juglandáceas'),('Lauráceas','Lauráceas'),('Leguminosas','Leguminosas'),('Meliáceas','Meliáceas'),('Mirtáceas','Mirtáceas'),('Moráceas','Moráceas'),('Oleáceas','Oleáceas'),('Palmáceas','Palmáceas'),('Pináceas','Pináceas'),('Platanáceas','Platanáceas'),('Punicáceas','Punicáceas'),('Ramnáceas','Ramnáceas'),('Rosáceas','Rosáceas'),('Salicáceas','Salicáceas'),('Simaroubáceas','Simaroubáceas'),('Solanáceas','Solanáceas'),('Tamariacáceas','Tamariacáceas'),('Taxáceas','Taxáceas'),('Tiliáceas','Tiliáceas'),('Ulmáceas','Ulmáceas'),)
 
-motivo_singularidad=( ('Antigüedad','Antigüedad'), ('Elevado Diámetro','Elevado Diámetro'), ('Plantado por un personaje histórico','Plantado por un personaje histórico'),)
-
-distribucion_predominante=( ('Asia','Asia'), ('Antártida','Antártida'), ('Europa','Europa'), ('África','África'), ('Oceanía','Oceanía'), ('América','América'),)
+motivo_singularidad=( ('Antigüedad','Antigüedad'), ('Elevado Diámetro','Elevado Diámetro'), ('Plantado por un personaje histórico','Plantado por un personaje histórico'),('Vistosidad','Vistosidad'),('Madera codiciada','Madera codiciada'),('Frutos peculiares','Frutos peculiares'), ('Utilidad medicinal','Utilidad medicinal'))
 
 class Familia(models.Model):
     nombreFamilia = models.CharField('Nombre',unique=True,choices=familias, max_length=30,blank=False)
@@ -14,11 +13,19 @@ class Familia(models.Model):
     def __str__(self):
         return self.nombreFamilia
 
-    def devolverFamilia(self):
+    def __init__(self, nombreFamilia):
+        self.__nombreFamilia = nombreFamilia
+
+    def getNombreFamilia(self):
+        return self.__nombreFamilia
+
+    def setNombreFamilia(self, nombreFamilia):
+        self.__nombreFamilia = nombreFamilia
+
+    def devolverFamilias(self):
         familias = list()
         for i in range (self.nombreFamilia):
             familias.append(i)
-            #print(familias)
         return familias
 
 class Especie(models.Model):
@@ -26,33 +33,79 @@ class Especie(models.Model):
     nombreComunEspecie = models.CharField('Nombre Común', unique=True,blank=False, max_length=30)
     familia = models.ForeignKey(Familia, on_delete=models.CASCADE, blank=False)
     autoctona = models.BooleanField('Autóctona', default=False)
-    distribucion = models.CharField('Distribucion', max_length=30,choices=distribucion_predominante,blank=False)
     descripcion = models.TextField('Descripcion', blank=False)
     ecologia = models.TextField('Ecologia', blank=False)
-    masInfo = models.TextField('Más Información', blank=False)
 
     def __str__(self):
             return self.nombreComunEspecie
 
-    def devolverEspeciePorNombreCientifico(self):
+    def __init__(self, nombreCientificoEspecie, nombreComunEspecie, familia, autoctona, descripcion, ecologia):
+        self.__nombreCientificoEspecie = nombreCientificoEspecie
+        self.__nombreComunEspecie = nombreComunEspecie
+        self.__familia = familia
+        self.__autoctona = autoctona
+        self.__descripcion = descripcion
+        self.__ecologia = ecologia
+
+    def getNombreFamilia(self):
+        return self.__nombreCientificoEspecie
+
+    def setNombreCientificoEspecie(self, nombreCientificoEspecie):
+        self.__nombreCientificoEspecie = nombreCientificoEspecie
+
+    def getNombreComunEspecie(self):
+        return self.__nombreComunEspecie
+
+    def setNombreComunEspecie(self, nombreComunEspecie):
+        self.__nombreComunEspecie = nombreComunEspecie
+
+    def getFamilia(self):
+        return self.__familia
+
+    def setFamilia(self, familia):
+        self.__familia = familia
+
+    def getAutoctona(self):
+        return self.__autoctona
+
+    def setAutoctona(self, autoctona):
+        self.__autoctona = autoctona
+
+    def getDescripcion(self):
+        return self.__descripcion
+
+    def setDescripcion(self, descripcion):
+        self.__descripcion = descripcion
+
+    def getEcologia(self):
+        return self.__ecologia
+
+    def setEcologia(self, ecologia):
+        self.__ecologia = ecologia
+
+    def devolverEspeciesPorNombreCientificoEspecie(self):
         especies = list()
         for i in range (self.nombreCientificoEspecie):
             especies.append(i)
         return especies
 
-    def devolverEspeciePorNombreComun(self):
+    def devolverEspeciesPorNombreComunEspecie(self):
         especies = list()
         for i in range (self.nombreComunEspecie):
             especies.append(i)
         return especies
 
-    def devolverEspeciePorAutoctona(self):
+    def devolverEspeciesPorAutoctona(self):
         especies = list()
         for i in range (self.autoctona):
             if self.autoctona == True:
                 especies.append(i)
         return especies
 
+# Creación de un nuevo registro usando el constructor del modelo.
+#a_record = Especie(nombreComunEspecie="Ciruelo Rojo")
+# Guardar el objeto en la base de datos.
+#a_record.save()
 
 class Individuos(models.Model):
     nombreComun = models.ForeignKey(Especie, on_delete=models.CASCADE, blank=False)
@@ -70,13 +123,58 @@ class Individuos(models.Model):
     def __str__(self):
             return self.nombreComunEspecie
 
-    def devolverIndividuoPorNombre(self):
-        individuo = list()
-        for i in range (self.nombreComunEspecie):
-            individuo.append(i)
-        return individuo
+    def __init__(self, nombreComun, motivoSingular, explicacionMotivoSingular, x, y, altura, perimetro):
+        self.__nombreComun = nombreComun
+        self.__motivoSingular = motivoSingular
+        self.__explicacionMotivoSingular = explicacionMotivoSingular
+        self.__x = x
+        self.__y = y
+        self.__altura = altura
+        self.__perimetro = perimetro
 
-    def devolverIndividuoPorMotivoSingular(self):
+    def getNombreComun(self):
+        return self.nombreComun
+
+    def setNombreCientificoEspecie(self, nombreComun):
+        self.__nombreComun = nombreComun
+
+    def getMotivoSingular(self):
+        return self.motivoSingular
+
+    def setMotivoSingular(self, motivoSingular):
+        self.__motivoSingular = motivoSingular
+
+    def getExplicacionMotivoSingular(self):
+        return self.explicacionMotivoSingular
+
+    def setMotivoSingular(self, explicacionMotivoSingular):
+        self.__explicacionMotivoSingular = explicacionMotivoSingular
+
+    def getX(self):
+        return self.x
+
+    def setX(self, x):
+        self.__x = x
+
+    def getY(self):
+        return self.y
+
+    def setY(self, y):
+        self.__y = y
+
+    def getAltura(self):
+        return self.altura
+
+    def setAltura(self, altura):
+        self.__altura = altura
+
+    def getPerimetro(self):
+        return self.perimetro
+
+    def setPerimetro(self, perimetro):
+        self.__perimetro = perimetro
+
+    def devolverIndividuosPorMotivoSingular(self):
         individuo = list()
         for i in range (self.motivoSingular):
             individuo.append(i)
