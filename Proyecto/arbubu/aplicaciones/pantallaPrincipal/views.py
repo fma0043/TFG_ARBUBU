@@ -9,7 +9,7 @@ from django.views.generic import(
     CreateView,
 )
 
-from .models import Familia,Especie,Individuos,Usuario
+from .models import Familias,Especies,Individuos,Usuario
 # Create your views here.
 
 class IndexView(TemplateView):
@@ -19,14 +19,14 @@ class IndexView(TemplateView):
 class ListaFamilias(ListView):
 
     template_name = "pantallaPrincipal/lista-familias.html"
-    model = Familia
+    model = Familias
     context_object_name = 'familia'
 
 
 class ListaEspecies(ListView):
 
     template_name = "pantallaPrincipal/lista-especies.html"
-    model = Especie
+    model = Especies
     context_object_name = 'especie'
 
     #def get_queryset(self):

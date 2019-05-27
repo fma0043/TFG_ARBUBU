@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Familia, Especie, Individuos, Usuario
+from .models import Familias, Especies, Individuos, Usuario
 # Register your models here.
 
 class FamiliaAdmin(admin.ModelAdmin):
@@ -7,12 +7,12 @@ class FamiliaAdmin(admin.ModelAdmin):
     search_fields = ('nombreFamilia',)
 
 class EspecieAdmin(admin.ModelAdmin):
-    list_display = ('nombreCientificoEspecie', 'nombreComunEspecie', 'familia', 'autoctona', 'descripcion', 'ecologia')
-    search_fields = ('nombreCientificoEspecie', 'nombreComunEspecie', 'familia')
+    list_display = ('nombreCientificoEspecie', 'nombreComunEspecie',  'autoctona', 'descripcion', 'ecologia')
+    search_fields = ('nombreCientificoEspecie', 'nombreComunEspecie', )
 
 class IndividuosAdmin(admin.ModelAdmin):
-    list_display = ( 'nombreComun','motivoSingular','explicacionMotivoSingular','x','y','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro' )
-    search_fields = ( 'nombreComun','motivoSingular','explicacionMotivoSingular','x','y','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro')
+    list_display = ( 'motivoSingular','explicacionMotivoSingular','x','y','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro' )
+    search_fields = ( 'motivoSingular','explicacionMotivoSingular','x','y','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro')
 
 class UsuarioAdmin(admin.ModelAdmin):
     list_display = ('nombreUsuario','primerApellido','segundoApellido','email','contrasenia','tipo')
@@ -20,7 +20,7 @@ class UsuarioAdmin(admin.ModelAdmin):
 
 
 
-admin.site.register(Familia,FamiliaAdmin)
-admin.site.register(Especie,EspecieAdmin)
+admin.site.register(Familias,FamiliaAdmin)
+admin.site.register(Especies,EspecieAdmin)
 admin.site.register(Individuos,IndividuosAdmin)
 admin.site.register(Usuario,UsuarioAdmin)

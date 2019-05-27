@@ -2,25 +2,68 @@ from django.db import models
 
 #import crypt
 
-
 familias=( ('Aceráceas','Aceráceas'), ('Anacardiáceas','Anacardiáceas'), ('Aquifoliáceas','Aquifoliáceas'), ('Betuláceas','Betuláceas'), ('Buxáceas','Buxáceas'), ('Caprifoliáceas','Caprifoliáceas'),('Celastráceas','Celastráceas'),('Cornáceas','Cornáceas'),('Cupresáceas','Cupresáceas'),('Eleagnáceas','Eleagnáceas'),('Ericácas','Ericácas'),('Fagáceas','Fagáceas'),('Juglandáceas','Juglandáceas'),('Lauráceas','Lauráceas'),('Leguminosas','Leguminosas'),('Meliáceas','Meliáceas'),('Mirtáceas','Mirtáceas'),('Moráceas','Moráceas'),('Oleáceas','Oleáceas'),('Palmáceas','Palmáceas'),('Pináceas','Pináceas'),('Platanáceas','Platanáceas'),('Punicáceas','Punicáceas'),('Ramnáceas','Ramnáceas'),('Rosáceas','Rosáceas'),('Salicáceas','Salicáceas'),('Simaroubáceas','Simaroubáceas'),('Solanáceas','Solanáceas'),('Tamariacáceas','Tamariacáceas'),('Taxáceas','Taxáceas'),('Tiliáceas','Tiliáceas'),('Ulmáceas','Ulmáceas'),)
 
 motivo_singularidad=( ('Antigüedad','Antigüedad'), ('Elevado Diámetro','Elevado Diámetro'), ('Plantado por un personaje histórico','Plantado por un personaje histórico'),('Vistosidad','Vistosidad'),('Madera codiciada','Madera codiciada'),('Frutos peculiares','Frutos peculiares'), ('Utilidad medicinal','Utilidad medicinal'))
 
-class Familia(models.Model):
-    nombreFamilia = models.CharField('Nombre',unique=True,choices=familias, max_length=30,blank=False)
+class Familias(models.Model):
+    nombreFamilia = models.CharField('Nombre', unique=True, blank=False, choices=familias, max_length=30)
 
     def __str__(self):
         return self.nombreFamilia
 
-    def __init__(self, nombreFamilia):
-        self.__nombreFamilia = nombreFamilia
+class Especies(models.Model):
+    nombreCientificoEspecie = models.CharField('Nombre Cientifico', unique=True, blank=False,  max_length=30)
+    nombreComunEspecie = models.CharField('Nombre Común', unique=True, blank=False,  max_length=30)
+    familia = models.ForeignKey(Familias, on_delete=models.CASCADE, blank=False)
+    autoctona = models.BooleanField('Autóctona', default=False)
+    descripcion = models.TextField('Descripcion', blank=False)
+    ecologia = models.TextField('Ecologia', blank=False)
+
+    def __str__(self):
+        return self.nombreCientificoEspecie
+
+
+class Individuos(models.Model):
+    nombreComun = models.ForeignKey(Especies, blank=False, on_delete=models.CASCADE)
+    motivoSingular = models.CharField('Motivo de Singularidad',choices=motivo_singularidad, blank=False, max_length=50)
+    explicacionMotivoSingular = models.TextField('Explicacion de Singularidad',blank=False)
+    x = models.IntegerField('X',blank=False, default=1)
+    y = models.IntegerField('Y',blank=False,default=1)
+    fotoArbol = models.ImageField(upload_to='static/imagenes',blank=False)
+    fotoHojas = models.ImageField(upload_to='static/imagenes',blank=True)
+    fotoTronco = models.ImageField(upload_to='static/imagenes',blank=True)
+    fotoFrutos = models.ImageField(upload_to='static/imagenes',blank=True)
+    altura = models.IntegerField('Altura',blank=False, default=0)
+    perimetro = models.IntegerField('Perimetro',blank=False, default=0)
+
+    def __str__(self):
+        return self.nombreComun
+
+permisos=(('Administrador','Administrador'), ('Usuario','Usuario'),)
+
+class Usuario(models.Model):
+    nombreUsuario = models.CharField('Nombre',blank=False,max_length=30,unique=True)
+    primerApellido = models.CharField('Primer Apellido',blank=False,max_length=30)
+    segundoApellido = models.CharField('Segundo Apellido',blank=False,max_length=30)
+    email = models.EmailField('E-mail',blank=False,unique=True)
+    contrasenia = models.CharField('Contraseña',blank=False,max_length=30)
+    tipo = models.CharField('Tipo',blank=False,choices=permisos,max_length=30, default='Usuario')
+    activo = models.BooleanField('Activo', default=False)
+
+    def __str__(self):
+            return self.nombreUsuario
+
+class _Familias(object):
+
+    def __init__(self,nombreFamilia):
+        self.nombreFamilia = nombreFamilia
 
     def getNombreFamilia(self):
-        return self.__nombreFamilia
+        return self.nombreFamilia
 
     def setNombreFamilia(self, nombreFamilia):
-        self.__nombreFamilia = nombreFamilia
+        self.nombreFamilia = nombreFamilia
 
     def devolverFamilias(self):
         familias = list()
@@ -28,60 +71,54 @@ class Familia(models.Model):
             familias.append(i)
         return familias
 
-class Especie(models.Model):
-    nombreCientificoEspecie = models.CharField('Nombre Cientifico', unique=True,blank=False, max_length=30)
-    nombreComunEspecie = models.CharField('Nombre Común', unique=True,blank=False, max_length=30)
-    familia = models.ForeignKey(Familia, on_delete=models.CASCADE, blank=False)
-    autoctona = models.BooleanField('Autóctona', default=False)
-    descripcion = models.TextField('Descripcion', blank=False)
-    ecologia = models.TextField('Ecologia', blank=False)
+class _Especies(object):
+
+    def __init__(self,nombreCientificoEspecie,nombreComunEspecie,familia,autoctona,descripcion,ecologia):
+        self.nombreCientificoEspecie = nombreCientificoEspecie
+        self.nombreComunEspecie = nombreComunEspecie
+        self.familia = familia
+        self.autoctona = autoctona
+        self.descripcion = descripcion
+        self.ecologia = ecologia
 
     def __str__(self):
-            return self.nombreComunEspecie
+        return self.nombreCientificoEspecie
 
-    def __init__(self, nombreCientificoEspecie, nombreComunEspecie, familia, autoctona, descripcion, ecologia):
-        self.__nombreCientificoEspecie = nombreCientificoEspecie
-        self.__nombreComunEspecie = nombreComunEspecie
-        self.__familia = familia
-        self.__autoctona = autoctona
-        self.__descripcion = descripcion
-        self.__ecologia = ecologia
+    def getNombreCientificoEspecie(self):
+        return self.nombreCientificoEspecie
 
-    def getNombreFamilia(self):
-        return self.__nombreCientificoEspecie
-
-    def setNombreCientificoEspecie(self, nombreCientificoEspecie):
-        self.__nombreCientificoEspecie = nombreCientificoEspecie
+    def setNombreCientificoEspecie(self, _nombreCientificoEspecie):
+        self.nombreCientificoEspecie = _nombreCientificoEspecie
 
     def getNombreComunEspecie(self):
-        return self.__nombreComunEspecie
+        return self.nombreComunEspecie
 
-    def setNombreComunEspecie(self, nombreComunEspecie):
-        self.__nombreComunEspecie = nombreComunEspecie
+    def setNombreComunEspecie(self, _nombreComunEspecie):
+        self.nombreComunEspecie = _nombreComunEspecie
 
     def getFamilia(self):
-        return self.__familia
+        return self.familia
 
-    def setFamilia(self, familia):
-        self.__familia = familia
+    def setFamilia(self, _familia):
+        self.familia = _familia
 
     def getAutoctona(self):
-        return self.__autoctona
+        return self.autoctona
 
-    def setAutoctona(self, autoctona):
-        self.__autoctona = autoctona
+    def setAutoctona(self, _autoctona):
+        self.autoctona = _autoctona
 
     def getDescripcion(self):
-        return self.__descripcion
+        return self.descripcion
 
-    def setDescripcion(self, descripcion):
-        self.__descripcion = descripcion
+    def setDescripcion(self, _descripcion):
+        self.descripcion = _descripcion
 
     def getEcologia(self):
-        return self.__ecologia
+        return self.ecologia
 
-    def setEcologia(self, ecologia):
-        self.__ecologia = ecologia
+    def setEcologia(self, _ecologia):
+        self.ecologia = _ecologia
 
     def devolverEspeciesPorNombreCientificoEspecie(self):
         especies = list()
@@ -102,77 +139,61 @@ class Especie(models.Model):
                 especies.append(i)
         return especies
 
-# Creación de un nuevo registro usando el constructor del modelo.
-#a_record = Especie(nombreComunEspecie="Ciruelo Rojo")
-# Guardar el objeto en la base de datos.
-#a_record.save()
+class _Individuos(object):
 
-class Individuos(models.Model):
-    nombreComun = models.ForeignKey(Especie, on_delete=models.CASCADE, blank=False)
-    motivoSingular = models.CharField('Motivo de Singularidad',choices=motivo_singularidad, blank=False, max_length=30)
-    explicacionMotivoSingular = models.CharField('Explicacion',blank=False, max_length=30,default='')
-    x = models.IntegerField('X',blank=False, default=1)
-    y = models.IntegerField('Y',blank=False,default=1)
-    fotoArbol = models.ImageField(upload_to='static/imagenes',blank=False)
-    fotoHojas = models.ImageField(upload_to='static/imagenes',blank=True)
-    fotoTronco = models.ImageField(upload_to='static/imagenes',blank=True)
-    fotoFrutos = models.ImageField(upload_to='static/imagenes',blank=True)
-    altura = models.IntegerField('Altura',blank=False, default=1)
-    perimetro = models.IntegerField('Perimetro',blank=False, default=1)
+    def __init__(self,nombreComun,motivoSingular,explicacionMotivoSingular,x,y,altura,perimetro):
+        self.nombreComun = nombreComun
+        self.motivoSingular = motivoSingular
+        self.explicacionMotivoSingular = explicacionMotivoSingular
+        self.x = x
+        self.y = y
+        self.altura = altura
+        self.perimetro = perimetro
 
     def __str__(self):
-            return self.nombreComunEspecie
-
-    def __init__(self, nombreComun, motivoSingular, explicacionMotivoSingular, x, y, altura, perimetro):
-        self.__nombreComun = nombreComun
-        self.__motivoSingular = motivoSingular
-        self.__explicacionMotivoSingular = explicacionMotivoSingular
-        self.__x = x
-        self.__y = y
-        self.__altura = altura
-        self.__perimetro = perimetro
+        return self.nombreComun
 
     def getNombreComun(self):
         return self.nombreComun
 
-    def setNombreCientificoEspecie(self, nombreComun):
-        self.__nombreComun = nombreComun
+    def setNombreComun(self, _nombreComun):
+        self.nombreComun = _nombreComun
 
     def getMotivoSingular(self):
         return self.motivoSingular
 
-    def setMotivoSingular(self, motivoSingular):
-        self.__motivoSingular = motivoSingular
+    def setMotivoSingular(self, _motivoSingular):
+        self.motivoSingular = _motivoSingular
 
     def getExplicacionMotivoSingular(self):
         return self.explicacionMotivoSingular
 
-    def setMotivoSingular(self, explicacionMotivoSingular):
-        self.__explicacionMotivoSingular = explicacionMotivoSingular
+    def setMotivoSingular(self, _explicacionMotivoSingular):
+        self.explicacionMotivoSingular = _explicacionMotivoSingular
 
     def getX(self):
         return self.x
 
-    def setX(self, x):
-        self.__x = x
+    def setX(self, _x):
+        self.x = _x
 
     def getY(self):
         return self.y
 
-    def setY(self, y):
-        self.__y = y
+    def setY(self, _y):
+        self.y = _y
 
     def getAltura(self):
         return self.altura
 
-    def setAltura(self, altura):
-        self.__altura = altura
+    def setAltura(self, _altura):
+        self.altura = _altura
 
     def getPerimetro(self):
         return self.perimetro
 
-    def setPerimetro(self, perimetro):
-        self.__perimetro = perimetro
+    def setPerimetro(self, _perimetro):
+        self.perimetro = _perimetro
 
     def devolverIndividuosPorMotivoSingular(self):
         individuo = list()
@@ -192,24 +213,20 @@ class Individuos(models.Model):
             individuo.append(i)
         return individuo
 
-permisos=(('Administrador','Administrador'), ('Usuario','Usuario'),)
+class _Usuario(object):
 
-class Usuario(models.Model):
-    nombreUsuario = models.CharField('Nombre',blank=False,max_length=30,unique=True)
-    primerApellido = models.CharField('Primer Apellido',blank=False,max_length=30)
-    segundoApellido = models.CharField('Segundo Apellido',blank=False,max_length=30)
-    email = models.EmailField('E-mail',blank=False,unique=True)
-    contrasenia = models.CharField('Contraseña',blank=False,max_length=30)
-    tipo = models.CharField('Tipo',blank=False,choices=permisos,max_length=30, default='Usuario')
+    def __init__(self,nombreUsuario,primerApellido,segundoApellido,email,contrasenia,tipo,activo):
+        self.nombreUsuario = nombreUsuario
+        self.primerApellido = primerApellido
+        self.segundoApellido = segundoApellido
+        self.email = email
+        self.y = y
+        self.contrasenia = contrasenia
+        self.tipo = tipo
+        self.activo = activo
 
     def __str__(self):
             return self.nombreUsuario
-
-    #def encriptarContrasenia(self):
-    #    byte[] bytes = System.Text.Encoding.UTF8.GetBytes(self.contrasenia);
-    #    SHA256 mySHA256 = SHA256.Create();
-    #    bytes = mySHA256.ComputeHash(bytes);
-    #    return (System.Text.Encoding.ASCII.GetString(bytes));
 
     def permisosAdmin(self):
         usuario = list()
@@ -217,11 +234,3 @@ class Usuario(models.Model):
             if self.tipo == Administrador:
                 usuario.append(i)
         return usuario
-
-#private string Encriptar(string _contraseña)
-#        {
-#            byte[] bytes = System.Text.Encoding.UTF8.GetBytes(_contraseña);
-#            SHA256 mySHA256 = SHA256.Create();
-#            bytes = mySHA256.ComputeHash(bytes);
-#            return (System.Text.Encoding.ASCII.GetString(bytes));
-#        }
