@@ -1,11 +1,75 @@
-{% extends "base.html" %}
-{% block title %} {% endblock %}
-{% block content %}
+<!DOCTYPE html>
+<html>
 
-</style>
-  <body>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-      <h1> Filtros</h1>
-      
-  </body>
-{% endblock %}
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Mapa simple de OpenStreetMap con Leaflet</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+</head>
+
+<body>
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <div id="map" class="map map-home" style="margin:12px 0 12px 0;height:400px;"></div>
+  <script>
+    var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      osm = L.tileLayer(osmUrl, {
+        maxZoom: 28,
+        attribution: osmAttrib
+      });
+    var estiloPopup = {'maxWidth': '300'};
+    var map = L.map('map').setView([42.350, -3.688], 17).addLayer(osm);
+    L.marker([42.3509889, -3.688927777777778])
+      .addTo(map)
+      .bindPopup("<h1>Ciruelo Rojo</h1>", estiloPopup);
+    L.marker([42.3509472, -3.688836111111111])
+      .addTo(map)
+      .bindPopup("<h1>Pinsapo</h1>", estiloPopup);
+    L.marker([42.351, -3.6887722222222226])
+      .addTo(map)
+      .bindPopup("<h1>Olivo</h1>", estiloPopup);
+    L.marker([42.351025, -3.688825])
+      .addTo(map)
+      .bindPopup("<h1>Acebo</h1>", estiloPopup);
+    L.marker([42.3510444, -3.6885944444444445])
+      .addTo(map)
+      .bindPopup("<h1>Abeto Rojo</h1>", estiloPopup);
+    L.marker([42.3510583, -3.6885111111111115])
+      .addTo(map)
+      .bindPopup("<h1>Hiedra</h1>", estiloPopup);
+    L.marker([42.3511806, -3.688377777777778])
+      .addTo(map)
+      .bindPopup("<h1>Sauce Llorón</h1>", estiloPopup);
+    L.marker([42.3511389, -3.6883861111111114])
+      .addTo(map)
+      .bindPopup("<h1>Nogal</h1>", estiloPopup);
+    L.marker([42.351375, -3.6881111111111116])
+      .addTo(map)
+      .bindPopup("<h1>Laurel Cerezo</h1>", estiloPopup);
+    L.marker([42.3514167, -3.6879250000000003])
+      .addTo(map)
+      .bindPopup("<h1>Tuya Gigante</h1>", estiloPopup);
+    L.marker([42.3507361, -3.6892500000000004])
+      .addTo(map)
+      .bindPopup("<h1>Catalpa</h1>", estiloPopup);
+    L.marker([42.3509306, -3.6893972222222224])
+      .addTo(map)
+      .bindPopup("<h1>Tamariz</h1>", estiloPopup);
+    L.marker([42.3509722, -3.689411111111111])
+      .addTo(map)
+      .bindPopup("<h1>Lilo</h1>", estiloPopup);
+    L.marker([42.3516556, -3.689505555555556])
+      .addTo(map)
+      .bindPopup("<h1>Plátano de Sombra</h1>", estiloPopup);
+    L.marker([42.3517056, -3.6892972222222227])
+      .addTo(map)
+      .bindPopup("<h1>Falsa Acacia</h1>", estiloPopup);
+    L.marker([42.3519361, -3.687877777777778])
+      .addTo(map)
+      .bindPopup("<h1>Olmo Siberiano</h1>", estiloPopup);
+    L.marker([42.350175, -3.6874888888888893])
+      .bindPopup('<h1>Chopo</h1><a href="http://google.es" target="_blank">Ir a Google</a>')
+      .addTo(map);
+  </script>
+</body>
+</html>
