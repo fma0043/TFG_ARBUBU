@@ -7,13 +7,12 @@ familia=( ('Aceráceas','Aceráceas'), ('Anacardiáceas','Anacardiáceas'), ('Aq
 motivo_singularidad=( ('Antigüedad','Antigüedad'), ('Elevado Diámetro','Elevado Diámetro'), ('Plantado por un personaje histórico','Plantado por un personaje histórico'),('Vistosidad','Vistosidad'),('Madera codiciada','Madera codiciada'),('Frutos peculiares','Frutos peculiares'), ('Utilidad medicinal','Utilidad medicinal'))
 
 class Familia(models.Model):
+    idFamilia = models.AutoField('ID',primary_key=True, serialize=False,default=1)
     nombreFamilia = models.CharField('Nombre', unique=True, blank=False, choices=familia, max_length=30)
 
-    def __str__(self):
-        return self.nombreFamilia
 
 class Especie(models.Model):
-
+    idEspecie = models.AutoField('ID',primary_key=True, serialize=False,default=1)
     nombreCientificoEspecie = models.CharField('Nombre Cientifico', unique=True, blank=False,  max_length=30)
     nombreComunEspecie = models.CharField('Nombre Común', unique=True, blank=False,  max_length=30)
     familia = models.ForeignKey(Familia, on_delete=models.CASCADE)
@@ -21,29 +20,25 @@ class Especie(models.Model):
     descripcion = models.TextField('Descripcion', blank=False)
     ecologia = models.TextField('Ecologia', blank=False)
 
-    def __str__(self):
-        return self.nombreCientificoEspecie
-
-
 class Individuos(models.Model):
+    idIndividuo = models.AutoField('ID',primary_key=True, serialize=False,default=1)
     nombreComun = models.ForeignKey(Especie, on_delete=models.CASCADE)
     motivoSingular = models.CharField('Motivo de Singularidad',choices=motivo_singularidad, blank=False, max_length=50)
     explicacionMotivoSingular = models.TextField('Explicacion de Singularidad',blank=False)
-    x = models.IntegerField('X',blank=False, default=1)
-    y = models.IntegerField('Y',blank=False,default=1)
+    x = models.DecimalField ('X',blank=False, default=1,max_digits=19, decimal_places=15)
+    y = models.DecimalField ('Y',blank=False,default=1,max_digits=19, decimal_places=15)
     fotoArbol = models.ImageField(upload_to='static/imagenes',blank=False)
     fotoHojas = models.ImageField(upload_to='static/imagenes',blank=True)
     fotoTronco = models.ImageField(upload_to='static/imagenes',blank=True)
     fotoFrutos = models.ImageField(upload_to='static/imagenes',blank=True)
-    altura = models.IntegerField('Altura',blank=False, default=0)
-    perimetro = models.IntegerField('Perimetro',blank=False, default=0)
+    altura = models.DecimalField('Altura',blank=False, default=0,max_digits=19, decimal_places=15)
+    perimetro = models.DecimalField('Perimetro',blank=False, default=0,max_digits=19, decimal_places=15)
 
-    def __str__(self):
-        return self.nombreComun
 
 permisos=(('Administrador','Administrador'), ('Usuario','Usuario'),)
 
 class Usuario(models.Model):
+    idUsuario = models.AutoField('ID',primary_key=True, serialize=False,default=1)
     nombreUsuario = models.CharField('Nombre',blank=False,max_length=30,unique=True)
     primerApellido = models.CharField('Primer Apellido',blank=False,max_length=30)
     segundoApellido = models.CharField('Segundo Apellido',blank=False,max_length=30)
@@ -52,8 +47,7 @@ class Usuario(models.Model):
     tipo = models.CharField('Tipo',blank=False,choices=permisos,max_length=30, default='Usuario')
     activo = models.BooleanField('Activo', default=False)
 
-    def __str__(self):
-            return self.nombreUsuario
+
 
 class _Familias(object):
 
@@ -81,9 +75,6 @@ class _Especies(object):
         self.autoctona = autoctona
         self.descripcion = descripcion
         self.ecologia = ecologia
-
-    def __str__(self):
-        return self.nombreCientificoEspecie
 
     def getNombreCientificoEspecie(self):
         return self.nombreCientificoEspecie
@@ -151,9 +142,6 @@ class _Individuos(object):
         self.altura = altura
         self.perimetro = perimetro
 
-    def __str__(self):
-        return self.nombreComun
-
     def getNombreComun(self):
         return self.nombreComun
 
@@ -169,7 +157,7 @@ class _Individuos(object):
     def getExplicacionMotivoSingular(self):
         return self.explicacionMotivoSingular
 
-    def setMotivoSingular(self, _explicacionMotivoSingular):
+    def setExplicacionMotivoSingular(self, _explicacionMotivoSingular):
         self.explicacionMotivoSingular = _explicacionMotivoSingular
 
     def getX(self):
@@ -216,18 +204,14 @@ class _Individuos(object):
 
 class _Usuario(object):
 
-    def __init__(self,nombreUsuario,primerApellido,segundoApellido,email,contrasenia,tipo,activo):
+    def __init__(self,nombreUsuario,primerApellido,segundoApellido,email,tipo,activo):
         self.nombreUsuario = nombreUsuario
         self.primerApellido = primerApellido
         self.segundoApellido = segundoApellido
         self.email = email
         self.y = y
-        self.contrasenia = contrasenia
         self.tipo = tipo
         self.activo = activo
-
-    def __str__(self):
-            return self.nombreUsuario
 
     def permisosAdmin(self):
         usuario = list()
