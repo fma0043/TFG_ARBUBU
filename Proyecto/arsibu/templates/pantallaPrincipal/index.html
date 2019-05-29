@@ -1,15 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Mapa simple de OpenStreetMap con Leaflet</title>
+  <title>Pagina Principal Arbubu</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
+
+  <div class="body">
+    <div class="imagen1">
+      <img src="{% static 'imagenes/logo.png' %}">
+    </div>
+    <div class="imagen2">
+      <img src="{% static 'imagenes/ubu.png' %}"HSPACE=250>
+    </div>
   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-  <div id="map" class="map map-home" style="margin:12px 0 12px 0;height:400px;"></div>
+  <div id="map" class="map map-home" style="margin:120px 0 120px 700px;height:400px;"></div>
   <script>
     var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -71,5 +83,6 @@
       .bindPopup('<h1>Chopo</h1><a href="http://google.es" target="_blank">Ir a Google</a>')
       .addTo(map);
   </script>
+  </div>
 </body>
 </html>
