@@ -1,27 +1,90 @@
-<style>
-  #map {
-    width: 50%;
-    height: 280px;
-    box-shadow: 5px 5px 5px #888;
+.mainBody{
+  position: absolute;
+}
+
+#map {
+  width: 600px;
+  height: 300px;
+  top:400px;
+  left: 20px;
+  box-shadow: 5px 5px 5px #888;
+  border: 2px solid;
+  position: relative;
  }
 
  h1 {
-    color: #142929;
-}
-.imagen1{
-  width:150px;
-  height:150px;
-}
-.imagen2{
-  width:150px;
-  height:150px;
+     color: #142929;
+ }
+
+ .main{
+   height: 1200px;
+   position: absolute;
+ }
+
+.mainHead{
+  width:0px;
+  position: absolute;
 }
 
-.body{
-  padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 25px;
-  background-color: #28DDD2;
+.cabecera{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  background-image: url("../imagenes/fondoF.jpg");
+  background-size: 1320px 310px;
+  position: relative;
+  width:  1170px;
+  height: 150px;
+
 }
-</style>
+
+.twitter{
+  position: relative;
+  bottom: 280px;
+  left: 20px;
+}
+
+.facebook{
+  position: relative;
+  bottom: 304px;
+  left: 160px;
+}
+
+.boton{
+  position: relative;
+  left: 1115px;
+  bottom: 320px;
+}
+
+body{
+  background-color:  #C6C9D2;
+  position: absolute;
+}
+
+
+.mainFooter{
+  position: absolute;
+
+}
+
+.piePagina{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  background-image: url("../imagenes/fotoFondo.jpg");
+  background-size: 1320px 310px;
+  position: relative;
+  width:  1120px;
+  height: 150px;
+  top:950px;
+}
