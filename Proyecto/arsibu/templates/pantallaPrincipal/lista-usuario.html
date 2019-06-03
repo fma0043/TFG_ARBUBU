@@ -1,17 +1,40 @@
-{% extends "base.html" %}
-{% block title %} {% endblock %}
-{% block content %}
-    <h1> Usuarios Registrados</h1>
-    <table border="1">
-      <thead>
-        <th>Id</th>
-        <th>Nombre</th>
-      </thead>
-      <tbody>
-        {% for l in usuario %}
-        <tr>
-          <td>{{l.id}}</td>
-          <td>{{l.nombre}}</td>
-        </tr>
-        {% endfor %}
-{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<div class="main">
+  <head>
+    <meta charset="utf-8">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <div class="cabecera">
+      <img src="{% static 'imagenes/logo.png' %}"width="100">
+      <img src="{% static 'imagenes/escudoUbu.png' %}"width="100">
+      <img src="{% static 'imagenes/ubuv.png' %}"width="100">
+    </div>
+  </head>
+  <body>
+    <div class="recuadro">
+      <div class="identificate">
+          <h1>Identificate</h1>
+      </div>
+    <div class="usuario">
+      <label>Usuario <input type="text" id="usuario" name="usuario"/></label>
+      </div>
+    <div class="contraseña">
+      <label>Contraseña <input type="password" id="Contraseña" name="Contraseña"/></label>
+    </div>
+    <div class="aceptar">
+      <input type="button" value="ACEPTAR" OnClick="location.href='usuario'">
+    </div>
+        </div>
+  </body>
+  <footer>
+    <div class="volver">
+      <input type="button" value="VOLVER" OnClick="location.href='index'">
+    </div>
+    <div class="cerrar">
+      <input type="button" value="CERRAR SESIÓN" OnClick="location.href='index'">
+    </div>
+  </footer>
+    </div>
+    </html>

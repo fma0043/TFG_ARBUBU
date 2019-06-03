@@ -1,90 +1,129 @@
-.mainBody{
-  position: absolute;
+  #map {
+    width: 32%;
+    height: 46%;
+    top: 30%;
+    left: 65%;
+    border: 1px solid;
+    position: absolute;
+ }
+
+h1 {
+    color: white;
 }
 
-#map {
-  width: 600px;
-  height: 300px;
-  top:400px;
-  left: 20px;
-  box-shadow: 5px 5px 5px #888;
-  border: 2px solid;
-  position: relative;
- }
-
- h1 {
-     color: #142929;
- }
-
- .main{
-   height: 1200px;
-   position: absolute;
- }
-
-.mainHead{
-  width:0px;
+.identificate{
   position: absolute;
+  background: #F23F30;
+  height: 30%;
+  width: 100%;
+  text-align: center;
+  font: arial;
 }
 
 .cabecera{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 50px;
+  padding-left: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 50px;
   background-image: url("../imagenes/fondoF.jpg");
-  background-size: 1320px 310px;
-  position: relative;
-  width:  1170px;
-  height: 150px;
-
+  background-size: 100% 100%;
+  width: 94.8%;
+  float: left;
 }
 
 .twitter{
-  position: relative;
-  bottom: 280px;
-  left: 20px;
+  position: absolute;
+  bottom: 97.5%;
+  left: 0%;
 }
 
 .facebook{
-  position: relative;
-  bottom: 304px;
-  left: 160px;
+  position: absolute;
+  bottom: 97.8%;
+  left: 10%;
 }
 
 .boton{
-  position: relative;
-  left: 1115px;
-  bottom: 320px;
+  position: absolute;
+  left: 91.2%;
+  bottom: 97.8%;
 }
 
-body{
-  background-color:  #C6C9D2;
+.filtros{
+  background: white;
   position: absolute;
+  width: 26%;
+  height: 46%;
+  left:5%;
+  top:30%;
 }
 
-
-.mainFooter{
+.checkbox{
   position: absolute;
+  top:30%;
 
+}
+
+.volver{
+  position: absolute;
+  top:97.8%;
+}
+.cerrar{
+  position: absolute;
+  top:97.8%;
+  left:90.7%;
+}
+
+.main{
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  background: #BCCBC1;
+  margin: 0% 0% 0% 0%;
 }
 
 .piePagina{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 100px;
+  padding-left: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 50px;
   background-image: url("../imagenes/fotoFondo.jpg");
-  background-size: 1320px 310px;
-  position: relative;
-  width:  1120px;
-  height: 150px;
-  top:950px;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 94.8%;
+  height: 10%;
+  top:126%;
+}
+
+.usuario{
+  left:11.5%;
+  top:40%;
+  font-style: arial;
+  font-size: 20px;
+  position: absolute;
+}
+
+.contraseña{
+  left:2%;
+  top:60%;
+  font-style: arial;
+  font-size: 20px;
+  position: absolute;
+}
+
+.aceptar{
+  position: absolute;
+  font-style: arial;
+  font-size: 20px;
+  left:65%;
+  top:80%;
+}
+
+.recuadro{
+  background: white;
+  position: absolute;
+  width: 22%;
+  height: 20%;
+  left:10%;
+  top:30%;
 }
