@@ -11,6 +11,15 @@ h1 {
     color: white;
 }
 
+.identificate1{
+  position: absolute;
+  background: #F23F30;
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  font: arial;
+}
+
 .identificate{
   position: absolute;
   background: #F23F30;
@@ -50,18 +59,37 @@ h1 {
 }
 
 .filtros{
-  background: white;
+  background: #DFC3C0;
   position: absolute;
   width: 26%;
-  height: 46%;
+  height: 38%;
   left:5%;
   top:30%;
 }
 
-.checkbox{
+.coincidencias{
+  background: #DFC3C0;
   position: absolute;
+  width: 26%;
+  height: 35.5%;
+  left:35%;
   top:30%;
+}
 
+.checkbox{
+  padding: 2% 2% 2% 2%;
+  top:20%;
+  font-style: arial;
+  font-size: 20px;
+  position: absolute;
+}
+
+.resultados{
+  padding: 2% 2% 2% 2%;
+  top:20%;
+  font-style: arial;
+  font-size: 20px;
+  position: absolute;
 }
 
 .volver{
@@ -80,6 +108,7 @@ h1 {
   width: 100%;
   background: #BCCBC1;
   margin: 0% 0% 0% 0%;
+
 }
 
 .piePagina{
@@ -92,7 +121,7 @@ h1 {
   position: absolute;
   width: 94.8%;
   height: 10%;
-  top:126%;
+  top:86%;
 }
 
 .usuario{
@@ -120,10 +149,41 @@ h1 {
 }
 
 .recuadro{
-  background: white;
+  background: #DFC3C0;
   position: absolute;
   width: 22%;
   height: 20%;
   left:10%;
-  top:30%;
+  top:50%;
+}
+
+.importar{
+  background: #DFC3C0;
+  position: absolute;
+  width: 32%;
+  height: 20%;
+  left:40%;
+  top:50%;
+}
+
+.csv{
+  top:35%;
+  font-style: arial;
+  font-size: 20px;
+  position: absolute;
+}
+
+.manualmente{
+  top:55%;
+  font-style: arial;
+  font-size: 20px;
+  position: absolute;
+}
+
+.mostrarUsuario{
+  position: absolute;
+  width: 12%;
+  height: 5%;
+  left:85%;
+  top:20%;
 }

@@ -27,20 +27,28 @@
 </head>
 <body>
   <div class="filtros">
-    <div class="identificate">
+    <div class="identificate1">
         <h1>Filtros de Búsqueda</h1>
     </div>
     <div class="checkbox">
-      <br><label> Por Familia <input type="" name="" value=""><br><br>
-      <label> Por Nombre Cientifico <input type="" name="" value=""><br><br>
-      <label> Por Nombre Común <input type="" name="" value=""> <br><br>
-      <label> Por Autóctona <input type="" name="" value=""> <br><br>
-      <label> Por Motivo Singular <input type="" name="" value=""> <br><br>
-      <label> Por Altura <input type="" name="" value=""> <br><br>
-      <label> Por Perímetro <input type="" name="" value=""> <br><br>
-      <input type="submit" value="Filtrar" >
+      <br><label> Familia <input type="text" name="" value=""><br><br>
+      <label> Nombre Cientifico <input type="text" name="" value=""><br><br>
+      <label> Nombre Común <input type="text" name="" value=""> <br><br>
+      <label> Autóctona <input type="checkbox" name="" value=""> <br><br>
+      <label> Motivo Singular <input type="text" name="" value=""> <br><br>
+      <input type="submit" value="Filtrar">
     </div>
   </div>
+
+  <div class="coincidencias">
+    <div class="identificate1">
+        <h1>Listado de Coincidencias</h1>
+    </div>
+    <div class="resultados">
+      <br><label>Prueba</label>
+    </div>
+  </div>
+
   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
   <div id="map"></div>
   <script>
@@ -97,15 +105,14 @@
       .bindPopup("<h2>Plátano de Sombra</h2>", estiloPopup);
     L.marker([42.3517056, -3.6892972222222227])
       .addTo(map)
-      .bindPopup("<h2>Falsa Acacia</h2>", estiloPopup);
+      .bindPopup('<h2>Falsa Acacia</h2><a href="individuo" target="_blank">Ver individuo</a><br><a href="especie" target="_blank">Ver + información especie</a>')
     L.marker([42.3519361, -3.687877777777778])
       .addTo(map)
-      .bindPopup("<h2>Olmo Siberiano</h2>", estiloPopup);
+      .bindPopup('<h2>Olmo Siberiano</h2><a href="individuo" target="_blank">Ver individuo</a><br><a href="especie" target="_blank">Ver + información especie</a>')
     L.marker([42.350175, -3.6874888888888893])
-      .bindPopup('<h2>Chopo</h2><a href="http://google.es" target="_blank">Ir a Google</a>')
+      .bindPopup('<h2>Chopo</h2><a href="individuo" target="_blank">Ver + información individuo</a><br><a href="especie" target="_blank">Ver + información especie</a>')
       .addTo(map);
   </script>
-  </div>
 </body>
 <footer>
   <div class="piePagina"></div>

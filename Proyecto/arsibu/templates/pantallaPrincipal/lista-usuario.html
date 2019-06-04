@@ -2,31 +2,47 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
 <div class="main">
+
   <head>
     <meta charset="utf-8">
     <title>Usuarios</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <div class="cabecera">
-      <img src="{% static 'imagenes/logo.png' %}"width="100">
-      <img src="{% static 'imagenes/escudoUbu.png' %}"width="100">
-      <img src="{% static 'imagenes/ubuv.png' %}"width="100">
+      <img src="{% static 'imagenes/logo.png' %}" width="100">
+      <img src="{% static 'imagenes/escudoUbu.png' %}" width="100">
+      <img src="{% static 'imagenes/ubuv.png' %}" width="100">
     </div>
   </head>
+
   <body>
     <div class="recuadro">
       <div class="identificate">
-          <h1>Identificate</h1>
+        <h1>Identificate</h1>
       </div>
-    <div class="usuario">
-      <label>Usuario <input type="text" id="usuario" name="usuario"/></label>
+      <div class="usuario">
+        <label>Usuario <input type="text" id="usuario" name="usuario" /></label>
       </div>
-    <div class="contraseña">
-      <label>Contraseña <input type="password" id="Contraseña" name="Contraseña"/></label>
+      <div class="contraseña">
+        <label>Contraseña <input type="password" id="Contraseña" name="Contraseña" /></label>
+      </div>
+      <div class="aceptar">
+        <input type="button" value="ACEPTAR" OnClick="location.href='usuario'">
+      </div>
     </div>
-    <div class="aceptar">
-      <input type="button" value="ACEPTAR" OnClick="location.href='usuario'">
+    <div class="importar">
+      <div class="identificate">
+        <h1>Importar Datos</h1>
+      </div>
+      <div class="csv">
+        <label>Mediante CSV <input type="file" id="csv" name="csv" /></label>
+      </div>
+      <div class="manualmente">
+        <label>Manualmente <input type="button" id="manualmente" name="manualmente" /></label>
+      </div>
     </div>
-        </div>
+    <div class="mostrarUsuario">
+        <h1>Usuario: </h1>
+    </div>
   </body>
   <footer>
     <div class="volver">
@@ -36,5 +52,6 @@
       <input type="button" value="CERRAR SESIÓN" OnClick="location.href='index'">
     </div>
   </footer>
-    </div>
-    </html>
+</div>
+
+</html>

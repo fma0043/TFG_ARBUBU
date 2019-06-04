@@ -1,28 +1,44 @@
-{% extends "base.html" %}
-{% block title %} {% endblock %}
-{% block content %}
-   <h1> Especies Registradas</h1>
-      <table border="1">
-        <thead>
-          <th>Id</th>
-          <th>Nombre Cientifico</th>
-          <th>Nombre Comun</th>
-          <th>Familia</th>
-          <th>Autóctona</th>
-          <th>Distribución</th>
-          <th>Ecologia</th>
+{% load static %}
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<div class="main">
+  <head>
+    <meta charset="utf-8">
+    <title>Listado de Especies</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <div class="cabecera">
+      <img src="{% static 'imagenes/logo.png' %}" width="100">
+      <img src="{% static 'imagenes/escudoUbu.png' %}" width="100">
+      <img src="{% static 'imagenes/ubuv.png' %}" width="100">
+    </div>
+    <table border="1">
+      <thead>
+        <th>Id</th>
+        <th>Nombre Cientifico</th>
+        <th>Nombre Comun</th>
+        <th>Familia</th>
+        <th>Autóctona</th>
+        <th>Distribución</th>
+        <th>Ecologia</th>
 
-        </thead>
-        <tbody>
-          {% for l in especie %}
-          <tr>
-            <td>{{l.idEspecie}}</td>
-            <td>{{l.nombreCientificoEspecie}}</td>
-            <td>{{l.nombreComunEspecie}}</td>
-            <td>{{l.familia.nombreFamilia}}</td>
-            <td>{{l.autoctona}}</td>
-            <td>{{l.descripcion}}</td>
-            <td>{{l.ecologia}}</td>
-          </tr>
-          {% endfor %}
-{% endblock %}
+      </thead>
+  </head>
+  <body>
+    <tbody>
+      {% for l in especie %}
+      <tr>
+        <td>{{l.idEspecie}}</td>
+        <td>{{l.nombreCientificoEspecie}}</td>
+        <td>{{l.nombreComunEspecie}}</td>
+        <td>{{l.familia.nombreFamilia}}</td>
+        <td>{{l.autoctona}}</td>
+        <td>{{l.descripcion}}</td>
+        <td>{{l.ecologia}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </body>
+        <footer>
+        </footer>
+    </div>
+</html>
