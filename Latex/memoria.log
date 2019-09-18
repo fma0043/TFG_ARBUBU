@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  5 JUN 2019 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  18 SEP 2019 20:25
 entering extended mode
 **./memoria.tex
 (memoria.tex
@@ -836,7 +836,7 @@ LaTeX Info: Redefining \nameref on input line 365.
 \@outlinefile=\write4
 \openout4 = `memoria.out'.
 
-<cabecera.pdf, id=99, 617.67549pt x 135.51413pt>
+<cabecera.pdf, id=79, 617.67549pt x 135.51413pt>
 File: cabecera.pdf Graphic file (type pdf)
 <use cabecera.pdf>
 Package pdftex.def Info: cabecera.pdf  used on input line 367.
@@ -871,7 +871,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 367.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 367.
-<escudoInfor.pdf, id=100, 618.11432pt x 737.07487pt>
+<escudoInfor.pdf, id=80, 618.11432pt x 737.07487pt>
 File: escudoInfor.pdf Graphic file (type pdf)
 <use escudoInfor.pdf>
 Package pdftex.def Info: escudoInfor.pdf  used on input line 367.
@@ -937,9 +937,9 @@ Package spanish Warning: Replacing `T1/lmr/bx/sc' by
 Package spanish Warning: Replacing `T1/lmr/bx/sc' by 
 (spanish)                faked small caps on input line 5.
 
-[3
+) [3
 
-])
+]
 LaTeX Info: Redefining \. on input line 458.
 LaTeX Info: Redefining \% on input line 458.
 
@@ -1014,76 +1014,63 @@ l.469 \include{./tex/2_Objetivos_del_proyecto}
 \openout2 = `./tex/3_Conceptos_teoricos.aux'.
 
 
-(tex/3_Conceptos_teoricos.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 5.
-
-
-LaTeX Warning: Citation `wiki:latex' on page 5 undefined on input line 22.
-
-
-LaTeX Warning: Citation `koza92' on page 5 undefined on input line 22.
-
-File: escudoInfor.pdf Graphic file (type pdf)
-<use escudoInfor.pdf>
-Package pdftex.def Info: escudoInfor.pdf  used on input line 29.
-(pdftex.def)             Requested size: 344.69766pt x 411.04959pt.
-[5
+(tex/3_Conceptos_teoricos.tex) [5
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
- [6])
-LaTeX Info: Redefining \. on input line 470.
-LaTeX Info: Redefining \% on input line 470.
- [7]
-LaTeX Info: Redefining \. on input line 470.
-LaTeX Info: Redefining \% on input line 470.
- [8]
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
- (tex/4_Tecnicas_y_herramientas.tex) [9
+ (tex/4_Tecnicas_y_herramientas.tex [6
+
+
+
+])
+[7]
+LaTeX Info: Redefining \. on input line 471.
+LaTeX Info: Redefining \% on input line 471.
+ [8]
+\openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
+
+ (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex) [9
 
 
 
 ]
-\openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
+\openout2 = `./tex/6_Trabajos_relacionados.aux'.
 
 
-(tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex [10
+(tex/6_Trabajos_relacionados.tex [10
 
 
 
 ]) [11]
-\openout2 = `./tex/6_Trabajos_relacionados.aux'.
-
-
-(tex/6_Trabajos_relacionados.tex [12
-
-
-
-]) [13]
 \openout2 = `./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux'.
 
 
-(tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex [14
+(tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex [12
 
 
 
-]) [15] (memoria.bbl
-[16
+]) [13] (memoria.bbl
+[14
 
 
 ]
 bibitemlist
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 7.
+("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+Underfull \hbox (badness 2591) in paragraph at lines 4--10
+[]\T1/lmr/m/n/12 (+20) Desarrollo web.  El mo-de-lo en cas-ca-da: desa-rro-llo 
+se-cuen-cial
+ []
 
 )
 
@@ -1092,7 +1079,7 @@ Class memoir Warning: The material used in the headers is too large
 either increase the head height or redesign the header
 (in both cases you will find help in the memoir manual). on input line 480.
 
-[17]
+[15]
 \tf@toc=\write5
 \openout5 = `memoria.toc'.
 
@@ -1117,24 +1104,21 @@ LaTeX Info: Redefining \% on input line 25.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 480.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 480.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 8DB5E38F09B7F7A9E0D95795E5ADA50B;1566.
+(rerunfilecheck)             Checksum: 980AE4C0EDBE37B177B72AEF7D34ECE2;1267.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 480.
  ) 
 Here is how much of TeX's memory you used:
- 12759 strings out of 492945
- 191555 string characters out of 3126252
- 370249 words of memory out of 3000000
- 16273 multiletter control sequences out of 15000+200000
- 91744 words of font info for 104 fonts, out of 3000000 for 9000
+ 12728 strings out of 492945
+ 191270 string characters out of 3126252
+ 363054 words of memory out of 3000000
+ 16268 multiletter control sequences out of 15000+200000
+ 71881 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,38p,521b,685s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,38p,521b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
 c}<C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx1
 0.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
@@ -1144,13 +1128,13 @@ ic/lm/lmcsc10.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/lm/lmr10.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmr12.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/lm/lmr17.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmr7.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmr8.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/lm/lmro12.pfb><C:/Users/felix/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on memoria.pdf (27 pages, 667360 bytes).
+nts/type1/public/lm/lmr8.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/lm/lmro12.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/felix/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on memoria.pdf (25 pages, 662293 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 25803 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 631 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 20131 words of extra memory for PDF output out of 20736 (max. 10000000)
 

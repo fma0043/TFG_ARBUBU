@@ -12,17 +12,10 @@
 \contentsline {section}{\numberline {2.1}Objetivos Generales}{3}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Objetivos T\IeC {\'e}cnicos}{3}{section.2.2}% 
 \contentsline {chapter}{Conceptos te\IeC {\'o}ricos}{5}{chapter*.6}% 
-\contentsline {section}{\numberline {3.1}Secciones}{5}{section.3.1}% 
-\contentsline {subsection}{Subsecciones}{5}{section*.7}% 
-\contentsline {subsubsection}{Subsubsecciones}{5}{section*.8}% 
-\contentsline {section}{\numberline {3.2}Referencias}{5}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Im\IeC {\'a}genes}{6}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Listas de items}{6}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Tablas}{7}{section.3.5}% 
-\contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{9}{chapter*.9}% 
-\contentsline {section}{\numberline {4.1}T\IeC {\'e}cnicas Metodol\IeC {\'o}gicas}{9}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Herramientas de Desarrollo}{9}{section.4.2}% 
-\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{11}{chapter*.10}% 
-\contentsline {chapter}{Trabajos relacionados}{13}{chapter*.11}% 
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{15}{chapter*.12}% 
-\contentsline {chapter}{Bibliograf\'{\i }a}{17}{chapter*.13}% 
+\contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{7}{chapter*.7}% 
+\contentsline {section}{\numberline {4.1}T\IeC {\'e}cnicas Metodol\IeC {\'o}gicas}{7}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Herramientas de Desarrollo}{8}{section.4.2}% 
+\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{9}{chapter*.8}% 
+\contentsline {chapter}{Trabajos relacionados}{11}{chapter*.9}% 
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{13}{chapter*.10}% 
+\contentsline {chapter}{Bibliograf\'{\i }a}{15}{chapter*.11}% 

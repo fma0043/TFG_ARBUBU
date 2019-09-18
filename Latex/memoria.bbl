@@ -1,3 +1,18 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{ModeloenCascada}
+Desarrollo web.
+\newblock El modelo en cascada: desarrollo secuencial de software.
+\newblock
+  \url{https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/},
+  Marzo 2019.
+\newblock [Online; accessed 18-Sep-2019].
+
+\bibitem{MetodologiaScrum}
+{Wikipedia contributors}.
+\newblock Scrum (desarrollo de software).
+\newblock \url{https://es.wikipedia.org/wiki/Scrum_(desarrollo_de_software)},
+  Septiembre 2019.
+\newblock [Online; accessed 18-Sep-2019].
 
 \end{thebibliography}
