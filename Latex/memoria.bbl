@@ -1,4 +1,16 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Flask}
+Matt Makai.
+\newblock Flask.
+\newblock \url{https://www.fullstackpython.com/flask.html}, 2019.
+\newblock [Online; accessed 4-Oct-2019].
+
+\bibitem{Django}
+threespot~y andrevv.
+\newblock Meet django.
+\newblock \url{https://www.djangoproject.com/}, 2019.
+\newblock [Online; accessed 4-Oct-2019].
 
 \bibitem{ModeloenCascada}
 Desarrollo web.
@@ -8,11 +20,47 @@ Desarrollo web.
   Marzo 2019.
 \newblock [Online; accessed 18-Sep-2019].
 
+\bibitem{MySQL}
+{Wikipedia contributors}.
+\newblock Mysql.
+\newblock \url{https://es.wikipedia.org/wiki/MySQL}, Agosto 2019.
+\newblock [Online; accessed 30-Sep-2019].
+
+\bibitem{Oracle}
+{Wikipedia contributors}.
+\newblock Oracle database.
+\newblock \url{https://es.wikipedia.org/wiki/Oracle_Database}, Septiembre 2019.
+\newblock [Online; accessed 30-Sep-2019].
+
+\bibitem{Php}
+{Wikipedia contributors}.
+\newblock Php.
+\newblock \url{https://es.wikipedia.org/wiki/PHP}, Septiembre 2019.
+\newblock [Online; accessed 2-Oct-2019].
+
+\bibitem{PostgreSQL}
+{Wikipedia contributors}.
+\newblock Postgresql.
+\newblock \url{https://es.wikipedia.org/wiki/PostgreSQL}, Septiembre 2019.
+\newblock [Online; accessed 1-Oct-2019].
+
+\bibitem{Python}
+{Wikipedia contributors}.
+\newblock Python.
+\newblock \url{https://es.wikipedia.org/wiki/Python}, Octubre 2019.
+\newblock [Online; accessed 2-Oct-2019].
+
 \bibitem{MetodologiaScrum}
 {Wikipedia contributors}.
 \newblock Scrum (desarrollo de software).
 \newblock \url{https://es.wikipedia.org/wiki/Scrum_(desarrollo_de_software)},
   Septiembre 2019.
 \newblock [Online; accessed 18-Sep-2019].
+
+\bibitem{SQLite3}
+{Wikipedia contributors}.
+\newblock Sqlite.
+\newblock \url{https://es.wikipedia.org/wiki/SQLite}, Septiembre 2019.
+\newblock [Online; accessed 1-Oct-2019].
 
 \end{thebibliography}
