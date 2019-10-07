@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{EjemploLeaflet}
+{Andy Maloney}.
+\newblock Creating an interactive map with leaflet and openstreetmap.
+\newblock
+  \url{https://asmaloney.com/2014/01/code/creating-an-interactive-map-with-leaflet-and-openstreetmap/},
+  2014.
+\newblock [Online; accessed 07-Oct-2019].
+
 \bibitem{Flask}
 Matt Makai.
 \newblock Flask.
@@ -12,6 +20,13 @@ threespot~y andrevv.
 \newblock \url{https://www.djangoproject.com/}, 2019.
 \newblock [Online; accessed 4-Oct-2019].
 
+\bibitem{leaflet}
+{Vladimir Agafonkin}.
+\newblock Leaflet - an open-source javascript library for mobile-friendly
+  interactive maps.
+\newblock \url{https://leafletjs.com/}, 2019.
+\newblock [Online; accessed 07-Oct-2019].
+
 \bibitem{ModeloenCascada}
 Desarrollo web.
 \newblock El modelo en cascada: desarrollo secuencial de software.
@@ -19,6 +34,12 @@ Desarrollo web.
   \url{https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/},
   Marzo 2019.
 \newblock [Online; accessed 18-Sep-2019].
+
+\bibitem{CategoriaTaxonomica}
+{Wikipedia contributors}.
+\newblock Categoría taxonómica --- {Wikipedia}{,} the free encyclopedia.
+\newblock \url{https://es.wikipedia.org/wiki/Categoría_taxonómica}, 2019.
+\newblock [Online; accessed 02-Jun-2019].
 
 \bibitem{MySQL}
 {Wikipedia contributors}.

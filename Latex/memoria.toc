@@ -12,12 +12,14 @@
 \contentsline {section}{\numberline {2.1}Objetivos Generales}{3}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Objetivos T\IeC {\'e}cnicos}{3}{section.2.2}% 
 \contentsline {chapter}{Conceptos te\IeC {\'o}ricos}{5}{chapter*.6}% 
+\contentsline {section}{\numberline {3.1}Estructura de datos}{5}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Leaflet}{6}{section.3.2}% 
 \contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{7}{chapter*.7}% 
 \contentsline {section}{\numberline {4.1}T\IeC {\'e}cnicas Metodol\IeC {\'o}gicas}{7}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Herramientas de Desarrollo}{8}{section.4.2}% 
 \contentsline {subsection}{Lenguaje de Programaci\IeC {\'o}n}{8}{section*.8}% 
 \contentsline {subsection}{Framework}{8}{section*.9}% 
-\contentsline {subsection}{Base de Datos}{8}{section*.10}% 
+\contentsline {subsection}{Bases de Datos}{8}{section*.10}% 
 \contentsline {subsection}{IDE}{9}{section*.11}% 
 \contentsline {subsection}{Servidor Web}{9}{section*.12}% 
 \contentsline {subsection}{Repositorio}{9}{section*.13}% 
