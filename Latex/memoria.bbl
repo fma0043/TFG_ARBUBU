@@ -35,6 +35,7 @@ Desarrollo web.
   Marzo 2019.
 \newblock [Online; accessed 18-Sep-2019].
 
+
 \bibitem{CategoriaTaxonomica}
 {Wikipedia contributors}.
 \newblock Categoría taxonómica --- {Wikipedia}{,} the free encyclopedia.
@@ -65,6 +66,18 @@ Desarrollo web.
 \newblock \url{https://es.wikipedia.org/wiki/PostgreSQL}, Septiembre 2019.
 \newblock [Online; accessed 1-Oct-2019].
 
+\bibitem{PyCharm}
+{Wikipedia contributors}.
+\newblock Pycharm.
+\newblock \url{https://en.wikipedia.org/wiki/PyCharm}, Octubre 2019.
+\newblock [Online; accessed 5-Oct-2019].
+
+\bibitem{PyDev}
+{Wikipedia contributors}.
+\newblock Pydev.
+\newblock \url{https://en.wikipedia.org/wiki/PyDev}, Julio 2019.
+\newblock [Online; accessed 5-Oct-2019].
+
 \bibitem{Python}
 {Wikipedia contributors}.
 \newblock Python.
@@ -84,4 +97,15 @@ Desarrollo web.
 \newblock \url{https://es.wikipedia.org/wiki/SQLite}, Septiembre 2019.
 \newblock [Online; accessed 1-Oct-2019].
 
+\bibitem{VIM}
+{Wikipedia contributors}.
+\newblock Vim.
+\newblock \url{https://es.wikipedia.org/wiki/Vim}, Octubre 2019.
+\newblock [Online; accessed 5-Oct-2019].
+
+\bibitem{Atom}
+{Wikipedia contributors}.
+\newblock Atom.
+\newblock \url{https://es.wikipedia.org/wiki/Atom_(software)}, Agosto 2019.
+\newblock [Online; accessed 5-Oct-2019].
 \end{thebibliography}
