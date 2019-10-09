@@ -1,12 +1,12 @@
 \capitulo{4}{Técnicas y herramientas}
-Esta sección vamos a hablar de las técnicas metodológicas  y de las herramientas de desarrollo seguidas durante el proyecto.
+En esta sección vamos a hablar de las técnicas metodológicas  y de las herramientas de desarrollo seguidas durante el proyecto.
 
 \section{Técnicas Metodológicas}
 No hemos seguido una metodología pura, es decir, no me he basado simplemente en una sola metodología si no que he ido eligiendo aspectos de varias de ellas.
 
-En primer lugar, tomamos aspectos de la metodología en cascada\cite{ModeloenCascada}, ya que hemos partido de unos requisitos iniciales, que posteriormente hemos ido adaptando según los cambios y necesidades del cliente.
+En primer lugar, tomamos aspectos de la \textbf{metodología en cascada} \cite{ModeloenCascada}, ya que hemos partido de unos requisitos iniciales, que posteriormente hemos ido adaptando según los cambios y necesidades del cliente.
 
-Más adelante una vez que teníamos claros los requisitos iniciales, nos hemos centrado más en la metodología scrum\cite{MetodologiaScrum}. Decimos que utilizamos esta metodologia porque a lo largo del desarrollo del proyecto hemos tenido reuniones semanales con los tutores, además de una reunión inicial con el encargado de Ubu Verde.
+Más adelante una vez que teníamos claros los requisitos iniciales, nos hemos centrado más en la \textbf{metodología scrum} \cite{MetodologiaScrum}. Decimos que utilizamos esta metodologia porque a lo largo del desarrollo del proyecto hemos tenido reuniones semanales con los tutores, además de una reunión inicial con el encargado de Ubu Verde.
 
 En todo momento hemos ido mezclando ambas técnicas ya que a las reuniones semanales con los tutores se fueron añadiendo a continuación el diseño e implementación de la aplicación.
 
@@ -17,41 +17,96 @@ A medida que íbamos realizando las distintas partes del proyecto se iban subien
 \section{Herramientas de Desarrollo}
 
 \subsection{Lenguaje de Programación}
-Lo primero antes de elegir las herramientas que vamos a utilizar es elegir el lenguaje de programación, tenemos infinidad de lenguajes para desarrollar nuestro proyecto, pero los más viables para ello creí que eran Python\cite{Python} y Php\cite{Php}.
+Lo primero antes de elegir las herramientas que vamos a utilizar es elegir el lenguaje de programación, tenemos infinidad de lenguajes para desarrollar nuestro proyecto, pero los más viables para ello creí que eran \textbf{Php} \cite{Php} y \textbf{Python} \cite{Python} Ver figura. \ref{fig:tecnicasYHerramientas/python}
 
 
 Me decanté por Python ya que es un lenguaje que me entra más por la vista y es más intuitivo, es un lenguaje más nuevo que Php por lo que en un futuro cuando trabaje habrá menos gente que conozca este lenguaje, es decir, menos competencia, existe una gran comunidad con gran cantidad de tutoriales \ldots
 
+\insertarimagen{tecnicasYHerramientas/python}{Logo Python}{LogoPython}
+
 \subsection{Framework}
 
-A la hora de decidir entre que framework elegir, me plantee dos posibles opciones que fueron Flask\cite{Flask} y Django\cite{Django}, finalmente me decidí por Django porque me pareció un framework más avanzado, te facilita mucho su desarrollo, ya que gran parte del código viene implementada y no es necesario programarlo, es el más utilizado por lo tanto es el que más comunidad tendrá a sus espaldas en caso de fallo o duda, es seguro ya que implementa medidas de seguridad por defecto y evita fallos como el SQL Injection, incluye una interfaz para acceder a la base de datos \ldots
+A la hora de decidir entre que framework elegir, me plantee dos posibles opciones que fueron \textbf{Flask} \cite{Flask} y \textbf{Django} \cite{Django} Ver figura. \ref{fig:tecnicasYHerramientas/django}
 
+Finalmente me decidí por Django porque me pareció un framework más avanzado, te facilita mucho su desarrollo, ya que gran parte del código viene implementada y no es necesario programarlo, es el más utilizado por lo tanto es el que más comunidad tendrá a sus espaldas en caso de fallo o duda, es seguro ya que implementa medidas de seguridad por defecto y evita fallos como el SQL Injection, incluye una interfaz para acceder a la base de datos \ldots
 
-\subsection{Base de Datos}
+\insertarimagenGrande{tecnicasYHerramientas/django}{Logo Django}{LogoDjango}
+\subsection{Bases de Datos}
 
 Existen 4 posibles opciones de bases de datos para elegir con Django:
 	\begin{itemize}
-	\item PostgreSQL\cite{PostgreSQL} es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto. 
-	\item SQLite 3\cite{SQLite3} es un sistema de gestión de bases de datos relacional, el conjunto de la base de datos (definiciones, tablas, índices, y los propios datos), son guardados como un solo fichero estándar en la máquina host. Permite bases de datos de hasta 2 Terabytes de tamaño, y también permite la inclusión de campos tipo BLOB.
-	\item MySQL\cite{MySQL} es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual: Licencia pública general/Licencia comercial por Oracle Corporation y está considerada como la base de datos de código abierto más popular del mundo.
-	\item Oracle\cite{Oracle} es un sistema de gestión de base de datos de tipo objeto-relacional, su dominio en el mercado de servidores empresariales había sido casi total hasta que recientemente tiene la competencia del Microsoft SQL Server y de la oferta de otros RDBMS con licencia libre como PostgreSQL, MySQL o Firebird.
+	\item \textbf{PostgreSQL} \cite{PostgreSQL} es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto. 
+	\item \textbf{SQLite} 3 \cite{SQLite3} es un sistema de gestión de bases de datos relacional, el conjunto de la base de datos (definiciones, tablas, índices, y los propios datos), son guardados como un solo fichero estándar en la máquina host. Permite bases de datos de hasta 2 Terabytes de tamaño, y también permite la inclusión de campos tipo BLOB. Ver figura. \ref{fig:tecnicasYHerramientas/SQLite3}
+	\item \textbf{MySQL} \cite{MySQL} es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual: Licencia pública general/Licencia comercial por Oracle Corporation y está considerada como la base de datos de código abierto más popular del mundo.
+	\item \textbf{Oracle} \cite{Oracle} es un sistema de gestión de base de datos de tipo objeto-relacional, su dominio en el mercado de servidores empresariales había sido casi total hasta que recientemente tiene la competencia del Microsoft SQL Server y de la oferta de otros RDBMS con licencia libre como PostgreSQL, MySQL o Firebird.
 	\end{itemize}
 
-Finalmente me decanté por SQLite 3 ya que es la que viene implementada por defecto con Django, es la más sencilla de las 4 pero para el proyecto que estamos desarrollando es más que suficiente.
+Finalmente me decanté por SQLite 3 ya que es la que viene implementada por defecto con Django, es la más sencilla de las cuatro, pero para el proyecto que estamos desarrollando es más que suficiente.
 
+\insertarimagen{tecnicasYHerramientas/SQLite3}{Logo SQLite3}{LogoSQLite3}
 \subsection{IDE}
 
-Pycharm, atom
+Existen infinidad de IDEs para trabajar con Python, decidí buscar información para decantarme por uno u otro:
 
-\subsection{Servidor Web}
+	\begin{itemize}
+	\item \textbf{PyDev} \cite{PyDev} es un IDE open source que se ejecuta en Eclipse, incluye modo depuración de Django, multilingüe, análisis de código, marcado de errores \ldots
+	
+	No fue la elegida ya que he trabajado varias veces con Eclipse y no me termina de gustar.
+	
+	\item \textbf{PyCharm} \cite{PyCharm}  es un IDE con dos versiones, la open source (bastante limitada a mi modo de ver) y la profesional. 
+	Incluye autocompletado de código, navegación intuitiva, depurador gráfico \ldots
+	
+	No resultó tampoco la elegida debido a su limitación y falta de prestaciones en su versión open source.
+	
+	\item \textbf{VIM} \cite{VIM} es un IDE open source con licencia GPL, es ligero y rápido. Su configuración resulta un poco costosa debido a que necesita varios complementos para que funcione en su máximo esplendor, por lo que por esto tampoco resultó elegido. 
 
+	\item \textbf{Atom} \cite{Atom} es un IDE open source, desarrollado por GitHub, lo que lo hace ideal para el control de versiones del proyecto, incluye infinidad de plugins que hacen que lo podamos personalizar a nuestro antojo. Ver figura. \ref{fig:tecnicasYHerramientas/atom}
+	
+	Es el que más me llamo la atención y el que más cómodo me resultó trabajar, así que por eso elegí este IDE.
+	
+	\end{itemize}
 
-\subsection{Repositorio}
-github
+\insertarimagenGrande{tecnicasYHerramientas/atom}{Logo Atom}{LogoAtom}
 
+\subsection{Herramientas de Gestión}
+
+He observado que existen varias posibilidades para ir subiendo nuestros avances a un repositorio. 
+
+Las opciones que me han parecido mejores son las siguientes:
+
+	\begin{itemize}
+
+	\item \textbf{BitBucket} \cite{BitBucket} es un servicio de alojamiento basado en web, ofrece la posibilidad de cuentas gratuitas pero limitando el numero de repositorios.
+	\item \textbf{GitHub} \cite{GitHub} es una plataforma de diseño colaborativo de software para alojar proyectos utilizando el sistema de control de versiones Git. Ver figura. \ref{fig:tecnicasYHerramientas/github}
+	\end{itemize}
+El elegido ha sido GitHub ya que es una herramienta que hemos utilizado en varias asignaturas y estoy más familiarizado con ella.	
+\insertarimagen{tecnicasYHerramientas/github}{Logo GitHub}{LogoGithub}
 \subsection{Documentación}
 
-Latex, Word, OpenOffice
+A la hora de realizar la documentación de nuestro proyecto existen varias opciones para ello: 
 
-\subsection{Diagramas}
-StarUml
+	\begin{itemize}
+	
+	\item \textbf{Microsoft Word} \cite{Word} es una aplicación orientada para el procesamiento de textos y permite crear, editar y compartir documentos de Word. Puedes trabajar con otras personas en tiempo real. No es gratuito, aunque existen versiones de prueba, para los estudiantes de la universidad nos ofrecen licencias.
+	\item \textbf{Writer} \cite{Writer} es un procesador de texto multiplataforma, es de código abierto y cada vez está más extendido entre los usuarios.
+	\item \textbf{LaTeX} \cite{Latex} es una herramienta utilizada para realizar documentos de ámbito científico y técnicos, es de software libre.
+	Para su utilización es necesario otra herramienta: \textbf{TeXstudio} \cite{TeXstudio} es un editor de documentos escritos en LaTeX. Ver figura. \ref{fig:tecnicasYHerramientas/LaTeX}
+	
+	Finalmente la elegida ha sido LaTeX ya que aunque pueda parecer dificil en un primer momento una vez que te acostumbras a ella es la más completa y funcional.
+	
+	\insertarimagenGrande{tecnicasYHerramientas/LaTeX}{Logo LaTeX}{LogoLaTeX}
+\end{itemize}
+
+\subsection{Programas para la creación de diagramas}
+Existe una gran variedad de programas para la realización de diagramas, los que más interesantes me han parecido son los siguientes:
+ 
+ \begin{itemize}
+ 	\item \textbf{Modelio} \cite{Modelio} es una herramienta para realizar modelos de código abierto, es fácil e intuitiva permitiendo añadir nuevas funcionalidades. 
+ 	\item \textbf{ArgoUml} \cite{ArgoUml} es una herramienta de código libre sencilla de utilizar, soporta Uml y es utilizada tanto para ingeniería inversa como para ingeniería de software.
+ 	\item \textbf{StarUml} \cite{StarUml} es una herramienta de código abierto para desarrollar proyectos Uml. Ver figura. \ref{fig:tecnicasYHerramientas/StarUml}
+ 	
+ 	Finalmente la elegida ha sido StarUml ya que es la herramienta que más me ha gustado y la que más intuitiva me ha parecido de las que he utilizado, además ya había trabajado con ella anteriormente.
+ 	
+ 	\insertarimagenGrande{tecnicasYHerramientas/StarUml}{Logo StarUml}{LogoStarUml}
+ \end{itemize}
+

@@ -1,5 +1,18 @@
 \begin{thebibliography}{10}
 
+\bibitem{LogoSQLite3}
+{Alejandro Suárez Lamadrid y Antonio Suárez Jiménez}.
+\newblock Guía rápida de sqlite3.
+\newblock
+  \url{https://python-para-impacientes.blogspot.com/p/blog-page_27.html}, 2019.
+\newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{Modelio}
+{AlternativeTo}.
+\newblock Modelio.
+\newblock \url{https://alternativeto.net/software/modelio-open/}, Agosto 2019.
+\newblock [Online; accessed 8-Oct-2019].
+
 \bibitem{EjemploLeaflet}
 {Andy Maloney}.
 \newblock Creating an interactive map with leaflet and openstreetmap.
@@ -8,17 +21,91 @@
   2014.
 \newblock [Online; accessed 07-Oct-2019].
 
+\bibitem{LogoGithub}
+{Asfo}.
+\newblock Subiendo miles y miles de archivos a github fácilmente con git+bash.
+\newblock
+  \url{https://medium.com/@asfo/subiendo-miles-y-miles-de-archivos-a-github-f%C3%A1cilmente-con-git-bash-e493d4a94fe0},
+  Junio 2018.
+\newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{LogoStarUml}
+{Azure-Aws-google-Cloud}.
+\newblock Staruml on cloud.
+\newblock
+  \url{https://secureanycloud.com/staruml-on-cloud-technical-support-cloud-help-azure-aws-opensource-cognosys/},
+  Noviembre 2016.
+\newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{TeXstudio}
+{Damián Amoedo}.
+\newblock Texstudio, un entorno de escritura para crear documentos latex.
+\newblock \url{https://ubunlog.com/texstudio-crear-documentos-latex/},
+  Septiembre 2019.
+\newblock [Online; accessed 8-Oct-2019].
+
+\bibitem{LogoAtom}
+{davr59}.
+\newblock Editor de texto atom y sincronización de su configuración en la
+  nube.
+\newblock
+  \url{https://dispuestoaaprender.com/2015/11/15/editor-de-texto-atom-y-sincronizacion-en-la-nube-de-su-configuracion/},
+  Noviembre 2015.
+\newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{LogoLaTeX}
+{GUILLERMO JULIÁN}.
+\newblock Cómo instalar y usar latex en windows.
+\newblock
+  \url{https://www.xatakawindows.com/aplicaciones-windows/como-instalar-y-usar-latex-en-windows},
+  Abril 2014.
+\newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{Word}
+{live.com}.
+\newblock Word online.
+\newblock
+  \url{https://chrome.google.com/webstore/detail/word-online/fiombgjlkfpdpkbhfioofeeinbehmajg?hl=es},
+  Octubre 2016.
+\newblock [Online; accessed 8-Oct-2019].
+
 \bibitem{Flask}
 Matt Makai.
 \newblock Flask.
 \newblock \url{https://www.fullstackpython.com/flask.html}, 2019.
 \newblock [Online; accessed 4-Oct-2019].
 
-\bibitem{Django}
-threespot~y andrevv.
-\newblock Meet django.
-\newblock \url{https://www.djangoproject.com/}, 2019.
-\newblock [Online; accessed 4-Oct-2019].
+\bibitem{ArgoUml}
+{MediaWiki}.
+\newblock Argouml.
+\newblock \url{https://www.ecured.cu/ArgoUML}, Julio 2019.
+\newblock [Online; accessed 8-Oct-2019].
+
+\bibitem{LogoPython}
+{Python Software Foundation}.
+\newblock Python.
+\newblock \url{https://www.python.org/}, 2019.
+\newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{StarUml}
+{Source Forge}.
+\newblock Staruml.
+\newblock \url{https://sourceforge.net/projects/staruml/}, Septiembre 2019.
+\newblock [Online; accessed 8-Oct-2019].
+
+\bibitem{Latex}
+{The Latex Project}.
+\newblock Latex – a document preparation system.
+\newblock \url{https://www.latex-project.org/}, Agosto 2019.
+\newblock [Online; accessed 8-Oct-2019].
+
+\bibitem{LogoDjango}
+{Tobias McNulty}.
+\newblock Django is boring, or why tech startups (should) use django.
+\newblock
+  \url{https://www.caktusgroup.com/blog/2016/12/14/django-boring-or-why-tech-startups-should-use-django/},
+  Diciembre 2016.
+\newblock [Online; accessed 07-Oct-2019].
 
 \bibitem{leaflet}
 {Vladimir Agafonkin}.
@@ -35,12 +122,36 @@ Desarrollo web.
   Marzo 2019.
 \newblock [Online; accessed 18-Sep-2019].
 
+\bibitem{Writer}
+{Wikipedia contributors}.
+\newblock Apache openoffice writer.
+\newblock \url{https://es.wikipedia.org/wiki/Apache_OpenOffice_Writer}, Agosto
+  2019.
+\newblock [Online; accessed 8-Oct-2019].
+
+\bibitem{Atom}
+{Wikipedia contributors}.
+\newblock Atom.
+\newblock \url{https://es.wikipedia.org/wiki/Atom_(software)}, Agosto 2019.
+\newblock [Online; accessed 5-Oct-2019].
+
+\bibitem{BitBucket}
+{Wikipedia contributors}.
+\newblock Bitbucket.
+\newblock \url{https://es.wikipedia.org/wiki/Bitbucket}, Septiembre 2019.
+\newblock [Online; accessed 8-Oct-2019].
 
 \bibitem{CategoriaTaxonomica}
 {Wikipedia contributors}.
 \newblock Categoría taxonómica --- {Wikipedia}{,} the free encyclopedia.
 \newblock \url{https://es.wikipedia.org/wiki/Categoría_taxonómica}, 2019.
 \newblock [Online; accessed 02-Jun-2019].
+
+\bibitem{GitHub}
+{Wikipedia contributors}.
+\newblock Github.
+\newblock \url{https://es.wikipedia.org/wiki/GitHub}, Septiembre 2019.
+\newblock [Online; accessed 8-Oct-2019].
 
 \bibitem{MySQL}
 {Wikipedia contributors}.
@@ -103,9 +214,10 @@ Desarrollo web.
 \newblock \url{https://es.wikipedia.org/wiki/Vim}, Octubre 2019.
 \newblock [Online; accessed 5-Oct-2019].
 
-\bibitem{Atom}
-{Wikipedia contributors}.
-\newblock Atom.
-\newblock \url{https://es.wikipedia.org/wiki/Atom_(software)}, Agosto 2019.
-\newblock [Online; accessed 5-Oct-2019].
+\bibitem{Django}
+Threespot y~Andrevv.
+\newblock Meet django.
+\newblock \url{https://www.djangoproject.com/}, 2019.
+\newblock [Online; accessed 4-Oct-2019].
+
 \end{thebibliography}

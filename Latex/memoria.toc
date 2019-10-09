@@ -19,13 +19,12 @@
 \contentsline {section}{\numberline {4.2}Herramientas de Desarrollo}{8}{section.4.2}% 
 \contentsline {subsection}{Lenguaje de Programaci\IeC {\'o}n}{8}{section*.8}% 
 \contentsline {subsection}{Framework}{8}{section*.9}% 
-\contentsline {subsection}{Bases de Datos}{8}{section*.10}% 
-\contentsline {subsection}{IDE}{9}{section*.11}% 
-\contentsline {subsection}{Servidor Web}{10}{section*.12}% 
-\contentsline {subsection}{Repositorio}{10}{section*.13}% 
-\contentsline {subsection}{Documentaci\IeC {\'o}n}{10}{section*.14}% 
-\contentsline {subsection}{Diagramas}{10}{section*.15}% 
-\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{11}{chapter*.16}% 
-\contentsline {chapter}{Trabajos relacionados}{13}{chapter*.17}% 
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{15}{chapter*.18}% 
-\contentsline {chapter}{Bibliograf\'{\i }a}{17}{chapter*.19}% 
+\contentsline {subsection}{Bases de Datos}{9}{section*.10}% 
+\contentsline {subsection}{IDE}{10}{section*.11}% 
+\contentsline {subsection}{Herramientas de Gesti\IeC {\'o}n}{11}{section*.12}% 
+\contentsline {subsection}{Documentaci\IeC {\'o}n}{12}{section*.13}% 
+\contentsline {subsection}{Programas para la creaci\IeC {\'o}n de diagramas}{13}{section*.14}% 
+\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{15}{chapter*.15}% 
+\contentsline {chapter}{Trabajos relacionados}{17}{chapter*.16}% 
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{19}{chapter*.17}% 
+\contentsline {chapter}{Bibliograf\'{\i }a}{21}{chapter*.18}% 
