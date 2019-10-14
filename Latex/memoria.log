@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  9 OCT 2019 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  14 OCT 2019 13:02
 entering extended mode
 **./memoria.tex
 (memoria.tex
@@ -836,7 +836,7 @@ LaTeX Info: Redefining \nameref on input line 383.
 \@outlinefile=\write4
 \openout4 = `memoria.out'.
 
-<cabecera.pdf, id=87, 617.67549pt x 135.51413pt>
+<cabecera.pdf, id=107, 617.67549pt x 135.51413pt>
 File: cabecera.pdf Graphic file (type pdf)
 <use cabecera.pdf>
 Package pdftex.def Info: cabecera.pdf  used on input line 385.
@@ -871,7 +871,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 385.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 385.
-<escudoInfor.pdf, id=88, 618.11432pt x 737.07487pt>
+<escudoInfor.pdf, id=108, 618.11432pt x 737.07487pt>
 File: escudoInfor.pdf Graphic file (type pdf)
 <use escudoInfor.pdf>
 Package pdftex.def Info: escudoInfor.pdf  used on input line 385.
@@ -1019,7 +1019,7 @@ l.487 \include{./tex/2_Objetivos_del_proyecto}
 
 
 ]
-<./img/conceptosTeoricos/leaflet.png, id=561, 903.375pt x 441.65pt>
+<./img/conceptosTeoricos/leaflet.png, id=596, 903.375pt x 441.65pt>
 File: ./img/conceptosTeoricos/leaflet.png Graphic file (type png)
 <use ./img/conceptosTeoricos/leaflet.png>
 Package pdftex.def Info: ./img/conceptosTeoricos/leaflet.png  used on input lin
@@ -1036,13 +1036,13 @@ LaTeX Info: Redefining \% on input line 488.
 
 
 ]
-<./img/tecnicasYHerramientas/python.png, id=581, 611.75027pt x 206.63113pt>
+<./img/tecnicasYHerramientas/python.png, id=616, 611.75027pt x 206.63113pt>
 File: ./img/tecnicasYHerramientas/python.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/python.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/python.png  used on input 
 line 25.
 (pdftex.def)             Requested size: 344.69766pt x 116.4315pt.
-<./img/tecnicasYHerramientas/django.png, id=588, 1204.5pt x 1204.5pt>
+<./img/tecnicasYHerramientas/django.png, id=623, 1204.5pt x 1204.5pt>
 File: ./img/tecnicasYHerramientas/django.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/django.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/django.png  used on input 
@@ -1055,7 +1055,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
 [8 <./img/tecnicasYHerramientas/python.png>]
-<./img/tecnicasYHerramientas/SQLite3.png, id=608, 590.205pt x 390.45876pt>
+<./img/tecnicasYHerramientas/SQLite3.png, id=643, 590.205pt x 390.45876pt>
 File: ./img/tecnicasYHerramientas/SQLite3.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/SQLite3.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/SQLite3.png  used on input
@@ -1071,13 +1071,13 @@ LaTeX Info: Redefining \% on input line 46.
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
  [10 <./img/tecnicasYHerramientas/SQLite3.png>]
-<./img/tecnicasYHerramientas/atom.png, id=636, 1027.84pt x 1027.84pt>
+<./img/tecnicasYHerramientas/atom.png, id=671, 1027.84pt x 1027.84pt>
 File: ./img/tecnicasYHerramientas/atom.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/atom.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/atom.png  used on input li
 ne 69.
 (pdftex.def)             Requested size: 153.19766pt x 153.19696pt.
-<./img/tecnicasYHerramientas/github.png, id=642, 1129.21875pt x 418.56375pt>
+<./img/tecnicasYHerramientas/github.png, id=677, 1129.21875pt x 418.56375pt>
 File: ./img/tecnicasYHerramientas/github.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/github.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/github.png  used on input 
@@ -1090,7 +1090,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
 [11 <./img/tecnicasYHerramientas/atom.png>]
-<./img/tecnicasYHerramientas/LaTeX.png, id=660, 696.6025pt x 293.095pt>
+<./img/tecnicasYHerramientas/LaTeX.png, id=695, 696.6025pt x 293.095pt>
 File: ./img/tecnicasYHerramientas/LaTeX.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/LaTeX.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/LaTeX.png  used on input l
@@ -1100,7 +1100,7 @@ LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
  [12 <./img/tecnicasYHerramientas/github.png> <./img/tecnicasYHerramientas/LaTe
 X.png>]
-<./img/tecnicasYHerramientas/StarUml.png, id=680, 200.75pt x 200.75pt>
+<./img/tecnicasYHerramientas/StarUml.png, id=715, 200.75pt x 200.75pt>
 File: ./img/tecnicasYHerramientas/StarUml.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/StarUml.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/StarUml.png  used on input
@@ -1117,23 +1117,79 @@ LaTeX Info: Redefining \% on input line 489.
 
 
 
-]) [15]
+]
+<./img/aspectosRelevantes/versionPython.png, id=733, 563.85657pt x 83.5622pt>
+File: ./img/aspectosRelevantes/versionPython.png Graphic file (type png)
+<use ./img/aspectosRelevantes/versionPython.png>
+Package pdftex.def Info: ./img/aspectosRelevantes/versionPython.png  used on in
+put line 13.
+(pdftex.def)             Requested size: 344.69766pt x 51.08379pt.
+) [15 <./img/aspectosRelevantes/versionPython.png>]
 \openout2 = `./tex/6_Trabajos_relacionados.aux'.
 
- (tex/6_Trabajos_relacionados.tex [16
+
+(tex/6_Trabajos_relacionados.tex [16
 
 
 
-]) [17]
+]
+<./img/trabajosRelacionados/arbolapp.jpeg, id=746, 1027.84pt x 614.295pt>
+File: ./img/trabajosRelacionados/arbolapp.jpeg Graphic file (type jpg)
+<use ./img/trabajosRelacionados/arbolapp.jpeg>
+Package pdftex.def Info: ./img/trabajosRelacionados/arbolapp.jpeg  used on inpu
+t line 9.
+(pdftex.def)             Requested size: 344.69766pt x 206.00803pt.
+<./img/trabajosRelacionados/observado.png, id=749, 1016.29688pt x 496.85625pt>
+File: ./img/trabajosRelacionados/observado.png Graphic file (type png)
+<use ./img/trabajosRelacionados/observado.png>
+Package pdftex.def Info: ./img/trabajosRelacionados/observado.png  used on inpu
+t line 15.
+(pdftex.def)             Requested size: 344.69766pt x 168.51949pt.
+ [17 <./img/trabajosRelacionados/arbolapp.jpeg>]
+<./img/trabajosRelacionados/arbolesMonumentales.png, id=757, 500.62032pt x 491.
+58656pt>
+File: ./img/trabajosRelacionados/arbolesMonumentales.png Graphic file (type png
+)
+<use ./img/trabajosRelacionados/arbolesMonumentales.png>
+Package pdftex.def Info: ./img/trabajosRelacionados/arbolesMonumentales.png  us
+ed on input line 23.
+(pdftex.def)             Requested size: 344.69766pt x 338.48999pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+[18 <./img/trabajosRelacionados/observado.png>]
+<./img/trabajosRelacionados/arbolesSingulares.png, id=767, 424.58624pt x 410.28
+28pt>
+File: ./img/trabajosRelacionados/arbolesSingulares.png Graphic file (type png)
+<use ./img/trabajosRelacionados/arbolesSingulares.png>
+Package pdftex.def Info: ./img/trabajosRelacionados/arbolesSingulares.png  used
+ on input line 28.
+(pdftex.def)             Requested size: 344.69766pt x 333.09727pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+
+Overfull \vbox (0.85403pt too high) has occurred while \output is active []
+
+
+[19 <./img/trabajosRelacionados/arbolesMonumentales.png>])
+LaTeX Info: Redefining \. on input line 491.
+LaTeX Info: Redefining \% on input line 491.
+ [20 <./img/trabajosRelacionados/arbolesSingulares.png>]
 \openout2 = `./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux'.
 
 
-(tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex [18
+(tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex) [21
 
 
 
-]) [19] (memoria.bbl
-[20
+] (memoria.bbl [22
 
 
 ]
@@ -1228,49 +1284,79 @@ Overfull \hbox (74.2936pt too wide) in paragraph at lines 48--55
 e-[]de-[]su-[]configuracion/$[][]\T1/lmr/m/n/12 (-20) ,
  []
 
-[21]
-Underfull \hbox (badness 1331) in paragraph at lines 57--63
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 57--63
+[]\T1/lmr/m/n/12 (+20) Carolina Blas-co Del-ga-do Ayun-ta-mien-to de Bur-gos.  
+Ár-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--63
+\T1/lmr/m/n/12 (+20) bo-les sin-gu-la-res de la ciu-dad de bur-gos.  [][]$\T1/l
+mtt/m/n/12 http : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--63
+\T1/lmtt/m/n/12 aytoburgos . es / archivos / medio-[]ambiente / articulo / docu
+mentos /
+ []
+
+
+Overfull \hbox (73.5806pt too wide) in paragraph at lines 57--63
+\T1/lmtt/m/n/12 arboles-[]singulares-[]de-[]la-[]ciudad-[]de-[]burgos-[]publica
+cion-[]divulgativa-[]web .
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 71--77
 []\T1/lmr/m/n/12 (+20) GUILLERMO JU-LIÁN.  Có-mo ins-ta-lar y usar la-tex en wi
 n-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--71
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
 \T1/lmtt/m/n/12 detail / word-[]online / fiombgjlkfpdpkbhfioofeeinbehmajg ? hl 
 = es$[][]\T1/lmr/m/n/12 (+20) ,
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 91--95
+Underfull \hbox (badness 1057) in paragraph at lines 118--122
 []\T1/lmr/m/n/12 (+20) Source For-ge.  Sta-ruml.  [][]$\T1/lmtt/m/n/12 https : 
 / / sourceforge . net / projects /
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 103--109
+Underfull \hbox (badness 3009) in paragraph at lines 130--136
 \T1/lmr/m/n/12 (+20) use djan-go.  [][]$\T1/lmtt/m/n/12 https : / / www . caktu
 sgroup . com / blog / 2016 / 12 / 14 /
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 103--109
+Underfull \hbox (badness 2600) in paragraph at lines 130--136
 \T1/lmtt/m/n/12 django-[]boring-[]or-[]why-[]tech-[]startups-[]should-[]use-[]d
 jango/$[][]\T1/lmr/m/n/12 (+20) , Di-
  []
 
-
-Underfull \hbox (badness 1810) in paragraph at lines 118--124
-[]\T1/lmr/m/n/12 (+20) Desarrollo web.  El mo-de-lo en cas-ca-da: desa-rro-llo 
-se-cuen-cial
- []
-
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
-[22])
+[24]
+Underfull \hbox (badness 1810) in paragraph at lines 145--151
+[]\T1/lmr/m/n/12 (+20) Desarrollo web.  El mo-de-lo en cas-ca-da: desa-rro-llo 
+se-cuen-cial
+ []
+
+LaTeX Info: Redefining \. on input line 218.
+LaTeX Info: Redefining \% on input line 218.
+
+Overfull \vbox (0.85403pt too high) has occurred while \output is active []
+
+
+[25])
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
@@ -1283,7 +1369,7 @@ LaTeX Info: Redefining \% on input line 498.
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
-[23]
+[26]
 \tf@toc=\write5
 \openout5 = `memoria.toc'.
 
@@ -1308,7 +1394,7 @@ LaTeX Info: Redefining \% on input line 25.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 498.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 498.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 909B6DFF24109289E9508A7D1C7AE48E;1393.
+(rerunfilecheck)             Checksum: 3F8141A182BA9EAF643CC4F78F522CF8;1722.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1316,13 +1402,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 498.
  ) 
 Here is how much of TeX's memory you used:
- 12907 strings out of 492945
- 194469 string characters out of 3126252
- 370586 words of memory out of 3000000
- 16353 multiletter control sequences out of 15000+200000
- 76062 words of font info for 102 fonts, out of 3000000 for 9000
+ 12973 strings out of 492945
+ 196200 string characters out of 3126252
+ 370312 words of memory out of 3000000
+ 16388 multiletter control sequences out of 15000+200000
+ 76153 words of font info for 103 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,40p,532b,685s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,40p,532b,710s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
 c}<C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx1
 0.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
@@ -1336,9 +1422,9 @@ nts/type1/public/lm/lmr8.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/lm/lmro12.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/felix/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on memoria.pdf (33 pages, 1420048 bytes).
+Output written on memoria.pdf (36 pages, 2756994 bytes).
 PDF statistics:
- 859 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 20699 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 941 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
+ 20764 words of extra memory for PDF output out of 24883 (max. 10000000)
 

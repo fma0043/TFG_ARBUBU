@@ -53,6 +53,20 @@
   Noviembre 2015.
 \newblock [Online; accessed 07-Oct-2019].
 
+\bibitem{arbolesSingulares}
+Carolina Blasco Delgado~Ayuntamiento de~Burgos.
+\newblock Árboles singulares de la ciudad de burgos.
+\newblock
+  \url{http://www.aytoburgos.es/archivos/medio-ambiente/articulo/documentos/arboles-singulares-de-la-ciudad-de-burgos-publicacion-divulgativa-web.pdf},
+  Junio 2018.
+\newblock [Online; accessed 14-Oct-2019].
+
+\bibitem{Observation}
+{Fundación Observation International}.
+\newblock Últimas rarezas.
+\newblock \url{https://spain.observation.org}, Octubre 2019.
+\newblock [Online; accessed 14-Oct-2019].
+
 \bibitem{LogoLaTeX}
 {GUILLERMO JULIÁN}.
 \newblock Cómo instalar y usar latex en windows.
@@ -81,11 +95,24 @@ Matt Makai.
 \newblock \url{https://www.ecured.cu/ArgoUML}, Julio 2019.
 \newblock [Online; accessed 8-Oct-2019].
 
+\bibitem{arbolesMonumentales}
+monumentaltrees.
+\newblock ¿cuál es el objeto de este sitio?
+\newblock \url{https://www.monumentaltrees.com/es/}, Octubre 2019.
+\newblock [Online; accessed 14-Oct-2019].
+
 \bibitem{LogoPython}
 {Python Software Foundation}.
 \newblock Python.
 \newblock \url{https://www.python.org/}, 2019.
 \newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{ArbolApp}
+{Real Jardín Botánico del CSIC}.
+\newblock Guía de árboles silvestres de la península ibérica y las islas
+  baleares.
+\newblock \url{http://www.arbolapp.es/}.
+\newblock [Online; accessed 14-Oct-2019].
 
 \bibitem{StarUml}
 {Source Forge}.
