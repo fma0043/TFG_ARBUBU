@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  18 SEP 2019 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  15 OCT 2019 13:33
 entering extended mode
 **./anexo.tex
 (anexo.tex
@@ -1004,20 +1004,32 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 46.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+[5]
+<./img/requisitos/casosUso.png, id=575, 570.63188pt x 304.88907pt>
+File: ./img/requisitos/casosUso.png Graphic file (type png)
+<use ./img/requisitos/casosUso.png>
+Package pdftex.def Info: ./img/requisitos/casosUso.png  used on input line 60.
+(pdftex.def)             Requested size: 344.69766pt x 184.17233pt.
 )
-LaTeX Info: Redefining \. on input line 390.
-LaTeX Info: Redefining \% on input line 390.
- [5]
 LaTeX Info: Redefining \. on input line 390.
 LaTeX Info: Redefining \% on input line 390.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
-[6]
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.Alph
+2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.390 \include{./tex/B_Requisitos}
+                                   <./img/requisitos/casosUso.png>]
 \openout2 = `./tex/C_Diseno.aux'.
 
- (tex/C_Diseno.tex) [7
+
+(tex/C_Diseno.tex) [7
 
 
 
@@ -1041,14 +1053,9 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 ]
 bibitemlist
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 3.
-("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
 )
 
 Class memoir Warning: The material used in the headers is too large
@@ -1086,16 +1093,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
  ) 
 Here is how much of TeX's memory you used:
- 12754 strings out of 492945
- 190645 string characters out of 3126252
- 363503 words of memory out of 3000000
- 16340 multiletter control sequences out of 15000+200000
- 69426 words of font info for 64 fonts, out of 3000000 for 9000
+ 12724 strings out of 492945
+ 190185 string characters out of 3126252
+ 363552 words of memory out of 3000000
+ 16311 multiletter control sequences out of 15000+200000
+ 69108 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,43p,296b,710s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
-y.enc}<C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
+ 46i,12n,43p,303b,710s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
+y.enc}{C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-e
+c.enc}<C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
 mbx12.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
 lm/lmbx8.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmcsc10.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
@@ -1105,11 +1112,10 @@ pe1/public/lm/lmr17.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts
 onts/type1/public/lm/lmro12.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/felix/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><C:/Users/felix/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/felix/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on anexo.pdf (19 pages, 612819 bytes).
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on anexo.pdf (19 pages, 652374 bytes).
 PDF statistics:
  660 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
- 18675 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 18168 words of extra memory for PDF output out of 20736 (max. 10000000)
 
