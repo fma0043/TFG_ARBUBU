@@ -37,6 +37,14 @@
   Noviembre 2016.
 \newblock [Online; accessed 07-Oct-2019].
 
+\bibitem{udemy}
+Cristhian~Santa Cruz.
+\newblock Curso super básico de django - paginas web con python.
+\newblock
+  \url{https://www.udemy.com/course/curso-basico-de-django-paginas-web-con-python/learn/lecture/12126220#overview},
+  Febrero 2019.
+\newblock [Online; accessed 10-Abril-2019].
+
 \bibitem{TeXstudio}
 {Damián Amoedo}.
 \newblock Texstudio, un entorno de escritura para crear documentos latex.
@@ -55,11 +63,8 @@
 
 \bibitem{arbolesSingulares}
 Carolina Blasco Delgado~Ayuntamiento de~Burgos.
-\newblock Árboles singulares de la ciudad de burgos.
-\newblock
-  \url{http://www.aytoburgos.es/archivos/medio-ambiente/articulo/documentos/arboles-singulares-de-la-ciudad-de-burgos-publicacion-divulgativa-web.pdf},
-  Junio 2018.
-\newblock [Online; accessed 14-Oct-2019].
+\newblock {\em ÁRBOLES SINGULARES DE LA CIUDAD DE BURGOS}.
+\newblock Ayuntamiento de Burgos, 2018.
 
 \bibitem{Observation}
 {Fundación Observation International}.
@@ -75,11 +80,17 @@ Carolina Blasco Delgado~Ayuntamiento de~Burgos.
   Abril 2014.
 \newblock [Online; accessed 07-Oct-2019].
 
+\bibitem{tutorialPython}
+Jaime.
+\newblock Un tutorial de python diferente.
+\newblock \url{https://www.tutorialpython.com/}, Diciembre 2014.
+\newblock [Online; accessed 7-Mayo-2019].
+
 \bibitem{Word}
 {live.com}.
 \newblock Word online.
 \newblock
-  \url{https://chrome.google.com/webstore/detail/word-online/fiombgjlkfpdpkbhfioofeeinbehmajg?hl=es},
+  \url{https://chrome.google.com/webstore/detail/word-online/fiombgjlkfpkbhfioofeeinbehmajg?hl=es},
   Octubre 2016.
 \newblock [Online; accessed 8-Oct-2019].
 
@@ -100,6 +111,44 @@ monumentaltrees.
 \newblock ¿cuál es el objeto de este sitio?
 \newblock \url{https://www.monumentaltrees.com/es/}, Octubre 2019.
 \newblock [Online; accessed 14-Oct-2019].
+
+\bibitem{cursoLatex}
+Ondix.
+\newblock Curso no convencional de latex.
+\newblock \url{https://github.com/Ondiz/cursoLatex/}, Noviembre 2017.
+\newblock [Online; accessed 25-Abril-2019].
+
+\bibitem{tutorialLeaflet}
+Kim Pham.
+\newblock Web mapping with python and leaflet.
+\newblock
+  \url{https://programminghistorian.org/en/lessons/mapping-with-python-leaflet},
+  Agosto 2017.
+\newblock [Online; accessed 7-Octubre-2019].
+
+\bibitem{cursoCss}
+pildorasinformaticas.
+\newblock Curso css avanzado.
+\newblock
+  \url{https://www.youtube.com/playlist?list=PLU8oAlHdN5BmpUDdnWSglIIHfIosElaVN},
+  Junio 2014.
+\newblock [Online; accessed 25-Junio-2019].
+
+\bibitem{cursoHTML}
+pildorasinformaticas.
+\newblock Curso html 5.
+\newblock
+  \url{https://www.youtube.com/playlist?list=PLU8oAlHdN5BnX63lyAeV0LzLnpGudgRrK},
+  Julio 2014.
+\newblock [Online; accessed 25-Junio-2019].
+
+\bibitem{djangoPildoras}
+pildorasinformaticas.
+\newblock Curso django.
+\newblock
+  \url{https://www.youtube.com/watch?v=7XO1AzwkPPE&list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB&index=1},
+  Julio 2019.
+\newblock [Online; accessed 7-Sep-2019].
 
 \bibitem{LogoPython}
 {Python Software Foundation}.

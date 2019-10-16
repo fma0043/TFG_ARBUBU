@@ -26,6 +26,7 @@
 \contentsline {subsection}{Programas para la creaci\IeC {\'o}n de diagramas}{15}{section*.13}% 
 \contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{17}{chapter*.14}% 
 \contentsline {section}{\numberline {5.1}Pasos a realizar}{17}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Formaci\IeC {\'o}n}{17}{section.5.2}% 
 \contentsline {chapter}{Trabajos relacionados}{19}{chapter*.15}% 
 \contentsline {section}{\numberline {6.1}ArbolApp}{19}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Observation}{20}{section.6.2}% 
