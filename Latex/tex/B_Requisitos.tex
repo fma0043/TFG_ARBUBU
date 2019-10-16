@@ -1,9 +1,180 @@
 \apendice{Especificación de Requisitos}
 
 \section{Introducción}
+Este anexo se encarga de mostrar los objetivos generales de la aplicación web, además de detallar los requisitos funcionales y no funcionales.
 
-\section{Objetivos generales}
+\section{Objetivos}
+	El principal objetivo del proyecto es realizar un diseño web, en el cual se puedan ver los árboles singulares de las zonas universitarias de Burgos, con sus principales características.
+
+	A través de un mapa podremos ver donde están ubicados los árboles. 
+	\subsection{Objetivos Generales}
+\begin{itemize}
+	\item Observar en un mapa los árboles singulares de las zonas universitarias de Burgos y ver sus características.
+	\item Filtrar a través de la familia, nombre científico y nombre común de la especie, autóctona y motivo singular donde se sitúan los árboles buscados y sus características.
+	\item Loguearnos como usuario y ser capaces de importar y descargar datos de los árboles.
+	\item Realizar una primera toma de contacto con la búsqueda de árboles, que en una futura mejora no solo busquemos arboles, es decir, que seamos capaces de buscar monumentos, lugares importantes \ldots
+	\item Poder compartir y dar me gusta a la página de facebook de UbuVerde e interactuar con ellos a través de twitter. 
+\end{itemize}
+
+\subsection{Objetivos Técnicos}
+\begin{itemize}
+	\item Ser capaz de introducir datos en la base de datos Sqlite3.
+	\item Ser capaz de descargar datos de la base de datos Sqlite3.
+	\item Plasmar en el mapa esos datos introducidos en la base de datos. 
+	\item Programar en Python y html el diseño web que va a tener nuestro proyecto.
+	\item Guardar en un repositorio de GitHub los cambios que hemos ido realizando.
+	\item Utilizar el framework Django para realizar correctamente nuestro diseño web.
+	
+\end{itemize}
 
 \section{Catalogo de requisitos}
+\subsection{Requisitos funcionales}
+\begin{itemize}
+	\item \textbf{RF-1 Cargar datos}: Los usuarios deben ser capaces de introducir datos en la base de datos y poder visualizarlos después.
+	\item \textbf{RF-2 Exportar datos}: Los usuarios deben ser capaces de exportar datos de la base de datos, para poder guardar la información sin necesidad de visitar la página.
+	\item \textbf{RF-3 Visualizar datos}: Los usuarios deben ser capaces de ver en un mapa los distintos árboles situados en las zonas universitarias.
+	\subitem \textbf{RF-3.1}: Se podrán filtrar los árboles a través de la familia, nombre científico y común de la especie, si es autóctono, motivo singular \ldots
+	\subitem \textbf{RF-3.2}: Se podrán buscar por los usuarios más expertos en la materia el árbol en concreto a través del nombre.
+	\item \textbf{RF-4 Control de usuarios}: La aplicación debe ser capaz de tener controlado en todo momento al usuario logueado.
+	\subitem \textbf{RF-4.1 Registro}: Los usuarios pueden registrarse para tener acceso a la descarga de los datos, así como su subida.
+	\subitem \textbf{RF-4.2 Iniciar sesión}: Los usuarios pueden iniciar sesión con una cuenta previamente registrada.
+	\subitem \textbf{RF-4.3 Cierre de sesión}: Los usuarios una vez terminada su visita en la página pueden cerrar sesión. 
+	\item \textbf{RF-5 Búsqueda de datos}: Los usuarios deben ser capaces de buscar datos de un árbol específico y ver donde está situado.
+	\item \textbf{RF-6 Aspecto visual}: Los usuarios deben ser capaces de visualizar las distintas pantallas de la aplicación en varios dispositivos con distintos tamaños y que el aspecto visual siga mostrándose de igual calidad. 
+\subsection{Requisitos no funcionales}
+\begin{itemize}
+	\item \textbf{RNF-1 Usabilidad}: La aplicación web debe ser intuitiva y de fácil manejo para el usuario.
+	\item \textbf{RNF-2 Mantenibilidad}: La aplicación web debe ser capaz de añadir nuevos datos.
+	\item \textbf{RNF-3 Compatibilidad}: La aplicación web debe poder visualizarse en los principales navegadores, así como en los dispositivos móviles.
+	\item \textbf{RNF-4 Rendimiento}: La aplicación web debe cargar los datos y mapas con una velocidad adecuada.
+	\item \textbf{RNF-5 Responsividad}: La aplicación web debe poder visualizarse sin perder calidad y adaptarse al tamaño en los principales navegadores, así como en los dispositivos móviles. 
+	\item \textbf{RNF-6 Escalabilidad}: A un mayor incremento de recursos la aplicación web debe ser capaz de incrementar en consecuencia su rendimiento.
+	\item \textbf{RNF-7 Desplegabilidad}: La aplicación web debe ser capaz de intregarse en un servidor sin ningún problema.
+	\end{itemize}
+\end{itemize}
 
 \section{Especificación de requisitos}
+
+Este apartado será el encargado de mostrar los diagramas de casos de uso basados en los requisitos funcionales del proyecto, para ello se describirán tanto en forma de tabla como de diagrama. Ver figura \ref{fig:requisitos/casosUso}
+
+\subsection{Diagrama de Casos de Uso}
+\imagen{requisitos/casosUso}{Diagrama de Casos de Uso}
+
+\subsection{Descripción de Casos de Uso}
+
+A continuación se mostrará una tabla para cada uno de los casos de uso.
+\newpage
+
+% Caso de uso 1
+
+\TablaCasoDeUso{1}{Cargar datos}
+{RF-1}
+{Carga datos en la base de datos para poder visualizarlos después.}
+{El usuario abre el navegador, carga la página de la aplicación y se registre.}
+{
+	\item El usuario inicie sesión.
+	\item El usuario introduce los datos del árbol que desea añadir.
+}
+{La información introducida es supervisada por el administrador y si es correcta se carga en la base de datos.}
+{
+	\item La información introducida no es correcta.
+	\item La información introducida es correcta pero no se puede catalogar como árbol singular.
+}
+{Alta}
+
+\newpage
+
+% Caso de uso 2
+
+\TablaCasoDeUso{2}{Exportar datos}
+{RF-2}
+{Exportar datos desde base de datos para poder guardar esa información.}
+{El usuario abre el navegador, carga la página de la aplicación y se registre.}
+{
+	\item El usuario inicie sesión.
+	\item El usuario selecciona los árboles que desea exportar.
+	\item El usuario exporta los datos de los árboles deseados.
+}
+{Si el usuario está registrado podrá descargar los datos.}
+{
+	\item Si el usuario no está registrado no le dejará descargar los datos.
+}
+{Media}
+
+\newpage
+
+% Caso de uso 3
+
+\TablaCasoDeUso{3}{Visualizar datos}
+{RF-3, RF-3.1, RF-3.2}
+{Visualizar en un mapa los árboles situados en las zonas universitarias.}
+{El usuario abre el navegador, carga la página de la aplicación y que haya árboles introducidos.}
+{
+	\item Inicia la aplicación web y podrá ver los árboles más cercanos a su punto de partida.
+	\item Si lo desea el usuario podrá filtrar los árboles por familia, nombre científico y común de la especie, si es autóctono, motivo singular y ver en el mapa los seleccionados.
+	\item Si lo desea el usuario puede filtrar los árboles únicamente por el nombre y ver en el mapa su selección.
+}
+{Se muestra en el mapa los árboles seleccionados.}
+{
+	\item Error si los datos seleccionados no coinciden con ningún dato de la base de datos.
+}
+{Alta}
+
+\newpage
+
+% Caso de uso 4
+
+\TablaCasoDeUso{4}{Controlar usuarios}
+{RF-4, RF-4.1, RF-4.2, RF-4.3}
+{Controlar a los usuarios que desean visitar la página web.}
+{El usuario abre el navegador y carga la página de la aplicación.}
+{
+	\item El usuario pulsa el botón de registrarse.
+	\item El usuario introduce los datos para registrarse.
+	\item El usuario pulsa el botón de iniciar sesión.
+	\item El usuario introduce los datos para iniciar sesión.
+	\item El usuario pulsa el botón de cerrar sesión.
+}
+{Redirecciona a la página con la sesión iniciada.
+ Redirecciona a la página con la sesión cerrada.}
+{
+	\item Error si los datos introducidos al registrarse no son correctos o ya existen.
+	\item Error si al iniciar sesión los datos introducidos no existen.
+}
+{Alta}
+
+\newpage
+
+% Caso de uso 5
+
+\TablaCasoDeUso{5}{Buscar datos específicos}
+{RF-5}
+{Buscar un árbol específico para ver donde está situado.}
+{El usuario abre el navegador y carga la página de la aplicación.}
+{
+	\item El usuario introduce las características del árbol que desea buscar.
+}
+{Se muestra en el mapa el árbol seleccionado.}
+{
+	\item Error si los datos introducidos del árbol no existen.
+}
+{Media}
+
+\newpage
+
+% Caso de uso 6
+
+\TablaCasoDeUso{6}{Visualizado en varios dispositivos}
+{RF-6}
+{Ver en distintos dispositivos la página web sin perder calidad.}
+{El usuario abre el navegador y carga la página de la aplicación.}
+{
+	\item El usuario abre la página web con el móvil, tablet, distintos navegadores de ordenador.
+}
+{La página web se ve correctamente.}
+{
+	\item Error si la página web no se ve correctamente o pierde calidad.
+}
+{Media}
+
+\newpage

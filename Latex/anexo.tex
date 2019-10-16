@@ -8,11 +8,22 @@
 \usepackage{lmodern} % scalable font
 \usepackage{microtype}
 \usepackage{placeins}
+\usepackage{longtable,booktabs}
 
 \RequirePackage{booktabs}
 \RequirePackage[table]{xcolor}
 \RequirePackage{xtab}
 \RequirePackage{multirow}
+
+% Multi-page tables using
+\usepackage{longtable}
+
+% Muestra un directorio en el árbol
+\newcommand{\desc}[1]{
+	\ldots{} \begin{minipage}[t]{8cm}
+		#1{.}
+	\end{minipage}
+}
 
 % Links
 \usepackage[colorlinks]{hyperref}
@@ -277,6 +288,76 @@
 
 
 
+\newcommand{\TablaCasoDeUso}[9]{
+	\begin{longtable}[H]{@{}ll@{}}
+		\toprule
+		\begin{minipage}[b]{0.25\columnwidth}\raggedright\strut
+			\textbf{CU-#1}\strut
+		\end{minipage} & \begin{minipage}[b]{0.70\columnwidth}\raggedright\strut
+			\textbf{#2}\strut
+		\end{minipage}\tabularnewline
+		\midrule
+		\endhead
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Versión}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			1.0\strut
+		\end{minipage}\tabularnewline
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Autor}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			\nombre\strut
+		\end{minipage}\tabularnewline
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Requisitos asociados}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			#3\strut
+		\end{minipage}\tabularnewline
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Descripción}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			#4\strut
+		\end{minipage}\tabularnewline
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Precondiciones}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			#5\strut
+		\end{minipage}\tabularnewline
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Acciones}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			\begin{enumerate}
+				\def\labelenumi{\arabic{enumi}.}
+				\tightlist
+				#6
+			\end{enumerate}\strut
+		\end{minipage}\tabularnewline
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Postcondiciones}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			#7\strut
+		\end{minipage}\tabularnewline
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Excepciones}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			\begin{itemize}
+				\tightlist
+				#8
+			\end{itemize}\strut
+		\end{minipage}\tabularnewline
+		\begin{minipage}[t]{0.25\columnwidth}\raggedright\strut
+			\textbf{Importancia}\strut
+		\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright\strut
+			#9\strut
+		\end{minipage}\tabularnewline
+		\bottomrule
+		\caption{CU-#1 #2.}
+		\label{CU:#1}
+	\end{longtable}
+	\newpage
+}
+
+
 
 \graphicspath{ {./img/} }
 
@@ -343,11 +424,13 @@
   }
 \makeatother
 
+\newcommand{\nombre}{Félix Movilla Alonso} %%% cambio de comando
+\newcommand{\nombreTutor}{Pedro Renedo Fernández y Antonio Jesús Canepa Oneto}
 
 % Datos de portada
-\title{título del TFG \\Documentación Técnica}
-\author{nombre alumno}
-\tutor{nombre tutor}
+\title{ARBUBU}
+\author{\nombre}
+\tutor{\nombreTutor}
 \date{\today}
 
 \begin{document}
