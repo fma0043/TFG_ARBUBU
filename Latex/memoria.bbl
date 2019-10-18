@@ -94,6 +94,12 @@ Jaime.
   Octubre 2016.
 \newblock [Online; accessed 8-Oct-2019].
 
+\bibitem{manualDjango}
+Saul~García M.
+\newblock {\em La guía definitiva de Django: Desarrolla aplicaciones web de
+  forma rápida y sencilla.}
+\newblock Django Software Corporation, 2015.
+
 \bibitem{Flask}
 Matt Makai.
 \newblock Flask.
