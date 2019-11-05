@@ -1,0 +1,136 @@
+#cuerpo{
+  margin: 20px;
+  background: #A6F1EE;
+}
+
+.contenedor {
+  width: 960px;
+  position: relative;
+  left: 50%;
+  margin-left: -480px;
+  display: block;
+  clear: both;
+}
+
+#banner{
+  width:100%;
+  position:relative;
+  height:105px;
+}
+
+#banner #cabecera{
+  position:absolute;
+  top:10px;
+  left:300px;
+}
+
+#banner ul {
+  position: absolute;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+  right: 0px;
+  top: 20px;
+
+}
+
+#banner li {
+	display: inline;
+	margin-left: 10px;
+}
+#banner li a {
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#princNav ul {
+  position: absolute;
+  top:130px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url('../imagenes/bg_nav.png') repeat-x left top;
+	float: left;
+	border-bottom: 1px solid #000;
+	width: 100%;
+  color: #663900;
+
+}
+
+#princNav li a, #princNav li a:link {
+  float: left;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .3em 0.5em;
+	border-right: 1px solid #000;
+	display: block;
+	font: bold 1em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+}
+#princNav li a:hover {
+	background: url('../imagenes/bg_nav_h.png');
+}
+
+.centrar {
+    text-align: center;
+}
+
+.familias a {
+    display: inline-block;
+    margin: 0 2px 4px;
+    padding: 2px 7px;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    color: #888;
+    background-color: #FFFFFF;
+    border: #c7c7c7 1px solid;
+}
+
+.familias a:hover {
+	background: url('../imagenes/bg_side_head.png');
+}
+
+.centrar .familias h1{
+  color: #666666;
+}
+
+#pie {
+  position: absolute;
+  width: 99%;
+	padding: 5px;
+	border-top: 1px solid #000;
+	background: #9EEB9D;
+	font-weight: bold;
+	color: #000000;
+}
+
+.title-especies {
+    margin: 0 0 20px;
+    padding: 5px 20px;
+    font-size: 26px;
+    color:#0068DD;
+}
+.box-especie {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px;
+    background-color: #FFF;
+    border: #c7c7c7 1px solid;
+}
+.box-especie:hover {
+    box-shadow: #555 0 2px 7px;
+}
+.box-especie img {
+    display: block;
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.box-especie .contenido {
+    float: left;
+    padding: 0 10px;
+    color: #616a4f;
+    font-style: italic;
+}

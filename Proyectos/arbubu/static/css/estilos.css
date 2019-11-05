@@ -1,0 +1,104 @@
+
+#cuerpo{
+  font-size: 62.5%;
+  font-family: "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+  margin: 20px;
+  background-color: #A6F1EE;
+}
+
+
+.contenedor {
+  width: 960px;
+  position: relative;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #A6F1EE;
+  display: block;
+  clear: both;
+}
+
+#banner{
+  width:100%;
+  position:relative;
+  height:105px;
+}
+
+#banner #cabecera{
+  position:absolute;
+  top:10px;
+}
+
+#banner ul {
+  position: absolute;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+  right: 0px;
+  top: 20px;
+
+}
+
+#banner li {
+	display: inline;
+	margin-left: 10px;
+}
+#banner li a {
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 1.1em "Trebuchet MS";
+}
+.separador {
+	border-right: 1px solid #666;
+	padding-right:10px;
+
+}
+
+#princNav ul {
+  position: absolute;
+  top:150px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url('../imagenes/bg_nav.png') repeat-x left top;
+	float: left;
+	border-bottom: 1px solid #000;
+	width: 100%;
+  color: #663900;
+
+}
+
+#princNav li a, #princNav li a:link {
+  float: left;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .3em .5em;
+	border-right: 1px solid #000;
+	display: block;
+	font: bold 1.5em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+}
+
+#princNav li a:hover {
+	background: url('../imagenes/bg_nav_h.png');
+}
+
+#map {
+  float:right;
+  top:100px;
+  width: 60%;
+  height: 480px;
+  box-shadow: 5px 5px 5px #888;
+  border: 1px dashed #000;
+  margin:10px 0 10px 10px;
+}
+
+#pie {
+  position: absolute;
+  width: 99%;
+  top:700px;
+	padding: 5px;
+	border-top: 1px solid #000;
+	background: #9EEB9D;
+	font-weight: bold;
+	color: #000000;
+}
