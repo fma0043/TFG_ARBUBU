@@ -1,0 +1,287 @@
+{% extends "base2.html" %}
+
+{% block title %}Generos{% endblock %}
+{% block content %}
+
+<br><br><br>
+          <h1 style="text-align:center;color:#0068DD;">Géneros Existentes</h1>
+
+            <h3 class="h3 title-especies">Adoxáceas</h3>
+              <a class="box-especie">
+              <div class="contenido">
+                {% for l in genero %}
+                {% if l.familia.idFamilia == 37 %}
+                  <h3>{{l.nombreGenero}}</h3>
+
+                  {% endif %}
+                {% endfor %}
+              </div>
+              </a>
+
+
+              <h3 class="h3 title-especies">Aquifoliáceas</h3>
+                <a class="box-especie">
+                <div class="contenido">
+                  {% for l in genero %}
+                  {% if l.familia.idFamilia == 3 %}
+                    <h3>{{l.nombreGenero}}</h3>
+
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                </a>
+
+                <h3 class="h3 title-especies">Araliáceas</h3>
+                  <a class="box-especie">
+                  <div class="contenido">
+                    {% for l in genero %}
+                    {% if l.familia.idFamilia == 33 %}
+                      <h3>{{l.nombreGenero}}</h3>
+
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  </a>
+
+
+                    <h3 class="h3 title-especies">	Bignoniáceas</h3>
+                      <a class="box-especie">
+                      <div class="contenido">
+                        {% for l in genero %}
+                        {% if l.familia.idFamilia == 34 %}
+                          <h3>{{l.nombreGenero}}</h3>
+
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                      </a>
+
+                    <h3 class="h3 title-especies">	Caprifoliáceas</h3>
+                      <a class="box-especie">
+                      <div class="contenido">
+                        {% for l in genero %}
+                        {% if l.familia.idFamilia == 6 %}
+                          <h3>{{l.nombreGenero}}</h3>
+
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                      </a>
+
+
+                          <h3 class="h3 title-especies">	Cupresáceas</h3>
+                            <a class="box-especie">
+                            <div class="contenido">
+                              {% for l in genero %}
+                              {% if l.familia.idFamilia == 9 %}
+                                <h3>{{l.nombreGenero}}</h3>
+
+                                {% endif %}
+                              {% endfor %}
+                            </div>
+                            </a>
+
+                            <h3 class="h3 title-especies">	Fabaceaes</h3>
+                              <a class="box-especie">
+                              <div class="contenido">
+                                {% for l in genero %}
+                                {% if l.familia.idFamilia == 35 %}
+                                  <h3>{{l.nombreGenero}}</h3>
+
+                                  {% endif %}
+                                {% endfor %}
+                              </div>
+                              </a>
+
+                                <h3 class="h3 title-especies">	Fagáceas</h3>
+                                  <a class="box-especie">
+                                  <div class="contenido">
+                                    {% for l in genero %}
+                                    {% if l.familia.idFamilia == 12 %}
+                                      <h3>{{l.nombreGenero}}</h3>
+
+                                      {% endif %}
+                                    {% endfor %}
+                                  </div>
+                                  </a>
+
+                                  <h3 class="h3 title-especies">	Juglandáceas</h3>
+                                    <a class="box-especie">
+                                    <div class="contenido">
+                                      {% for l in genero %}
+                                      {% if l.familia.idFamilia == 13 %}
+                                        <h3>{{l.nombreGenero}}</h3>
+
+                                        {% endif %}
+                                      {% endfor %}
+                                    </div>
+                                    </a>
+
+                                      <h3 class="h3 title-especies">	Leguminosas</h3>
+                                        <a class="box-especie">
+                                        <div class="contenido">
+                                          {% for l in genero %}
+                                          {% if l.familia.idFamilia == 15 %}
+                                            <h3>{{l.nombreGenero}}</h3>
+
+                                            {% endif %}
+                                          {% endfor %}
+                                        </div>
+                                        </a>
+
+                                        <h3 class="h3 title-especies">	Malvaceae</h3>
+                                          <a class="box-especie">
+                                          <div class="contenido">
+                                            {% for l in genero %}
+                                            {% if l.familia.idFamilia == 38 %}
+                                              <h3>{{l.nombreGenero}}</h3>
+
+                                              {% endif %}
+                                            {% endfor %}
+                                          </div>
+                                          </a>
+
+                                        <h3 class="h3 title-especies">	Magnoliáceas</h3>
+                                          <a class="box-especie">
+                                          <div class="contenido">
+                                            {% for l in genero %}
+                                            {% if l.familia.idFamilia == 36 %}
+                                              <h3>{{l.nombreGenero}}</h3>
+
+                                              {% endif %}
+                                            {% endfor %}
+                                          </div>
+                                          </a>
+
+                                            <h3 class="h3 title-especies">	Moráceas</h3>
+                                              <a class="box-especie">
+                                              <div class="contenido">
+                                                {% for l in genero %}
+                                                {% if l.familia.idFamilia == 18 %}
+                                                  <h3>{{l.nombreGenero}}</h3>
+
+                                                  {% endif %}
+                                                {% endfor %}
+                                              </div>
+                                              </a>
+
+                                              <h3 class="h3 title-especies">	Oleáceas</h3>
+                                                <a class="box-especie">
+                                                <div class="contenido">
+                                                  {% for l in genero %}
+                                                  {% if l.familia.idFamilia == 19 %}
+                                                    <h3>{{l.nombreGenero}}</h3>
+
+                                                    {% endif %}
+                                                  {% endfor %}
+                                                </div>
+                                                </a>
+
+                                                  <h3 class="h3 title-especies">	Pináceas</h3>
+                                                    <a class="box-especie">
+                                                    <div class="contenido">
+                                                      {% for l in genero %}
+                                                      {% if l.familia.idFamilia == 21 %}
+                                                        <h3>{{l.nombreGenero}}</h3>
+
+                                                        {% endif %}
+                                                      {% endfor %}
+                                                    </div>
+                                                    </a>
+
+                                                    <h3 class="h3 title-especies">	Platanáceas</h3>
+                                                      <a class="box-especie">
+                                                      <div class="contenido">
+                                                        {% for l in genero %}
+                                                        {% if l.familia.idFamilia == 22 %}
+                                                          <h3>{{l.nombreGenero}}</h3>
+
+                                                          {% endif %}
+                                                        {% endfor %}
+                                                      </div>
+                                                      </a>
+
+                                                          <h3 class="h3 title-especies">	Rosáceas</h3>
+                                                            <a class="box-especie">
+                                                            <div class="contenido">
+                                                              {% for l in genero %}
+                                                              {% if l.familia.idFamilia == 25 %}
+                                                                <h3>{{l.nombreGenero}}</h3>
+
+                                                                {% endif %}
+                                                              {% endfor %}
+                                                            </div>
+                                                            </a>
+
+                                                            <h3 class="h3 title-especies">	Salicáceas</h3>
+                                                              <a class="box-especie">
+                                                              <div class="contenido">
+                                                                {% for l in genero %}
+                                                                {% if l.familia.idFamilia == 26 %}
+                                                                  <h3>{{l.nombreGenero}}</h3>
+
+                                                                  {% endif %}
+                                                                {% endfor %}
+                                                              </div>
+                                                              </a>
+
+                                                              <h3 class="h3 title-especies">	Simaroubáceas</h3>
+                                                                <a class="box-especie">
+                                                                <div class="contenido">
+                                                                  {% for l in genero %}
+                                                                  {% if l.familia.idFamilia == 27 %}
+                                                                    <h3>{{l.nombreGenero}}</h3>
+
+                                                                    {% endif %}
+                                                                  {% endfor %}
+                                                                </div>
+                                                                </a>
+
+                                                                  <h3 class="h3 title-especies">	Tamariacáceas</h3>
+                                                                    <a class="box-especie">
+                                                                    <div class="contenido">
+                                                                      {% for l in genero %}
+                                                                      {% if l.familia.idFamilia == 29 %}
+                                                                        <h3>{{l.nombreGenero}}</h3>
+
+                                                                        {% endif %}
+                                                                      {% endfor %}
+                                                                    </div>
+                                                                    </a>
+
+                                                                    <h3 class="h3 title-especies">	Taxáceas</h3>
+                                                                      <a class="box-especie">
+                                                                      <div class="contenido">
+                                                                        {% for l in genero %}
+                                                                        {% if l.familia.idFamilia == 30 %}
+                                                                          <h3>{{l.nombreGenero}}</h3>
+
+                                                                          {% endif %}
+                                                                        {% endfor %}
+                                                                      </div>
+                                                                      </a>
+
+                                                                      <h3 class="h3 title-especies">	Tiliáceas</h3>
+                                                                        <a class="box-especie">
+                                                                        <div class="contenido">
+                                                                          {% for l in genero %}
+                                                                          {% if l.familia.idFamilia == 31 %}
+                                                                            <h3>{{l.nombreGenero}}</h3>
+
+                                                                            {% endif %}
+                                                                          {% endfor %}
+                                                                        </div>
+                                                                        </a>
+
+                                                                        <h3 class="h3 title-especies">	Ulmáceas</h3>
+                                                                          <a class="box-especie">
+                                                                          <div class="contenido">
+                                                                            {% for l in genero %}
+                                                                            {% if l.familia.idFamilia == 32 %}
+                                                                              <h3>{{l.nombreGenero}}</h3>
+
+                                                                              {% endif %}
+                                                                            {% endfor %}
+                                                                          </div>
+                                                                          </a>
+{% endblock content %}

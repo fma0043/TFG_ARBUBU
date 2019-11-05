@@ -1,0 +1,14 @@
+{% extends "base2.html" %}
+
+{% block title %}Familias{% endblock %}
+{% block content %}
+
+<br><br><br>
+        <div class="centrar familias">
+          <h1 style="text-align:center;color:#0068DD;">Familias Existentes</h1>
+          <br>
+          {% for l in familia %}
+          <a>{{l.nombreFamilia}}</a>
+          {% endfor %}
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}

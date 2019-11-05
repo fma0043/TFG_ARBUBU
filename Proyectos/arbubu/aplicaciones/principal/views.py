@@ -4,11 +4,11 @@ from django.http import HttpResponse
 
 from django.template import RequestContext
 
-from django.views.generic import ListView, TemplateView, CreateView 
+from django.views.generic import ListView, TemplateView, CreateView
 
 from django.contrib import auth
 
-from .models import Usuario
+from .models import Usuario, Familia, Genero
 
 from .forms import SignUpForm
 
@@ -18,6 +18,17 @@ class IndexView(TemplateView):
 
     template_name = "principal/index.html"
 
+class Familias(ListView):
+
+    template_name = "principal/familias.html"
+    model = Familia
+    context_object_name = 'familia'
+
+class Generos(ListView):
+
+    template_name = "principal/generos.html"
+    model = Genero
+    context_object_name = 'genero'
 
 class SignUpView(CreateView):
     model = Usuario
@@ -29,10 +40,7 @@ class SignUpView(CreateView):
         password = form.cleaned_data.get('password1')
         usuario = authenticate(username=usuario, password=password)
         login(self.request, usuario)
-        return redirect('/')
-
-class BienvenidaView(TemplateView):
-   template_name = 'principal/bienvenida.html'
+        return redirect('/index')
 
 class SignInView(LoginView):
     template_name = 'principal/iniciar_sesion.html'

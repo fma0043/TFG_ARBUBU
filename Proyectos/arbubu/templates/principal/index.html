@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>Prueba</h1>
-  </body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Página Principal Arbubu{% endblock %}
+{% block content %}
+{% include "mapa.html" %}
+{% endblock content %}
