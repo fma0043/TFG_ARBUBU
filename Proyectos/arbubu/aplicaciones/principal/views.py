@@ -2,13 +2,15 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.http import HttpResponse
 
-from django.template import RequestContext
+from django.template import RequestContext, Template, Context
+
+from django.template.loader import get_template
 
 from django.views.generic import ListView, TemplateView, CreateView
 
 from django.contrib import auth
 
-from .models import Usuario, Familia, Genero
+from .models import Usuario, Familia, Genero, Especie, Individuos
 
 from .forms import SignUpForm
 
@@ -29,6 +31,17 @@ class Generos(ListView):
     template_name = "principal/generos.html"
     model = Genero
     context_object_name = 'genero'
+
+class Especies(ListView):
+
+    template_name = "principal/especies.html"
+    model = Especie
+    context_object_name = 'especie'
+
+class Individuos(ListView):
+    model = Individuos
+    context_object_name = 'individuo'
+    template_name = "principal/individuos.html"
 
 class SignUpView(CreateView):
     model = Usuario

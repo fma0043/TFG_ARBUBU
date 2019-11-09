@@ -1,0 +1,20 @@
+{% extends "base2.html" %}
+
+{% block title %}Ciruelo Rojo{% endblock %}
+{% block content %}
+
+<br><br><br>
+          <h1 style="text-align:center;color:#0068DD;">Ciruelo Rojo</h1>
+            <div class="caja">
+
+              <div class="contenido">
+                {% for l in especie %}
+                {% if l.genero.idGenero == 25 %}
+                <h3>
+                  <a>{{l.nombreComunEspecie}}</a></h3>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+
+{% endblock content %}

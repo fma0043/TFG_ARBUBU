@@ -18,11 +18,15 @@ class Genero(models.Model):
     idGenero = models.AutoField('ID',primary_key=True, serialize=False)
     nombreGenero = models.CharField('Nombre', unique=True, blank=False, max_length=30)
     familia = models.ForeignKey(Familia, on_delete=models.CASCADE)
+    fotoGenero = models.ImageField(upload_to='static/imagenes',blank=False)
+
+    class Meta:
+        ordering = ['nombreGenero']
 
 class Especie(models.Model):
     idEspecie = models.AutoField('ID',primary_key=True, serialize=False)
-    nombreCientificoEspecie = models.CharField('Nombre Cientifico', unique=True, blank=False,  max_length=30)
-    nombreComunEspecie = models.CharField('Nombre Común', unique=True, blank=False,  max_length=30)
+    nombreCientificoEspecie = models.CharField('Nombre Cientifico', blank=False,  max_length=40)
+    nombreComunEspecie = models.CharField('Nombre Común',  blank=False,  max_length=30)
     genero = models.ForeignKey(Genero, on_delete=models.CASCADE)
     autoctona = models.BooleanField('Autóctona', default=False)
     descripcion = models.TextField('Descripcion', blank=False)
@@ -30,7 +34,7 @@ class Especie(models.Model):
 
 class Individuos(models.Model):
     idIndividuo = models.AutoField('ID',primary_key=True, serialize=False)
-    nombreComun = models.CharField('Nombre Común', unique=True, blank=False,  max_length=30)
+    nombreComun = models.CharField('Nombre Común', unique=True, max_length=30)
     especie = models.ForeignKey(Especie, on_delete=models.CASCADE)
     motivoSingular = models.CharField('Motivo de Singularidad',choices=motivo_singularidad, blank=False, max_length=50)
     explicacionMotivoSingular = models.TextField('Explicacion de Singularidad',blank=False)
