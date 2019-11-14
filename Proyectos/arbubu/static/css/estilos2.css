@@ -105,9 +105,6 @@
 	color: #000000;
 }
 
-h3{
-
-}
 
 .especies h3{
     font-size: 26px;
@@ -123,16 +120,77 @@ h3{
     height: auto;
 }
 
-.caja{
-display: inline-block;width: 99%;background-color: #FFF; font-style: italic; color:#626E50;padding: 5px;border: #c7c7c7 1px solid;;
-margin: 10px 0 10px 0;
+
+.box{
+  display: inline-block;
+  width: 98%;
+  font-style: italic;
+  padding: 5px;
 }
 
+.box h3{
+  font-size: 20px;
+  padding-left: 5px;
+  border: #28843D 1px solid;
+  margin: 4px;
+}
+
+.box a{
+  font-size: 18px;
+  color: black;
+  align: justify;
+}
+
+
 .contenido h3{
-display: inline-block;width: 99%;background-color: #FFF;border: #c7c7c7 1px solid; font-style: italic; color:#626E50;padding: 5px;
+display: inline-block;
+width: 99%;
+background-color: #FFF;
+border: #c7c7c7 1px solid;
+font-style: italic;
+color:#626E50;
+padding: 5px;
 }
 
 .contenido h3:hover{
+  box-shadow: #555 0 2px 7px;
+}
+
+.box{
+display: inline-block;
+width: 98%;
+background-color: #FFF;
+font-style: italic;
+color:#626E50;
+padding: 5px;
+border: #c7c7c7 1px solid;
+margin: 10px 0 10px 0;
+}
+
+.caja h3{
+  font-size: 20px;
+  color:#1E8535;
+  padding-left: 5px;
+  background-color: #FFF;
+  border: #28843D 1px dashed;
+}
+
+.caja a{
+  font-size: 18px;
+  color: black;
+  align: justify;
+}
+
+.individuo h3{
+display: inline-block;
+width: 99%;
+background-color: #FFF;
+font-style: italic;
+color:#626E50;
+padding: 0px;
+}
+
+.individuo h3:hover{
   box-shadow: #555 0 2px 7px;
 }
 

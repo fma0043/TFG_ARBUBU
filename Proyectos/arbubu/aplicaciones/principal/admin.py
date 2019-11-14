@@ -14,8 +14,8 @@ class EspecieAdmin(admin.ModelAdmin):
     search_fields = ('idEspecie','nombreCientificoEspecie', 'nombreComunEspecie', 'genero')
 
 class IndividuosAdmin(admin.ModelAdmin):
-    list_display = ( 'idIndividuo','nombreComun','especie','motivoSingular','explicacionMotivoSingular','x','y','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','altura','perimetro' )
-    search_fields = ( 'idIndividuo','nombreComun','especie','motivoSingular','explicacionMotivoSingular','x','y')
+    list_display = ( 'idIndividuo','nombreComun','especie','motivoSingular','explicacionMotivoSingular','latitud','longitud','fotoArbol','fotoHojas','fotoTronco','fotoFrutos','ubicacion','altura','perimetro' )
+    search_fields = ( 'idIndividuo','nombreComun','especie','motivoSingular','explicacionMotivoSingular','latitud','longitud','ubicacion')
 
 
 admin.site.register(Familia,FamiliaAdmin)

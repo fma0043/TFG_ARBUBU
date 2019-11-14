@@ -1,20 +1,914 @@
 {% extends "base2.html" %}
 
-{% block title %}Ciruelo Rojo{% endblock %}
+{% block title %}Individuos{% endblock %}
 {% block content %}
 
 <br><br><br>
-          <h1 style="text-align:center;color:#0068DD;">Ciruelo Rojo</h1>
-            <div class="caja">
+          <h1 style="text-align:center;color:#0068DD;">Campus Río Vena</h1>
+            <div class="box">
+              <div class="individuo">
 
-              <div class="contenido">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 25 %}
-                <h3>
-                  <a>{{l.nombreComunEspecie}}</a></h3>
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 5 %}
+                      <h3><a href="" name="AbetoRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 4 %}
+                      <h3><a href="" name="Acebo">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 11 %}
+                      <h3><a href="" name="Catalpa">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 17 %}
+                      <h3><a href="" name="ChopoCanadiense">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 1 %}
+                      <h3><a href="" name="CirueloRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 15 %}
+                      <h3><a href="" name="FalsaAcacia">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 6 %}
+                      <h3><a href="" name="Hiedra">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 9 %}
+                      <h3><a href="" name="LaurelCerezo">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 13 %}
+                      <h3><a href="" name="Lilo">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 8 %}
+                      <h3><a href="" name="Nogal">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 3 %}
+                      <h3><a href="" name="Olivo">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 16 %}
+                      <h3><a href="" name="OlmoSiberiano">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 14 %}
+                      <h3><a href="" name="PlatanoSombra">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 2 %}
+                      <h3><a href="" name="Pinsapo">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 7 %}
+                      <h3><a href="" name="SauceLloron">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 12 %}
+                      <h3><a href="" name="Taray">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for l in individuo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 10 %}
+                      <h3><a href="" name="TuyaGigante">{{l.especie.nombreComunEspecie}}</a></h3>
+                    {% endif %}
                   {% endif %}
                 {% endfor %}
               </div>
             </div>
 
+            <h1 style="text-align:center;color:#0068DD;">Hospital del Rey</h1>
+              <div class="box">
+                <div class="individuo">
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 31 %}
+                        <h3><a href="" name="AbetoRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 32 %}
+                        <h3><a href="" name="AbetoRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 42 %}
+                        <h3><a href="" name="AlamoBlanco">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 25 %}
+                        <h3><a href="" name="AligustreJapon">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 26 %}
+                        <h3><a href="" name="AligustreJapon">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 27 %}
+                        <h3><a href="" name="AligustreJapon">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 20 %}
+                        <h3><a href="" name="ArbolAmor">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 21 %}
+                        <h3><a href="" name="ArbolTulipanes">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 28 %}
+                        <h3><a href="" name="CipresLeyland">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 30 %}
+                        <h3><a href="" name="CirueloRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 22 %}
+                        <h3><a href="" name="Encina">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 40 %}
+                        <h3><a href="" name="FalsaAcacia">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 19 %}
+                        <h3><a href="" name="FalsoEbano">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 18 %}
+                        <h3><a href="" name="HayaPurpura">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 41 %}
+                        <h3><a href="" name="Lilo">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 33 %}
+                        <h3><a href="" name="Madreselva">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 29 %}
+                        <h3><a href="" name="Moral">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 39 %}
+                        <h3><a href="" name="Nogal">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 35 %}
+                        <h3><a href="" name="Pinsapo">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 23 %}
+                        <h3><a href="" name="Quejigo">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 24 %}
+                        <h3><a href="" name="SauceLloron">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 34 %}
+                        <h3><a href="" name="SauceLloron">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 37 %}
+                        <h3><a href="" name="Taray">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 38 %}
+                        <h3><a href="" name="Tejo">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 43 %}
+                        <h3><a href="" name="Tilo">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for l in individuo %}
+                    {% if l.ubicacion == 'Hospital del Rey' %}
+                      {% if l.idIndividuo == 36 %}
+                        <h3><a href="" name="TuyaOriental">{{l.especie.nombreComunEspecie}}</a></h3>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+
+              <h1 style="text-align:center;color:#0068DD;">Hospital Militar</h1>
+                <div class="box">
+                  <div class="individuo">
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 53 %}
+                          <h3><a href="" name="AbetoRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 54 %}
+                          <h3><a href="" name="AbetoRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 55 %}
+                          <h3><a href="" name="AbetoRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 56 %}
+                          <h3><a href="" name="AbetoRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 57 %}
+                          <h3><a href="" name="AbetoRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 58 %}
+                          <h3><a href="" name="CedroAtlas">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 59 %}
+                          <h3><a href="" name="CedroAtlas">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 60 %}
+                          <h3><a href="" name="CedroAtlas">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 61 %}
+                          <h3><a href="" name="CedroAtlas">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 62 %}
+                          <h3><a href="" name="CedroAtlas">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 63 %}
+                          <h3><a href="" name="CedroAtlas">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 64 %}
+                          <h3><a href="" name="CedroHimalaya">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 67 %}
+                          <h3><a href="" name="Cerezo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 68 %}
+                          <h3><a href="" name="CirueloRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 44 %}
+                          <h3><a href="" name="PinoPiñonero">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 45 %}
+                          <h3><a href="" name="PinoPiñonero">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 46 %}
+                          <h3><a href="" name="PinoPiñonero">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 47 %}
+                          <h3><a href="" name="PinoPiñonero">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 48 %}
+                          <h3><a href="" name="PinoPiñonero">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 66 %}
+                          <h3><a href="" name="Pinsapo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 49 %}
+                          <h3><a href="" name="Tejo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 65 %}
+                          <h3><a href="" name="Tilo">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 50 %}
+                          <h3><a href="" name="TuyaCanada">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 51 %}
+                          <h3><a href="" name="TuyaCanada">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for l in individuo %}
+                      {% if l.ubicacion == 'Hospital Militar' %}
+                        {% if l.idIndividuo == 52 %}
+                          <h3><a href="" name="TuyaCanada">{{l.especie.nombreComunEspecie}}</a></h3>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </div>
+
+                <h1 style="text-align:center;color:#0068DD;">Campus Facultad de Educación</h1>
+                  <div class="box">
+                    <div class="individuo">
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 78 %}
+                            <h3><a href="" name="Abeto">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 79 %}
+                            <h3><a href="" name="Abeto">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 77 %}
+                            <h3><a href="" name="CedroAtlas">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 80 %}
+                            <h3><a href="" name="Chopo">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 82 %}
+                            <h3><a href="" name="ChopoCanadiense">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 83 %}
+                            <h3><a href="" name="ChopoCanadiense">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 75 %}
+                            <h3><a href="" name="Hiedra">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 81 %}
+                            <h3><a href="" name="Peral">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 76 %}
+                            <h3><a href="" name="Pinsapo">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 69 %}
+                            <h3><a href="" name="PlatanoSombra">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 70 %}
+                            <h3><a href="" name="PlatanoSombra">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 71 %}
+                            <h3><a href="" name="PlatanoSombra">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 72 %}
+                            <h3><a href="" name="PlatanoSombra">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 73 %}
+                            <h3><a href="" name="PlatanoSombra">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 84 %}
+                            <h3><a href="" name="OlmoSiberiano">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 85 %}
+                            <h3><a href="" name="Sauco">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% for l in individuo %}
+                        {% if l.ubicacion == 'Campus Facultad de Educación' %}
+                          {% if l.idIndividuo == 74 %}
+                            <h3><a href="" name="TuyaGigante">{{l.especie.nombreComunEspecie}}</a></h3>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+
+                  <h1 style="text-align:center;color:#0068DD;">Campus Facultad de Ciencias</h1>
+                    <div class="box">
+                      <div class="individuo">
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 109 %}
+                              <h3><a href="" name="Acebo">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 110 %}
+                              <h3><a href="" name="Acebo">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 102 %}
+                              <h3><a href="" name="AlamoBlanco">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 92 %}
+                              <h3><a href="" name="AlamoChino">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 93 %}
+                              <h3><a href="" name="AlamoChino">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 94 %}
+                              <h3><a href="" name="AlamoChino">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 95 %}
+                              <h3><a href="" name="AlamoChino">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 98 %}
+                              <h3><a href="" name="Ailanto">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 99 %}
+                              <h3><a href="" name="Ailanto">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 100 %}
+                              <h3><a href="" name="Ailanto">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 88 %}
+                              <h3><a href="" name="CedroAtlas">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 89 %}
+                              <h3><a href="" name="CedroAzul">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 86 %}
+                              <h3><a href="" name="CedroHimalaya">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 87 %}
+                              <h3><a href="" name="CedroHimalaya">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 106 %}
+                              <h3><a href="" name="ChopoCanadiense">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 107 %}
+                              <h3><a href="" name="ChopoCanadiense">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 90 %}
+                              <h3><a href="" name="CipresArizona">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 91 %}
+                              <h3><a href="" name="CipresArizona">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 104 %}
+                              <h3><a href="" name="CirueloRojo">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 108 %}
+                              <h3><a href="" name="Haya">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 96 %}
+                              <h3><a href="" name="Higuera">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 101 %}
+                              <h3><a href="" name="PlatanoSombra">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 97 %}
+                              <h3><a href="" name="RosaSiria">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 103 %}
+                              <h3><a href="" name="SauceLloron">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for l in individuo %}
+                          {% if l.ubicacion == 'Campus Facultad de Ciencias' %}
+                            {% if l.idIndividuo == 105 %}
+                              <h3><a href="" name="SecuoyaGigante">{{l.especie.nombreComunEspecie}}</a></h3>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
 {% endblock content %}
