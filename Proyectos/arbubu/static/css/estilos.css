@@ -8,10 +8,10 @@
 
 
 .contenedor {
-  width: 960px;
-  position: relative;
-  left: 50%;
-  margin-left: -480px;
+  width: 1300px;
+  position: absolute;
+  right: : 50%;
+  margin-right: -600px;
   background-color: #A6F1EE;
   display: block;
   clear: both;
@@ -85,7 +85,7 @@
 #map {
   float:right;
   top:100px;
-  width: 60%;
+  width: 100%;
   height: 480px;
   box-shadow: 5px 5px 5px #888;
   border: 1px dashed #000;

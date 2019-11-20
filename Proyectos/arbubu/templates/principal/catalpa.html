@@ -1,0 +1,23 @@
+{% extends "base2.html" %}
+
+{% block title %}Ciruelo Rojo{% endblock %}
+{% block content %}
+
+<br><br><br>
+          <h1 id="container" style="text-align:center;color:#0068DD;">Ciruelo Rojo</h1>
+
+            <div class="box">
+              <a href="#container" id="scroll-top" title="Volver arriba"></a>
+              <div class="individuo">
+
+                {% for l in cirueloRojo %}
+                  {% if l.ubicacion == 'Campus Río Vena' %}
+                    {% if l.idIndividuo == 1 %}
+                      <h3><a>{{l.especie.nombreComunEspecie}}</a></h3>
+                      <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                </div>
+              </div>
+{% endblock content %}

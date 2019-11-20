@@ -4,1067 +4,156 @@
 {% block content %}
 
 <br><br><br>
-          <h1 style="text-align:center;color:#0068DD;">Especies Existentes</h1>
-
-          <div class="especies">
-            <h3><a name="abies"></a>Género Abies</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 2 %}
-                {% if l.idEspecie == 3 %}
-                  <h3>Nombre Común: <a href="individuos#Pinsapo">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 2 %}
-                {% if l.idEspecie == 38 %}
-                  <h3>Nombre Común: <a href="individuos#Abeto">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="ailanthus"></a>Género Ailanthus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 32 %}
-            <h3>Nombre Común: <a href="individuos#Ailanto">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+        <div class="centrar familias">
+          <h1 id="container" style="text-align:center;color:#0068DD;">Especies Existentes</h1>
+          {% comment %}<a href="#container" id="scroll-top" title="Volver arriba" class="scroll"></a>{% endcomment %}
+          <br>
+          {% for l in especie %}
+            {% if l.idEspecie == 38 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="catalpa"></a>Género Catalpa</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 9 %}
-            <h3>Nombre Común: <a href="individuos#Catalpa">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 3 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="cedrus"></a>Género Cedrus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 35 %}
-                {% if l.idEspecie == 34 %}
-                  <h3>Nombre Común: <a href="individuos#CedroAtlas">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 35 %}
-                {% if l.idEspecie == 35 %}
-                  <h3>Nombre Común: <a href="individuos#CedroHimalaya">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 35 %}
-                {% if l.idEspecie == 42 %}
-                  <h3>Nombre Común: <a href="individuos#CedroAzul">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="cercis"></a>Género Cercis</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 19 %}
-            <h3>Nombre Común: <a href="individuos#ArbolAmor">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 47 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="cupressus"></a>Género Cupressus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 23 %}
-                {% if l.idEspecie == 26 %}
-                  <h3>Nombre Común: <a href="individuos#CipresLeyland">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 23 %}
-                {% if l.idEspecie == 43 %}
-                  <h3>Nombre Común: <a href="individuos#CipresArizona">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="fagus"></a>Género Fagus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 17 %}
-                {% if l.idEspecie == 19 %}
-                  <h3>Nombre Común: <a href="individuos#HayaPurpura">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 17 %}
-                {% if l.idEspecie == 49 %}
-                  <h3>Nombre Común: <a href="individuos#Haya">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="ficus"></a>Género Ficus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 34 %}
-            <h3>Nombre Común: <a href="individuos#Higuera">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 12 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="hedera"></a>Género Hedera</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 16 %}
-            <h3>Nombre Común: <a href="individuos#Hiedra">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 34 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="hibiscus"></a>Género Hibiscus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 33 %}
-            <h3>Nombre Común: <a href="individuos#RosaSiria">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 35 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="ilex"></a>Género Ilex</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 4 %}
-            <h3>Nombre Común: <a href="individuos#Acebo">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 42 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="juglans"></a>Género Juglans</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 7 %}
-            <h3>Nombre Común: <a href="individuos#Nogal">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 21 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="laburnum"></a>Género Laburnum</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 18 %}
-            <h3>Nombre Común: <a href="individuos#FalsoEbano">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 43 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología:<br> <a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="ligustrum"></a>Género Ligustrum</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 22 %}
-            <h3>Nombre Común: <a href="individuos#AligustreJapon">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 49 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología:<br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="liriodendron"></a>Género Liriodendron</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 20 %}
-            <h3>Nombre Común: <a href="individuos#ArbolTulipanes">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 19 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="lonicera"></a>Género Lonicera</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 25 %}
-            <h3>Nombre Común: <a href="individuos#Madreselva">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 45 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="morus"></a>Género Morus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 24 %}
-            <h3>Nombre Común: <a href="individuos#Moral">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 7 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="olea"></a>Género Olea</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 3 %}
-            <h3>Nombre Común: <a href="individuos#Olivo">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 46 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología:<br> <a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="picea"></a>Género Picea</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 5 %}
-            <h3>Nombre Común: <a href="individuos#AbetoRojo">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 5 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="pinus"></a>Género Pinus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 36 %}
-            <h3>Nombre Común: <a href="individuos#PinoPiñonero">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 9 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="platanus"></a>Género Platanus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 12 %}
-            <h3>Nombre Común: <a href="individuos#PlatanoSombra">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 20 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="platycladus"></a>Género Platycladus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-            {% if l.genero.idGenero == 26 %}
-            <h3>Nombre Común: <a href="individuos#TuyaOriental">{{l.nombreComunEspecie}}</a></h3>
-            <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-            <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-            {% if l.autoctona == False %}
-              <h3>¿Es autoctona?
-              <a> No </a></h3>
-            {% else %}
-              <h3>¿Es autoctona?
-              <a> Si </a></h3>
+            {% if l.idEspecie == 25 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
             {% endif %}
-            <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-            <h3>Ecología:<br> <a>{{l.ecologia}}</a></h3>
-              {% endif %}
-            {% endfor %}
+            {% if l.idEspecie == 22 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 28 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 27 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 4 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 6 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 32 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 15 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 29 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 31 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 39 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 44 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 18 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 37 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 1 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 10 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 40 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 24 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 23 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 16 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 8 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 41 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 48 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 14 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 13 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 30 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 33 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 11 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 36 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 17 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+            {% if l.idEspecie == 26 %}
+              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+            {% endif %}
+          {% endfor %}
+          <br><br><br><br><br><br><br><br><br><br><br>
           </div>
-
-          <div class="especies">
-            <h3><a name="populus"></a>Género Populus</h3>
-          </div>
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 15 %}
-                {% if l.idEspecie == 18 %}
-                  <h3>Nombre Común: <a href="individuos#ChopoCanadiense">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 15 %}
-                {% if l.idEspecie == 31 %}
-                  <h3>Nombre Común: <a href="individuos#AlamoBlanco">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 15 %}
-                {% if l.idEspecie == 39 %}
-                  <h3>Nombre Común: <a href="individuos#Chopo">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="caja">
-            {% for l in especie %}
-              {% if l.genero.idGenero == 15 %}
-                {% if l.idEspecie == 44 %}
-                  <h3>Nombre Común: <a href="individuos#AlamoChino">{{l.nombreComunEspecie}}</a></h3>
-                  <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                  <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                  {% if l.autoctona == False %}
-                    <h3>¿Es autoctona?
-                    <a> No </a></h3>
-                  {% else %}
-                    <h3>¿Es autoctona?
-                    <a> Si </a></h3>
-                  {% endif %}
-                  <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                  <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="especies">
-            <h3><a name="prunus"></a>Género Prunus</h3>
-          </div>
-            <div class="caja">
-              {% for l in especie %}
-                {% if l.genero.idGenero == 1 %}
-                  {% if l.idEspecie == 1 %}
-                    <h3>Nombre Común: <a href="individuos#CirueloRojo">{{l.nombreComunEspecie}}</a></h3>
-                    <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                    <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                    {% if l.autoctona == False %}
-                      <h3>¿Es autoctona?
-                      <a> No </a></h3>
-                    {% else %}
-                      <h3>¿Es autoctona?
-                      <a> Si </a></h3>
-                    {% endif %}
-                    <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                    <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endif %}
-              {% endfor %}
-              </div>
-
-              <div class="caja">
-                {% for l in especie %}
-                  {% if l.genero.idGenero == 1 %}
-                    {% if l.idEspecie == 10 %}
-                      <h3>Nombre Común: <a href="individuos#LaurelCerezo">{{l.nombreComunEspecie}}</a></h3>
-                      <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                      <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                      {% if l.autoctona == False %}
-                        <h3>¿Es autoctona?
-                        <a> No </a></h3>
-                      {% else %}
-                        <h3>¿Es autoctona?
-                        <a> Si </a></h3>
-                      {% endif %}
-                      <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                      <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="caja">
-                {% for l in especie %}
-                  {% if l.genero.idGenero == 1 %}
-                    {% if l.idEspecie == 37 %}
-                      <h3>Nombre Común: <a href="individuos#Cerezo">{{l.nombreComunEspecie}}</a></h3>
-                      <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                      <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                      {% if l.autoctona == False %}
-                        <h3>¿Es autoctona?
-                        <a> No </a></h3>
-                      {% else %}
-                        <h3>¿Es autoctona?
-                        <a> Si </a></h3>
-                      {% endif %}
-                      <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                      <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="pyrus"></a>Género Pyrus</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 29 %}
-                <h3>Nombre Común: <a href="individuos#Peral">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="quercus"></a>Género Quercus</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                  {% if l.genero.idGenero == 21 %}
-                    {% if l.idEspecie == 23 %}
-                      <h3>Nombre Común: <a href="individuos#Encina">{{l.nombreComunEspecie}}</a></h3>
-                      <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                      <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                      {% if l.autoctona == False %}
-                        <h3>¿Es autoctona?
-                        <a> No </a></h3>
-                      {% else %}
-                        <h3>¿Es autoctona?
-                        <a> Si </a></h3>
-                      {% endif %}
-                      <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                      <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="caja">
-                {% for l in especie %}
-                  {% if l.genero.idGenero == 21 %}
-                    {% if l.idEspecie == 24 %}
-                      <h3>Nombre Común: <a href="individuos#Quejigo">{{l.nombreComunEspecie}}</a></h3>
-                      <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                      <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                      {% if l.autoctona == False %}
-                        <h3>¿Es autoctona?
-                        <a> No </a></h3>
-                      {% else %}
-                        <h3>¿Es autoctona?
-                        <a> Si </a></h3>
-                      {% endif %}
-                      <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                      <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="robinia"></a>Género Robinia</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 13 %}
-                <h3>Nombre Común: <a href="individuos#FalsaAcacia">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología:<br> <a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-
-              <div class="especies">
-                <h3><a name="salix"></a>Género Salix</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 6 %}
-                <h3>Nombre Común: <a href="individuos#SauceLloron">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="sambucus"></a>Género Sambucus</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 30 %}
-                <h3>Nombre Común: <a href="individuos#Sauco">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="sequoiadendron"></a>Género Sequoiadendron</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 31 %}
-                <h3>Nombre Común: <a href="individuos#SecuoyaGigante">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología:<br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="syringa"></a>Género Syringa</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 11 %}
-                <h3>Nombre Común: <a href="individuos#Lilo">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="tamarix"></a>Género Tamarix</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 10 %}
-                <h3>Nombre Común: <a href="individuos#Taray">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="taxus"></a>Género Taxus</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 27 %}
-                <h3>Nombre Común: <a href="individuos#Tejo">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="thuja"></a>Género Thuja</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                  {% if l.genero.idGenero == 8 %}
-                    {% if l.idEspecie == 11 %}
-                      <h3>Nombre Común: <a href="individuos#TuyaGigante">{{l.nombreComunEspecie}}</a></h3>
-                      <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                      <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                      {% if l.autoctona == False %}
-                        <h3>¿Es autoctona?
-                        <a> No </a></h3>
-                      {% else %}
-                        <h3>¿Es autoctona?
-                        <a> Si </a></h3>
-                      {% endif %}
-                      <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                      <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="caja">
-                {% for l in especie %}
-                  {% if l.genero.idGenero == 8 %}
-                    {% if l.idEspecie == 33 %}
-                      <h3>Nombre Común: <a href="individuos#TuyaCanada">{{l.nombreComunEspecie}}</a></h3>
-                      <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                      <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                      {% if l.autoctona == False %}
-                        <h3>¿Es autoctona?
-                        <a> No </a></h3>
-                      {% else %}
-                        <h3>¿Es autoctona?
-                        <a> Si </a></h3>
-                      {% endif %}
-                      <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
-                      <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="tilia"></a>Género Tilia</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 28 %}
-                <h3>Nombre Común: <a href="individuos#Tilo">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="ulmus"></a>Género Ulmus</h3>
-              </div>
-              <div class="caja">
-                {% for l in especie %}
-                {% if l.genero.idGenero == 14 %}
-                <h3>Nombre Común: <a href="individuos#OlmoSiberiano">{{l.nombreComunEspecie}}</a></h3>
-                <h3>Nombre Científico: <a>{{l.nombreCientificoEspecie}}</a></h3>
-                <h3>Género: <a>{{l.genero.nombreGenero}}</a></h3>
-                {% if l.autoctona == False %}
-                  <h3>¿Es autoctona?
-                  <a> No </a></h3>
-                {% else %}
-                  <h3>¿Es autoctona?
-                  <a> Si </a></h3>
-                {% endif %}
-                <h3>Descripción: <br><a>{{l.descripcion}}</a></h3>
-                <h3>Ecología: <br><a>{{l.ecologia}}</a></h3>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
 {% endblock content %}

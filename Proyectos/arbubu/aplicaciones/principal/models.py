@@ -32,6 +32,9 @@ class Especie(models.Model):
     descripcion = models.TextField('Descripcion', blank=False)
     ecologia = models.TextField('Ecologia', blank=False)
 
+    class Meta:
+        ordering = ['nombreCientificoEspecie']
+
 ubicacion=( ('Campus Río Vena','Campus Río Vena'), ('Hospital del Rey','Hospital del Rey'), ('Hospital Militar','Hospital Militar'),('Campus Facultad de Educación','Campus Facultad de Educación'),('Campus Facultad de Ciencias','Campus Facultad de Ciencias'))
 
 class Individuos(models.Model):
@@ -51,7 +54,7 @@ class Individuos(models.Model):
     perimetro = models.DecimalField('Perimetro',blank=False, default=0,max_digits=19, decimal_places=15)
 
     class Meta:
-        ordering = ['especie']
+        ordering = ['nombreComun']
 
 class Usuario(models.Model):
     idUsuario = models.AutoField('ID',primary_key=True, serialize=False)

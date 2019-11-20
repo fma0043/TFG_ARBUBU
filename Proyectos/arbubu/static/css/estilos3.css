@@ -1,0 +1,96 @@
+#cuerpo{
+  margin: 20px;
+  background: #A6F1EE;
+}
+
+.contenedor {
+  width: 960px;
+  position: relative;
+  left: 50%;
+  margin-left: -480px;
+  display: block;
+  clear: both;
+}
+
+#banner{
+  width:100%;
+  position:relative;
+  height:105px;
+}
+
+#banner #cabecera{
+  position:absolute;
+  top:10px;
+  left:300px;
+}
+
+#banner ul {
+  position: absolute;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+  right: 0px;
+  top: 20px;
+
+}
+
+#banner li {
+	display: inline;
+	margin-left: 10px;
+}
+#banner li a {
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#princNav ul {
+  position: absolute;
+  top:130px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url('../imagenes/bg_nav.png') repeat-x left top;
+	float: left;
+	border-bottom: 1px solid #000;
+	width: 100%;
+  color: #663900;
+
+}
+
+#princNav li a, #princNav li a:link {
+  float: left;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .3em 0.5em;
+	border-right: 1px solid #000;
+	display: block;
+	font: bold 1em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+}
+#princNav li a:hover {
+	background: url('../imagenes/bg_nav_h.png');
+}
+
+#pie {
+  position: absolute;
+  width: 99%;
+	padding: 5px;
+	border-top: 1px solid #000;
+	background: #9EEB9D;
+	font-weight: bold;
+	color: #000000;
+}
+
+
+
+#scroll-top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 10px;
+    height: 3%;
+    width: 2%;
+    background: url('../imagenes/flechaArriba.png') #A6F1EE;
+
+}

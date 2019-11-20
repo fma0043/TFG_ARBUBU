@@ -2,12 +2,22 @@
   margin: 20px;
   background: #A6F1EE;
 }
-
+/*
 .contenedor {
   width: 960px;
   position: relative;
   left: 50%;
   margin-left: -480px;
+  display: block;
+  clear: both;
+}*/
+
+.contenedor {
+  width: 1300px;
+  position: absolute;
+  right: : 50%;
+  margin-right: -600px;
+  background-color: #A6F1EE;
   display: block;
   clear: both;
 }
@@ -21,7 +31,7 @@
 #banner #cabecera{
   position:absolute;
   top:10px;
-  left:300px;
+  left:500px;
 }
 
 #banner ul {
@@ -116,7 +126,7 @@
 
 .contenido img {
     display: block;
-    width: 30%;
+    width: 50%;
     height: auto;
 }
 
@@ -163,8 +173,8 @@ background-color: #FFF;
 font-style: italic;
 color:#626E50;
 padding: 5px;
-border: #c7c7c7 1px solid;
 margin: 10px 0 10px 0;
+background: #A6F1EE;
 }
 
 .caja h3{
@@ -184,14 +194,26 @@ margin: 10px 0 10px 0;
 .individuo h3{
 display: inline-block;
 width: 99%;
-background-color: #FFF;
+background-color: #A6F1EE;
 font-style: italic;
 color:#626E50;
 padding: 0px;
 }
-
+/*
 .individuo h3:hover{
   box-shadow: #555 0 2px 7px;
+}*/
+
+#scroll-top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 10px;
+    height: 3%;
+    width: 2%;
+    background: url('../imagenes/flechaArriba.png') #A6F1EE;
+
 }
 
 .search-form input {

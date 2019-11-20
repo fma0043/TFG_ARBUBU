@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'import_export',
     'aplicaciones.principal',
+
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 LOGIN_URL = '/inicia-sesion/'
 LOGIN_REDIRECT_URL = '/index'
 LOGOUT_REDIRECT_URL = '/index'
+
+IMPORT_EXPORT_USE_TRANSACTIONS = True

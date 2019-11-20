@@ -1,0 +1,30 @@
+{% load static %}
+<html lang="es">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<!-- mobile meta (hooray!) -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/estilos3.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body id="cuerpo">
+  <div class="contenedor">
+    <div id="banner">
+      <img src="{% static 'imagenes/cabeceras.png' %}" name="cabecera" id="cabecera"/>
+        <div id="princNav">
+          <ul>
+            <li><a href="../index">Inicio</a></li>
+          </ul>
+        </div>
+    </div>
+    {% block content %}{% endblock content %}
+    <p id="pie">2019. Félix Movilla Alonso. Trabajo Fin De Grado</p>
+  </div>
+
+</body>
+
+</html>

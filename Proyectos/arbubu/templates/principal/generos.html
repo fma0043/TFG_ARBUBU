@@ -1,365 +1,123 @@
 {% extends "base2.html" %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'css/estilos2.css' %}">
-{% block title %}Generos{% endblock %}
+
+{% block title %}Géneros{% endblock %}
 {% block content %}
 
 <br><br><br>
-          <h1 style="text-align:center;color:#0068DD;">Géneros Existentes</h1>
-{% comment %}
-          <form action="" method="post" class="search-form">
-            {% csrf_token %}
-
-            {{ form.as_p }}
-                      <input type="text" name="cadena" value="" placeholder="Buscar por nombre científico o común" />
-                      <button name="buscar" class="btn-padded"></button>
-                  </form>
-{% endcomment %}
-            <div class="especies">
-              <h3><a name="adoxaceas"></a>Familia de Adoxáceas</h3>
-            </div>
-              <div class="contenido">
-                {% for l in genero %}
-                {% if l.familia.idFamilia == 37 %}
-                  <a href="especies#sambucus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                  <img src={{l.fotoGenero}}>
-                  {% endif %}
-                {% endfor %}
-              </div>
-
-              <div class="especies">
-                <h3><a name="aquifoliaceas"></a>Familia de Aquifoliáceas</h3>
-              </div>
-                <div class="contenido">
-                  {% for l in genero %}
-                  {% if l.familia.idFamilia == 3 %}
-                    <a href="especies#ilex" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                    <img src={{l.fotoGenero}}>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-
-                <div class="especies">
-                  <h3><a name="araliaceas"></a>Familia de Araliáceas</h3>
-                </div>
-                  <div class="contenido">
-                    {% for l in genero %}
-                    {% if l.familia.idFamilia == 33 %}
-                      <a href="especies#hedera" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                      <img style="height:50%" src={{l.fotoGenero}}>
-                      {% endif %}
-                    {% endfor %}
-                  </div>
-
-
-                  <div class="especies">
-                    <h3><a name="bignoniaceas"></a>Familia de Bignoniáceas</h3>
-                  </div>
-                      <div class="contenido">
-                        {% for l in genero %}
-                        {% if l.familia.idFamilia == 34 %}
-                          <a href="especies#catalpa" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                          <img style="height:50%" src={{l.fotoGenero}}>
-                          {% endif %}
-                        {% endfor %}
-                      </div>
-
-                      <div class="especies">
-                        <h3><a name="caprifoliaceas"></a>Familia de Caprifoliáceas</h3>
-                      </div>
-                      <div class="contenido">
-                        {% for l in genero %}
-                        {% if l.familia.idFamilia == 6 %}
-                          <a href="especies#lonicera" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                          <img src={{l.fotoGenero}}>
-                          {% endif %}
-                        {% endfor %}
-                      </div>
-
-                      <div class="especies">
-                        <h3><a name="cupresaceas"></a>Familia de Cupresáceas</h3>
-                      </div>
-                            <div class="contenido">
-                              {% for l in genero %}
-                                {% if l.familia.idFamilia == 9 %}
-                                  {% if l.idGenero == 23 %}
-                                    <a href="especies#cupressus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                    <img style="height:50%" src={{l.fotoGenero}}>
-                                  {% endif %}
-                                    {% if l.idGenero == 26 %}
-                                      <a href="especies#platycladus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                      <img  src={{l.fotoGenero}}>
-                                    {% endif %}
-                                    {% if l.idGenero == 31 %}
-                                      <a href="especies#sequoiadendron" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                      <img  src={{l.fotoGenero}}>
-                                    {% endif %}
-                                    {% if l.idGenero == 8 %}
-                                      <a href="especies#thuja" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                      <img style="height:50%" src={{l.fotoGenero}}>
-                                    {% endif %}
-                                {% endif %}
-                              {% endfor %}
-
-                            </div>
-
-                            <div class="especies">
-                              <h3><a name="fabaceas"></a>Familia de Fabaceaes</h3>
-                            </div>
-                              <div class="contenido">
-                                {% for l in genero %}
-                                {% if l.familia.idFamilia == 35 %}
-                                  {% if l.idGenero == 18 %}
-                                    <a href="especies#laburnum" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                    <img  src={{l.fotoGenero}}>
-                                  {% endif %}
-                                  {% if l.idGenero == 13 %}
-                                  <a href="especies#robinia" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                  <img style="height:50%" src={{l.fotoGenero}}>
-                                  {% endif %}
-                                {% endif %}
-                                {% endfor %}
-                              </div>
-
-                              <div class="especies">
-                                <h3><a name="fagaceas"></a>Familia de Fagáceas</h3>
-                              </div>
-                                  <div class="contenido">
-                                    {% for l in genero %}
-                                    {% if l.familia.idFamilia == 12 %}
-                                      {% if l.idGenero == 17 %}
-                                      <a href="especies#fagus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                      <img src={{l.fotoGenero}}>
-                                      {% endif %}
-                                      {% if l.idGenero == 21 %}
-                                      <a href="especies#quercus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                      <img src={{l.fotoGenero}}>
-                                      {% endif %}
-                                    {% endif %}
-                                    {% endfor %}
-                                  </div>
-
-
-                                  <div class="especies">
-                                    <h3><a name="juglandaceas"></a>Familia de Juglandáceas</h3>
-                                  </div>
-                                    <div class="contenido">
-                                      {% for l in genero %}
-                                      {% if l.familia.idFamilia == 13 %}
-                                        <a href="especies#juglans" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                        <img style="height:50%" src={{l.fotoGenero}}>
-                                        {% endif %}
-                                      {% endfor %}
-                                    </div>
-
-                                    <div class="especies">
-                                      <h3><a name="leguminosas"></a>Familia de Leguminosas</h3>
-                                    </div>
-                                        <div class="contenido">
-                                          {% for l in genero %}
-                                          {% if l.familia.idFamilia == 15 %}
-                                          <a href="especies#cercis" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                            <img src={{l.fotoGenero}}>
-                                            {% endif %}
-                                          {% endfor %}
-                                        </div>
-
-                                          <div class="especies">
-                                            <h3><a name="magnoliaceas"></a>Familia de Magnoliáceas</h3>
-                                          </div>
-                                          <div class="contenido">
-                                            {% for l in genero %}
-                                            {% if l.familia.idFamilia == 36 %}
-                                              <a href="especies#liriodendron" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                              <img src={{l.fotoGenero}}>
-                                              {% endif %}
-                                            {% endfor %}
-                                          </div>
-
-                                          <div class="especies">
-                                            <h3><a name="malvaceae"></a>Familia de Malvaceae</h3>
-                                          </div>
-                                            <div class="contenido">
-                                              {% for l in genero %}
-                                              {% if l.familia.idFamilia == 38 %}
-                                                <a href="especies#hibiscus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                <img src={{l.fotoGenero}}>
-                                                {% endif %}
-                                              {% endfor %}
-                                            </div>
-
-                                          <div class="especies">
-                                            <h3><a name="moraceas"></a>Familia de Moráceas</h3>
-                                          </div>
-                                              <div class="contenido">
-                                                {% for l in genero %}
-                                                {% if l.familia.idFamilia == 18 %}
-                                                  {% if l.idGenero == 34 %}
-                                                  <a href="especies#ficus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                  <img src={{l.fotoGenero}}>
-                                                  {% endif %}
-                                                  {% if l.idGenero == 24 %}
-                                                  <a href="especies#morus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                  <img src={{l.fotoGenero}}>
-                                                  {% endif %}
-                                                {% endif %}
-                                                {% endfor %}
-                                              </div>
-
-                                              <div class="especies">
-                                                <h3><a name="oleaceas"></a>Familia de Oleáceas</h3>
-                                              </div>
-                                                <div class="contenido">
-                                                  {% for l in genero %}
-                                                  {% if l.familia.idFamilia == 19 %}
-                                                  {% if l.idGenero == 3 %}
-                                                    <a href="especies#olea" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                    <img  src={{l.fotoGenero}}>
-                                                  {% endif %}
-                                                    {% if l.idGenero == 11 %}
-                                                      <a href="especies#syringa" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                      <img style="height:50%" src={{l.fotoGenero}}>
-                                                    {% endif %}
-                                                    {% if l.idGenero == 22 %}
-                                                      <a href="especies#ligustrum" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                      <img  src={{l.fotoGenero}}>
-                                                    {% endif %}
-                                                  {% endif %}
-                                                  {% endfor %}
-                                                </div>
-
-                                                <div class="especies">
-                                                  <h3><a name="pinaceas"></a>Familia de Pináceas</h3>
-                                                </div>
-                                                    <div class="contenido">
-                                                      {% for l in genero %}
-                                                      {% if l.familia.idFamilia == 21 %}
-                                                      {% if l.idGenero == 2 %}
-                                                      <a href="especies#abies" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                      <img style="height:50%" src={{l.fotoGenero}}>
-                                                      {% endif %}
-                                                      {% endif %}
-                                                      {% if l.idGenero == 35 %}
-                                                        <a href="especies#cedrus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                        <img  src={{l.fotoGenero}}>
-                                                      {% endif %}
-                                                      {% if l.idGenero == 5 %}
-                                                        <a href="especies#picea" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                        <img  src={{l.fotoGenero}}>
-                                                      {% endif %}
-                                                      {% if l.idGenero == 36 %}
-                                                        <a href="especies#pinus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                        <img  src={{l.fotoGenero}}>
-                                                      {% endif %}
-                                                      {% endfor %}
-                                                    </div>
-
-                                                    <div class="especies">
-                                                      <h3><a name="platanaceas"></a>Familia de Platanáceas</h3>
-                                                    </div>
-                                                      <div class="contenido">
-                                                        {% for l in genero %}
-                                                        {% if l.familia.idFamilia == 22 %}
-                                                          <a href="especies#platanus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                          <img style="height:50%" src={{l.fotoGenero}}>
-                                                          {% endif %}
-                                                        {% endfor %}
-                                                      </div>
-
-                                                      <div class="especies">
-                                                        <h3><a name="rosaceas"></a>Familia de Rosáceas</h3>
-                                                      </div>
-                                                            <div class="contenido">
-                                                              {% for l in genero %}
-                                                              {% if l.familia.idFamilia == 25 %}
-                                                                {% if l.idGenero == 1 %}
-                                                                <a href="especies#prunus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                <img style="height:50%" src={{l.fotoGenero}}>
-                                                                {% endif %}
-                                                                {% if l.idGenero == 29 %}
-                                                                <a href="especies#pyrus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                <img style="height:50%" src={{l.fotoGenero}}>
-                                                                {% endif %}
-                                                              {% endif %}
-                                                              {% endfor %}
-                                                            </div>
-
-                                                            <div class="especies">
-                                                              <h3><a name="salicaceas"></a>Familia de Salicáceas</h3>
-                                                            </div>
-                                                              <div class="contenido">
-                                                                {% for l in genero %}
-                                                                {% if l.familia.idFamilia == 26 %}
-                                                                  {% if l.idGenero == 15 %}
-                                                                  <a href="especies#populus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                  <img src={{l.fotoGenero}}>
-                                                                  {% endif %}
-                                                                  {% if l.idGenero == 6 %}
-                                                                  <a href="especies#salix" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                  <img src={{l.fotoGenero}}>
-                                                                  {% endif %}
-                                                                {% endif %}
-                                                                {% endfor %}
-                                                              </div>
-
-                                                              <div class="especies">
-                                                                <h3><a name="simaroubaceas"></a>Familia de Simaroubáceas</h3>
-                                                              </div>
-                                                                <div class="contenido">
-                                                                  {% for l in genero %}
-                                                                  {% if l.familia.idFamilia == 27 %}
-                                                                    <a href="especies#ailanthus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                    <img src={{l.fotoGenero}}>
-                                                                    {% endif %}
-                                                                  {% endfor %}
-                                                                </div>
-
-                                                                <div class="especies">
-                                                                  <h3><a name="tamariacaceas"></a>Familia de Tamariacáceas</h3>
-                                                                </div>
-                                                                    <div class="contenido">
-                                                                      {% for l in genero %}
-                                                                      {% if l.familia.idFamilia == 29 %}
-                                                                      <a href="especies#tamarix" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                        <img style="height:50%" src={{l.fotoGenero}}>
-                                                                        {% endif %}
-                                                                      {% endfor %}
-                                                                    </div>
-
-                                                                    <div class="especies">
-                                                                      <h3><a name="taxaceas"></a>Familia de Taxáceas</h3>
-                                                                    </div>
-                                                                      <div class="contenido">
-                                                                        {% for l in genero %}
-                                                                        {% if l.familia.idFamilia == 30 %}
-                                                                          <a href="especies#taxus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                          <img src={{l.fotoGenero}}>
-                                                                          {% endif %}
-                                                                        {% endfor %}
-                                                                      </div>
-
-                                                                      <div class="especies">
-                                                                        <h3><a name="tiliaceas"></a>Familia de Tiliáceas</h3>
-                                                                      </div>
-                                                                        <div class="contenido">
-                                                                          {% for l in genero %}
-                                                                          {% if l.familia.idFamilia == 31 %}
-                                                                            <a href="especies#tilia" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                            <img src={{l.fotoGenero}}>
-                                                                            {% endif %}
-                                                                          {% endfor %}
-                                                                        </div>
-
-                                                                        <div class="especies">
-                                                                          <h3><a name="ulmaceas"></a>Familia de Ulmáceas</h3>
-                                                                        </div>
-                                                                          <div class="contenido">
-                                                                            {% for l in genero %}
-                                                                            {% if l.familia.idFamilia == 32 %}
-                                                                              <a href="especies#ulmus" style="text-decoration:none"><h3>{{l.nombreGenero}}</h3></a>
-                                                                              <img style="height:50%" src={{l.fotoGenero}}>
-                                                                              {% endif %}
-                                                                            {% endfor %}
-                                                                          </div>
-
+        <div class="centrar familias">
+          <h1 id="container" style="text-align:center;color:#0068DD;">Géneros Existentes</h1>
+          {% comment %}<a href="#container" id="scroll-top" title="Volver arriba" class="scroll"></a>{% endcomment %}
+          <br>
+          {% for l in genero %}
+            {% if l.idGenero == 2 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 32 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 9 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 35 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 19 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 23 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 17 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 34 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 16 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 33 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 4 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 7 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 18 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 22 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 20 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 25 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 24 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 3 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 5 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 36 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 12 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 26 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 15 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 1 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 29 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 21 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 13 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 6 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 30 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 31 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 11 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 10 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 27 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 8 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 28 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+            {% if l.idGenero == 14 %}
+              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% endif %}
+          {% endfor %}
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
 {% endblock content %}
