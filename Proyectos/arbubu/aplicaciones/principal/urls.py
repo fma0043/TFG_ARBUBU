@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from django.urls import include, path, re_path
-from . import views
+from . import views,admin
 from aplicaciones.principal.views import SignUpView, SignInView, SignOutView, importar, individuo_print
 
 app_name="principal_app"
@@ -9,6 +9,10 @@ urlpatterns = [
     path('index', views.IndexView.as_view(),name='index'),
     path('familias', views.Familias.as_view(),name='familias'),
     path('generos', views.Generos.as_view(),name='generos'),
+    path('sambucus', views.Sambucus.as_view(),name='sambucus'),
+    path('sambucusNigra', views.SambucusNigra.as_view(),name='sambucusNigra'),
+    path('sauco', views.Sauco.as_view(),name='sauco'),
+    #path('generos/<pk>', views.ListaGeneros.as_view(),name="lista-generos"),
     path('especies', views.Especies.as_view(),name='especies'),
     path('individuos', views.Individuos.as_view(), name='individuos'),
     path('cirueloRojo', views.CirueloRojo.as_view(), name='cirueloRojo'),
@@ -20,6 +24,8 @@ urlpatterns = [
     url(r'^inicia-sesion/$', views.SignInView.as_view(), name='sign_in'),
     url(r'^cerrar-sesion/$', views.SignOutView.as_view(), name='sign_out'),
     path('import', importar, name='import'),
+    #path('exportar',exportarExcel.as_view(), name='prueba'),
+
     #path('export', some_view, name='export'),
     path('individuos/print', individuo_print, name='individuo_print'),
 ]

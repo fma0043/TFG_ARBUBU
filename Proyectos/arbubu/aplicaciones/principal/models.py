@@ -56,6 +56,9 @@ class Individuos(models.Model):
     class Meta:
         ordering = ['nombreComun']
 
+    def __str__(self):
+        return self.nombreComun
+
 class Usuario(models.Model):
     idUsuario = models.AutoField('ID',primary_key=True, serialize=False)
     usuario = models.OneToOneField(User, on_delete=models.CASCADE)

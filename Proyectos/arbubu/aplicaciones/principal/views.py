@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.http import HttpResponse
-
+from import_export import resources
 import csv
-from django.http import HttpResponse
+from django.http.response import HttpResponse
 
 from django.template import RequestContext, Template, Context
 
@@ -21,6 +21,37 @@ from django.contrib.auth.views import LoginView, LogoutView
 
 from tablib import Dataset
 
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
+
+from .admin import IndividuoResource
+
+class ListaGeneros(ListView):
+
+    template_name = "pantallaPrincipal/lista-generos.html"
+    model = Genero
+    context_object_name = 'genero'
+
+    def get_queryset(self):
+        id = self.kwargs['pk']
+        lista = Individuos.objects.filter(
+            idGenero=id
+        )
+        # devuelvo el resultado o la lista resultado
+        return lista
+
+#class exportarExcel(TemplateView):
+#    def get(self, request, *args, **kwargs):
+#        query = Individuos.objects.all()
+#        wb = Workbook()
+
+#        nombreArchivo = "datosIndividuos.xlsx"
+#        response = HttpResponse(content_type = "application/ms-excel")
+#        contenido = "attachment; filename = {0}".format(nombreArchivo)
+#        response["Content-Disposition"] = contenido
+#        wb.save()
+#        return response
+
 class IndexView(TemplateView):
 
     template_name = "principal/index.html"
@@ -30,6 +61,24 @@ class Familias(ListView):
     template_name = "principal/familias.html"
     model = Familia
     context_object_name = 'familia'
+
+class Sambucus(ListView):
+
+    template_name = "principal/sambucus.html"
+    model = Genero
+    context_object_name = 'sambucus'
+
+class SambucusNigra(ListView):
+
+    template_name = "principal/sambucusNigra.html"
+    model = Especie
+    context_object_name = 'sambucusNigra'
+
+class Sauco(ListView):
+
+    template_name = "principal/sauco.html"
+    model = Individuos
+    context_object_name = 'sauco'
 
 class Generos(ListView):
 
@@ -73,6 +122,20 @@ class Catalpa(ListView):
     model = Individuos
     context_object_name = 'catalpa'
 
+def importar(request):
+
+   if request.method == 'POST':
+
+     individuos_resource = IndividuoResource()
+     dataset = Dataset()
+     nuevos_individuos = request.FILES['xlsfile']
+     imported_data = dataset.load(nuevos_individuos.read())
+     result = individuos_resource.import_data(dataset, dry_run=True) # Test the data import
+     if not result.has_errors():
+       individuos_resource.import_data(dataset, dry_run=False) # Actually import now
+
+   return render(request, 'principal/importar.html')
+
 class Individuos(ListView):
 
     model = Individuos
@@ -111,19 +174,7 @@ class SignOutView(LogoutView):
 
 #    return response
 
-def importar(request):
 
-   if request.method == 'POST':
-     template = get_template('../templates/principal/importar.html')
-     individuos_resource = IndividuoResource()
-     dataset = Dataset()
-     nuevos_individuos = request.FILES['xlsfile']
-     imported_data = dataset.load(nuevos_individuos.read())
-     result = individuos_resource.import_data(dataset, dry_run=True) # Test the data import
-     if not result.has_errors():
-       individuos_resource.import_data(dataset, dry_run=False) # Actually import now
-
-   return render(request, 'principal/importar.html')
 
 def individuo_print(self, pk=None):
    import io

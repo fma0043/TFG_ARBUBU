@@ -1,0 +1,29 @@
+{% extends "base2.html" %}
+{% load static %}
+
+{% block title %}Sambucus Nigra{% endblock %}
+{% block content %}
+
+<br><br><br>
+
+
+              <div class="caja">
+                {% for l in sambucusNigra %}
+                    {% if l.idEspecie == 41 %}
+                      <h3> Nombre Cientifico de la Especie: <a>{{l.nombreCientificoEspecie}}</a></h3>
+                      <h3> Nombre Común de la Especie: <a>{{l.nombreComunEspecie}}</a></h3>
+                      <h3> Género: <a>{{l.genero.nombreGenero}}</a></h3>
+                      {% if l.autoctona == False %}
+                        <h3>¿Es autoctona?
+                        <a><img src="{% static 'imagenes/tickVerde.jpg' %}" width="15"></a></h3>
+                      {% else %}
+                        <h3>¿Es autoctona?
+                        <a><img src="{% static 'imagenes/tickRojo.png' %}" width="15"></a></h3>
+                      {% endif %}
+                      <h3>Descripción: <br> <a>{{l.descripcion}}</a></h3>
+                      <h3>Ecología: <br> <a> {{l.ecologia}}</a></h3>
+                      <h3> <a href="sauco">Ver Individuos</a> </h3>
+                    {% endif %}
+                {% endfor %}
+              </div>
+{% endblock content %}

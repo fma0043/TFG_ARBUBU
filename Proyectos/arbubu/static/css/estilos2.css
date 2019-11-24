@@ -12,6 +12,24 @@
   clear: both;
 }*/
 
+#map2 {
+  width: 100%;
+  height: 480px;
+  box-shadow: 5px 5px 5px #888;
+  border: 1px dashed #000;
+  margin:10px 0 10px 10px;
+}
+
+#map {
+  float:right;
+  top:100px;
+  width: 100%;
+  height: 480px;
+  box-shadow: 5px 5px 5px #888;
+  border: 1px dashed #000;
+  margin:10px 0 10px 10px;
+}
+
 .contenedor {
   width: 1300px;
   position: absolute;
@@ -130,6 +148,14 @@
     height: auto;
 }
 
+.caja h2 img {
+    display: block;
+    width: 20%;
+    height: auto;
+    font-size: 20px;
+    color:#1E8535;
+    background-color: #A6F1EE;
+}
 
 .box{
   display: inline-block;
@@ -153,13 +179,13 @@
 
 
 .contenido h3{
-display: inline-block;
-width: 99%;
-background-color: #FFF;
-border: #c7c7c7 1px solid;
-font-style: italic;
-color:#626E50;
-padding: 5px;
+  display: inline-block;
+  width: 99%;
+  background-color: #FFF;
+  border: #c7c7c7 1px solid;
+  font-style: italic;
+  color:#626E50;
+  padding: 5px;
 }
 
 .contenido h3:hover{
@@ -167,14 +193,14 @@ padding: 5px;
 }
 
 .box{
-display: inline-block;
-width: 98%;
-background-color: #FFF;
-font-style: italic;
-color:#626E50;
-padding: 5px;
-margin: 10px 0 10px 0;
-background: #A6F1EE;
+  display: inline-block;
+  width: 98%;
+  background-color: #FFF;
+  font-style: italic;
+  color:#626E50;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  background: #A6F1EE;
 }
 
 .caja h3{
@@ -192,12 +218,12 @@ background: #A6F1EE;
 }
 
 .individuo h3{
-display: inline-block;
-width: 99%;
-background-color: #A6F1EE;
-font-style: italic;
-color:#626E50;
-padding: 0px;
+  display: inline-block;
+  width: 99%;
+  background-color: #A6F1EE;
+  font-style: italic;
+  color:#626E50;
+  padding: 0px;
 }
 /*
 .individuo h3:hover{

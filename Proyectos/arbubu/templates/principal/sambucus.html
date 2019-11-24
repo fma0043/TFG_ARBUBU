@@ -1,0 +1,19 @@
+{% extends "base2.html" %}
+
+{% block title %}Sambucus{% endblock %}
+{% block content %}
+
+<br><br><br>
+
+              <div class="caja">
+                {% for l in sambucus %}
+                    {% if l.idGenero == 30 %}
+                      <h3> Nombre Género: <a>{{l.nombreGenero}}</a></h3>
+                      <h3> Nombre Familia: <a>{{l.familia.nombreFamilia}}</a></h3>
+                      <h3> <a href="sambucusNigra">Ver Especies </a></h3>
+                    {% endif %}
+                {% endfor %}
+              </div>
+
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}
