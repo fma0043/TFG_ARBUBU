@@ -1,0 +1,3 @@
+features = [
+ { "nombreComun": "Ciruelo Rojo", "motivoSingular": "Plantado por un personaje histórico", "explicacionMotivoSingular": "El jardinero jefe del Sah de Persia la introdujo en Europa, de ahí el \"apellido\" Pissardii.", "fotoHojas": "static\/imagenes\/ciruelo_rojo_1.jpg", "fotoTronco": "", "fotoFrutos": "static\/imagenes\/ciruelo_rojo4.jpg", "altura": 0.0, "perimetro": 0.0, "especie_id": 1, "ubicacion": "Campus Río Vena", "latitud": 42.3509889, "longitud": -3.68892777777778, "fotoArbol": "static\/imagenes\/ciruelo_rojo2_ZXzEVFG.jpg" }, "geometry": null }
+ ];

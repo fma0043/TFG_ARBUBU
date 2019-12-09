@@ -3,60 +3,12 @@
 {% block title %}Prueba{% endblock %}
 {% block content %}
 
-<div id="container">
-<br><br><br>
- <a href="individuos/print"  class="btn btn-warning" target="print"><span class="fa fa-print"></span> Imprimir</a>
-        <!-- scroll-top -->
-        <a href="#container" id="scroll-top" title="Volver arriba"></a>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" name="xlsfile">
+  <button type="submit">Subir</button>
+ </form>
 
-<div class="title-bar">
-    <div class="wrap">
-        <h2 class="h1">Listado de especies </h2>
-    </div>
-</div>
-
-<section class="content-page especie-page">
-    <div class="wrap">
-        <div class="fivecol first">
-            <div class="slide-wrapper">
-                <a id="btnLeft" class="btn-left" href="javascript:;"></a>
-                <div id="slider" class="slide">
-
-                <a class="slide-item lightbox" href="http://www.arbolapp.es/imagenes/especies/especie_113_01.jpg" target="_blank" style="background-image: url('http://www.arbolapp.es/imagenes/especies/especie_113_01.jpg');" rel="galeria">
-                                    </a>
-                                </div>
-                <a id="btnRight" class="btn-right" href="javascript:;"></a>
-                <div class="slider-pag"></div>
-            </div>
-        </div>
-        <div class="sixcol last">
-            <h1 class="h2">Salix daphnoides</h1>
-            <h2 class="h3">Sauce alpino</h2>
-            <p class="comun">Sauce alpino, sarga (cast.); salze dafnoide (cat.); European violet-willow (ing.).</p>
-            <h3 class="h4 autoc">Autóctona</h3>
-            <div class="curiosidad">¿SABÍAS QUE…? Este sauce es pionero en la sujeción de suelos sueltos y pedregosos que han sufrido modelado glaciar.</div>
-        </div>
-
-        <h4 class="h5">DESCRIPCIÓN</h4>
-        <div class="especie-texto">Arbusto o árbol que puede alcanzar los 14 m de altura, de ramas pelosillas, blanquecinas o grisáceas de jóvenes, que semejan estar cubiertas de cera, si bien al madurar se vuelven lampiñas verdes, rojizas o castañas. Las hojas son <span class="glosario" id="17" data-title="Caduca/o (ver persistente)" data-desc="Relativo a los órganos poco duraderos, como las hojas que muchos árboles pierden en el otoño o invierno.">caducas,</span> <span class="glosario" id="5" data-title="Alterna (ver opuesta)" data-desc="Hojas dispuestas espaciadamente a lo largo del tallo, de forma que por cada nudo hay una sola hoja y cada una se dispone en sentido opuesto a la anterior.">alternas,</span> de 4-10 cm de largo por 2,5 cm de ancho —semejantes a las de <i>Salix alba</i>—, de <span class="glosario" id="51" data-title="Lanceolada/o" data-desc="Relativo a la hoja con forma de punta de lanza, es decir, elíptica y alargada, que se estrecha en ambos extremos.">lanceoladas</span> a <span class="glosario" id="62" data-title="Oblonga/o" data-desc="Relativo a la hoja alargada, que es más larga que ancha.">oblongas</span> y de punta aguda. Son pelosillas de jóvenes, pero de adultas son lampiñas, algo <span class="glosario" id="24" data-title="Coriácea/o" data-desc="Relativo a la hoja de consistencia fuerte pero flexible, que recuerda al cuero, como en las encinas (<i>Quercus ilex</i>), el laurel (<i>Laurus nobilis</i>), el madroño (<i>Arbutus unedo</i>) o los eucaliptos (gén. <i>Eucalyptus</i>).">coriáceas,</span> de <span class="glosario" id="46" data-title="Haz (ver envés)" data-desc="Cara superior de las hojas, que por lo general es de color más vivo que la cara inferior o envés.">haz</span> verde oscuro y brillante, y <span class="glosario" id="33" data-title="Envés (ver haz)" data-desc="Cara inferior de las hojas, que por lo general es de color más claro que la cara superior o haz.">envés</span> mate y verde-azulado con el nervio medio prominente. El <span class="glosario" id="57" data-title="Margen" data-desc="Borde o contorno de la hoja, que puede ser entero, crenado, dentado, lobulado, serrado, sinuado, etc.">margen</span> es finamente <span class="glosario" id="83" data-title="Serrada/o" data-desc="Relativo a la hoja cuyo margen tiene dientes inclinados a modo de sierra.">serrado</span> y el rabillo apenas llega a 1 cm de largo. Las flores nacen en primavera en largos filamentos llamados <span class="glosario" id="6" data-title="Amentos" data-desc="Conjunto de flores que forman normalmente un racimo o espiga de flores apretadas. Suelen ser colgantes y unisexuales (masculinas o femeninas) y sin pétalos. Son propias, por ejemplo, de los sauces (gén. <i>Salix</i>), álamos (gén. <i>Populus</i>), alisos (gén. <i>Alnus</i>), avellanos (gén. <i>Corylus</i>), abedules (gén. <i>Betula</i>) o castaños (gén. <i>Castanea</i>).">amentos.</span> Los <span class="glosario" id="40" data-title="Fruto" data-desc="Estructura que en las plantas con flor (angiospermas) se forma a partir de la flor fecundada. Puede ser seco o carnoso y contiene las semillas en su interior. En las gimnospermas (pinos —gén. <i>Pinus</i>—, abetos —gén. <i>Abies—, </i>tejos —<i>Taxus baccata</i>—, etc.) no se forman verdaderos frutos y las semillas se encuentran dentro de unas estructuras que se denominan falsos frutos, como son las piñas de los pinos (gén. <i>Pinus</i>), los gálbulos de los enebros (gén. <i>Juniperus</i>, en parte) o el arilo carnoso de los tejos (<i>Taxus baccata</i>).">frutos</span> son <span class="glosario" id="19" data-title="Cápsula" data-desc="Fruto seco que se abre al madurar para liberar las semillas de su interior, como en los eucaliptos (gén. <i>Eucalyptus</i>), los bojes (gén. <i>Buxus</i>) o en el tabaco moruno (<i>Nicotiana glauca</i>).">cápsulas</span> que se abren al madurar y liberan las semillas envueltas en un tejido algodonoso que favorece su dispersión por el viento.</div>
-
-                <div class="sevencol first">
-            <h4 class="h5">ECOLOGÍA</h4>
-            <div class="especie-texto">Este árbol es muy importante desde el punto de vista ecológico porque contribuye a la fijación de terrenos sueltos y morrenas glaciares en zonas de alta montaña, estabilizando laderas, suelos inestables y bordes de ríos. Se desarrolla formando bosquetes en depresiones con suelos húmedos arenosos o de grava fina. De forma natural crece entre los 1600 y 2000 m de altitud.</div>
-
-            <h4 class="h5">DISTRIBUCIÓN</h4>
-            <div class="especie-texto">Habita desde Escandinavia hasta el sur de Europa, excepto en la Península Balcánica. En la Península Ibérica es muy escaso y sólo se encuentra en Pirineos.</div>
-        </div>
-
-
-        </div>
-
-                <h4 class="h5">MÁS INFORMACIÓN</h4>
-        <div class="especie-texto"><p>A pesar de su interés ecológico, en España apenas se cultiva como ornamental y no es frecuente encontrarlo en los viveros. En otras zonas de Europa se cultiva tradicionalmente por el alto contenido en salicina de su corteza, que reduce la fiebre, alivia el dolor articular, el de cabeza y el de muelas.</p><p>Se trata de una planta protegida. Figura en el <i>Catálogo de Especies Amenazadas de Aragón</i> con la categoría de ‘sensible a la alteración de su hábitat’. En el <i>Catálogo de flora amenazada de Cataluña</i>, aparece como ‘vulnerable’. Además, está en la <i>Lista roja de la flora vascular española</i>.</p><i>Salix</i> es el nombre romano de los sauces. El epíteto específico <i>daphnoides</i> significa ‘similar a <i>Daphne’</i>, porque alude a la semejanza de sus hojas con las de la laureola y el mezereón, ambas del género <i>Daphne</i>, de la familia de las timeleáceas. Por eso en algunos lugares se puede encontrar con el nombre de ‘sauce falso dafne’.</div>
-            </div>
-</section>
-
-
-        </div> <!-- end #container -->
+ <a href="{% url 'exportar' %}"> Exportar</a>
 
 {% endblock content %}

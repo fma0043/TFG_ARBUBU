@@ -2,5 +2,21 @@
 {% load static %}
 {% block title %}Página Principal Arbubu{% endblock %}
 {% block content %}
-{% include "mapa.html" %}
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<link rel="stylesheet"  href="{% static 'css/estilos.css' %}">
+<div id="map" ><script>
+  var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    osm = L.tileLayer(osmUrl, {
+      maxZoom: 28,
+      attribution: osmAttrib
+    });
+  var estiloPopup = {'maxWidth': '300'};
+  var map = L.map('map').setView([42.350, -3.688], 17).addLayer(osm);
+  L.marker([42.3509889, -3.688927777777778])
+    .addTo(map)
+    .bindPopup("<h2>Ciruelo Rojo</h2>", estiloPopup);
+
+</script></div>
 {% endblock content %}

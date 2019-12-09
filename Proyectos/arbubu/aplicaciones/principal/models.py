@@ -18,7 +18,6 @@ class Genero(models.Model):
     idGenero = models.AutoField('ID',primary_key=True, serialize=False)
     nombreGenero = models.CharField('Nombre', unique=True, blank=False, max_length=30)
     familia = models.ForeignKey(Familia, on_delete=models.CASCADE)
-    fotoGenero = models.ImageField(upload_to='static/imagenes',blank=True)
 
     class Meta:
         ordering = ['nombreGenero']
@@ -35,7 +34,7 @@ class Especie(models.Model):
     class Meta:
         ordering = ['nombreCientificoEspecie']
 
-ubicacion=( ('Campus Río Vena','Campus Río Vena'), ('Hospital del Rey','Hospital del Rey'), ('Hospital Militar','Hospital Militar'),('Campus Facultad de Educación','Campus Facultad de Educación'),('Campus Facultad de Ciencias','Campus Facultad de Ciencias'))
+ubicacion=( ('Campus Río Vena','Campus Río Vena'), ('Hospital del Rey','Hospital del Rey'), ('Hospital Militar','Hospital Militar'),('Campus de Educación','Campus de Educación'),('Campus de Ciencias','Campus de Ciencias'))
 
 class Individuos(models.Model):
     idIndividuo = models.AutoField('ID',primary_key=True, serialize=False)

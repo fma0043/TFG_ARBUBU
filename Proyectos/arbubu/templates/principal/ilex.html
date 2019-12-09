@@ -1,0 +1,19 @@
+{% extends "base2.html" %}
+
+{% block title %}Ilex{% endblock %}
+{% block content %}
+
+<br><br><br>
+
+              <div class="caja">
+                {% for l in ilex %}
+                    {% if l.idGenero == 4 %}
+                      <h3> Nombre Género: <a>{{l.nombreGenero}}</a></h3>
+                      <h3> Nombre Familia: <a>{{l.familia.nombreFamilia}}</a></h3>
+                      <h3> <a href="ilexAquifolium">Ver Especies </a></h3>
+                    {% endif %}
+                {% endfor %}
+              </div>
+
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}
