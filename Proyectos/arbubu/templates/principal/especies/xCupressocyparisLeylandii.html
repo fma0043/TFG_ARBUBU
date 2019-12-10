@@ -1,0 +1,42 @@
+{% extends "base3.html" %}
+{% load static %}
+
+{% block title %}x Cupressocyparis leylandii{% endblock %}
+{% block content %}
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<link rel="stylesheet"  href="{% static 'css/estilos2.css' %}">
+
+              <div class="nombreComun" style="left: 355px;top:150px;">
+                {% for l in xCupressocyparisLeylandii %}
+                 {% if l.idEspecie == 26 %}
+                  <h1>{{l.nombreCientificoEspecie}}</h1>
+              </div>
+
+              <div class="nombreCientifico" style="left: 435px;top:190px;">
+                <h2>({{l.nombreComunEspecie}})</h2>
+              </div>
+
+              <div class="restoCaracteristicas" style="top:220px;">
+                <h3>GÉNERO: <a>{{l.genero.nombreGenero}}</a></h3>
+                {% if l.autoctona == True %}
+                  <h3>¿ES AUTÓCTONA?
+                  <a><img src="{% static 'imagenes/tickVerde.png' %}" width="15"></a></h3>
+                {% else %}
+                  <h3>¿ES AUTÓCTONA?
+                  <a><img src="{% static 'imagenes/tickRojo.png' %}" width="15"></a></h3>
+                {% endif %}
+                <h3>DESCRIPCIÓN: <a>{{l.descripcion|linebreaks}}</a></h3>
+                <h3>ECOLOGÍA: <a>{{l.ecologia|linebreaks}}</a></h3>
+              </div>
+
+              <div class="individuos">
+                <h1>Individuos</h1>
+              </div>
+            <div class="nombreIndividuos">
+              <a href="cipresLeyland">CIPRÉS DE LEYLAND (HOSPITAL DEL REY)</a>
+            </div>
+
+            {% endif %}
+          {% endfor %}
+{% endblock content %}

@@ -67,25 +67,287 @@ class Hedera(ListView):
     model = Genero
     context_object_name = 'hedera'
 
-class IlexAquifolium(ListView):
+class AbiesAlba(ListView):
 
-    template_name = "principal/ilexAquifolium.html"
+    template_name = "principal/especies/abiesAlba.html"
     model = Especie
-    context_object_name = 'ilexAquifolium'
+    context_object_name = 'abiesAlba'
+
+class AbiesPinsapo(ListView):
+
+    template_name = "principal/especies/abiesPinsapo.html"
+    model = Especie
+    context_object_name = 'abiesPinsapo'
+
+class AilanthusAltissima(ListView):
+
+    template_name = "principal/especies/ailanthusAltissima.html"
+    model = Especie
+    context_object_name = 'ailanthusAltissima'
+
+class CatalpaBignonioides(ListView):
+
+    template_name = "principal/especies/catalpaBignonioides.html"
+    model = Especie
+    context_object_name = 'catalpaBignonioides'
+
+class CedrusAtlantica(ListView):
+
+    template_name = "principal/especies/cedrusAtlantica.html"
+    model = Especie
+    context_object_name = 'cedrusAtlantica'
+
+class CedrusDeodara(ListView):
+
+    template_name = "principal/especies/cedrusDeodara.html"
+    model = Especie
+    context_object_name = 'cedrusDeodara'
+
+class CedrusAtlanticaGlaucaPendula(ListView):
+
+    template_name = "principal/especies/cedrusAtlanticaGlaucaPendula.html"
+    model = Especie
+    context_object_name = 'cedrusAtlanticaGlaucaPendula'
+
+class CercisSiliquastrum(ListView):
+
+    template_name = "principal/especies/cercisSiliquastrum.html"
+    model = Especie
+    context_object_name = 'cercisSiliquastrum'
+
+class CupressusArizonica(ListView):
+
+    template_name = "principal/especies/cupressusArizonica.html"
+    model = Especie
+    context_object_name = 'cupressusArizonica'
+
+class FagusSylvatica(ListView):
+
+    template_name = "principal/especies/fagusSylvatica.html"
+    model = Especie
+    context_object_name = 'fagusSylvatica'
+
+class FagusSylvaticacvAtropunicea(ListView):
+
+    template_name = "principal/especies/fagusSylvaticacvAtropunicea.html"
+    model = Especie
+    context_object_name = 'fagusSylvaticacvAtropunicea'
+
+class FicusCarica(ListView):
+
+    template_name = "principal/especies/ficusCarica.html"
+    model = Especie
+    context_object_name = 'ficusCarica'
 
 class HederaHelix(ListView):
 
-    template_name = "principal/hederaHelix.html"
+    template_name = "principal/especies/hederaHelix.html"
     model = Especie
     context_object_name = 'hederaHelix'
 
+class HibiscusSyriacus(ListView):
+
+    template_name = "principal/especies/hibiscusSyriacus.html"
+    model = Especie
+    context_object_name = 'hibiscusSyriacus'
+
+class IlexAquifolium(ListView):
+
+    template_name = "principal/especies/ilexAquifolium.html"
+    model = Especie
+    context_object_name = 'ilexAquifolium'
+
+class JuglansRegia(ListView):
+
+    template_name = "principal/especies/juglansRegia.html"
+    model = Especie
+    context_object_name = 'juglansRegia'
+
+class LaburnumAnagyroides(ListView):
+
+    template_name = "principal/especies/laburnumAnagyroides.html"
+    model = Especie
+    context_object_name = 'laburnumAnagyroides'
+
+class LigustrumLucidum(ListView):
+
+    template_name = "principal/especies/ligustrumLucidum.html"
+    model = Especie
+    context_object_name = 'ligustrumLucidum'
+
+class LiriodendronTulipifera(ListView):
+
+    template_name = "principal/especies/liriodendronTulipifera.html"
+    model = Especie
+    context_object_name = 'liriodendronTulipifera'
+
+class LoniceraSpp(ListView):
+
+    template_name = "principal/especies/loniceraSpp.html"
+    model = Especie
+    context_object_name = 'loniceraSpp'
+
+class MorusNigra(ListView):
+
+    template_name = "principal/especies/morusNigra.html"
+    model = Especie
+    context_object_name = 'morusNigra'
+
+class OleaEuropaea(ListView):
+
+    template_name = "principal/especies/oleaEuropaea.html"
+    model = Especie
+    context_object_name = 'oleaEuropaea'
+
+class PiceaAbies(ListView):
+
+    template_name = "principal/especies/piceaAbies.html"
+    model = Especie
+    context_object_name = 'piceaAbies'
+
+class PinusPicea(ListView):
+
+    template_name = "principal/especies/pinusPicea.html"
+    model = Especie
+    context_object_name = 'pinusPicea'
+
+class PlatanusxHispanica(ListView):
+
+    template_name = "principal/especies/platanusxHispanica.html"
+    model = Especie
+    context_object_name = 'platanusxHispanica'
+
+class PlatycladusOrientalis(ListView):
+
+    template_name = "principal/especies/platycladusOrientalis.html"
+    model = Especie
+    context_object_name = 'platycladusOrientalis'
+
+class PopulusAlba(ListView):
+
+    template_name = "principal/especies/populusAlba.html"
+    model = Especie
+    context_object_name = 'populusAlba'
+
+class PopulusNigra(ListView):
+
+    template_name = "principal/especies/populusNigra.html"
+    model = Especie
+    context_object_name = 'populusNigra'
+
+class PopulusSimonii(ListView):
+
+    template_name = "principal/especies/populusSimonii.html"
+    model = Especie
+    context_object_name = 'populusSimonii'
+
+class PopulusxCanadensis(ListView):
+
+    template_name = "principal/especies/populusxCanadensis.html"
+    model = Especie
+    context_object_name = 'populusxCanadensis'
+
+class PrunusCerasiferavarPissardii(ListView):
+
+    template_name = "principal/especies/prunusCerasiferavarPissardii.html"
+    model = Especie
+    context_object_name = 'prunusCerasiferavarPissardii'
+
+class PrunusLaurocerasus(ListView):
+
+    template_name = "principal/especies/prunusLaurocerasus.html"
+    model = Especie
+    context_object_name = 'prunusLaurocerasus'
+
+class PyrusCommunis(ListView):
+
+    template_name = "principal/especies/pyrusCommunis.html"
+    model = Especie
+    context_object_name = 'pyrusCommunis'
+
+class QuercusFaginea(ListView):
+
+    template_name = "principal/especies/quercusFaginea.html"
+    model = Especie
+    context_object_name = 'quercusFaginea'
+
+class QuercusIlex(ListView):
+
+    template_name = "principal/especies/quercusIlex.html"
+    model = Especie
+    context_object_name = 'quercusIlex'
+
+class RobiniaPseudoacacia(ListView):
+
+    template_name = "principal/especies/robiniaPseudoacacia.html"
+    model = Especie
+    context_object_name = 'robiniaPseudoacacia'
+
+class SalixBabylonica(ListView):
+
+    template_name = "principal/especies/salixBabylonica.html"
+    model = Especie
+    context_object_name = 'salixBabylonica'
+
 class SambucusNigra(ListView):
 
-    template_name = "principal/sambucusNigra.html"
+    template_name = "principal/especies/sambucusNigra.html"
     model = Especie
     context_object_name = 'sambucusNigra'
 
+class SequoiadendronGiganteum(ListView):
 
+    template_name = "principal/especies/sequoiadendronGiganteum.html"
+    model = Especie
+    context_object_name = 'sequoiadendronGiganteum'
+
+class SyringaVulgaris(ListView):
+
+    template_name = "principal/especies/syringaVulgaris.html"
+    model = Especie
+    context_object_name = 'syringaVulgaris'
+
+class TamarixSpp(ListView):
+
+    template_name = "principal/especies/tamarixSpp.html"
+    model = Especie
+    context_object_name = 'tamarixSpp'
+
+class TaxusBaccata(ListView):
+
+    template_name = "principal/especies/taxusBaccata.html"
+    model = Especie
+    context_object_name = 'taxusBaccata'
+
+class ThujaOccidentalis(ListView):
+
+    template_name = "principal/especies/thujaOccidentalis.html"
+    model = Especie
+    context_object_name = 'thujaOccidentalis'
+
+class ThujaPlicata(ListView):
+
+    template_name = "principal/especies/thujaPlicata.html"
+    model = Especie
+    context_object_name = 'thujaPlicata'
+
+class TiliaSpp(ListView):
+
+    template_name = "principal/especies/tiliaSpp.html"
+    model = Especie
+    context_object_name = 'tiliaSpp'
+
+class UlmusPumila(ListView):
+
+    template_name = "principal/especies/ulmusPumila.html"
+    model = Especie
+    context_object_name = 'ulmusPumila'
+
+class XCupressocyparisLeylandii(ListView):
+
+    template_name = "principal/especies/xCupressocyparisLeylandii.html"
+    model = Especie
+    context_object_name = 'xCupressocyparisLeylandii'
 
 class Generos(ListView):
 

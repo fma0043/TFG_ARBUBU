@@ -70,6 +70,25 @@ body {
 	padding: 10px;
 }
 
+.nombreIndividuos{
+	position: absolute;
+	left: 1000px;
+	top: 249px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.individuos{
+	position: absolute;
+	left: 1035px;
+	top: 163px;
+	color:#3B937B;
+}
+
+.nombreIndividuos a:hover {
+	background: url('../imagenes/bg_nav_h.png');
+}
+
 .restoCaracteristicas h3{
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
@@ -191,34 +210,10 @@ body {
 	background: url('../imagenes/bg_nav_h.png');
 }
 
-.centrar {
-    text-align: center;
-}
-
-.familias a {
-    display: inline-block;
-    margin: 0 2px 4px;
-    padding: 2px 7px;
-    width: auto;
-    height: auto;
-    font-size: 16px;
-    color: #888;
-    background-color: #FFFFFF;
-    border: #c7c7c7 1px solid;
-}
-
-.familias a:hover {
-	background: url('../imagenes/bg_side_head.png');
-}
-
-.centrar .familias h1{
-  color: #666666;
-}
-
 #pie {
   position: absolute;
   width: 99.2%;
-  top: 590px;
+  top: 710px;
 	padding: 5px;
 	border-top: 1px solid #000;
 	background: #9EEB9D;

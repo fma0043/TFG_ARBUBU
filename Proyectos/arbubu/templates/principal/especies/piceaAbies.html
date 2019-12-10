@@ -1,0 +1,56 @@
+{% extends "base3.html" %}
+{% load static %}
+
+{% block title %}Picea abies{% endblock %}
+{% block content %}
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<link rel="stylesheet"  href="{% static 'css/estilos2.css' %}">
+
+              <div class="nombreComun" style="left: 425px;top:150px;">
+                {% for l in piceaAbies %}
+                 {% if l.idEspecie == 6 %}
+                  <h1>{{l.nombreCientificoEspecie}}</h1>
+              </div>
+
+              <div class="nombreCientifico" style="left: 435px;top:190px;">
+                <h2>({{l.nombreComunEspecie}})</h2>
+              </div>
+
+              <div class="restoCaracteristicas" style="top:220px;">
+                <h3>GÉNERO: <a>{{l.genero.nombreGenero}}</a></h3>
+                {% if l.autoctona == True %}
+                  <h3>¿ES AUTÓCTONA?
+                  <a><img src="{% static 'imagenes/tickVerde.png' %}" width="15"></a></h3>
+                {% else %}
+                  <h3>¿ES AUTÓCTONA?
+                  <a><img src="{% static 'imagenes/tickRojo.png' %}" width="15"></a></h3>
+                {% endif %}
+                <h3>DESCRIPCIÓN: <a>{{l.descripcion|linebreaks}}</a></h3>
+                <h3>ECOLOGÍA: <a>{{l.ecologia|linebreaks}}</a></h3>
+              </div>
+
+              <div class="individuos">
+                <h1>Individuos</h1>
+              </div>
+            <div class="nombreIndividuos" >
+              <a href="abetoRojo1">ABETO ROJO (HOSPITAL MILITAR)</a>
+              <br><br>
+              <a href="abetoRojo2">ABETO ROJO (HOSPITAL MILITAR)</a>
+              <br><br>
+              <a href="abetoRojo3">ABETO ROJO (HOSPITAL MILITAR)</a>
+              <br><br>
+              <a href="abetoRojo4">ABETO ROJO (HOSPITAL MILITAR)</a>
+              <br><br>
+              <a href="abetoRojo5">ABETO ROJO (HOSPITAL MILITAR)</a>
+              <br><br>
+              <a href="abetoRojo6">ABETO ROJO (HOSPITAL DEL REY)</a>
+              <br><br>
+              <a href="abetoRojo7">ABETO ROJO (HOSPITAL DEL REY)</a>
+              <br><br>
+              <a href="abetoRojo8">ABETO ROJO (CAMPUS RÍO VENA)</a>
+            </div>
+
+            {% endif %}
+          {% endfor %}
+{% endblock content %}
