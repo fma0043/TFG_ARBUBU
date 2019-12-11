@@ -2,158 +2,178 @@
 
 {% block title %}Especies{% endblock %}
 {% block content %}
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
 
-<br><br><br>
-        <div class="centrar familias">
-          <h1 id="container" style="text-align:center;color:#0068DD;">Especies Existentes</h1>
-          {% comment %}<a href="#container" id="scroll-top" title="Volver arriba" class="scroll"></a>{% endcomment %}
-          <br>
+        <div class="tituloEspecies">
+          <h1>Especies Existentes</h1>
+        </div>
+
+          <div class="listado" style="top: 240px;left: 250px;">
+          <form name="link" ><select name="menu">
+          <option selected="selected">Elige la especie deseada</option>
           {% for l in especie %}
             {% if l.idEspecie == 38 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="abiesAlba">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 3 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="abiesPinsapo">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 47 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="ailanthusAltissima">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 12 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="catalpaBignonioides">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 34 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="cedrusAtlantica">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 35 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="cedrusDeodara">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 42 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="cedrusAtlanticaGlaucaPendula">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 21 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="cercisSiliquastrum">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 43 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="cupressusArizonica">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 49 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="fagusSylvatica">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 19 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="fagusSylvaticacvAtropunicea">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 45 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="ficusCarica">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 7 %}
-              <a href="hiedrag" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="hederaHelix">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 46 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="hibiscusSyriacus">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 5 %}
-              <a href="acebog" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="ilexAquifolium">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 9 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="juglansRegia">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 20 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="laburnumAnagyroides">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 25 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="ligustrumLucidum">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 22 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="liriodendronTulipifera">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 28 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="loniceraSpp">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 27 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="morusNigra">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 4 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="oleaEuropaea">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 6 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="piceaAbies">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 32 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="pinusPicea">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 15 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="platanusxHispanica">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 29 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="platycladusOrientalis">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 31 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="populusAlba">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 39 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="populusNigra">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 44 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="populusSimonii">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 18 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
-            {% endif %}
-            {% if l.idEspecie == 37 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="populusxCanadensis">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 1 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="prunusCerasiferavarPissardii">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 10 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="prunusLaurocerasus">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 40 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="pyrusCommunis">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 24 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="quercusFaginea">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 23 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="quercusIlex">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 16 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="robiniaPseudoacacia">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 8 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="salixBabylonica">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 41 %}
-              <a href="sauco" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="sambucusNigra">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 48 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="sequoiadendronGiganteum">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 14 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="syringaVulgaris">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 13 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="tamarixSpp">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 30 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="taxusBaccata">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 33 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="thujaOccidentalis">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 11 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="thujaPlicata">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 36 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="tiliaSpp">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 17 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="ulmusPumila">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
             {% if l.idEspecie == 26 %}
-              <a href="" style="text-decoration:none">{{l.nombreCientificoEspecie}}</a>
+              <option value="xCupressocyparisLeylandii">{{l.nombreCientificoEspecie}}</option>
             {% endif %}
           {% endfor %}
-          <br><br><br><br><br><br><br><br><br><br><br>
+          </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
           </div>
+
+          <div id="map" style="left:0px; top: 100px;width: 600px;height: 380px;box-shadow: 5px 5px 5px #888;margin:10px 0 10px 10px;"><script>
+            var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+              osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+              osm = L.tileLayer(osmUrl, {
+                maxZoom: 28,
+                attribution: osmAttrib
+              });
+            var estiloPopup = {'maxWidth': '300'};
+            var map = L.map('map').setView([42.350, -3.688], 17).addLayer(osm);
+
+            {% comment %}
+              for ( var i=0; i < sauco.length; ++i ) {
+                 L.marker( [sauco[i].latitud, sauco[i].longitud] )
+                    .bindPopup(sauco[i].nombreComun);
+                    .addTo( map );
+              }
+              {% endcomment %}
+          </script></div>
 {% endblock content %}
