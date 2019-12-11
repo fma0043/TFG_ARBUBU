@@ -20,31 +20,83 @@
             <div class="listado" style="top: 200px;left: 1010px;">
             <form name="link" ><select name="menu">
             <option selected="selected">Elige el árbol deseado</option>
-            <option value="abetoRojo1">Abeto Rojo</option>
-            <option value="abetoRojo2">Abeto Rojo</option>
-            <option value="abetoRojo3">Abeto Rojo</option>
-            <option value="abetoRojo4">Abeto Rojo</option>
-            <option value="abetoRojo5">Abeto Rojo</option>
-            <option value="cedroAtlas3">Cedro del Atlas</option>
-            <option value="cedroAtlas4">Cedro del Atlas</option>
-            <option value="cedroAtlas5">Cedro del Atlas</option>
-            <option value="cedroAtlas6">Cedro del Atlas</option>
-            <option value="cedroAtlas7">Cedro del Atlas</option>
-            <option value="cedroAtlas8">Cedro del Atlas</option>
-            <option value="cedroHimalaya3">Cedro del Himalaya</option>
-            <option value="cirueloRojo2">Ciruelo Rojo</option>
-            <option value="laurelCerezo1">Laurel Cerezo</option>
-            <option value="pinoPinonero1">Pino Piñonero</option>
-            <option value="pinoPinonero2">Pino Piñonero</option>
-            <option value="pinoPinonero3">Pino Piñonero</option>
-            <option value="pinoPinonero4">Pino Piñonero</option>
-            <option value="pinoPinonero5">Pino Piñonero</option>
-            <option value="pinsapo2">Pinsapo</option>
-            <option value="tejo1">Tejo</option>
-            <option value="tilo1">Tilo</option>
-            <option value="tuyaCanada1">Tuya de Canadá</option>
-            <option value="tuyaCanada2">Tuya de Canadá</option>
-            <option value="tuyaCanada3">Tuya de Canadá</option>
+            {% for l in individuoHospitalMilitar %}
+            {% if l.idIndividuo == 53 %}
+              <option value="abetoRojo1">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 54 %}
+              <option value="abetoRojo2">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 55 %}
+              <option value="abetoRojo3">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 56 %}
+              <option value="abetoRojo4">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 57 %}
+              <option value="abetoRojo5">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 58 %}
+              <option value="cedroAtlas3">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 59 %}
+              <option value="cedroAtlas4">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 60 %}
+              <option value="cedroAtlas5">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 61 %}
+              <option value="cedroAtlas6">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 62 %}
+              <option value="cedroAtlas7">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 63 %}
+              <option value="cedroAtlas8">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 64 %}
+              <option value="cedroHimalaya3">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 68 %}
+              <option value="cirueloRojo2">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 67 %}
+              <option value="laurelCerezo1">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 44 %}
+              <option value="pinoPinonero1">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 45 %}
+              <option value="pinoPinonero2">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 46 %}
+              <option value="pinoPinonero3">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 47 %}
+              <option value="pinoPinonero4">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 48 %}
+              <option value="pinoPinonero5">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 66 %}
+              <option value="pinsapo2">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 49 %}
+              <option value="tejo1">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 65 %}
+              <option value="tilo1">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 50 %}
+              <option value="tuyaCanada1">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 51 %}
+              <option value="tuyaCanada2">{{l.nombreComun}}</option>
+              {% endif %}
+            {% if l.idIndividuo == 52 %}
+              <option value="tuyaCanada3">{{l.nombreComun}}</option>
+            {% endif %}
+          {% endfor %}
             </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
             </div>
 {% endblock content %}

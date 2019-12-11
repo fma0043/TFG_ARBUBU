@@ -20,23 +20,59 @@
             <div class="listado" style="top: 200px;left: 1010px;">
             <form name="link" ><select name="menu">
             <option selected="selected">Elige el árbol deseado</option>
-            <option value="abeto1">Abeto</option>
-            <option value="abeto2">Abeto</option>
-            <option value="cedroAtlas2">Cedro del Atlas</option>
-            <option value="chopo">Chopo</option>
-            <option value="chopoCanadiense2">Chopo Canadiense</option>
-            <option value="chopoCanadiense3">Chopo Canadiense</option>
-            <option value="hiedra1">Hiedra</option>
-            <option value="peral">Peral</option>
-            <option value="pinsapo1">Pinsapo</option>
-            <option value="platanoSombra2">Plátano de Sombra</option>
-            <option value="platanoSombra3">Plátano de Sombra</option>
-            <option value="platanoSombra4">Plátano de Sombra</option>
-            <option value="platanoSombra5">Plátano de Sombra</option>
-            <option value="platanoSombra6">Plátano de Sombra</option>
-            <option value="olmoSiberiano1">Olmo Siberiano</option>
-            <option value="sauco">Saúco</option>
-            <option value="tuyaGigante1">Tuya Gigante</option>
+            {% for l in individuoEducacion %}
+                {% if l.idIndividuo == 78 %}
+                <option value="abeto1">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 79 %}
+                <option value="abeto2">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 77 %}
+                <option value="cedroAtlas2">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 80 %}
+                <option value="chopo">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 82 %}
+                <option value="chopoCanadiense2">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 83 %}
+                <option value="chopoCanadiense3">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 75 %}
+                <option value="hiedra1">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 81 %}
+                <option value="peral">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 76 %}
+                <option value="pinsapo1">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 69 %}
+                <option value="platanoSombra2">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 70 %}
+                <option value="platanoSombra3">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 71 %}
+                <option value="platanoSombra4">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 72 %}
+                <option value="platanoSombra5">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 73 %}
+                <option value="platanoSombra6">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 84 %}
+                <option value="olmoSiberiano1">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 85 %}
+                <option value="sauco">{{l.nombreComun}}</option>
+                {% endif %}
+                {% if l.idIndividuo == 74 %}
+                <option value="tuyaGigante1">{{l.nombreComun}}</option>
+                {% endif %}
+            {% endfor %}
             </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
             </div>
 {% endblock content %}
