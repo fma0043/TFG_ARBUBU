@@ -1,0 +1,42 @@
+{% extends "base3.html" %}
+{% load static %}
+
+{% block title %}Individuos{% endblock %}
+{% block content %}
+<link rel="stylesheet"  href="{% static 'css/estilos2.css' %}">
+
+              <div class="ubicacion">
+                <h1>UBICACIÓN</h1>
+              </div>
+
+            <div class="facultades">
+                <h3><a href="individuoRioVena">CAMPUS RÍO VENA</a></h3>
+                <h3><a href="individuoHospitalDelRey">HOSPITAL DEL REY</a></h3>
+                <h3><a href="individuoHospitalMilitar">HOSPITAL MILITAR</a></h3>
+                <h3><a href="individuos"style="background:#14DF14">CAMPUS DE EDUCACIÓN</a></h3>
+                <h3><a href="individuoCiencias">CAMPUS DE CIENCIAS</a></h3>
+            </div>
+
+            <div class="listado" style="top: 200px;left: 1010px;">
+            <form name="link" ><select name="menu">
+            <option selected="selected">Elige el árbol deseado</option>
+            <option value="abeto1">Abeto</option>
+            <option value="abeto2">Abeto</option>
+            <option value="cedroAtlas2">Cedro del Atlas</option>
+            <option value="chopo">Chopo</option>
+            <option value="chopoCanadiense2">Chopo Canadiense</option>
+            <option value="chopoCanadiense3">Chopo Canadiense</option>
+            <option value="hiedra1">Hiedra</option>
+            <option value="peral">Peral</option>
+            <option value="pinsapo1">Pinsapo</option>
+            <option value="platanoSombra2">Plátano de Sombra</option>
+            <option value="platanoSombra3">Plátano de Sombra</option>
+            <option value="platanoSombra4">Plátano de Sombra</option>
+            <option value="platanoSombra5">Plátano de Sombra</option>
+            <option value="platanoSombra6">Plátano de Sombra</option>
+            <option value="olmoSiberiano1">Olmo Siberiano</option>
+            <option value="sauco">Saúco</option>
+            <option value="tuyaGigante1">Tuya Gigante</option>
+            </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+            </div>
+{% endblock content %}

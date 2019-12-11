@@ -1023,6 +1023,36 @@ class Abeto2(ListView):
     model = Individuos
     context_object_name = 'abeto2'
 
+class IndividuosRioVena(ListView):
+
+    model = Individuos
+    context_object_name = 'individuoRioVena'
+    template_name = "principal/individuos-rio-vena.html"
+
+class IndividuosHospitalDelRey(ListView):
+
+    model = Individuos
+    context_object_name = 'individuoHospitalDelRey'
+    template_name = "principal/individuos-hospital-del-rey.html"
+
+class IndividuosHospitalMilitar(ListView):
+
+    model = Individuos
+    context_object_name = 'individuoHospitalMilitar'
+    template_name = "principal/individuos-hospital-militar.html"
+
+class IndividuosEducacion(ListView):
+
+    model = Individuos
+    context_object_name = 'individuoEducacion'
+    template_name = "principal/individuos-educacion.html"
+
+class IndividuosCiencias(ListView):
+
+    model = Individuos
+    context_object_name = 'individuoCiencias'
+    template_name = "principal/individuos-ciencias.html"
+
 def importar(request):
 
    if request.method == 'POST':

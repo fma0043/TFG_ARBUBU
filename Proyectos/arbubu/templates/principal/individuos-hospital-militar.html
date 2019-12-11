@@ -1,0 +1,50 @@
+{% extends "base3.html" %}
+{% load static %}
+
+{% block title %}Individuos{% endblock %}
+{% block content %}
+<link rel="stylesheet"  href="{% static 'css/estilos2.css' %}">
+
+              <div class="ubicacion">
+                <h1>UBICACIÓN</h1>
+              </div>
+
+            <div class="facultades">
+                <h3><a href="individuoRioVena">CAMPUS RÍO VENA</a></h3>
+                <h3><a href="individuoHospitalDelRey">HOSPITAL DEL REY</a></h3>
+                <h3><a href="individuos"style="background:#14DF14">HOSPITAL MILITAR</a></h3>
+                <h3><a href="individuoEducacion">CAMPUS DE EDUCACIÓN</a></h3>
+                <h3><a href="individuoCiencias">CAMPUS DE CIENCIAS</a></h3>
+            </div>
+
+            <div class="listado" style="top: 200px;left: 1010px;">
+            <form name="link" ><select name="menu">
+            <option selected="selected">Elige el árbol deseado</option>
+            <option value="abetoRojo1">Abeto Rojo</option>
+            <option value="abetoRojo2">Abeto Rojo</option>
+            <option value="abetoRojo3">Abeto Rojo</option>
+            <option value="abetoRojo4">Abeto Rojo</option>
+            <option value="abetoRojo5">Abeto Rojo</option>
+            <option value="cedroAtlas3">Cedro del Atlas</option>
+            <option value="cedroAtlas4">Cedro del Atlas</option>
+            <option value="cedroAtlas5">Cedro del Atlas</option>
+            <option value="cedroAtlas6">Cedro del Atlas</option>
+            <option value="cedroAtlas7">Cedro del Atlas</option>
+            <option value="cedroAtlas8">Cedro del Atlas</option>
+            <option value="cedroHimalaya3">Cedro del Himalaya</option>
+            <option value="cirueloRojo2">Ciruelo Rojo</option>
+            <option value="laurelCerezo1">Laurel Cerezo</option>
+            <option value="pinoPinonero1">Pino Piñonero</option>
+            <option value="pinoPinonero2">Pino Piñonero</option>
+            <option value="pinoPinonero3">Pino Piñonero</option>
+            <option value="pinoPinonero4">Pino Piñonero</option>
+            <option value="pinoPinonero5">Pino Piñonero</option>
+            <option value="pinsapo2">Pinsapo</option>
+            <option value="tejo1">Tejo</option>
+            <option value="tilo1">Tilo</option>
+            <option value="tuyaCanada1">Tuya de Canadá</option>
+            <option value="tuyaCanada2">Tuya de Canadá</option>
+            <option value="tuyaCanada3">Tuya de Canadá</option>
+            </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+            </div>
+{% endblock content %}
