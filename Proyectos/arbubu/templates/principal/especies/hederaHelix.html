@@ -33,11 +33,14 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" style="left: 970px;">
-              <a href="hiedra1">HIEDRA (CAMPUS DE EDUCACIÓN)</a>
-              <br><br>
-              <a href="hiedra2">HIEDRA (CAMPUS DE RÍO VENA)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 990px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="hiedra1">{{l.nombreComunEspecie}} (Campus de Educación)</option>
+                <option value="hiedra2">{{l.nombreComunEspecie}} (Campus Río Vena)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

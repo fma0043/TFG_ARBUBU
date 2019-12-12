@@ -33,11 +33,14 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" style="left: 970px;">
-              <a href="laurelCerezo1">LAUREL CEREZO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="laurelCerezo2">LAUREL CEREZO (CAMPUS RÍO VENA)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 980px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="laurelCerezo1">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="laurelCerezo2">{{l.nombreComunEspecie}} (Campus Río Vena)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

@@ -33,11 +33,14 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" style="left: 970px;">
-              <a href="acebo1">ACEBO (CAMPUS DE CIENCIAS)</a>
-              <br><br>
-              <a href="acebo2">ACEBO (CAMPUS DE RÍO VENA)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 990px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="acebo1">{{l.nombreComunEspecie}} (Campus de Ciencias)</option>
+                <option value="acebo2">{{l.nombreComunEspecie}} (Campus Río Vena)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

@@ -33,11 +33,14 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" style="left: 970px;">
-              <a href="cipresArizona1">CIPRÉS DE ARIZONA (CAMPUS DE CIENCIAS)</a>
-              <br><br>
-              <a href="cipresArizona2">CIPRÉS DE ARIZONA (CAMPUS DE CIENCIAS)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 990px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="cipresArizona1">{{l.nombreComunEspecie}} (Campus de Ciencias)</option>
+                <option value="cipresArizona2">{{l.nombreComunEspecie}} (Campus de Ciencias)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

@@ -33,23 +33,20 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" >
-              <a href="abetoRojo1">ABETO ROJO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="abetoRojo2">ABETO ROJO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="abetoRojo3">ABETO ROJO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="abetoRojo4">ABETO ROJO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="abetoRojo5">ABETO ROJO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="abetoRojo6">ABETO ROJO (HOSPITAL DEL REY)</a>
-              <br><br>
-              <a href="abetoRojo7">ABETO ROJO (HOSPITAL DEL REY)</a>
-              <br><br>
-              <a href="abetoRojo8">ABETO ROJO (CAMPUS RÍO VENA)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 990px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="abetoRojo1">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="abetoRojo2">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="abetoRojo3">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="abetoRojo4">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="abetoRojo5">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="abetoRojo6">{{l.nombreComunEspecie}} (Hospital del Rey)</option>
+                <option value="abetoRojo7">{{l.nombreComunEspecie}} (Hospital del Rey)</option>
+                <option value="abetoRojo8">{{l.nombreComunEspecie}} (Campus Río Vena)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

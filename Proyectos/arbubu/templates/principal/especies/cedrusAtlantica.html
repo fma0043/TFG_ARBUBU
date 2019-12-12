@@ -33,24 +33,22 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" style="left: 970px;">
-              <a href="cedroAtlas1">CEDRO DEL ATLAS (CAMPUS DE CIENCIAS)</a>
-              <br><br>
-              <a href="cedroAtlas2">CEDRO DEL ATLAS (CAMPUS DE EDUCACIÓN)</a>
-              <br><br>
-              <a href="cedroAtlas3">CEDRO DEL ATLAS (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="cedroAtlas4">CEDRO DEL ATLAS (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="cedroAtlas5">CEDRO DEL ATLAS (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="cedroAtlas6">CEDRO DEL ATLAS (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="cedroAtlas7">CEDRO DEL ATLAS (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="cedroAtlas8">CEDRO DEL ATLAS (HOSPITAL MILITAR)</a>
-              <br><br>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 1000px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="cedroAtlas1">{{l.nombreComunEspecie}} (Campus de Ciencias)</option>
+                <option value="cedroAtlas2">{{l.nombreComunEspecie}} (Campus de Educación)</option>
+                <option value="cedroAtlas3">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="cedroAtlas4">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="cedroAtlas5">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="cedroAtlas6">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="cedroAtlas7">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="cedroAtlas8">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
+
+
 
             {% endif %}
           {% endfor %}

@@ -33,13 +33,15 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" >
-              <a href="tuyaCanada1">TUYA DE CANADA (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="tuyaCanada2">TUYA DE CANADA (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="tuyaCanada3">TUYA DE CANADA (HOSPITAL MILITAR)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 1000px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="tuyaCanada1">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="tuyaCanada2">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="tuyaCanada3">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

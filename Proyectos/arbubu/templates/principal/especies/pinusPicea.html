@@ -33,17 +33,16 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" >
-              <a href="pinoPinonero1">PINO PIÑONERO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="pinoPinonero1">PINO PIÑONERO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="pinoPinonero1">PINO PIÑONERO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="pinoPinonero1">PINO PIÑONERO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="pinoPinonero1">PINO PIÑONERO (HOSPITAL MILITAR)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 990px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="pinoPinonero1">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="pinoPinonero2">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="pinoPinonero3">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="pinoPinonero4">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

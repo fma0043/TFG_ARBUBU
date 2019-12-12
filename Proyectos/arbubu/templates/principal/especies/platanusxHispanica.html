@@ -33,21 +33,19 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" >
-              <a href="platanoSombra1">PLÁTANO DE SOMBRA (CAMPUS DE CIENCIAS)</a>
-              <br><br>
-              <a href="platanoSombra2">PLÁTANO DE SOMBRA (CAMPUS DE EDUCACIÓN)</a>
-              <br><br>
-              <a href="platanoSombra3">PLÁTANO DE SOMBRA (CAMPUS DE EDUCACIÓN)</a>
-              <br><br>
-              <a href="platanoSombra4">PLÁTANO DE SOMBRA (CAMPUS DE EDUCACIÓN)</a>
-              <br><br>
-              <a href="platanoSombra5">PLÁTANO DE SOMBRA (CAMPUS DE EDUCACIÓN)</a>
-              <br><br>
-              <a href="platanoSombra6">PLÁTANO DE SOMBRA (CAMPUS DE EDUCACIÓN)</a>
-              <br><br>
-              <a href="platanoSombra7">PLÁTANO DE SOMBRA (CAMPUS RÍO VENA)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 980px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="platanoSombra1">{{l.nombreComunEspecie}} (Campus de Ciencias)</option>
+                <option value="platanoSombra2">{{l.nombreComunEspecie}} (Campus de Educación)</option>
+                <option value="platanoSombra3">{{l.nombreComunEspecie}} (Campus de Educación)</option>
+                <option value="platanoSombra4">{{l.nombreComunEspecie}} (Campus de Educación)</option>
+                <option value="platanoSombra5">{{l.nombreComunEspecie}} (Campus de Educación)</option>
+                <option value="platanoSombra6">{{l.nombreComunEspecie}} (Campus de Educación)</option>
+                <option value="platanoSombra7">{{l.nombreComunEspecie}} (Campus Río Vena)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

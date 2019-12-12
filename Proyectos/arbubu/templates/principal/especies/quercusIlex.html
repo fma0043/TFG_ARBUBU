@@ -33,9 +33,13 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" >
-              <a href="encina">ENCINA (HOSPITAL DEL REY)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 1020px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="encina">{{l.nombreComunEspecie}} (Hospital del Rey)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}

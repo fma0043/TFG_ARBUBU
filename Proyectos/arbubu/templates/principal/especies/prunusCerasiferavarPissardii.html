@@ -33,15 +33,16 @@
               <div class="individuos">
                 <h1>Individuos</h1>
               </div>
-            <div class="nombreIndividuos" style="left: 970px;">
-              <a href="cirueloRojo1">CIRUELO ROJO (CAMPUS DE CIENCIAS)</a>
-              <br><br>
-              <a href="cirueloRojo2">CIRUELO ROJO (HOSPITAL MILITAR)</a>
-              <br><br>
-              <a href="cirueloRojo3">CIRUELO ROJO (HOSPITAL DEL REY)</a>
-              <br><br>
-              <a href="cirueloRojo4">CIRUELO ROJO (CAMPUS RÍO VENA)</a>
-            </div>
+
+              <div class="listado" style="top: 240px;left: 980px;">
+              <form name="link" ><select name="menu">
+              <option selected="selected">Elige el árbol deseado</option>
+                <option value="cirueloRojo1">{{l.nombreComunEspecie}} (Campus de Ciencias)</option>
+                <option value="cirueloRojo2">{{l.nombreComunEspecie}} (Hospital Militar)</option>
+                <option value="cirueloRojo3">{{l.nombreComunEspecie}} (Hospital del Rey)</option>
+                <option value="cirueloRojo4">{{l.nombreComunEspecie}} (Campus Río Vena)</option>
+              </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+              </div>
 
             {% endif %}
           {% endfor %}
