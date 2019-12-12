@@ -4,6 +4,27 @@
 {% block title %}Individuos{% endblock %}
 {% block content %}
 <link rel="stylesheet"  href="{% static 'css/estilos2.css' %}">
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+<div id="map" style="right:0px; top: 90px;width: 500px;height: 400px;box-shadow: 5px 5px 5px #888;margin:10px 0 10px 10px;"><script>
+  var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    osm = L.tileLayer(osmUrl, {
+      maxZoom: 28,
+      attribution: osmAttrib
+    });
+  var estiloPopup = {'maxWidth': '300'};
+  var map = L.map('map').setView([42.350, -3.688], 17).addLayer(osm);
+
+  {% comment %}
+    for ( var i=0; i < sauco.length; ++i ) {
+       L.marker( [sauco[i].latitud, sauco[i].longitud] )
+          .bindPopup(sauco[i].nombreComun);
+          .addTo( map );
+    }
+    {% endcomment %}
+</script></div>
 
               <div class="ubicacion">
                 <h1>UBICACIÓN</h1>
@@ -17,7 +38,7 @@
                 <h3><a href="individuoCiencias">CAMPUS DE CIENCIAS</a></h3>
             </div>
 
-            <div class="listado" style="top: 200px;left: 1010px;">
+            <div class="listado" style="top: 200px;left: 510px;">
             <form name="link" ><select name="menu">
             <option selected="selected">Elige el árbol deseado</option>
             {% for l in individuoEducacion %}
