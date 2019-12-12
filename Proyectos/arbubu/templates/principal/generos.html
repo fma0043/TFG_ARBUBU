@@ -2,122 +2,145 @@
 
 {% block title %}Géneros{% endblock %}
 {% block content %}
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
 
-<br><br><br>
-        <div class="centrar familias">
-          <h1 id="container" style="text-align:center;color:#0068DD;">Géneros Existentes</h1>
-          {% comment %}<a href="#container" id="scroll-top" title="Volver arriba" class="scroll"></a>{% endcomment %}
-          <br>
+        <div class="tituloEspecies">
+          <h1>Géneros Existentes</h1>
+        </div>
+
+          <div class="listado" style="top: 240px;left: 250px;">
+          <form name="link" ><select name="menu">
+          <option selected="selected">Elige el género deseado</option>
           {% for l in genero %}
             {% if l.idGenero == 2 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="abies">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 32 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="ailanthus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 9 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="catalpaG">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 35 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="cedrus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 19 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="cercis">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 23 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="cupressus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 17 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="fagus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 34 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="ficus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 16 %}
-              <a href="hederaHelix" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="hedera">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 33 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="hibiscus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 4 %}
-              <a href="ilexAquifolium" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="ilex">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 7 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="juglans">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 18 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="laburnum">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 22 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="ligustrum">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 20 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="liriodendron">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 25 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="lonicera">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 24 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="morus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 3 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="olea">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 5 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="picea">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 36 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="pinus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 12 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="platanus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 26 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="platycladus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 15 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="populus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 1 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="prunus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 29 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="pyrus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 21 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="quercus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 13 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="robinia">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 6 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="salix">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 30 %}
-              <a href="sambucusNigra" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="sambucus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 31 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="sequoiadendron">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 11 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="syringa">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 10 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="tamarix">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 27 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="taxus">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 8 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="thuja">{{l.nombreGenero}}</option>
             {% endif %}
             {% if l.idGenero == 28 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+              <option value="tilia">{{l.nombreGenero}}</option>
             {% endif %}
-            {% if l.idGenero == 14 %}
-              <a href="" style="text-decoration:none">{{l.nombreGenero}}</a>
+            {% if l.idGenero ==  14%}
+              <option value="ulmus">{{l.nombreGenero}}</option>
             {% endif %}
           {% endfor %}
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
           </div>
+
+          <div id="map" style="left:0px; top: 100px;width: 600px;height: 380px;box-shadow: 5px 5px 5px #888;margin:10px 0 10px 10px;"><script>
+            var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+              osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+              osm = L.tileLayer(osmUrl, {
+                maxZoom: 28,
+                attribution: osmAttrib
+              });
+            var estiloPopup = {'maxWidth': '300'};
+            var map = L.map('map').setView([42.350, -3.688], 17).addLayer(osm);
+
+            {% comment %}
+              for ( var i=0; i < sauco.length; ++i ) {
+                 L.marker( [sauco[i].latitud, sauco[i].longitud] )
+                    .bindPopup(sauco[i].nombreComun);
+                    .addTo( map );
+              }
+              {% endcomment %}
+          </script></div>
 {% endblock content %}
