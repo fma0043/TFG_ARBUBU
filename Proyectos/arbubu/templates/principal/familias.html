@@ -2,83 +2,106 @@
 
 {% block title %}Familias{% endblock %}
 {% block content %}
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
 
-<br><br><br>
-        <div class="centrar familias">
-          <h1 id="container" style="text-align:center;color:#0068DD;">Familias Existentes</h1>
-          {% comment %}<a href="#container" id="scroll-top" title="Volver arriba" class="scroll"></a>{% endcomment %}
-          <br>
+        <div class="tituloEspecies">
+          <h1>Familias Existentes</h1>
+        </div>
+
+          <div class="listado" style="top: 240px;left: 250px;">
+          <form name="link" ><select name="menu">
+          <option selected="selected">Elige la familia deseada</option>
           {% for l in familia %}
             {% if l.idFamilia == 37 %}
-              <a href="sambucus" style="text-decoration:none">{{l.nombreFamilia}}</a>
+              <option value="adoxaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 3  %}
-              <a href="ilex" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 3 %}
+              <option value="aquifoliaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 33  %}
-              <a href="hedera" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 33 %}
+              <option value="araliaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 34  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 34 %}
+              <option value="bignoniaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 6  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 6 %}
+              <option value="caprifoliaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 9  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 9 %}
+              <option value="cupresaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 35  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 35 %}
+              <option value="fabaceaes">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 12  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 12 %}
+              <option value="fagaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 13  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 13 %}
+              <option value="juglandaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 15  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 15 %}
+              <option value="leguminosas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 38  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 36 %}
+              <option value="magnoliaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 36  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 38 %}
+              <option value="malvaceae">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 18  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 18 %}
+              <option value="moraceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 19  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 19 %}
+              <option value="oleaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 21  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 21 %}
+              <option value="pinaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 22  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 22 %}
+              <option value="platanaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 25  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 25 %}
+              <option value="rosaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 26  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 26 %}
+              <option value="salicaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 27  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 27 %}
+              <option value="simaroubaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 29  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 29 %}
+              <option value="tamariacaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 30  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 30 %}
+              <option value="taxaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 31  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 31 %}
+              <option value="tiliaceas">{{l.nombreFamilia}}</option>
             {% endif %}
-            {% if l.idFamilia == 32  %}
-              <a href="" style="text-decoration:none">{{l.nombreFamilia}}</a>
+            {% if l.idFamilia == 32 %}
+              <option value="ulmaceas">{{l.nombreFamilia}}</option>
             {% endif %}
           {% endfor %}
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
           </div>
+
+          <div id="map" style="left:0px; top: 100px;width: 600px;height: 380px;box-shadow: 5px 5px 5px #888;margin:10px 0 10px 10px;"><script>
+            var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+              osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+              osm = L.tileLayer(osmUrl, {
+                maxZoom: 28,
+                attribution: osmAttrib
+              });
+            var estiloPopup = {'maxWidth': '300'};
+            var map = L.map('map').setView([42.350, -3.688], 17).addLayer(osm);
+
+            {% comment %}
+              for ( var i=0; i < sauco.length; ++i ) {
+                 L.marker( [sauco[i].latitud, sauco[i].longitud] )
+                    .bindPopup(sauco[i].nombreComun);
+                    .addTo( map );
+              }
+              {% endcomment %}
+          </script></div>
 {% endblock content %}
