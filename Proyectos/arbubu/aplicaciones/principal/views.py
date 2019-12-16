@@ -43,29 +43,365 @@ class IndexView(TemplateView):
 
     template_name = "principal/index.html"
 
+class Adoxaceas(ListView):
+
+    template_name = "principal/familias/adoxaceas.html"
+    model = Familia
+    context_object_name = 'adoxaceas'
+
+class Aquifoliaceas(ListView):
+
+    template_name = "principal/familias/aquifoliaceas.html"
+    model = Familia
+    context_object_name = 'aquifoliaceas'
+
+class Araliaceas(ListView):
+
+    template_name = "principal/familias/araliaceas.html"
+    model = Familia
+    context_object_name = 'araliaceas'
+
+class Bignoniaceas(ListView):
+
+    template_name = "principal/familias/bignoniaceas.html"
+    model = Familia
+    context_object_name = 'bignoniaceas'
+
+class Caprifoliaceas(ListView):
+
+    template_name = "principal/familias/caprifoliaceas.html"
+    model = Familia
+    context_object_name = 'caprifoliaceas'
+
+class Cupresaceas(ListView):
+
+    template_name = "principal/familias/cupresaceas.html"
+    model = Familia
+    context_object_name = 'cupresaceas'
+
+class Fabaceaes(ListView):
+
+    template_name = "principal/familias/fabaceaes.html"
+    model = Familia
+    context_object_name = 'fabaceaes'
+
+class Fagaceas(ListView):
+
+    template_name = "principal/familias/fagaceas.html"
+    model = Familia
+    context_object_name = 'fagaceas'
+
+class Juglandaceas(ListView):
+
+    template_name = "principal/familias/juglandaceas.html"
+    model = Familia
+    context_object_name = 'juglandaceas'
+
+class Leguminosas(ListView):
+
+    template_name = "principal/familias/leguminosas.html"
+    model = Familia
+    context_object_name = 'leguminosas'
+
+class Magnoliaceas(ListView):
+
+    template_name = "principal/familias/magnoliaceas.html"
+    model = Familia
+    context_object_name = 'magnoliaceas'
+
+class Malvaceae(ListView):
+
+    template_name = "principal/familias/malvaceae.html"
+    model = Familia
+    context_object_name = 'malvaceae'
+
+class Moraceas(ListView):
+
+    template_name = "principal/familias/moraceas.html"
+    model = Familia
+    context_object_name = 'moraceas'
+
+class Oleaceas(ListView):
+
+    template_name = "principal/familias/oleaceas.html"
+    model = Familia
+    context_object_name = 'oleaceas'
+
+class Pinaceas(ListView):
+
+    template_name = "principal/familias/pinaceas.html"
+    model = Familia
+    context_object_name = 'pinaceas'
+
+class Platanaceas(ListView):
+
+    template_name = "principal/familias/platanaceas.html"
+    model = Familia
+    context_object_name = 'platanaceas'
+
+class Rosaceas(ListView):
+
+    template_name = "principal/familias/rosaceas.html"
+    model = Familia
+    context_object_name = 'rosaceas'
+
+class Salicaceas(ListView):
+
+    template_name = "principal/familias/salicaceas.html"
+    model = Familia
+    context_object_name = 'salicaceas'
+
+class Simaroubaceas(ListView):
+
+    template_name = "principal/familias/simaroubaceas.html"
+    model = Familia
+    context_object_name = 'simaroubaceas'
+
+class Tamariacaceas(ListView):
+
+    template_name = "principal/familias/tamariacaceas.html"
+    model = Familia
+    context_object_name = 'tamariacaceas'
+
+class Taxaceas(ListView):
+
+    template_name = "principal/familias/taxaceas.html"
+    model = Familia
+    context_object_name = 'taxaceas'
+
+class Tiliaceas(ListView):
+
+    template_name = "principal/familias/tiliaceas.html"
+    model = Familia
+    context_object_name = 'tiliaceas'
+
+class Ulmaceas(ListView):
+
+    template_name = "principal/familias/ulmaceas.html"
+    model = Familia
+    context_object_name = 'ulmaceas'
+
 class Familias(ListView):
 
     template_name = "principal/familias.html"
     model = Familia
     context_object_name = 'familia'
 
-class Sambucus(ListView):
+class Abies(ListView):
 
-    template_name = "principal/sambucus.html"
+    template_name = "principal/generos/abies.html"
     model = Genero
-    context_object_name = 'sambucus'
+    context_object_name = 'abies'
 
-class Ilex(ListView):
+class Ailanthus(ListView):
 
-    template_name = "principal/ilex.html"
+    template_name = "principal/generos/ailanthus.html"
     model = Genero
-    context_object_name = 'ilex'
+    context_object_name = 'ailanthus'
+
+class CatalpaG(ListView):
+
+    template_name = "principal/generos/catalpaG.html"
+    model = Genero
+    context_object_name = 'catalpaG'
+
+class Cedrus(ListView):
+
+    template_name = "principal/generos/cedrus.html"
+    model = Genero
+    context_object_name = 'cedrus'
+
+class Cercis(ListView):
+
+    template_name = "principal/generos/cercis.html"
+    model = Genero
+    context_object_name = 'cercis'
+
+class Cupressus(ListView):
+
+    template_name = "principal/generos/cupressus.html"
+    model = Genero
+    context_object_name = 'cupressus'
+
+class Fagus(ListView):
+
+    template_name = "principal/generos/fagus.html"
+    model = Genero
+    context_object_name = 'fagus'
+
+class Ficus(ListView):
+
+    template_name = "principal/generos/ficus.html"
+    model = Genero
+    context_object_name = 'ficus'
 
 class Hedera(ListView):
 
-    template_name = "principal/hedera.html"
+    template_name = "principal/generos/hedera.html"
     model = Genero
     context_object_name = 'hedera'
+
+class Hibiscus(ListView):
+
+    template_name = "principal/generos/hibiscus.html"
+    model = Genero
+    context_object_name = 'hibiscus'
+
+class Ilex(ListView):
+
+    template_name = "principal/generos/ilex.html"
+    model = Genero
+    context_object_name = 'ilex'
+
+class Juglans(ListView):
+
+    template_name = "principal/generos/juglans.html"
+    model = Genero
+    context_object_name = 'juglans'
+
+class Laburnum(ListView):
+
+    template_name = "principal/generos/laburnum.html"
+    model = Genero
+    context_object_name = 'laburnum'
+
+class Ligustrum(ListView):
+
+    template_name = "principal/generos/ligustrum.html"
+    model = Genero
+    context_object_name = 'ligustrum'
+
+class Liriodendron(ListView):
+
+    template_name = "principal/generos/liriodendron.html"
+    model = Genero
+    context_object_name = 'liriodendron'
+
+class Lonicera(ListView):
+
+    template_name = "principal/generos/lonicera.html"
+    model = Genero
+    context_object_name = 'lonicera'
+
+class Morus(ListView):
+
+    template_name = "principal/generos/morus.html"
+    model = Genero
+    context_object_name = 'morus'
+
+class Olea(ListView):
+
+    template_name = "principal/generos/olea.html"
+    model = Genero
+    context_object_name = 'olea'
+
+class Picea(ListView):
+
+    template_name = "principal/generos/picea.html"
+    model = Genero
+    context_object_name = 'picea'
+
+class Pinus(ListView):
+
+    template_name = "principal/generos/pinus.html"
+    model = Genero
+    context_object_name = 'pinus'
+
+class Platanus(ListView):
+
+    template_name = "principal/generos/platanus.html"
+    model = Genero
+    context_object_name = 'platanus'
+
+class Platycladus(ListView):
+
+    template_name = "principal/generos/platycladus.html"
+    model = Genero
+    context_object_name = 'platycladus'
+
+class Populus(ListView):
+
+    template_name = "principal/generos/populus.html"
+    model = Genero
+    context_object_name = 'populus'
+
+class Prunus(ListView):
+
+    template_name = "principal/generos/prunus.html"
+    model = Genero
+    context_object_name = 'prunus'
+
+class Pyrus(ListView):
+
+    template_name = "principal/generos/pyrus.html"
+    model = Genero
+    context_object_name = 'pyrus'
+
+class Quercus(ListView):
+
+    template_name = "principal/generos/quercus.html"
+    model = Genero
+    context_object_name = 'quercus'
+
+class Robinia(ListView):
+
+    template_name = "principal/generos/robinia.html"
+    model = Genero
+    context_object_name = 'robinia'
+
+class Salix(ListView):
+
+    template_name = "principal/generos/salix.html"
+    model = Genero
+    context_object_name = 'salix'
+
+class Sambucus(ListView):
+
+    template_name = "principal/generos/sambucus.html"
+    model = Genero
+    context_object_name = 'sambucus'
+
+class Sequoiadendron(ListView):
+
+    template_name = "principal/generos/sequoiadendron.html"
+    model = Genero
+    context_object_name = 'sequoiadendron'
+
+class Syringa(ListView):
+
+    template_name = "principal/generos/syringa.html"
+    model = Genero
+    context_object_name = 'syringa'
+
+class Tamarix(ListView):
+
+    template_name = "principal/generos/tamarix.html"
+    model = Genero
+    context_object_name = 'tamarix'
+
+class Taxus(ListView):
+
+    template_name = "principal/generos/taxus.html"
+    model = Genero
+    context_object_name = 'taxus'
+
+class Thuja(ListView):
+
+    template_name = "principal/generos/thuja.html"
+    model = Genero
+    context_object_name = 'thuja'
+
+class Tilia(ListView):
+
+    template_name = "principal/generos/tilia.html"
+    model = Genero
+    context_object_name = 'tilia'
+
+class Ulmus(ListView):
+
+    template_name = "principal/generos/ulmus.html"
+    model = Genero
+    context_object_name = 'ulmus'
 
 class AbiesAlba(ListView):
 
