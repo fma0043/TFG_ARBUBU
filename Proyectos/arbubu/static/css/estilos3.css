@@ -1,29 +1,6 @@
 
 body {
-	background:#f2f2f2;
-}
-
-.main {
-  position: absolute;
-	width: 600px;
-	right: 0px;
-	top: 190px;
-	display: block;
-	clear: both;
-}
-
-.nombreComun{
-	position: absolute;
-	top: 170px;
-	color:#3B937B;
-	left: 240px;
-}
-
-.nombreCientifico{
-	position: absolute;
-	top: 210px;
-	color:#20C195;
-	left: 190px;
+	background:#FFFFFF;
 }
 
 .restoCaracteristicas{
@@ -32,33 +9,21 @@ body {
 	left: 350px;
 }
 
-.nombreIndividuos{
-	position: absolute;
-	left: 1000px;
-	top: 249px;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-}
-
 .individuos{
 	position: absolute;
 	left: 835px;
 	top: 213px;
-	color:#3B937B;
+	color:#59A652;
 }
 
-.nombreIndividuos a:hover {
-	background: url('../imagenes/bg_nav_h.png');
-}
 
 .restoCaracteristicas h3{
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	color: #3B937B;
+	border: 1px solid #59A652;
+	color: #798F2E;
 }
 
 .restoCaracteristicas a{
-	color: #20C195;
+	color: #59A652;
 }
 
 .listado{
@@ -69,17 +34,8 @@ body {
 
 #cuerpo{
   margin: 20px;
-  background: #A6F1EE;
+  background: #FFFFFF;
 }
-/*
-.contenedor {
-  width: 960px;
-  position: relative;
-  left: 50%;
-  margin-left: -480px;
-  display: block;
-  clear: both;
-}*/
 
 
 #map {
@@ -94,7 +50,7 @@ body {
   position: absolute;
   right: : 50%;
   margin-right: -600px;
-  background-color: #A6F1EE;
+  background-color: #FFFFFF;
   display: block;
   clear: both;
 }
@@ -137,9 +93,9 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background: url('../imagenes/bg_nav.png') repeat-x left top;
+	background: #798F2E;
 	float: left;
-	border-bottom: 1px solid #000;
+	border: 1px solid #59A652;
 	width: 100%;
   color: #663900;
 
@@ -155,52 +111,41 @@ body {
 	font: bold 1em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
 }
 #princNav li a:hover {
-	background: url('../imagenes/bg_nav_h.png');
+	background: #596536;
 }
 
 #pie {
   position: absolute;
   width: 99.2%;
-  top: 590px;
+  top: 620px;
 	padding: 5px;
-	border-top: 1px solid #000;
-	background: #9EEB9D;
+	border: 1px solid #59A652;
+	background: #798F2E;
 	font-weight: bold;
-	color: #000000;
+	color: #FFFFFF;
 }
 
-
-
-.contenido h3{
-  display: inline-block;
-  width: 99%;
-  background-color: #FFF;
-  border: #c7c7c7 1px solid;
-  font-style: italic;
-  color:#626E50;
-  padding: 5px;
+.ubicacion{
+	position: absolute;
+	top: 170px;
+	color:#798F2E;
+	left: 240px;
 }
 
-.contenido h3:hover{
-  box-shadow: #555 0 2px 7px;
+.facultades{
+	position: absolute;
+	top: 240px;
+	left: 210px;
+	padding: 10px;
+	color: #59A652;
 }
 
-.box{
-  display: inline-block;
-  width: 98%;
-  background-color: #FFF;
-  font-style: italic;
-  color:#626E50;
-  padding: 5px;
-  margin: 10px 0 10px 0;
-  background: #A6F1EE;
+.facultades h3{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-decoration: none;
 }
 
-.individuo h3{
-  display: inline-block;
-  width: 99%;
-  background-color: #A6F1EE;
-  font-style: italic;
-  color:#626E50;
-  padding: 0px;
+.facultades h3 a:link,a:visited,a:hover,a:active{
+	color: #59A652;
 }

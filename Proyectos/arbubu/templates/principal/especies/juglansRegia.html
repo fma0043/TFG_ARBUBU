@@ -1,11 +1,8 @@
-{% extends "base3.html" %}
+{% extends "base2.html" %}
 {% load static %}
 
 {% block title %}Juglans Regia{% endblock %}
 {% block content %}
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-<link rel="stylesheet"  href="{% static 'css/estilos2.css' %}">
 
               <div class="nombreComun" style="left: 385px;top:150px;">
                 {% for l in juglansRegia %}

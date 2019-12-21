@@ -1,6 +1,6 @@
 
 body {
-	background:#f2f2f2;
+	background:#FFFFFF;
 }
 
 .main {
@@ -12,9 +12,8 @@ body {
 	clear: both;
 }
 
-
 .slidesjs-pagination {
-	background:#424242;
+	background:#CFD89E;
 	list-style:none;
 	overflow:hidden;
   margin:0;
@@ -33,15 +32,15 @@ body {
 }
 
 .slidesjs-pagination li a:hover {
-	background:#000;
+	background:#59A652;
 }
 
 .slides .active {
-	background:#000;
+	background:#798F2E;
 }
 
 .slidesjs-navigation{
-	background:#000;
+	background:#798F2E;
 	color:#fff;
 	text-decoration:none;
 	display:inline-block;
@@ -49,18 +48,17 @@ body {
 	float:right;
 }
 
-
 .nombreComun{
 	position: absolute;
 	top: 170px;
-	color:#3B937B;
+	color:#798F2E;
 	left: 240px;
 }
 
 .nombreCientifico{
 	position: absolute;
 	top: 210px;
-	color:#20C195;
+	color:#59A652;
 	left: 190px;
 }
 
@@ -70,90 +68,24 @@ body {
 	padding: 10px;
 }
 
-.nombreIndividuos{
-	position: absolute;
-	left: 1000px;
-	top: 249px;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-}
-
-.individuos{
-	position: absolute;
-	left: 1035px;
-	top: 163px;
-	color:#3B937B;
-}
-
-.nombreIndividuos a:hover {
-	background: url('../imagenes/bg_nav_h.png');
-}
 
 .restoCaracteristicas h3{
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	color: #3B937B;
+	border: 1px solid #59A652;
+	color: #798F2E;
 }
 
 .restoCaracteristicas a{
-	color: #20C195;
-}
-
-.ubicacion{
-	position: absolute;
-	top: 170px;
-	color:#3B937B;
-	left: 240px;
-}
-
-.facultades{
-	position: absolute;
-	top: 240px;
-	left: 210px;
-	padding: 10px;
-	color: #20C195;
-}
-
-.facultades h3{
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
+	color: #59A652;
 }
 
 .listado{
 	position: absolute;
 }
 
-.tituloEspecies{
-	position: absolute;
-	top: 170px;
-	color:#3B937B;
-	left: 240px;
-}
-
-.especies{
-	position: absolute;
-	top: 240px;
-	left: 210px;
-	right: 600px;
-	margin: 10px;
-	padding: 10px;
-	color: #20C195;
-}
-
 #cuerpo{
   margin: 20px;
-  background: #A6F1EE;
+  background: #FFFFFF;
 }
-/*
-.contenedor {
-  width: 960px;
-  position: relative;
-  left: 50%;
-  margin-left: -480px;
-  display: block;
-  clear: both;
-}*/
-
 
 #map {
   float:right;
@@ -167,7 +99,7 @@ body {
   position: absolute;
   right: : 50%;
   margin-right: -600px;
-  background-color: #A6F1EE;
+  background-color: #FFFFFF;
   display: block;
   clear: both;
 }
@@ -210,9 +142,9 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background: url('../imagenes/bg_nav.png') repeat-x left top;
+	background: #798F2E;
 	float: left;
-	border-bottom: 1px solid #000;
+	border: 1px solid #59A652;
 	width: 100%;
   color: #663900;
 
@@ -223,12 +155,19 @@ body {
 	color: #FFFFFF;
 	text-decoration: none;
 	padding: .3em 0.5em;
-	border-right: 1px solid #000;
+	border-right: 1px solid #59A652;
 	display: block;
 	font: bold 1em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
 }
 #princNav li a:hover {
-	background: url('../imagenes/bg_nav_h.png');
+	background: #596536;
+}
+
+.tituloEspecies{
+	position: absolute;
+	top: 170px;
+	color:#59A652;
+	left: 240px;
 }
 
 #pie {
@@ -236,78 +175,9 @@ body {
   width: 99.2%;
   top: 710px;
 	padding: 5px;
-	border-top: 1px solid #000;
-	background: #9EEB9D;
+	border: 1px solid #59A652;
+	background: #798F2E;
 	font-weight: bold;
-	color: #000000;
-}
-
-
-.especies h3{
-    font-size: 26px;
-    color:#0068DD;
-    border: #28843D 3px solid;
-    padding-left: 5px;
-    background-color: #FFF;
-}
-
-.contenido img {
-    display: block;
-    width: 50%;
-    height: auto;
-}
-
-.box{
-  display: inline-block;
-  width: 98%;
-  font-style: italic;
-  padding: 5px;
-}
-
-.box h3{
-  font-size: 20px;
-  padding-left: 5px;
-  border: #28843D 1px solid;
-  margin: 4px;
-}
-
-.box a{
-  font-size: 18px;
-  color: black;
-  align: justify;
-}
-
-
-.contenido h3{
-  display: inline-block;
-  width: 99%;
-  background-color: #FFF;
-  border: #c7c7c7 1px solid;
-  font-style: italic;
-  color:#626E50;
-  padding: 5px;
-}
-
-.contenido h3:hover{
-  box-shadow: #555 0 2px 7px;
-}
-
-.box{
-  display: inline-block;
-  width: 98%;
-  background-color: #FFF;
-  font-style: italic;
-  color:#626E50;
-  padding: 5px;
-  margin: 10px 0 10px 0;
-  background: #A6F1EE;
-}
-
-.individuo h3{
-  display: inline-block;
-  width: 99%;
-  background-color: #A6F1EE;
-  font-style: italic;
-  color:#626E50;
-  padding: 0px;
+	color: #FFFFFF;
+	font:0.8em;
 }

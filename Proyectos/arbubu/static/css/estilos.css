@@ -3,16 +3,15 @@
   font-size: 62.5%;
   font-family: "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
   margin: 20px;
-  background-color: #A6F1EE;
+  background-color: #FFFFFF;
 }
-
 
 .contenedor {
   width: 1300px;
   position: absolute;
   right: : 50%;
   margin-right: -600px;
-  background-color: #A6F1EE;
+  background-color: #FFFFFF;
   display: block;
   clear: both;
 }
@@ -23,10 +22,6 @@
   height:105px;
 }
 
-#banner #cabecera{
-  position:absolute;
-  top:10px;
-}
 
 #banner ul {
   position: absolute;
@@ -35,7 +30,13 @@
 	list-style: none;
   right: 0px;
   top: 20px;
+}
 
+#banner ul h1{
+  color: #59A652;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 2.1em "Trebuchet MS";
 }
 
 #banner li {
@@ -43,15 +44,32 @@
 	margin-left: 10px;
 }
 #banner li a {
-	color: #666666;
+	color: #94AE97;
 	text-decoration: none;
 	text-transform: uppercase;
 	font: 1.1em "Trebuchet MS";
 }
+
 .separador {
 	border-right: 1px solid #666;
 	padding-right:10px;
+  border: #59A652;
+}
 
+.separador a:hover{
+  background: #798F2E;
+}
+
+.fb-like{
+  position: absolute;
+  top:100px;
+  right: 0px;
+}
+
+.twitter{
+  position: absolute;
+  top:100px;
+  left:0px;
 }
 
 #princNav ul {
@@ -60,9 +78,9 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background: url('../imagenes/bg_nav.png') repeat-x left top;
+	background: #798F2E;
 	float: left;
-	border-bottom: 1px solid #000;
+	border: 1px solid #59A652;
 	width: 100%;
   color: #663900;
 
@@ -73,13 +91,13 @@
 	color: #FFFFFF;
 	text-decoration: none;
 	padding: .3em .5em;
-	border-right: 1px solid #000;
+	border: 1px solid #59A652;
 	display: block;
 	font: bold 1.5em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
 }
 
 #princNav li a:hover {
-	background: url('../imagenes/bg_nav_h.png');
+	background: #596536;
 }
 
 #map {
@@ -91,20 +109,13 @@
   margin:10px 0 10px 10px;
 }
 
-.map {
-  weight: 2000px;
-  height: 480px;
-  box-shadow: 5px 5px 5px #888;
-  margin:10px 0 10px 10px;
-}
-
 #pie {
   position: absolute;
   width: 99%;
-  top:600px;
+  top:635px;
 	padding: 5px;
-	border-top: 1px solid #000;
-	background: #9EEB9D;
+	border: 1px solid #59A652;
+	background: #798F2E;
 	font-weight: bold;
-	color: #000000;
+	color: #FFFFFF;
 }
