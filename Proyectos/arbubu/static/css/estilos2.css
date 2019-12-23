@@ -70,7 +70,6 @@ body {
 
 
 .restoCaracteristicas h3{
-	border: 1px solid #59A652;
 	color: #798F2E;
 }
 
@@ -151,11 +150,11 @@ body {
 }
 
 #princNav li a, #princNav li a:link {
-  float: left;
+	float: left;
 	color: #FFFFFF;
 	text-decoration: none;
-	padding: .3em 0.5em;
-	border-right: 1px solid #59A652;
+	padding: .3em .5em;
+	border: 1px solid #59A652;
 	display: block;
 	font: bold 1em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
 }
@@ -175,7 +174,6 @@ body {
   width: 99.2%;
   top: 710px;
 	padding: 5px;
-	border: 1px solid #59A652;
 	background: #798F2E;
 	font-weight: bold;
 	color: #FFFFFF;

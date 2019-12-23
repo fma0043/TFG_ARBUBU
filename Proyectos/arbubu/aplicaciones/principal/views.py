@@ -1482,3 +1482,8 @@ def individuo_print(self, pk=None):
    response.write(buff.getvalue())
    buff.close()
    return response
+
+
+def prueba(request):
+
+   return render(request, 'principal/prueba.html')

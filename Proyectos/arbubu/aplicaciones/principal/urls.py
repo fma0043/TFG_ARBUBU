@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.urls import include, path, re_path
 from . import views,admin
-from aplicaciones.principal.views import SignUpView, SignInView, SignOutView, importar, individuo_print
+from aplicaciones.principal.views import SignUpView, SignInView, SignOutView, importar, individuo_print, prueba
 
 app_name="principal_app"
 
@@ -235,6 +235,7 @@ urlpatterns = [
     url(r'^inicia-sesion/$', views.SignInView.as_view(), name='sign_in'),
     url(r'^cerrar-sesion/$', views.SignOutView.as_view(), name='sign_out'),
     path('import', importar, name='import'),
+    path('prueba',prueba, name='prueba'),
     #path('exportar',exportarExcel.as_view(), name='prueba'),
 
     #path('export', some_view, name='export'),

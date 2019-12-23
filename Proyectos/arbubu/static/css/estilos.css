@@ -62,7 +62,7 @@
 
 .fb-like{
   position: absolute;
-  top:100px;
+  top:50px;
   right: 0px;
 }
 
@@ -106,7 +106,6 @@
   width: 800px;
   height: 380px;
   box-shadow: 5px 5px 5px #888;
-  margin:10px 0 10px 10px;
 }
 
 #pie {
