@@ -1,0 +1,181 @@
+
+body {
+	background:#FFFFFF;
+}
+
+.main {
+  position: absolute;
+	width: 600px;
+	right: 0px;
+	top: 190px;
+	display: block;
+	clear: both;
+}
+
+.slidesjs-pagination {
+	background:#CFD89E;
+	list-style:none;
+	overflow:hidden;
+  margin:0;
+  padding:0;
+}
+
+.slidesjs-pagination li {
+	float:left;
+}
+
+.slidesjs-pagination li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	text-decoration:none;
+}
+
+.slidesjs-pagination li a:hover {
+	background:#59A652;
+}
+
+.slides .active {
+	background:#798F2E;
+}
+
+.slidesjs-navigation{
+	background:#798F2E;
+	color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	padding:13.5px 20px;
+	float:right;
+}
+
+.nombreComun{
+	position: absolute;
+	top: 170px;
+	color:#798F2E;
+	left: 240px;
+}
+
+.nombreCientifico{
+	position: absolute;
+	top: 210px;
+	color:#59A652;
+	left: 190px;
+}
+
+.restoCaracteristicas{
+	position: absolute;
+	top: 240px;
+	padding: 10px;
+}
+
+
+.restoCaracteristicas h3{
+	color: #798F2E;
+}
+
+.restoCaracteristicas a{
+	color: #59A652;
+}
+
+.listado{
+	position: absolute;
+}
+
+#cuerpo{
+  margin: 20px;
+  background: #FFFFFF;
+}
+
+#map {
+  float:right;
+  top: 100px;
+  width: 100%;
+  height: 400px;
+}
+
+.contenedor {
+  width: 1300px;
+  position: absolute;
+  right: : 50%;
+  margin-right: -600px;
+  background-color: #FFFFFF;
+  display: block;
+  clear: both;
+}
+
+#banner{
+  width:100%;
+  position:relative;
+  height:105px;
+}
+
+#banner #cabecera{
+  position:absolute;
+  top:10px;
+  left:500px;
+}
+
+#banner ul {
+  position: absolute;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+  right: 0px;
+  top: 20px;
+
+}
+
+#banner li {
+	display: inline;
+	margin-left: 10px;
+}
+#banner li a {
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#princNav ul {
+  position: absolute;
+  top:130px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #798F2E;
+	float: left;
+	border: 1px solid #59A652;
+	width: 100%;
+  color: #663900;
+
+}
+
+#princNav li a, #princNav li a:link {
+	float: left;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .3em .5em;
+	border: 1px solid #59A652;
+	display: block;
+	font: bold 1em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+}
+#princNav li a:hover {
+	background: #596536;
+}
+
+.tituloEspecies{
+	position: absolute;
+	top: 170px;
+	color:#59A652;
+	left: 240px;
+}
+
+#pie {
+  position: absolute;
+  width: 99.2%;
+  top: 600px;
+	padding: 5px;
+	background: #798F2E;
+	font-weight: bold;
+	color: #FFFFFF;
+	font:0.8em;
+}
