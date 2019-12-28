@@ -3,11 +3,19 @@
 
 {% block title %}Chopo Canadiense{% endblock %}
 {% block content %}
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+
+<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"
+  integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+  crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
 <link rel="stylesheet"  href="{% static 'css/estilos2.css' %}">
 <link rel="stylesheet"  href="{% static 'css/fonts.css' %}">
-<link  href="{% static 'principal_individuos.json' %}">
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="static/js/jquery.slides.js"></script>
 
@@ -18,24 +26,10 @@
                    <img style="width: 600px;height: 343px;" src={{l.fotoHojas}}>
                    <img style="width: 600px;height: 343px;" src={{l.fotoFrutos}}>
 
-            			<div id="map" ><script>
-                    var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-                      osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                      osm = L.tileLayer(osmUrl, {
-                        maxZoom: 28,
-                        attribution: osmAttrib
-                      });
-                    var estiloPopup = {'maxWidth': '300'};
-                    var map = L.map('map').setView([42.350, -3.688], 17).addLayer(osm);
-
-                    {% comment %}
-                      for ( var i=0; i < sauco.length; ++i ) {
-                         L.marker( [sauco[i].latitud, sauco[i].longitud] )
-                            .bindPopup(sauco[i].nombreComun);
-                            .addTo( map );
-                      }
-                      {% endcomment %}
-                  </script></div>
+                   <div id="map">
+                     <script type='text/javascript' src='static/principal_individuo.js'></script>
+                     <script type='text/javascript' src='static/individuosJs/chopoCanadiense1.js'></script>
+                   </div>
 
             		</div>
             	</div>

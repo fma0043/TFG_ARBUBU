@@ -69,7 +69,7 @@
 .twitter{
   position: absolute;
   top:100px;
-  left:0px;
+  right: 200px;
 }
 
 #princNav ul {
