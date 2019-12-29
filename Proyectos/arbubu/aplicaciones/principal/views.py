@@ -3,7 +3,7 @@ from django.contrib.auth import login, authenticate
 from django.http import HttpResponse
 from import_export import resources
 import csv
-from django.http.response import HttpResponse
+from django.http.response import HttpResponse, HttpResponseRedirect
 
 from django.template import RequestContext, Template, Context
 
@@ -16,7 +16,8 @@ from django.contrib import auth
 from .models import Usuario, Familia, Genero, Especie, Individuos
 from .models import Individuos as IndividuosModel
 
-from .forms import SignUpForm
+from .forms import SignUpForm, IndividuosForm
+from django.shortcuts import render_to_response
 
 from django.contrib.auth.views import LoginView, LogoutView
 
@@ -32,6 +33,16 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.platypus import Table
 
+
+def addIndividuo(request):
+    if request.method == 'POST':
+        formulario = IndividuosForm(request.POST, request.FILES)
+        if formulario.is_valid():
+            formulario.save()
+            return HttpResponseRedirect('/index')
+    else:
+        formulario = IndividuosForm()
+    return render(request,'principal/addIndividuo.html',{'formulario':formulario})
 
 class IndexView(TemplateView):
 
