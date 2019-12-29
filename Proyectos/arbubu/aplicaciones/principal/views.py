@@ -14,6 +14,7 @@ from django.views.generic import ListView, TemplateView, CreateView
 from django.contrib import auth
 
 from .models import Usuario, Familia, Genero, Especie, Individuos
+from .models import Individuos as IndividuosModel
 
 from .forms import SignUpForm
 
@@ -24,20 +25,13 @@ from tablib import Dataset
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 
-from .admin import IndividuoResource
+import io
+from reportlab.platypus import SimpleDocTemplate, Paragraph, TableStyle
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import letter, landscape
+from reportlab.platypus import Table
 
-
-#class exportarExcel(TemplateView):
-#    def get(self, request, *args, **kwargs):
-#        query = Individuos.objects.all()
-#        wb = Workbook()
-
-#        nombreArchivo = "datosIndividuos.xlsx"
-#        response = HttpResponse(content_type = "application/ms-excel")
-#        contenido = "attachment; filename = {0}".format(nombreArchivo)
-#        response["Content-Disposition"] = contenido
-#        wb.save()
-#        return response
 
 class IndexView(TemplateView):
 
@@ -1397,9 +1391,9 @@ def importar(request):
      dataset = Dataset()
      nuevos_individuos = request.FILES['xlsfile']
      imported_data = dataset.load(nuevos_individuos.read())
-     result = individuos_resource.import_data(dataset, dry_run=True) # Test the data import
+     result = individuos_resource.import_data(dataset, dry_run=True)
      if not result.has_errors():
-       individuos_resource.import_data(dataset, dry_run=False) # Actually import now
+       individuos_resource.import_data(dataset, dry_run=False)
 
    return render(request, 'principal/importar.html')
 
@@ -1408,8 +1402,6 @@ class Individuos(ListView):
     model = Individuos
     context_object_name = 'individuo'
     template_name = "principal/individuos.html"
-
-
 
 class SignUpView(CreateView):
     model = Usuario
@@ -1429,61 +1421,36 @@ class SignInView(LoginView):
 class SignOutView(LogoutView):
     pass
 
-
-#def some_view(request):
-    # Create the HttpResponse object with the appropriate CSV header.
-#    response = HttpResponse(content_type='text/csv')
-#    response['Content-Disposition'] = 'attachment; filename="exportar.csv"'
-
-#    writer = csv.writer(response)
-#    writer.writerow(['First row', 'Foo', 'Bar', 'Baz'])
-#    writer.writerow(['Second row', 'A', 'B', 'C', '"Testing"', "Here's a quote"])
-
-#    return response
-
-
-
-def individuo_print(self, pk=None):
-   import io
-   from reportlab.platypus import SimpleDocTemplate, Paragraph, TableStyle
-   from reportlab.lib.styles import getSampleStyleSheet
-   from reportlab.lib import colors
-   from reportlab.lib.pagesizes import letter
-   from reportlab.platypus import Table
+def DescargarIndividuoPdf(self, pk=None):
 
    response = HttpResponse(content_type='application/pdf')
-   buff = io.BytesIO()
-   doc = SimpleDocTemplate(buff,
-               pagesize=letter,
-               rightMargin=40,
-               leftMargin=40,
+   buffer = io.BytesIO()
+   documento = SimpleDocTemplate(buffer,
+               pagesize=landscape(letter),
+               rightMargin=20,
+               leftMargin=20,
                topMargin=60,
-               bottomMargin=18,
+               bottomMargin=20,
                )
    individuos = []
    styles = getSampleStyleSheet()
    header = Paragraph("Listado de Individuos", styles['Heading1'])
    individuos.append(header)
-   headings = ('idIndividuo', 'nombreComun', 'especie', 'motivoSingular','explicacionMotivoSingular','latitud','longitud','ubicacion','altura','perimetro')
+   headings = ('Nombre Comun', 'Especie', 'Motivo Singular', 'Ubicacion','Latitud','Longitud')
 
-   todascategorias = [(p.idIndividuo, p.nombreComun, p.especie.nombreComunEspecie, p.motivoSingular, p.explicacionMotivoSingular, p.latitud,p.longitud,p.ubicacion,p.altura,p.perimetro)
-               for p in Individuos.objects.all()]
-   t = Table([headings] + todascategorias)
-   t.setStyle(TableStyle(
+   atributos = [(p.nombreComun, p.especie.nombreCientificoEspecie, p.motivoSingular, p.ubicacion, p.latitud,p.longitud)
+               for p in IndividuosModel.objects.all()]
+   cabecera = Table([headings] + atributos)
+   cabecera.setStyle(TableStyle(
      [
-       ('GRID', (0, 0), (3, -1), 1, colors.dodgerblue),
+       ('GRID', (0, 0), (6, -1), 1, colors.dodgerblue),
        ('LINEBELOW', (0, 0), (-1, 0), 2, colors.darkblue),
        ('BACKGROUND', (0, 0), (-1, 0), colors.dodgerblue)
      ]
    ))
 
-   individuos.append(t)
-   doc.build(individuos)
-   response.write(buff.getvalue())
-   buff.close()
+   individuos.append(cabecera)
+   documento.build(individuos)
+   response.write(buffer.getvalue())
+   buffer.close()
    return response
-
-
-def prueba(request):
-
-   return render(request, 'principal/prueba.html')
