@@ -41,6 +41,13 @@
 	\FloatBarrier
 }
 
+\newcommand{\imagenPequena}[2]{
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.3\textwidth]{#1}
+	\end{figure}
+	\FloatBarrier
+}
 \newcommand{\insertarimagen}[3]{
 	\begin{figure}[!h]
 		\centering
@@ -357,9 +364,12 @@
     \includegraphics[width=\textwidth]{escudoInfor}
   \end{minipage}
   \vfill
+  
+  
   % Datos de alumno, curso y tutores ------------------
   \begin{center}%
   {%
+  	\imagenPequena{portada/logo}
     \noindent\LARGE
     Presentado por \@author{}\\ 
     en Universidad de Burgos --- \@date{}\\

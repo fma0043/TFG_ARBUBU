@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  18 OCT 2019 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  2 JAN 2020 23:23
 entering extended mode
 **./memoria.tex
 (memoria.tex
@@ -746,28 +746,28 @@ LaTeX Info: Redefining \% on input line 25.
 (tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux))
 \openout1 = `memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 383.
-LaTeX Font Info:    ... okay on input line 383.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 383.
-LaTeX Font Info:    ... okay on input line 383.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 383.
-LaTeX Font Info:    ... okay on input line 383.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 383.
-LaTeX Font Info:    ... okay on input line 383.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 383.
-LaTeX Font Info:    ... okay on input line 383.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 383.
-LaTeX Font Info:    ... okay on input line 383.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 383.
-LaTeX Font Info:    ... okay on input line 383.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 383.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 393.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \. on input line 383.
-LaTeX Info: Redefining \% on input line 383.
-LaTeX Info: Redefining \microtypecontext on input line 383.
+LaTeX Info: Redefining \. on input line 393.
+LaTeX Info: Redefining \% on input line 393.
+LaTeX Info: Redefining \microtypecontext on input line 393.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -814,7 +814,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring ON on input line 383.
+Package hyperref Info: Link coloring ON on input line 393.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -828,10 +828,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 383.
-LaTeX Info: Redefining \ref on input line 383.
-LaTeX Info: Redefining \pageref on input line 383.
-LaTeX Info: Redefining \nameref on input line 383.
+LaTeX Info: Redefining \nameref on input line 393.
+LaTeX Info: Redefining \ref on input line 393.
+LaTeX Info: Redefining \pageref on input line 393.
+LaTeX Info: Redefining \nameref on input line 393.
 (memoria.out) (memoria.out)
 \@outlinefile=\write4
 \openout4 = `memoria.out'.
@@ -839,48 +839,53 @@ LaTeX Info: Redefining \nameref on input line 383.
 <cabecera.pdf, id=119, 617.67549pt x 135.51413pt>
 File: cabecera.pdf Graphic file (type pdf)
 <use cabecera.pdf>
-Package pdftex.def Info: cabecera.pdf  used on input line 385.
+Package pdftex.def Info: cabecera.pdf  used on input line 395.
 (pdftex.def)             Requested size: 383.0pt x 84.02823pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 385.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 395.
 
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 385.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 395.
 
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 385
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 395
 .
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 385
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 395
 .
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 385.
+(Font)              <12> on input line 395.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 385.
+(Font)              <8> on input line 395.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 385.
+(Font)              <6> on input line 395.
 <escudoInfor.pdf, id=120, 618.11432pt x 737.07487pt>
 File: escudoInfor.pdf Graphic file (type pdf)
 <use escudoInfor.pdf>
-Package pdftex.def Info: escudoInfor.pdf  used on input line 385.
+Package pdftex.def Info: escudoInfor.pdf  used on input line 395.
 (pdftex.def)             Requested size: 76.59883pt x 91.3356pt.
 
-Overfull \hbox (27.54143pt too wide) in paragraph at lines 385--385
+Overfull \hbox (27.54143pt too wide) in paragraph at lines 395--395
 [][][][][][][] $[]$ 
  []
 
+<./img/portada/logo.png, id=121, 150.5625pt x 150.5625pt>
+File: ./img/portada/logo.png Graphic file (type png)
+<use ./img/portada/logo.png>
+Package pdftex.def Info: ./img/portada/logo.png  used on input line 395.
+(pdftex.def)             Requested size: 114.90117pt x 114.90652pt.
 [1
 
 {C:/Users/felix/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./cabecera.
@@ -888,12 +893,12 @@ pdf> <./escudoInfor.pdf
 
 pdfTeX warning: pdflatex.exe (file ./escudoInfor.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
->] [2
+> <./img/portada/logo.png>] [2
 
 ]
 File: cabecera.pdf Graphic file (type pdf)
 <use cabecera.pdf>
-Package pdftex.def Info: cabecera.pdf  used on input line 390.
+Package pdftex.def Info: cabecera.pdf  used on input line 400.
 (pdftex.def)             Requested size: 383.0pt x 84.02823pt.
  [3] [4
 
@@ -904,7 +909,7 @@ Package microtype Info: Character `029' is missing
  [1] [2
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 475.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 485.
 
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
@@ -936,14 +941,14 @@ Package spanish Warning: Replacing `T1/lmr/bx/sc' by
 [3
 
 ])
-LaTeX Info: Redefining \. on input line 476.
-LaTeX Info: Redefining \% on input line 476.
+LaTeX Info: Redefining \. on input line 486.
+LaTeX Info: Redefining \% on input line 486.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 476.
+(in both cases you will find help in the memoir manual). on input line 486.
 
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
@@ -980,13 +985,13 @@ been already used, duplicate ignored
 l.42 	\item \textbf
                    {Vídeo explicativo}: vídeo explicando el funcionamiento...
 [2])
-LaTeX Info: Redefining \. on input line 484.
-LaTeX Info: Redefining \% on input line 484.
+LaTeX Info: Redefining \. on input line 494.
+LaTeX Info: Redefining \% on input line 494.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.484 \include{./tex/1_Introduccion}
+l.494 \include{./tex/1_Introduccion}
                                      [3]
 \openout2 = `./tex/2_Objetivos_del_proyecto.aux'.
 
@@ -999,20 +1004,29 @@ l.1 \capitulo{2}{Objetivos del proyecto}
 
 
 
-] [5])
-LaTeX Info: Redefining \. on input line 485.
-LaTeX Info: Redefining \% on input line 485.
- [6]
+]
+<./img/objetivos/portada.png, id=613, 1005.7575pt x 496.85625pt>
+File: ./img/objetivos/portada.png Graphic file (type png)
+<use ./img/objetivos/portada.png>
+Package pdftex.def Info: ./img/objetivos/portada.png  used on input line 15.
+(pdftex.def)             Requested size: 344.69766pt x 170.27837pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5])
+LaTeX Info: Redefining \. on input line 495.
+LaTeX Info: Redefining \% on input line 495.
+ [6 <./img/objetivos/portada.png>]
 \openout2 = `./tex/3_Conceptos_teoricos.aux'.
 
-
-(tex/3_Conceptos_teoricos.tex
-<./img/conceptosTeoricos/modelos.png, id=615, 640.64343pt x 311.66437pt>
+ (tex/3_Conceptos_teoricos.tex
+<./img/conceptosTeoricos/modelos.png, id=624, 671.50874pt x 402.75468pt>
 File: ./img/conceptosTeoricos/modelos.png Graphic file (type png)
 <use ./img/conceptosTeoricos/modelos.png>
 Package pdftex.def Info: ./img/conceptosTeoricos/modelos.png  used on input lin
 e 20.
-(pdftex.def)             Requested size: 344.69766pt x 167.69229pt.
+(pdftex.def)             Requested size: 344.69766pt x 206.74188pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1022,7 +1036,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<./img/conceptosTeoricos/leaflet.png, id=624, 903.375pt x 441.65pt>
+<./img/conceptosTeoricos/leaflet.png, id=632, 903.375pt x 441.65pt>
 File: ./img/conceptosTeoricos/leaflet.png Graphic file (type png)
 <use ./img/conceptosTeoricos/leaflet.png>
 Package pdftex.def Info: ./img/conceptosTeoricos/leaflet.png  used on input lin
@@ -1035,15 +1049,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
 [8 <./img/conceptosTeoricos/modelos.png>]
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
-
-Overfull \vbox (0.85403pt too high) has occurred while \output is active []
-
-
-[9 <./img/conceptosTeoricos/leaflet.png (PNG copy)>])
-LaTeX Info: Redefining \. on input line 486.
-LaTeX Info: Redefining \% on input line 486.
+<./img/conceptosTeoricos/leafletPropio.png, id=642, 603.75563pt x 285.31593pt>
+File: ./img/conceptosTeoricos/leafletPropio.png Graphic file (type png)
+<use ./img/conceptosTeoricos/leafletPropio.png>
+Package pdftex.def Info: ./img/conceptosTeoricos/leafletPropio.png  used on inp
+ut line 35.
+(pdftex.def)             Requested size: 344.69766pt x 162.89297pt.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+ [9 <./img/conceptosTeoricos/leaflet.png (PNG copy)> <./img/conceptosTeoricos/l
+eafletPropio.png>])
+LaTeX Info: Redefining \. on input line 496.
+LaTeX Info: Redefining \% on input line 496.
  [10]
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
@@ -1053,7 +1070,7 @@ LaTeX Info: Redefining \% on input line 486.
 
 
 ]
-<./img/tecnicasYHerramientas/python.png, id=654, 611.75027pt x 206.63113pt>
+<./img/tecnicasYHerramientas/python.png, id=665, 611.75027pt x 206.63113pt>
 File: ./img/tecnicasYHerramientas/python.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/python.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/python.png  used on input 
@@ -1062,25 +1079,25 @@ line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  [12 <./img/tecnicasYHerramientas/python.png>]
-<./img/tecnicasYHerramientas/django.png, id=669, 1204.5pt x 1204.5pt>
+<./img/tecnicasYHerramientas/django.png, id=680, 1204.5pt x 1204.5pt>
 File: ./img/tecnicasYHerramientas/django.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/django.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/django.png  used on input 
 line 33.
 (pdftex.def)             Requested size: 153.19766pt x 153.19035pt.
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
  [13 <./img/tecnicasYHerramientas/django.png (PNG copy)>]
-<./img/tecnicasYHerramientas/SQLite3.png, id=689, 590.205pt x 390.45876pt>
+<./img/tecnicasYHerramientas/SQLite3.png, id=700, 590.205pt x 390.45876pt>
 File: ./img/tecnicasYHerramientas/SQLite3.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/SQLite3.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/SQLite3.png  used on input
  line 47.
 (pdftex.def)             Requested size: 344.69766pt x 228.04507pt.
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
  [14 <./img/tecnicasYHerramientas/SQLite3.png>]
-<./img/tecnicasYHerramientas/atom.png, id=705, 1027.84pt x 1027.84pt>
+<./img/tecnicasYHerramientas/atom.png, id=716, 1027.84pt x 1027.84pt>
 File: ./img/tecnicasYHerramientas/atom.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/atom.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/atom.png  used on input li
@@ -1089,7 +1106,7 @@ ne 71.
 LaTeX Info: Redefining \. on input line 72.
 LaTeX Info: Redefining \% on input line 72.
  [15 <./img/tecnicasYHerramientas/atom.png>]
-<./img/tecnicasYHerramientas/github.png, id=721, 1129.21875pt x 418.56375pt>
+<./img/tecnicasYHerramientas/github.png, id=732, 1129.21875pt x 418.56375pt>
 File: ./img/tecnicasYHerramientas/github.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/github.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/github.png  used on input 
@@ -1099,7 +1116,7 @@ LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
 
 [16 <./img/tecnicasYHerramientas/github.png>]
-<./img/tecnicasYHerramientas/LaTeX.png, id=738, 696.6025pt x 293.095pt>
+<./img/tecnicasYHerramientas/LaTeX.png, id=749, 696.6025pt x 293.095pt>
 File: ./img/tecnicasYHerramientas/LaTeX.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/LaTeX.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/LaTeX.png  used on input l
@@ -1108,21 +1125,21 @@ ine 100.
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
  [17 <./img/tecnicasYHerramientas/LaTeX.png>]
-<./img/tecnicasYHerramientas/StarUml.png, id=756, 200.75pt x 200.75pt>
+<./img/tecnicasYHerramientas/StarUml.png, id=767, 200.75pt x 200.75pt>
 File: ./img/tecnicasYHerramientas/StarUml.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/StarUml.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/StarUml.png  used on input
  line 113.
 (pdftex.def)             Requested size: 153.19766pt x 153.20871pt.
 )
-LaTeX Info: Redefining \. on input line 487.
-LaTeX Info: Redefining \% on input line 487.
+LaTeX Info: Redefining \. on input line 497.
+LaTeX Info: Redefining \% on input line 497.
  [18 <./img/tecnicasYHerramientas/StarUml.png>]
 \openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
 
 
 (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
-<./img/aspectosRelevantes/versionPython.png, id=770, 563.85657pt x 83.5622pt>
+<./img/aspectosRelevantes/versionPython.png, id=781, 563.85657pt x 83.5622pt>
 File: ./img/aspectosRelevantes/versionPython.png Graphic file (type png)
 <use ./img/aspectosRelevantes/versionPython.png>
 Package pdftex.def Info: ./img/aspectosRelevantes/versionPython.png  used on in
@@ -1141,20 +1158,20 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 31.
 )
-LaTeX Info: Redefining \. on input line 488.
-LaTeX Info: Redefining \% on input line 488.
+LaTeX Info: Redefining \. on input line 498.
+LaTeX Info: Redefining \% on input line 498.
 
 [20]
 \openout2 = `./tex/6_Trabajos_relacionados.aux'.
 
  (tex/6_Trabajos_relacionados.tex
-<./img/trabajosRelacionados/arbolapp.jpeg, id=799, 1027.84pt x 614.295pt>
+<./img/trabajosRelacionados/arbolapp.jpeg, id=810, 1027.84pt x 614.295pt>
 File: ./img/trabajosRelacionados/arbolapp.jpeg Graphic file (type jpg)
 <use ./img/trabajosRelacionados/arbolapp.jpeg>
 Package pdftex.def Info: ./img/trabajosRelacionados/arbolapp.jpeg  used on inpu
 t line 9.
 (pdftex.def)             Requested size: 344.69766pt x 206.00803pt.
-<./img/trabajosRelacionados/observado.png, id=802, 1016.29688pt x 496.85625pt>
+<./img/trabajosRelacionados/observado.png, id=813, 1016.29688pt x 496.85625pt>
 File: ./img/trabajosRelacionados/observado.png Graphic file (type png)
 <use ./img/trabajosRelacionados/observado.png>
 Package pdftex.def Info: ./img/trabajosRelacionados/observado.png  used on inpu
@@ -1165,7 +1182,7 @@ t line 15.
 
 
  <./img/trabajosRelacionados/arbolapp.jpeg>]
-<./img/trabajosRelacionados/arbolesMonumentales.png, id=811, 500.62032pt x 491.
+<./img/trabajosRelacionados/arbolesMonumentales.png, id=822, 500.62032pt x 491.
 58656pt>
 File: ./img/trabajosRelacionados/arbolesMonumentales.png Graphic file (type png
 )
@@ -1180,7 +1197,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 [22 <./img/trabajosRelacionados/observado.png>]
-<./img/trabajosRelacionados/arbolesSingulares.png, id=821, 424.58624pt x 410.28
+<./img/trabajosRelacionados/arbolesSingulares.png, id=832, 424.58624pt x 410.28
 28pt>
 File: ./img/trabajosRelacionados/arbolesSingulares.png Graphic file (type png)
 <use ./img/trabajosRelacionados/arbolesSingulares.png>
@@ -1198,8 +1215,8 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 [23 <./img/trabajosRelacionados/arbolesMonumentales.png>])
-LaTeX Info: Redefining \. on input line 489.
-LaTeX Info: Redefining \% on input line 489.
+LaTeX Info: Redefining \. on input line 499.
+LaTeX Info: Redefining \% on input line 499.
  [24 <./img/trabajosRelacionados/arbolesSingulares.png>]
 \openout2 = `./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux'.
 
@@ -1209,8 +1226,8 @@ LaTeX Info: Redefining \% on input line 489.
 
 
 ])
-LaTeX Info: Redefining \. on input line 490.
-LaTeX Info: Redefining \% on input line 490.
+LaTeX Info: Redefining \. on input line 500.
+LaTeX Info: Redefining \% on input line 500.
  [26] (memoria.bbl
 bibitemlist
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 7.
@@ -1418,10 +1435,10 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 496.
+(in both cases you will find help in the memoir manual). on input line 506.
 
-LaTeX Info: Redefining \. on input line 496.
-LaTeX Info: Redefining \% on input line 496.
+LaTeX Info: Redefining \. on input line 506.
+LaTeX Info: Redefining \% on input line 506.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -1433,8 +1450,8 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 \tf@lof=\write6
 \openout6 = `memoria.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 506.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 506.
  (memoria.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
@@ -1445,22 +1462,22 @@ LaTeX Info: Redefining \% on input line 25.
 (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux)
 (tex/6_Trabajos_relacionados.aux)
 (tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 506.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
 (rerunfilecheck)             Checksum: 9AEA4B8EE2F117A871163D1D219CD125;1937.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 496.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 506.
  ) 
 Here is how much of TeX's memory you used:
- 13040 strings out of 492945
- 197271 string characters out of 3126252
- 372744 words of memory out of 3000000
- 16425 multiletter control sequences out of 15000+200000
- 81113 words of font info for 110 fonts, out of 3000000 for 9000
+ 13062 strings out of 492945
+ 197845 string characters out of 3126252
+ 372965 words of memory out of 3000000
+ 16440 multiletter control sequences out of 15000+200000
+ 81022 words of font info for 109 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,40p,532b,710s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
@@ -1479,9 +1496,9 @@ TeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Users/felix/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/felix/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/felix/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on memoria.pdf (41 pages, 2848897 bytes).
+Output written on memoria.pdf (41 pages, 3219909 bytes).
 PDF statistics:
- 1022 PDF objects out of 1200 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
- 22841 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1033 PDF objects out of 1200 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 22856 words of extra memory for PDF output out of 24883 (max. 10000000)
 
