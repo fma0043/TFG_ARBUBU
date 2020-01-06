@@ -10,20 +10,21 @@ Este anexo se encarga de mostrar los objetivos generales de la aplicación web, 
 	\subsection{Objetivos Generales}
 \begin{itemize}
 	\item Observar en un mapa los árboles singulares de las zonas universitarias de Burgos y ver sus características.
-	\item Filtrar a través de la familia, nombre científico y nombre común de la especie, autóctona y motivo singular donde se sitúan los árboles buscados y sus características.
-	\item Loguearnos como usuario y ser capaces de importar y descargar datos de los árboles.
+	\item Filtrar a través de la familia, género, especie y ubicación los distintos árboles.
+	\item Loguearnos como usuario y ser capaces de introducir y descargar datos de los árboles.
 	\item Realizar una primera toma de contacto con la búsqueda de árboles, que en una futura mejora no solo busquemos arboles, es decir, que seamos capaces de buscar monumentos, lugares importantes \ldots
 	\item Poder compartir y dar me gusta a la página de facebook de UbuVerde e interactuar con ellos a través de twitter. 
+	\item Estar en constante contacto con UbuVerde a través de 'Acerca de Nosotros' que es un enlace a la página de UbuVerde.
 \end{itemize}
 
 \subsection{Objetivos Técnicos}
 \begin{itemize}
-	\item Ser capaz de introducir datos en la base de datos Sqlite3.
-	\item Ser capaz de descargar datos de la base de datos Sqlite3.
+	\item Crear la Base de Datos para guardar la información de las familias, géneros, especies e individuos con una estructura adecuada de tablas y campos.
+	\item Ser capaz de introducir nuevos individuos en la base de datos Sqlite3.
+	\item Ser capaz de descargar información de la base de datos Sqlite3.
 	\item Plasmar en el mapa esos datos introducidos en la base de datos. 
-	\item Programar en Python y html el diseño web que va a tener nuestro proyecto.
+	\item Desarrollar el diseño web con Django quedando plasmado con una interfaz gráfica amena y agradable para el usuario.
 	\item Guardar en un repositorio de GitHub los cambios que hemos ido realizando.
-	\item Utilizar el framework Django para realizar correctamente nuestro diseño web.
 	
 \end{itemize}
 
@@ -31,10 +32,9 @@ Este anexo se encarga de mostrar los objetivos generales de la aplicación web, 
 \subsection{Requisitos funcionales}
 \begin{itemize}
 	\item \textbf{RF-1 Cargar datos}: Los usuarios deben ser capaces de introducir datos en la base de datos y poder visualizarlos después.
-	\item \textbf{RF-2 Exportar datos}: Los usuarios deben ser capaces de exportar datos de la base de datos, para poder guardar la información sin necesidad de visitar la página.
+	\item \textbf{RF-2 Exportar datos}: Los usuarios deben ser capaces de exportar datos de la base de datos, para poder guardar la información de los árboles sin necesidad de visitar la página.
 	\item \textbf{RF-3 Visualizar datos}: Los usuarios deben ser capaces de ver en un mapa los distintos árboles situados en las zonas universitarias.
-	\subitem \textbf{RF-3.1}: Se podrán filtrar los árboles a través de la familia, nombre científico y común de la especie, si es autóctono, motivo singular \ldots
-	\subitem \textbf{RF-3.2}: Se podrán buscar por los usuarios más expertos en la materia el árbol en concreto a través del nombre.
+	\subitem \textbf{RF-3.1}: Se podrán filtrar los árboles a través de la familia, género, especie y ubicación de los distintos árboles.
 	\item \textbf{RF-4 Control de usuarios}: La aplicación debe ser capaz de tener controlado en todo momento al usuario logueado.
 	\subitem \textbf{RF-4.1 Registro}: Los usuarios pueden registrarse para tener acceso a la descarga de los datos, así como su subida.
 	\subitem \textbf{RF-4.2 Iniciar sesión}: Los usuarios pueden iniciar sesión con una cuenta previamente registrada.
@@ -92,8 +92,7 @@ A continuación se mostrará una tabla para cada uno de los casos de uso.
 {El usuario abre el navegador, carga la página de la aplicación y se registre.}
 {
 	\item El usuario inicie sesión.
-	\item El usuario selecciona los árboles que desea exportar.
-	\item El usuario exporta los datos de los árboles deseados.
+	\item El usuario exporta los datos de los árboles.
 }
 {Si el usuario está registrado podrá descargar los datos.}
 {
@@ -106,15 +105,14 @@ A continuación se mostrará una tabla para cada uno de los casos de uso.
 % Caso de uso 3
 
 \TablaCasoDeUso{3}{Visualizar datos}
-{RF-3, RF-3.1, RF-3.2}
+{RF-3, RF-3.1}
 {Visualizar en un mapa los árboles situados en las zonas universitarias.}
 {El usuario abre el navegador, carga la página de la aplicación y que haya árboles introducidos.}
 {
-	\item Inicia la aplicación web y podrá ver los árboles más cercanos a su punto de partida.
-	\item Si lo desea el usuario podrá filtrar los árboles por familia, nombre científico y común de la especie, si es autóctono, motivo singular y ver en el mapa los seleccionados.
-	\item Si lo desea el usuario puede filtrar los árboles únicamente por el nombre y ver en el mapa su selección.
+	\item Inicia la aplicación web y podrá ver los árboles situados en las zonas universitarias.
+	\item Se podrán filtrar los árboles a través de la familia, género, especie y ubicación universitaria de los distintos árboles.
 }
-{Se muestra en el mapa los árboles seleccionados.}
+{Se muestra los datos del árbol seleccionado, así como la ubicación en el mapa de dicho árbol.}
 {
 	\item Error si los datos seleccionados no coinciden con ningún dato de la base de datos.
 }
@@ -152,9 +150,9 @@ A continuación se mostrará una tabla para cada uno de los casos de uso.
 {Buscar un árbol específico para ver donde está situado.}
 {El usuario abre el navegador y carga la página de la aplicación.}
 {
-	\item El usuario introduce las características del árbol que desea buscar.
+	\item El usuario introduce la familia, género, especie o ubicación del árbol seleccionado y lo selecciona.
 }
-{Se muestra en el mapa el árbol seleccionado.}
+{Se muestra en el mapa el árbol seleccionado y sus características.}
 {
 	\item Error si los datos introducidos del árbol no existen.
 }

@@ -60,7 +60,13 @@
 	\end{figure}
 }
 
-
+\newcommand{\imagenPequena}[2]{
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.3\textwidth]{#1}
+	\end{figure}
+	\FloatBarrier
+}
 
 % El comando \figura nos permite insertar figuras comodamente, y utilizando
 % siempre el mismo formato. Los parametros son:
@@ -413,6 +419,7 @@
   % Datos de alumno, curso y tutores ------------------
   \begin{center}%
   {%
+  	\imagenPequena{portada/logo}
     \noindent\LARGE
     Presentado por \@author{}\\ 
     en Universidad de Burgos --- \@date{}\\

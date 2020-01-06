@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  16 OCT 2019 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  6 JAN 2020 14:35
 entering extended mode
 **./anexo.tex
 (anexo.tex
@@ -770,28 +770,28 @@ LaTeX Info: Redefining \% on input line 25.
 (tex/D_Manual_programador.aux) (tex/E_Manual_usuario.aux))
 \openout1 = `anexo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 436.
-LaTeX Font Info:    ... okay on input line 436.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 436.
-LaTeX Font Info:    ... okay on input line 436.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 436.
-LaTeX Font Info:    ... okay on input line 436.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 436.
-LaTeX Font Info:    ... okay on input line 436.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 436.
-LaTeX Font Info:    ... okay on input line 436.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 436.
-LaTeX Font Info:    ... okay on input line 436.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 436.
-LaTeX Font Info:    ... okay on input line 436.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 436.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 443.
+LaTeX Font Info:    ... okay on input line 443.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 443.
+LaTeX Font Info:    ... okay on input line 443.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 443.
+LaTeX Font Info:    ... okay on input line 443.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 443.
+LaTeX Font Info:    ... okay on input line 443.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 443.
+LaTeX Font Info:    ... okay on input line 443.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 443.
+LaTeX Font Info:    ... okay on input line 443.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 443.
+LaTeX Font Info:    ... okay on input line 443.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 443.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \. on input line 436.
-LaTeX Info: Redefining \% on input line 436.
-LaTeX Info: Redefining \microtypecontext on input line 436.
+LaTeX Info: Redefining \. on input line 443.
+LaTeX Info: Redefining \% on input line 443.
+LaTeX Info: Redefining \microtypecontext on input line 443.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -838,7 +838,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring ON on input line 436.
+Package hyperref Info: Link coloring ON on input line 443.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -852,10 +852,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 436.
-LaTeX Info: Redefining \ref on input line 436.
-LaTeX Info: Redefining \pageref on input line 436.
-LaTeX Info: Redefining \nameref on input line 436.
+LaTeX Info: Redefining \nameref on input line 443.
+LaTeX Info: Redefining \ref on input line 443.
+LaTeX Info: Redefining \pageref on input line 443.
+LaTeX Info: Redefining \nameref on input line 443.
 (anexo.out) (anexo.out)
 \@outlinefile=\write4
 \openout4 = `anexo.out'.
@@ -863,48 +863,53 @@ LaTeX Info: Redefining \nameref on input line 436.
 <cabecera.pdf, id=119, 617.67549pt x 135.51413pt>
 File: cabecera.pdf Graphic file (type pdf)
 <use cabecera.pdf>
-Package pdftex.def Info: cabecera.pdf  used on input line 438.
+Package pdftex.def Info: cabecera.pdf  used on input line 445.
 (pdftex.def)             Requested size: 383.0pt x 84.02823pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 438.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 445.
 
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 438.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 445.
 
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 438
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 445
 .
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 438
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 445
 .
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 438.
+(Font)              <12> on input line 445.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 438.
+(Font)              <8> on input line 445.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 438.
+(Font)              <6> on input line 445.
 <escudoInfor.pdf, id=120, 618.11432pt x 737.07487pt>
 File: escudoInfor.pdf Graphic file (type pdf)
 <use escudoInfor.pdf>
-Package pdftex.def Info: escudoInfor.pdf  used on input line 438.
+Package pdftex.def Info: escudoInfor.pdf  used on input line 445.
 (pdftex.def)             Requested size: 76.59883pt x 91.3356pt.
 
-Overfull \hbox (27.54143pt too wide) in paragraph at lines 438--438
+Overfull \hbox (27.54143pt too wide) in paragraph at lines 445--445
 [][][][][][][] $[]$ 
  []
 
+<./img/portada/logo.png, id=121, 150.5625pt x 150.5625pt>
+File: ./img/portada/logo.png Graphic file (type png)
+<use ./img/portada/logo.png>
+Package pdftex.def Info: ./img/portada/logo.png  used on input line 445.
+(pdftex.def)             Requested size: 114.90117pt x 114.90652pt.
 [1
 
 {C:/Users/felix/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./cabecera.
@@ -912,19 +917,21 @@ pdf> <./escudoInfor.pdf
 
 pdfTeX warning: pdflatex.exe (file ./escudoInfor.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
->] [2
+> <./img/portada/logo.png>] [2
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 457.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 464.
 
- ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
+
+("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (anexo.toc
+
+(anexo.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
@@ -954,14 +961,14 @@ Package microtype Info: Character `029' is missing
 
 
 ])
-LaTeX Info: Redefining \. on input line 458.
-LaTeX Info: Redefining \% on input line 458.
+LaTeX Info: Redefining \. on input line 465.
+LaTeX Info: Redefining \% on input line 465.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 458.
+(in both cases you will find help in the memoir manual). on input line 465.
 
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
@@ -991,7 +998,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.472 \include{./tex/A_Plan_proyecto}
+l.479 \include{./tex/A_Plan_proyecto}
                                       [1
 
 
@@ -1010,8 +1017,8 @@ l.1 \apendice{Especificación de Requisitos}
 
 
 ] [3]
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -1026,11 +1033,11 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 LaTeX Info: Redefining \. on input line 59.
 LaTeX Info: Redefining \% on input line 59.
 [5]
-<./img/requisitos/casosUso.png, id=587, 570.63188pt x 304.88907pt>
+<./img/requisitos/casosUso.png, id=590, 594.72188pt x 298.86656pt>
 File: ./img/requisitos/casosUso.png Graphic file (type png)
 <use ./img/requisitos/casosUso.png>
 Package pdftex.def Info: ./img/requisitos/casosUso.png  used on input line 61.
-(pdftex.def)             Requested size: 344.69766pt x 184.17233pt.
+(pdftex.def)             Requested size: 344.69766pt x 173.21959pt.
 LaTeX Info: Redefining \. on input line 66.
 LaTeX Info: Redefining \% on input line 66.
 
@@ -1051,36 +1058,36 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 [7]
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 [8]
-LaTeX Info: Redefining \. on input line 121.
-LaTeX Info: Redefining \% on input line 121.
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 [9]
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
+LaTeX Info: Redefining \. on input line 142.
+LaTeX Info: Redefining \% on input line 142.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 [10]
-LaTeX Info: Redefining \. on input line 161.
-LaTeX Info: Redefining \% on input line 161.
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 [11]
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -1120,7 +1127,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 482.
+(in both cases you will find help in the memoir manual). on input line 489.
 
 [19]
 \tf@toc=\write5
@@ -1132,8 +1139,8 @@ either increase the head height or redesign the header
 \tf@lot=\write7
 \openout7 = `anexo.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
  (anexo.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
@@ -1141,22 +1148,22 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
  (tex/A_Plan_proyecto.aux) (tex/B_Requisitos.aux)
 (tex/C_Diseno.aux) (tex/D_Manual_programador.aux) (tex/E_Manual_usuario.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
 Package rerunfilecheck Info: File `anexo.out' has not changed.
 (rerunfilecheck)             Checksum: AF4F9765ECBDC3D44757EF71156B322F;2154.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 489.
  ) 
 Here is how much of TeX's memory you used:
- 12849 strings out of 492945
- 191517 string characters out of 3126252
- 370276 words of memory out of 3000000
- 16399 multiletter control sequences out of 15000+200000
- 69381 words of font info for 66 fonts, out of 3000000 for 9000
+ 12859 strings out of 492945
+ 191693 string characters out of 3126252
+ 370337 words of memory out of 3000000
+ 16404 multiletter control sequences out of 15000+200000
+ 69563 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,43p,303b,710s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
@@ -1172,9 +1179,9 @@ onts/type1/public/lm/lmro12.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/felix/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><C:/Users/felix/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on anexo.pdf (25 pages, 668824 bytes).
+Output written on anexo.pdf (25 pages, 674315 bytes).
 PDF statistics:
  720 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 18168 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 81 named destinations out of 1000 (max. 500000)
+ 18173 words of extra memory for PDF output out of 20736 (max. 10000000)
 
