@@ -21,6 +21,13 @@
   2014.
 \newblock [Online; accessed 07-Oct-2019].
 
+\bibitem{slideshow}
+FalconMasters~Carlos Arturo.
+\newblock Como hacer un slideshow para un sitio web.
+\newblock \url{http://www.falconmasters.com/tutoriales/como-hacer-slideshow/},
+  Julio 2014.
+\newblock [Online; accessed 20-Diciembre-2019].
+
 \bibitem{LogoGithub}
 {Asfo}.
 \newblock Subiendo miles y miles de archivos a github fácilmente con git+bash.
@@ -36,6 +43,15 @@
   \url{https://secureanycloud.com/staruml-on-cloud-technical-support-cloud-help-azure-aws-opensource-cognosys/},
   Noviembre 2016.
 \newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{exportarPdf}
+Daniel Bojorge.
+\newblock Generar pdf con django 2.1 (vertical y horizontal - portrait y
+  landscape).
+\newblock
+  \url{http://debsconsultores.blogspot.com/2018/12/generar-pdf-con-django-21-vertical-y.html},
+  Diciembre 2018.
+\newblock [Online; accessed 20-Diciembre-2019].
 
 \bibitem{udemy}
 Cristhian~Santa Cruz.
