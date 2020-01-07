@@ -2,8 +2,140 @@
 
 \section{Introducción}
 
+En este apartado explicaremos el diseño que ha dado lugar a la aplicación, para ello el anexo está dividido en tres secciones: el diseño de datos, el diseño procedimental y el diseño arquitectónico.
+
 \section{Diseño de datos}
+
+Para el almacenaje de los datos de la aplicación he utilizado una base de datos sqlite3, la cual está compuesta por seis tablas o modelos.
+
+\imagen{diseño/familias}{Tabla Familia}
+
+\begin{itemize}
+	\item \textbf{FAMILIA}: En este modelo se va a guardar la información relacionada con las familias de árboles existentes en las universidades de Burgos, está compuesta por dos campos que son:
+		\subitem \textbf{idFamilia}: Es la clave primaria de la tabla y contiene un identificador único para cada familia.
+		\subitem \textbf{nombreFamilia}: Contiene el nombre de la familia, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
+\end{itemize}
+
+\imagen{diseño/generos}{Tabla Genero}
+
+\begin{itemize}
+	\item \textbf{GENERO}: En este modelo se va a guardar la información relacionada con los géneros de árboles existentes en las universidades de Burgos, está compuesta por tres campos que son:
+	\subitem \textbf{idGenero}: Es la clave primaria de la tabla y contiene un identificador único para cada género.
+	\subitem \textbf{nombreFamilia}: Contiene el nombre del género, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
+	\subitem \textbf{familia}: Contiene el nombre de la familia, es una FK.
+\end{itemize}
+
+
+\imagen{diseño/especies}{Tabla Especie}
+
+\begin{itemize}
+	\item \textbf{ESPECIE}: En este modelo se va a guardar la información relacionada con las especies de árboles existentes en las universidades de Burgos, está compuesta por siete campos que son:
+	\subitem \textbf{idEspecie}: Es la clave primaria de la tabla y contiene un identificador único para cada especie.
+	\subitem \textbf{nombreCientificoEspecie}: Contiene el nombre científico de la especie, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
+	\subitem \textbf{nombreComunEspecie}: Contiene el nombre común de la especie, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
+	\subitem \textbf{genero}: Contiene el nombre del género, es una FK.
+	\subitem \textbf{autoctona}: Contiene si la especie es autóctona, es un campo de tipo booleano y no se puede dejar en blanco.
+	\subitem \textbf{descripcion}: Contiene una pequeña descripción de la especie, es un campo de tipo texto y no se puede dejar en blanco.
+	\subitem \textbf{ecologia}: Contiene la ecología de la especie, es un campo de tipo texto y no se puede dejar en blanco.
+\end{itemize}
+
+\imagen{diseño/individuos}{Tabla Individuos}
+
+\begin{itemize}
+	\item \textbf{INDIVIDUO}: En este modelo se va a guardar la información relacionada con cada uno de árboles existentes en las universidades de Burgos, está compuesta por catorce campos que son:
+	\subitem \textbf{idIndividuo}: Es la clave primaria de la tabla y contiene un identificador único para cada individuo.
+	\subitem \textbf{nombreComun}: Contiene el nombre común del árbol, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
+	\subitem \textbf{especie}: Contiene el nombre de la especie, es una FK.
+	\subitem \textbf{motivoSingular}: Contiene un motivo de por qué el árbol es singular, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
+	\subitem \textbf{explicacionMotivoSingular}: Contiene una explicación más detallada de porque el árbol es singular, es un campo de tipo texto y no se puede dejar en blanco.
+	\subitem \textbf{latitud}: Contiene la latitud del árbol, es un campo de tipo decimal y no se puede dejar en blanco.
+	\subitem \textbf{longitud}: Contiene la longitud del árbol, es un campo de tipo decimal y no se puede dejar en blanco.
+	\subitem \textbf{fotoArbol}: Contiene la foto del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
+	\subitem \textbf{fotoHojas}: Contiene la foto de las hojas del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
+	\subitem \textbf{fotoTronco}: Contiene la foto del tronco del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
+	\subitem \textbf{fotoFrutos}: Contiene la foto de los frutos del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
+	\subitem \textbf{ubicacion}: Contiene la ubicación del árbol, es decir, la zona universitaria donde está ubicado, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
+	\subitem \textbf{altura}: Contiene la altura del árbol, es un campo de tipo decimal, si se puede dejar en blanco y con un tamaño máximo de 19 caracteres.
+	\subitem \textbf{perimetro}: Contiene el perímetro del árbol, es un campo de tipo decimal, si se puede dejar en blanco y con un tamaño máximo de 19 caracteres.  
+\end{itemize}
+
+\imagen{diseño/usuarios}{Tabla Usuario}
+
+\begin{itemize}
+	\item \textbf{USUARIO}: En este modelo se va a guardar la información relacionada con los usuarios, está compuesta por dos campos que son:
+	\subitem \textbf{idUsuario}: Es la clave primaria de la tabla y contiene un identificador único para cada usuario.
+	\subitem \textbf{usuario}: Contiene el nombre del usuario, es una FK. 
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{USER}: Este modelo está diseñado por el framework y guarda información relacionada con los usuarios, está compuesta por doce campos que son:
+	\subitem \textbf{username}: Contiene el nombre del usuario, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 150 caracteres.
+	\subitem \textbf{first name}: Contiene el nombre del usuario, es un campo de tipo texto, se puede dejar en blanco y con un tamaño máximo de 30 caracteres.
+	\subitem \textbf{last name}: Contiene el apellido del usuario, es un campo de tipo texto, se puede dejar en blanco y con un tamaño máximo de 150 caracteres.
+	\subitem \textbf{email}: Contiene el email del usuario, es un campo de tipo email y se puede dejar en blanco.
+	\subitem \textbf{password}: Contiene la contraseña del usuario, es un campo de tipo texto, es necesario y se encripta.
+	\subitem \textbf{groups}: Contiene el grupo al cual pertenece el usuario.
+	\subitem \textbf{user permissions}: Contiene los permisos que tiene cada usuario.
+	\subitem \textbf{is staff}: Nos indica si este usuario puede acceder al sitio de administración.
+	\subitem \textbf{is active}: Nos indica si este usuario está activo.
+	\subitem \textbf{is superuser}: Nos indica si este usuario es super usuario.
+	\subitem \textbf{last login}: Nos indica una fecha y hora del último inicio de sesión del usuario.
+	\subitem \textbf{date joined}: Nos indica una fecha y hora de cuando se creó la cuenta del usuario.
+	
+\end{itemize}
 
 \section{Diseño procedimental}
 
+Para comprender y entender las funciones que va a desempeñar nuestra aplicación web he realizado un diagrama de navegabilidad \ref{fig:diseño/diagramaNavegabilidad}, el cual explicaré en detalle a continuación:
+
+\begin{itemize}
+	\item En primer lugar el usuario accede a la pantalla principal de la página.
+	\item Una vez dentro tiene dos opciones, registrarse e iniciar sesión o navegar sin las ventajas de ser usuario.
+	\item Si el usuario no inicia sesión podrá:
+	\subitem Seguir en Twitter a @UbuVerde.
+	\subitem Dar Me Gusta y compartir noticias de UbuVerde.
+	\subitem Visitar la página de UbuVerde (Acerca De Nosotros).
+	\subitem Ver el mapa con todos los árboles y seleccionar uno y ver sus características y fotos.
+	\subitem Ver todas las familias.
+	\subsubitem Elegir una o ver el mapa y seleccionar un árbol.
+	\subsubitem Si seleccionas una familia, la ves y eliges un género.
+	\subsubitem Una vez seleccionado el género, ves el género, la familia y eliges la especie.
+	\subsubitem Ves las características de la especie y eliges el individuo.
+	\subsubitem Ves las fotos, el mapa y las características del árbol seleccionado.
+	\subsubitem Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado.
+	\subitem Ver todos los géneros.
+	\subsubitem Elegir uno o ver el mapa y seleccionar un árbol.
+	\subsubitem Si seleccionas un género, ves la familia y el género seleccionado y eliges una especie.
+	\subsubitem Ves las características de la especie y eliges el individuo.
+	\subsubitem Ves las fotos, el mapa y las características del árbol seleccionado.
+	\subsubitem Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado.
+	\subitem Ver todas las especies.
+	\subsubitem Elegir una o ver el mapa y seleccionar un árbol.
+	\subsubitem Si seleccionas una especie, ves las características de la especie y eliges el individuo.
+	\subsubitem Ves las fotos, el mapa y las características del árbol seleccionado.
+	\subsubitem Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado.
+	\subitem Ver todos los individuos.
+	\subsubitem Ves las 5 ubicaciones y seleccionas una.
+	\subsubitem Ves el mapa con los árboles de esa ubicación y seleccionas uno.
+	\subsubitem Ves las fotos, el mapa y las características del árbol seleccionado.
+	\item Si el usuario inicia sesión podrá además de todas esas cosas anteriores:
+	\subitem Descargar un pdf con las características de los árboles.
+	\subitem Agregar nuevos árboles.
+	\subitem Cerrar sesión.
+
+\end{itemize}
+
+\imagen{diseño/diagramaNavegabilidad}{Diagrama de Navegabilidad}
+
 \section{Diseño arquitectónico}
+
+El proyecto como está realizado mediante el framework Django seguirá el patrón MVT\cite{MVT}.
+
+Es un framework muy parecido al MVC, pero con ligeros matices:
+\begin{itemize}
+	\item \textbf{M}: significa Model o Modelo, es la capa que tiene acceso a la base de datos. En ella esta contenida la información relacionada con los datos, es decir, cómo acceder a ellos, cómo se comportan, cómo se validan y las relaciones entre sí.
+	\item \textbf{V}: significa View o Vista, es la capa de la lógica de negocios. En ella esta contenida la lógica que accede al modelo y se comunica con el template o plantilla deseada. 
+	\item \textbf{T}: significa Template o Plantilla, es la capa de presentación. En ella estará contenido las decisiones que tienen que ver con la presentación de los datos, en nuestro caso como se va a ver la página web.
+\end{itemize}
+
+Muchas veces se tiende a decir que las Vistas de Django se pueden asemejar al controlador y las Plantillas pueden ser las vistas en el MVC, pero esto no es cierto, en realidad la vista en MVC describe los datos que son presentados al usuario; no necesariamente el cómo se mostrarán, pero si cuáles datos son presentados.

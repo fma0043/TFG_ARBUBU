@@ -3,10 +3,11 @@
 {% block title %}Registrate{% endblock %}
 
 {% block content %}
-    <form action="" method="POST">
+    <form method="POST">
         {% csrf_token %}
-        <br><br><br>
-        {{ form.as_p }}
-        <input type="submit" name="submit">
+        <div class="registrarse">
+          {{ form.as_p }}
+          <input type="submit" name="submit">
+        </div>
     </form>
 {% endblock content %}

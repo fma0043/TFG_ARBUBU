@@ -5,13 +5,13 @@ from django.forms import ModelForm
 from .models import Usuario, Individuos
 
 class SignUpForm(UserCreationForm):
-    first_name = forms.CharField(max_length=140, required=True)
-    last_name = forms.CharField(max_length=140, required=False)
+    nombre = forms.CharField(max_length=140, required=True)
+    apellido = forms.CharField(max_length=140, required=False)
     email = forms.EmailField(required=True)
 
     class Meta:
         model = User
-        fields = ('username','email','first_name','last_name','password1','password2','is_active','groups')
+        fields = ('username','email','nombre','apellido','password1','password2','is_active','groups')
 
 class IndividuosForm(ModelForm):
 
