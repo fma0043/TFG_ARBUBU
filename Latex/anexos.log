@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.6)  7 JAN 2020 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.6)  10 JAN 2020 20:08
 entering extended mode
 **./anexos.tex
 (anexos.tex
@@ -805,36 +805,36 @@ LaTeX Info: Redefining \% on input line 26.
 ual_programador.aux) (tex/E_Manual_usuario.aux))
 \openout1 = `anexos.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 443.
-LaTeX Font Info:    ... okay on input line 443.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 443.
-LaTeX Font Info:    ... okay on input line 443.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 443.
-LaTeX Font Info:    ... okay on input line 443.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 443.
-LaTeX Font Info:    ... okay on input line 443.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 443.
-LaTeX Font Info:    ... okay on input line 443.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 443.
-LaTeX Font Info:    ... okay on input line 443.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 443.
-LaTeX Font Info:    ... okay on input line 443.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 44
-3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 451.
+LaTeX Font Info:    ... okay on input line 451.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 451.
+LaTeX Font Info:    ... okay on input line 451.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 451.
+LaTeX Font Info:    ... okay on input line 451.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 451.
+LaTeX Font Info:    ... okay on input line 451.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 451.
+LaTeX Font Info:    ... okay on input line 451.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 451.
+LaTeX Font Info:    ... okay on input line 451.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 451.
+LaTeX Font Info:    ... okay on input line 451.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 45
+1.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \. on input line 443.
-LaTeX Info: Redefining \% on input line 443.
-LaTeX Info: Redefining \microtypecontext on input line 443.
+LaTeX Info: Redefining \. on input line 451.
+LaTeX Info: Redefining \% on input line 451.
+LaTeX Info: Redefining \microtypecontext on input line 451.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 443.
+LaTeX Info: Redefining \showhyphens on input line 451.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -875,7 +875,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 460.
 )
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring ON on input line 443.
+Package hyperref Info: Link coloring ON on input line 451.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -893,10 +893,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 443.
-LaTeX Info: Redefining \ref on input line 443.
-LaTeX Info: Redefining \pageref on input line 443.
-LaTeX Info: Redefining \nameref on input line 443.
+LaTeX Info: Redefining \nameref on input line 451.
+LaTeX Info: Redefining \ref on input line 451.
+LaTeX Info: Redefining \pageref on input line 451.
+LaTeX Info: Redefining \nameref on input line 451.
 (anexos.out) (anexos.out)
 \@outlinefile=\write4
 \openout4 = `anexos.out'.
@@ -904,52 +904,52 @@ LaTeX Info: Redefining \nameref on input line 443.
 <cabecera.pdf, id=119, 617.67549pt x 135.51413pt>
 File: cabecera.pdf Graphic file (type pdf)
 <use cabecera.pdf>
-Package pdftex.def Info: cabecera.pdf  used on input line 445.
+Package pdftex.def Info: cabecera.pdf  used on input line 453.
 (pdftex.def)             Requested size: 383.0pt x 84.02823pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-45.
+53.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
-45.
+53.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-445.
+453.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-445.
+453.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 445.
+(Font)              <12> on input line 453.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 445.
+(Font)              <8> on input line 453.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 445.
+(Font)              <6> on input line 453.
 <escudoInfor.pdf, id=120, 618.11432pt x 737.07487pt>
 File: escudoInfor.pdf Graphic file (type pdf)
 <use escudoInfor.pdf>
-Package pdftex.def Info: escudoInfor.pdf  used on input line 445.
+Package pdftex.def Info: escudoInfor.pdf  used on input line 453.
 (pdftex.def)             Requested size: 76.59883pt x 91.3356pt.
 
-Overfull \hbox (27.54143pt too wide) in paragraph at lines 445--445
+Overfull \hbox (27.54143pt too wide) in paragraph at lines 453--453
 [][][][][][][] $[]$ 
  []
 
 <./img/portada/logo.png, id=121, 150.5625pt x 150.5625pt>
 File: ./img/portada/logo.png Graphic file (type png)
 <use ./img/portada/logo.png>
-Package pdftex.def Info: ./img/portada/logo.png  used on input line 445.
+Package pdftex.def Info: ./img/portada/logo.png  used on input line 453.
 (pdftex.def)             Requested size: 114.90117pt x 114.90652pt.
 [1
 
@@ -962,7 +962,7 @@ pdfs with page group included in a single page
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 4
-64.
+72.
 
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1002,14 +1002,14 @@ Package microtype Info: Character `029' is missing
 
 
 ])
-LaTeX Info: Redefining \. on input line 465.
-LaTeX Info: Redefining \% on input line 465.
+LaTeX Info: Redefining \. on input line 473.
+LaTeX Info: Redefining \% on input line 473.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 465.
+(in both cases you will find help in the memoir manual). on input line 473.
 
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
@@ -1039,7 +1039,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.479 	\include{./tex/A_Plan_proyecto}
+l.487 	\include{./tex/A_Plan_proyecto}
                                        [1
 
 
@@ -1075,7 +1075,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 LaTeX Info: Redefining \. on input line 59.
 LaTeX Info: Redefining \% on input line 59.
 [5]
-<./img/requisitos/casosUso.png, id=602, 594.72188pt x 298.86656pt>
+<./img/requisitos/casosUso.png, id=636, 594.72188pt x 298.86656pt>
 File: ./img/requisitos/casosUso.png Graphic file (type png)
 <use ./img/requisitos/casosUso.png>
 Package pdftex.def Info: ./img/requisitos/casosUso.png  used on input line 61.
@@ -1138,7 +1138,7 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 \openout2 = `./tex/C_Diseno.aux'.
 
  (tex/C_Diseno.tex
-<./img/diseño/familias.png, id=648, 458.46281pt x 88.07906pt>
+<./img/diseño/familias.png, id=682, 458.46281pt x 88.07906pt>
 File: ./img/diseño/familias.png Graphic file (type png)
 <use ./img/diseño/familias.png>
 Package pdftex.def Info: ./img/diseño/familias.png  used on input line 11.
@@ -1154,12 +1154,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.Alph3.
                                                   \fi \fi 
 l.17 \end{itemize}
                    <./img/diseño/familias.png>]
-<./img/diseño/generos.png, id=655, 472.01344pt x 156.585pt>
+<./img/diseño/generos.png, id=689, 472.01344pt x 156.585pt>
 File: ./img/diseño/generos.png Graphic file (type png)
 <use ./img/diseño/generos.png>
 Package pdftex.def Info: ./img/diseño/generos.png  used on input line 19.
 (pdftex.def)             Requested size: 344.69766pt x 114.35149pt.
-<./img/diseño/especies.png, id=656, 478.78876pt x 250.68657pt>
+<./img/diseño/especies.png, id=690, 478.78876pt x 250.68657pt>
 File: ./img/diseño/especies.png Graphic file (type png)
 <use ./img/diseño/especies.png>
 Package pdftex.def Info: ./img/diseño/especies.png  used on input line 29.
@@ -1181,7 +1181,7 @@ h3.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.29 \imagen{diseño/especies}{Tabla Especie}
                                               <./img/diseño/generos.png>]
-<./img/diseño/individuos.png, id=662, 470.50781pt x 405.76593pt>
+<./img/diseño/individuos.png, id=696, 470.50781pt x 405.76593pt>
 File: ./img/diseño/individuos.png Graphic file (type png)
 <use ./img/diseño/individuos.png>
 Package pdftex.def Info: ./img/diseño/individuos.png  used on input line 42.
@@ -1214,7 +1214,7 @@ h3.4}) has been already used, duplicate ignored
 l.52 	\subitem
                \textbf{longitud}: Contiene la longitud del árbol, es un cam...
  <./img/diseño/individuos.png>]
-<./img/diseño/usuarios.png, id=673, 475.02469pt x 109.1578pt>
+<./img/diseño/usuarios.png, id=707, 475.02469pt x 109.1578pt>
 File: ./img/diseño/usuarios.png Graphic file (type png)
 <use ./img/diseño/usuarios.png>
 Package pdftex.def Info: ./img/diseño/usuarios.png  used on input line 62.
@@ -1239,15 +1239,15 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 122.
 LaTeX Info: Redefining \% on input line 122.
  [19]
-<./img/diseño/diagramaNavegabilidad.png, id=689, 826.58812pt x 344.03531pt>
+<./img/diseño/diagramaNavegabilidad.png, id=723, 826.58812pt x 344.03531pt>
 File: ./img/diseño/diagramaNavegabilidad.png Graphic file (type png)
 <use ./img/diseño/diagramaNavegabilidad.png>
 Package pdftex.def Info: ./img/diseño/diagramaNavegabilidad.png  used on input
  line 128.
 (pdftex.def)             Requested size: 344.69766pt x 143.47018pt.
 )
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 489.
+LaTeX Info: Redefining \% on input line 489.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -1257,10 +1257,10 @@ h3.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.481 	\include{./tex/C_Diseno}
+l.489 	\include{./tex/C_Diseno}
                                 <./img/diseño/diagramaNavegabilidad.png>]
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 489.
+LaTeX Info: Redefining \% on input line 489.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -1280,12 +1280,323 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 
-]) [25] (anexos.bbl [26
+] [25]
+<./img/manualUsuario/portadaSinRegistrar.png, id=754, 1005.7575pt x 495.35063pt
+>
+File: ./img/manualUsuario/portadaSinRegistrar.png Graphic file (type png)
+<use ./img/manualUsuario/portadaSinRegistrar.png>
+Package pdftex.def Info: ./img/manualUsuario/portadaSinRegistrar.png  used on i
+nput line 34.
+(pdftex.def)             Requested size: 344.69766pt x 169.76239pt.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+
+Overfull \vbox (0.85403pt too high) has occurred while \output is active []
+
+
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.36 N
+      os encontraremos con esta página \imagen{manualUsuario/registrarse}{R...
+ <./img/manualUsuario/portadaSinRegistrar.png>]
+<./img/manualUsuario/registrarse.png, id=763, 897.3525pt x 496.10344pt>
+File: ./img/manualUsuario/registrarse.png Graphic file (type png)
+<use ./img/manualUsuario/registrarse.png>
+Package pdftex.def Info: ./img/manualUsuario/registrarse.png  used on input lin
+e 36.
+(pdftex.def)             Requested size: 344.69766pt x 190.56514pt.
+<./img/manualUsuario/portadaConRegistro.png, id=764, 991.45406pt x 495.35063pt>
+
+File: ./img/manualUsuario/portadaConRegistro.png Graphic file (type png)
+<use ./img/manualUsuario/portadaConRegistro.png>
+Package pdftex.def Info: ./img/manualUsuario/portadaConRegistro.png  used on in
+put line 36.
+(pdftex.def)             Requested size: 344.69766pt x 172.21887pt.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.Al
+ph5.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.41 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.A
+lph5.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.41 
+      <./img/manualUsuario/registrarse.png> <./img/manualUsuario/portadaConRegi
+stro.png>]
+<./img/manualUsuario/iniciaSesion.png, id=772, 995.97093pt x 261.97874pt>
+File: ./img/manualUsuario/iniciaSesion.png Graphic file (type png)
+<use ./img/manualUsuario/iniciaSesion.png>
+Package pdftex.def Info: ./img/manualUsuario/iniciaSesion.png  used on input li
+ne 42.
+(pdftex.def)             Requested size: 344.69766pt x 90.67058pt.
+<./img/manualUsuario/paginaUbuVerde.png, id=776, 1003.49907pt x 488.57532pt>
+File: ./img/manualUsuario/paginaUbuVerde.png Graphic file (type png)
+<use ./img/manualUsuario/paginaUbuVerde.png>
+Package pdftex.def Info: ./img/manualUsuario/paginaUbuVerde.png  used on input 
+line 51.
+(pdftex.def)             Requested size: 344.69766pt x 167.82806pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+
+Overfull \vbox (0.85403pt too high) has occurred while \output is active []
+
+
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.51 ...lUsuario/paginaUbuVerde}{Página UbuVerde}
+                                                   <./img/manualUsuario/iniciaS
+esion.png>]
+<./img/manualUsuario/pdf.png, id=786, 757.32938pt x 444.15938pt>
+File: ./img/manualUsuario/pdf.png Graphic file (type png)
+<use ./img/manualUsuario/pdf.png>
+Package pdftex.def Info: ./img/manualUsuario/pdf.png  used on input line 61.
+(pdftex.def)             Requested size: 344.69766pt x 202.1606pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 .... \imagen{manualUsuario/pdf}{PDF árboles}
+                                                   <./img/manualUsuario/paginaU
+buVerde.png>]
+<./img/manualUsuario/agregarArbol.png, id=794, 904.1278pt x 496.10344pt>
+File: ./img/manualUsuario/agregarArbol.png Graphic file (type png)
+<use ./img/manualUsuario/agregarArbol.png>
+Package pdftex.def Info: ./img/manualUsuario/agregarArbol.png  used on input li
+ne 65.
+(pdftex.def)             Requested size: 344.69766pt x 189.13441pt.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+
+Overfull \vbox (0.85403pt too high) has occurred while \output is active []
+
+
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.67 \subsection
+                {Ver Mapa}pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.Alph5.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.67 \subsection
+                {Ver Mapa} <./img/manualUsuario/pdf.png> <./img/manualUsuario/a
+gregarArbol.png>]
+<./img/manualUsuario/arbolMapa.png, id=802, 1008.01593pt x 494.59781pt>
+File: ./img/manualUsuario/arbolMapa.png Graphic file (type png)
+<use ./img/manualUsuario/arbolMapa.png>
+Package pdftex.def Info: ./img/manualUsuario/arbolMapa.png  used on input line 
+69.
+(pdftex.def)             Requested size: 344.69766pt x 169.12703pt.
+<./img/manualUsuario/pantallaArbol.png, id=805, 995.97093pt x 477.28313pt>
+File: ./img/manualUsuario/pantallaArbol.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaArbol.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaArbol.png  used on input l
+ine 74.
+(pdftex.def)             Requested size: 344.69766pt x 165.18721pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.74 ...nualUsuario/pantallaArbol}{Pantalla Arbol}
+                                                   <./img/manualUsuario/arbolMa
+pa.png>]
+<./img/manualUsuario/pantallaFamilia.png, id=814, 792.71156pt x 447.17062pt>
+File: ./img/manualUsuario/pantallaFamilia.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaFamilia.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaFamilia.png  used on input
+ line 79.
+(pdftex.def)             Requested size: 344.69766pt x 194.44942pt.
+<./img/manualUsuario/pantallaFamilia2.png, id=816, 991.45406pt x 490.08093pt>
+File: ./img/manualUsuario/pantallaFamilia2.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaFamilia2.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaFamilia2.png  used on inpu
+t line 82.
+(pdftex.def)             Requested size: 344.69766pt x 170.38675pt.
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+
+Overfull \vbox (0.85403pt too high) has occurred while \output is active []
+
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 ...ntallaFamilia2}{Segunda Pantalla Familias}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.Alph5.10}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 ...ntallaFamilia2}{Segunda Pantalla Familias}
+                                                   <./img/manualUsuario/pantall
+aArbol.png> <./img/manualUsuario/pantallaFamilia.png>]
+<./img/manualUsuario/pantallaFamilia3.png, id=824, 983.17313pt x 483.30562pt>
+File: ./img/manualUsuario/pantallaFamilia3.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaFamilia3.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaFamilia3.png  used on inpu
+t line 85.
+(pdftex.def)             Requested size: 344.69766pt x 169.44711pt.
+<./img/manualUsuario/pantallaFamilia4.png, id=825, 886.81313pt x 494.59781pt>
+File: ./img/manualUsuario/pantallaFamilia4.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaFamilia4.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaFamilia4.png  used on inpu
+t line 88.
+(pdftex.def)             Requested size: 344.69766pt x 192.25087pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.88 ...antallaFamilia4}{Cuarta Pantalla Familias}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.Alph5.12}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.88 ...antallaFamilia4}{Cuarta Pantalla Familias}
+                                                   <./img/manualUsuario/pantall
+aFamilia2.png> <./img/manualUsuario/pantallaFamilia3.png>]
+<./img/manualUsuario/pantallaGenero.png, id=833, 903.375pt x 495.35063pt>
+File: ./img/manualUsuario/pantallaGenero.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaGenero.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaGenero.png  used on input 
+line 95.
+(pdftex.def)             Requested size: 344.69766pt x 189.01372pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+
+Overfull \vbox (0.85403pt too high) has occurred while \output is active []
+
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.95 ...Usuario/pantallaGenero}{Pantalla Géneros}
+                                                   <./img/manualUsuario/pantall
+aFamilia4.png>]
+<./img/manualUsuario/pantallaEspecies.png, id=844, 884.55469pt x 492.33937pt>
+File: ./img/manualUsuario/pantallaEspecies.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaEspecies.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaEspecies.png  used on inpu
+t line 106.
+(pdftex.def)             Requested size: 344.69766pt x 191.86133pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.106 ...ario/pantallaEspecies}{Pantalla Especies}
+                                                   <./img/manualUsuario/pantall
+aGenero.png>]
+<./img/manualUsuario/pantallaIndividuos.png, id=854, 988.44281pt x 491.58656pt>
+
+File: ./img/manualUsuario/pantallaIndividuos.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaIndividuos.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaIndividuos.png  used on in
+put line 115.
+(pdftex.def)             Requested size: 344.69766pt x 171.42778pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
+
+Overfull \vbox (0.85403pt too high) has occurred while \output is active []
+
+
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.Alp
+h5.15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.115 .../pantallaIndividuos}{Pantalla Individuos}
+                                                   <./img/manualUsuario/pantall
+aEspecies.png>]
+<./img/manualUsuario/pantallaIndividuos2.png, id=861, 992.20688pt x 492.33937pt
+>
+File: ./img/manualUsuario/pantallaIndividuos2.png Graphic file (type png)
+<use ./img/manualUsuario/pantallaIndividuos2.png>
+Package pdftex.def Info: ./img/manualUsuario/pantallaIndividuos2.png  used on i
+nput line 117.
+(pdftex.def)             Requested size: 344.69766pt x 171.03671pt.
+)
+LaTeX Info: Redefining \. on input line 491.
+LaTeX Info: Redefining \% on input line 491.
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.Al
+ph5.16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.491 	\include{./tex/E_Manual_usuario}
+                                       pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.Alph5.17}) has been already used, duplicate ig
+nored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.491 	\include{./tex/E_Manual_usuario}
+                                        <./img/manualUsuario/pantallaIndividuos
+.png> <./img/manualUsuario/pantallaIndividuos2.png>] (anexos.bbl [38
 
 
 ]
 bibitemlist
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
 .
 ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1295,7 +1606,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 6428) in paragraph at lines 4--10
+Underfull \hbox (badness 6428) in paragraph at lines 8--14
 \T1/lmtt/m/n/12 libros / django-[]1-[]0 / capitulo-[]5 / el-[]patron-[]de-[]dis
 eno-[]mtv$[][]\T1/lmr/m/n/12 (+20) , 2020.
  []
@@ -1305,9 +1616,9 @@ eno-[]mtv$[][]\T1/lmr/m/n/12 (+20) , 2020.
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 489.
+(in both cases you will find help in the memoir manual). on input line 497.
 
-[27]
+[39]
 \tf@toc=\write5
 \openout5 = `anexos.toc'.
 
@@ -1317,8 +1628,8 @@ either increase the head height or redesign the header
 \tf@lot=\write7
 \openout7 = `anexos.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 497.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 497.
  (anexos.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
@@ -1326,24 +1637,24 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  (tex/A_Plan_proyecto.aux) (tex/B_Requisitos.aux)
 (tex/C_Diseno.aux) (tex/D_Manual_programador.aux) (tex/E_Manual_usuario.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 497.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 497.
 Package rerunfilecheck Info: File `anexos.out' has not changed.
-(rerunfilecheck)             Checksum: FA94B720354E3306D39A09738B8C6A7C;2125.
+(rerunfilecheck)             Checksum: 01C4F3792862CA67F2B49EB23B2B4475;2125.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 489.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 497.
  ) 
 Here is how much of TeX's memory you used:
- 13314 strings out of 492484
- 200838 string characters out of 3121602
- 376399 words of memory out of 3000000
- 17205 multiletter control sequences out of 15000+200000
- 71246 words of font info for 84 fonts, out of 3000000 for 9000
+ 13524 strings out of 492484
+ 206875 string characters out of 3121602
+ 377782 words of memory out of 3000000
+ 17345 multiletter control sequences out of 15000+200000
+ 71610 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,43p,372b,706s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,12n,43p,565b,706s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
 c}{C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
 y.enc}<C:/Users/felix/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
@@ -1358,9 +1669,9 @@ onts/type1/public/lm/lmro12.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX 2
 KTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><C:/Users/felix/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/felix/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on anexos.pdf (33 pages, 830075 bytes).
+Output written on anexos.pdf (45 pages, 3197239 bytes).
 PDF statistics:
- 788 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 18715 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 955 PDF objects out of 1000 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
+ 18800 words of extra memory for PDF output out of 20736 (max. 10000000)
 

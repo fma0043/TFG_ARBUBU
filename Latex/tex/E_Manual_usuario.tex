@@ -2,8 +2,118 @@
 
 \section{Introducción}
 
+En este apartado explicaremos los requisitos mínimos que debe cumplir el dispositivo donde se ejecutará el diseño web, lo que deben instalar y un manual de usuario.
+
 \section{Requisitos de usuarios}
+
+Al tratarse de una aplicación web, los requisitos que necesita el usuario son:
+
+\begin{itemize}
+	\item Un navegador instalado (Google Chrome, Microsoft Edge, Mozilla Firefox, Opera ...)
+	\item Cookies activadas.
+	\item Compatibilidad con hojas de estilo CSS.
+	\item JavaScript activado.
+	\item Conexión a internet, ya que los mapas lo necesitan para cargarse.
+	\item Al ejecutarse en localhost, necesitará el código fuente y el entorno virtual creado.
+\end{itemize}
+ 
+ La aplicación web se ha probado en diferentes navegadores y funciona correctamente, también funcionaría para dispositivos móviles ya que por lo único que nos podría dar algún problema es la introducción de mapas y la tecnología leaflet está pensada para que funcione en el móvil correctamente.
 
 \section{Instalación}
 
+Al trabajar en localhost como hemos explicado anteriormente, necesitaremos disponer del código fuente que se podrá descargar desde GitHub \cite{GitHub}. El repositorio se podrá descargar a partir de esta dirección: \cite{Repositorio}
+
+Como se trata de un manual para que el usuario sea capaz de probar la aplicación web y no de manipular el código no será necesario la instalación de ningún componente extra.
+
 \section{Manual del usuario}
+
+En este apartado se mostrará como manejar la aplicación. Como hemos explicado anteriormente no es necesario registrarse, ni iniciar sesión para navegar en la página, simplemente agregará funcionalidades. 
+
+\subsection{Registrarse}
+
+Una vez dentro de la dirección de la aplicación nos encontraremos con esta página inicial \imagen{manualUsuario/portadaSinRegistrar}{PortadaSinregistro},en la parte de arriba a la derecha tenemos tres botones, INICIA SESION, REGISTRATE y ACERCA DE NOSOTROS. En este caso pulsaremos sobre REGISTRATE.
+
+Nos encontraremos con esta página \imagen{manualUsuario/registrarse}{Registro} y cumplimentamos los campos. Una vez registrados nos mandará a la página de inicio y automáticamente iniciará sesión. \imagen{manualUsuario/portadaConRegistro}{PortadaConregistro}
+
+\subsection{Iniciar Sesión}
+
+Si ya estamos registrados, unicamente tendremos que iniciar sesión, nos encontraremos con esta pantalla: \ref{fig:manualUsuario/portadaSinRegistrar} para ello como dijimos anteriormente nos encontraremos los tres botones, pero en este caso iremos a INICIA SESION.
+
+Veremos esta página \imagen{manualUsuario/iniciaSesion}{Iniciar Sesión} y cumplimentamos los campos. Una vez iniciada la sesión nos mandará a la página de inicio. \ref{fig:manualUsuario/portadaConRegistro}
+
+\subsection{Seguir a @UbuVerde, compartir y dar Like en Facebook}
+
+En la página de inicio \ref{fig:manualUsuario/portadaSinRegistrar} arriba a la derecha debajo de los tres botones mencionados tendremos un botón de seguir a @ubuVerde en twitter y dos botones seguidos de compartir y dar me gusta en Facebook a la página de UbuVerde.
+
+\subsection{Visitar página UbuVerde}
+
+Como dijimos anteriormente en la página de inicio \ref{fig:manualUsuario/portadaSinRegistrar} arriba a la derecha el último botón es ACERCA DE NOSOTROS, si pulsamos en el nos mandará a la página de UbuVerde.
+\imagen{manualUsuario/paginaUbuVerde}{Página UbuVerde} 
+
+\subsection{Descargar Individuos}
+
+En cambio si sí nos registramos e iniciamos sesión tendremos la posibilidad de descargarnos un pdf con las caracteristicas de todos los árboles y su ubicación, nos encontramos en esta pantalla: \ref{fig:manualUsuario/portadaConRegistro}
+
+ 
+Ahora ya no tendremos arriba a la derecha los botones de iniciar sesión y registrarse, si no que aparecerán el botón de CERRAR SESION, DESCARGAR INDIVIDUOS, AGREGAR INDIVIDUOS y ACERCA DE NOSOTROS.
+
+
+Si pulsamos en DESCARGAR INDIVIDUOS, nos abrirá un pdf que podremos descargar. \imagen{manualUsuario/pdf}{PDF árboles}
+
+\subsection{Agregar Individuos}
+
+En la pantalla de inicio \ref{fig:manualUsuario/portadaConRegistro} si estamos registrados, en la parte de arriba a la derecha podemos introducir algún árbol en la base de datos si pulsamos en AGREGAR INDIVIDUOS. Nos redirigirá a esta página \imagen{manualUsuario/agregarArbol}{Agregar árboles} cumplimentamos los campos y automáticamente se agregará a la base de datos.
+
+\subsection{Ver Mapa}
+
+En la pantalla de inicio independientemente estemos o no registrados, veremos en la parte central un mapa con todos los árboles que he introducido en la base de datos,\imagen{manualUsuario/arbolMapa}{Arbol resaltado en mapa} si pulsamos en alguno de los iconos se verá resaltado las características de dicho árbol y un enlace \ref{fig:manualUsuario/pantallaArbol} para ver más en profundidad esas características, además de sus fotos y el mapa con el árbol resaltado.
+
+\subsection{Ver Arbol}
+
+En la pantalla de inicio como hemos dicho antes en la parte central tenemos un mapa y si pinchamos en algún icono se vera resaltado un árbol con sus características y un enlace, si pulsamos en dicho enlace nos llevará a esta página \ref{fig:manualUsuario/pantallaArbol} donde podremos observar las características del árbol y un slide a la derecha con las fotos y el mapa donde está ubicado el árbol.
+\imagen{manualUsuario/pantallaArbol}{Pantalla Arbol}
+
+\subsection{Ver Familias}
+
+En la pantalla de inicio independientemente estemos o no registrados, veremos un menú en el cual tendremos INICIO, FAMILIAS, GENEROS, ESPECIES e INDIVIDUOS, en este caso debemos ir a FAMILIAS. Una vez pulsado nos aparecerá esta pantalla: 
+\imagen{manualUsuario/pantallaFamilia}{Pantalla Familias}
+
+en ella veremos una lista desplegable con todas las familias existentes y un mapa con todos los árboles, si pulsamos en cualquier icono del mapa y pinchamos en el enlace iremos a esta página \ref{fig:manualUsuario/pantallaArbol} y si pulsamos en alguna de las familias existentes en ir nos llevará a la siguiente pantalla:
+\imagen{manualUsuario/pantallaFamilia2}{Segunda Pantalla Familias}
+
+en ella veremos la familia seleccionada y una lista desplegable de todos los géneros de dicha especie, si elegimos uno y pulsamos en ir nos aparecerá la siguiente pantalla:
+\imagen{manualUsuario/pantallaFamilia3}{Tercera Pantalla Familias}
+
+en ella veremos la familia y el genero seleccionados y una lista desplegable con todas las especies de dicho genero, si elegimos uno y pulsamos en ir nos aparecerá la siguiente pantalla:
+\imagen{manualUsuario/pantallaFamilia4}{Cuarta Pantalla Familias}
+
+en ella veremos las características de la especie seleccionada y una lista desplegable con todos los árboles de la especie, si elegimos uno y pulsamos en ir nos aparecerá la siguiente pantalla: \ref{fig:manualUsuario/pantallaArbol}
+
+\subsection{Ver Géneros}
+
+En la pantalla de inicio independientemente estemos o no registrados, veremos un menú en el cual tendremos INICIO, FAMILIAS, GENEROS, ESPECIES e INDIVIDUOS, en este caso debemos ir a GENEROS. Una vez pulsado nos aparecerá esta pantalla: 
+\imagen{manualUsuario/pantallaGenero}{Pantalla Géneros}
+
+en ella veremos una lista desplegable con todos los géneros existentes y un mapa con todos los árboles, si pulsamos en cualquier icono del mapa y pinchamos en el enlace iremos a esta página \ref{fig:manualUsuario/pantallaArbol} y si pulsamos en alguno de los géneros existentes en ir nos llevará a la siguiente pantalla: \ref{fig:manualUsuario/pantallaFamilia3}
+
+en ella veremos el genero seleccionado y la familia a la que pertenece y una lista desplegable con todas las especies de dicho genero, si elegimos uno y pulsamos en ir nos aparecerá la siguiente pantalla: \ref{fig:manualUsuario/pantallaFamilia4}
+
+en ella veremos las características de la especie seleccionada y una lista desplegable con todos los árboles de la especie, si elegimos uno y pulsamos en ir nos aparecerá la siguiente pantalla: \ref{fig:manualUsuario/pantallaArbol}
+
+\subsection{Ver Especies}
+
+En la pantalla de inicio independientemente estemos o no registrados, veremos un menú en el cual tendremos INICIO, FAMILIAS, GENEROS, ESPECIES e INDIVIDUOS, en este caso debemos ir a ESPECIES. Una vez pulsado nos aparecerá esta pantalla: 
+\imagen{manualUsuario/pantallaEspecies}{Pantalla Especies}
+
+en ella veremos una lista desplegable con todas las especies existentes y un mapa con todos los árboles, si pulsamos en cualquier icono del mapa y pinchamos en el enlace iremos a esta página \ref{fig:manualUsuario/pantallaArbol} y si pulsamos en alguna de las especies existentes en ir nos llevará a la siguiente pantalla: \ref{fig:manualUsuario/pantallaFamilia4}
+
+en ella veremos las características de la especie seleccionada y una lista desplegable con todos los árboles de la especie, si elegimos uno y pulsamos en ir nos aparecerá la siguiente pantalla: \ref{fig:manualUsuario/pantallaArbol}
+
+\subsection{Ver Individuos}
+
+En la pantalla de inicio independientemente estemos o no registrados, veremos un menú en el cual tendremos INICIO, FAMILIAS, GENEROS, ESPECIES e INDIVIDUOS, en este caso debemos ir a INDIVIDUOS. Una vez pulsado nos aparecerá esta pantalla: 
+\imagen{manualUsuario/pantallaIndividuos}{Pantalla Individuos}
+
+en ella veremos las cinco ubicaciones y si pulsamos sobre cualquiera de ellas veremos:  \imagen{manualUsuario/pantallaIndividuos2}{Segunda Pantalla Individuos}
+
+podemos observar como se resalta la ubicación seleccionada, una lista desplegable con todos los árboles que hay en esa ubicación y un mapa, si pulsamos en cualquier icono del mapa y pinchamos en el enlace iremos a esta página \ref{fig:manualUsuario/pantallaArbol} y si pulsamos en alguno de los arboles existentes en ir nos llevará también a la  misma pantalla: \ref{fig:manualUsuario/pantallaArbol}

@@ -34,6 +34,18 @@
 \contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{25}{appendix.Alph5}%
 \contentsline {section}{\numberline {E.1}Introducción}{25}{section.Alph5.1}%
 \contentsline {section}{\numberline {E.2}Requisitos de usuarios}{25}{section.Alph5.2}%
-\contentsline {section}{\numberline {E.3}Instalación}{25}{section.Alph5.3}%
-\contentsline {section}{\numberline {E.4}Manual del usuario}{25}{section.Alph5.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{27}{appendix*.12}%
+\contentsline {section}{\numberline {E.3}Instalación}{26}{section.Alph5.3}%
+\contentsline {section}{\numberline {E.4}Manual del usuario}{26}{section.Alph5.4}%
+\contentsline {subsection}{Registrarse}{26}{section*.12}%
+\contentsline {subsection}{Iniciar Sesión}{28}{section*.13}%
+\contentsline {subsection}{Seguir a @UbuVerde, compartir y dar Like en Facebook}{28}{section*.14}%
+\contentsline {subsection}{Visitar página UbuVerde}{28}{section*.15}%
+\contentsline {subsection}{Descargar Individuos}{29}{section*.16}%
+\contentsline {subsection}{Agregar Individuos}{30}{section*.17}%
+\contentsline {subsection}{Ver Mapa}{31}{section*.18}%
+\contentsline {subsection}{Ver Arbol}{31}{section*.19}%
+\contentsline {subsection}{Ver Familias}{32}{section*.20}%
+\contentsline {subsection}{Ver Géneros}{34}{section*.21}%
+\contentsline {subsection}{Ver Especies}{35}{section*.22}%
+\contentsline {subsection}{Ver Individuos}{36}{section*.23}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{39}{appendix*.24}%

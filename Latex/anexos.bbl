@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{Repositorio}
+Félix~Movilla Alonso.
+\newblock \url{https://github.com/fma0043/TFG_ARBUBU}, Enero 2020.
+
 \bibitem{MVT}
 {Uniwebsidad}.
 \newblock El patrón de diseño mtv.
@@ -7,5 +11,11 @@
   \url{https://uniwebsidad.com/libros/django-1-0/capitulo-5/el-patron-de-diseno-mtv},
   2020.
 \newblock [Online; accessed 07-Ene-2020].
+
+\bibitem{GitHub}
+{Wikipedia contributors}.
+\newblock Github.
+\newblock \url{https://es.wikipedia.org/wiki/GitHub}, Septiembre 2019.
+\newblock [Online; accessed 8-Oct-2019].
 
 \end{thebibliography}
