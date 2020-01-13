@@ -12,75 +12,86 @@ Para el almacenaje de los datos de la aplicación he utilizado una base de datos
 
 \begin{itemize}
 	\item \textbf{FAMILIA}: En este modelo se va a guardar la información relacionada con las familias de árboles existentes en las universidades de Burgos, está compuesta por dos campos que son:
-		\subitem \textbf{idFamilia}: Es la clave primaria de la tabla y contiene un identificador único para cada familia.
-		\subitem \textbf{nombreFamilia}: Contiene el nombre de la familia, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
+	\begin{itemize}
+		\item \textbf{idFamilia}: Es la clave primaria de la tabla y contiene un identificador único para cada familia.
+		\item \textbf{nombreFamilia}: Contiene el nombre de la familia, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
+	\end{itemize}
 \end{itemize}
 
 \imagen{diseño/generos}{Tabla Genero}
 
 \begin{itemize}
 	\item \textbf{GENERO}: En este modelo se va a guardar la información relacionada con los géneros de árboles existentes en las universidades de Burgos, está compuesta por tres campos que son:
-	\subitem \textbf{idGenero}: Es la clave primaria de la tabla y contiene un identificador único para cada género.
-	\subitem \textbf{nombreFamilia}: Contiene el nombre del género, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
-	\subitem \textbf{familia}: Contiene el nombre de la familia, es una FK.
+	\begin{itemize}
+		\item \textbf{idGenero}: Es la clave primaria de la tabla y contiene un identificador único para cada género.
+		\item \textbf{nombreFamilia}: Contiene el nombre del género, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
+		\item \textbf{familia}: Contiene el nombre de la familia, es una FK.
+	\end{itemize}
 \end{itemize}
-
 
 \imagen{diseño/especies}{Tabla Especie}
 
 \begin{itemize}
 	\item \textbf{ESPECIE}: En este modelo se va a guardar la información relacionada con las especies de árboles existentes en las universidades de Burgos, está compuesta por siete campos que son:
-	\subitem \textbf{idEspecie}: Es la clave primaria de la tabla y contiene un identificador único para cada especie.
-	\subitem \textbf{nombreCientificoEspecie}: Contiene el nombre científico de la especie, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
-	\subitem \textbf{nombreComunEspecie}: Contiene el nombre común de la especie, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
-	\subitem \textbf{genero}: Contiene el nombre del género, es una FK.
-	\subitem \textbf{autoctona}: Contiene si la especie es autóctona, es un campo de tipo booleano y no se puede dejar en blanco.
-	\subitem \textbf{descripcion}: Contiene una pequeña descripción de la especie, es un campo de tipo texto y no se puede dejar en blanco.
-	\subitem \textbf{ecologia}: Contiene la ecología de la especie, es un campo de tipo texto y no se puede dejar en blanco.
+	\begin{itemize}
+		\item \textbf{idEspecie}: Es la clave primaria de la tabla y contiene un identificador único para cada especie.
+		\item \textbf{nombreCientificoEspecie}: Contiene el nombre científico de la especie, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres.
+		\item \textbf{nombreComunEspecie}: Contiene el nombre común de la especie, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres.
+		\item \textbf{genero}: Contiene el nombre del género, es una FK.
+		\item \textbf{autoctona}: Contiene si la especie es autóctona, es un campo de tipo booleano y no se puede dejar en blanco.
+		\item \textbf{descripcion}: Contiene una pequeña descripción de la especie, es un campo de tipo texto y no se puede dejar en blanco.
+		\item \textbf{ecologia}: Contiene la ecología de la especie, es un campo de tipo texto y no se puede dejar en blanco.
+	\end{itemize}
 \end{itemize}
 
 \imagen{diseño/individuos}{Tabla Individuos}
 
 \begin{itemize}
 	\item \textbf{INDIVIDUO}: En este modelo se va a guardar la información relacionada con cada uno de árboles existentes en las universidades de Burgos, está compuesta por catorce campos que son:
-	\subitem \textbf{idIndividuo}: Es la clave primaria de la tabla y contiene un identificador único para cada individuo.
-	\subitem \textbf{nombreComun}: Contiene el nombre común del árbol, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
-	\subitem \textbf{especie}: Contiene el nombre de la especie, es una FK.
-	\subitem \textbf{motivoSingular}: Contiene un motivo de por qué el árbol es singular, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
-	\subitem \textbf{explicacionMotivoSingular}: Contiene una explicación más detallada de porque el árbol es singular, es un campo de tipo texto y no se puede dejar en blanco.
-	\subitem \textbf{latitud}: Contiene la latitud del árbol, es un campo de tipo decimal y no se puede dejar en blanco.
-	\subitem \textbf{longitud}: Contiene la longitud del árbol, es un campo de tipo decimal y no se puede dejar en blanco.
-	\subitem \textbf{fotoArbol}: Contiene la foto del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
-	\subitem \textbf{fotoHojas}: Contiene la foto de las hojas del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
-	\subitem \textbf{fotoTronco}: Contiene la foto del tronco del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
-	\subitem \textbf{fotoFrutos}: Contiene la foto de los frutos del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
-	\subitem \textbf{ubicacion}: Contiene la ubicación del árbol, es decir, la zona universitaria donde está ubicado, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
-	\subitem \textbf{altura}: Contiene la altura del árbol, es un campo de tipo decimal, si se puede dejar en blanco y con un tamaño máximo de 19 caracteres.
-	\subitem \textbf{perimetro}: Contiene el perímetro del árbol, es un campo de tipo decimal, si se puede dejar en blanco y con un tamaño máximo de 19 caracteres.  
+	\begin{itemize}
+		\item \textbf{idIndividuo}: Es la clave primaria de la tabla y contiene un identificador único para cada individuo.
+		\item \textbf{nombreComun}: Contiene el nombre común del árbol, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 30 caracteres. 
+		\item \textbf{especie}: Contiene el nombre de la especie, es una FK.
+		\item \textbf{motivoSingular}: Contiene un motivo de por qué el árbol es singular, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres. 
+		\item \textbf{explicacionMotivoSingular}: Contiene una explicación más detallada de porque el árbol es singular, es un campo de tipo texto y no se puede dejar en blanco.
+		\item \textbf{latitud}: Contiene la latitud del árbol, es un campo de tipo decimal y no se puede dejar en blanco.
+		\item \textbf{longitud}: Contiene la longitud del árbol, es un campo de tipo decimal y no se puede dejar en blanco.
+		\item \textbf{fotoArbol}: Contiene la foto del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
+		\item \textbf{fotoHojas}: Contiene la foto de las hojas del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
+		\item \textbf{fotoTronco}: Contiene la foto del tronco del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
+		\item \textbf{fotoFrutos}: Contiene la foto de los frutos del árbol, es un campo de tipo imagen y si se puede dejar en blanco.
+		\item \textbf{ubicacion}: Contiene la ubicación del árbol, es decir, la zona universitaria donde está ubicado, es un campo de tipo texto, no se puede dejar en blanco y con un tamaño máximo de 50 caracteres.
+		\item \textbf{altura}: Contiene la altura del árbol, es un campo de tipo decimal, si se puede dejar en blanco y con un tamaño máximo de 19 caracteres.
+		\item \textbf{perimetro}: Contiene el perímetro del árbol, es un campo de tipo decimal, si se puede dejar en blanco y con un tamaño máximo de 19 caracteres.  
+	\end{itemize}
 \end{itemize}
 
 \imagen{diseño/usuarios}{Tabla Usuario}
 
 \begin{itemize}
 	\item \textbf{USUARIO}: En este modelo se va a guardar la información relacionada con los usuarios, está compuesta por dos campos que son:
-	\subitem \textbf{idUsuario}: Es la clave primaria de la tabla y contiene un identificador único para cada usuario.
-	\subitem \textbf{usuario}: Contiene el nombre del usuario, es una FK. 
+		\begin{itemize}
+		\item \textbf{idUsuario}: Es la clave primaria de la tabla y contiene un identificador único para cada usuario.
+		\item \textbf{usuario}: Contiene el nombre del usuario, es una FK. 
+	\end{itemize}
 \end{itemize}
 
 \begin{itemize}
 	\item \textbf{USER}: Este modelo está diseñado por el framework y guarda información relacionada con los usuarios, está compuesta por doce campos que son:
-	\subitem \textbf{username}: Contiene el nombre del usuario, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 150 caracteres.
-	\subitem \textbf{first name}: Contiene el nombre del usuario, es un campo de tipo texto, se puede dejar en blanco y con un tamaño máximo de 30 caracteres.
-	\subitem \textbf{last name}: Contiene el apellido del usuario, es un campo de tipo texto, se puede dejar en blanco y con un tamaño máximo de 150 caracteres.
-	\subitem \textbf{email}: Contiene el email del usuario, es un campo de tipo email y se puede dejar en blanco.
-	\subitem \textbf{password}: Contiene la contraseña del usuario, es un campo de tipo texto, es necesario y se encripta.
-	\subitem \textbf{groups}: Contiene el grupo al cual pertenece el usuario.
-	\subitem \textbf{user permissions}: Contiene los permisos que tiene cada usuario.
-	\subitem \textbf{is staff}: Nos indica si este usuario puede acceder al sitio de administración.
-	\subitem \textbf{is active}: Nos indica si este usuario está activo.
-	\subitem \textbf{is superuser}: Nos indica si este usuario es super usuario.
-	\subitem \textbf{last login}: Nos indica una fecha y hora del último inicio de sesión del usuario.
-	\subitem \textbf{date joined}: Nos indica una fecha y hora de cuando se creó la cuenta del usuario.
+	\begin{itemize}
+		\item \textbf{username}: Contiene el nombre del usuario, es un campo de tipo texto, tiene que ser único, no se puede dejar en blanco y con un tamaño máximo de 150 caracteres.
+		\item \textbf{first name}: Contiene el nombre del usuario, es un campo de tipo texto, se puede dejar en blanco y con un tamaño máximo de 30 caracteres.
+		\item \textbf{last name}: Contiene el apellido del usuario, es un campo de tipo texto, se puede dejar en blanco y con un tamaño máximo de 150 caracteres.  
+		\item \textbf{email}: Contiene el email del usuario, es un campo de tipo email y se puede dejar en blanco.
+		\item \textbf{password}: Contiene la contraseña del usuario, es un campo de tipo texto, es necesario y se encripta.
+		\item \textbf{groups}: Contiene el grupo al cual pertenece el usuario. 
+		\item \textbf{user permissions}: Contiene los permisos que tiene cada usuario.
+		\item \textbf{is staff}: Nos indica si este usuario puede acceder al sitio de administración.
+		\item \textbf{is active}: Nos indica si este usuario está activo.  
+		\item \textbf{is superuser}: Nos indica si este usuario es super usuario.
+		\item \textbf{last login}: Nos indica una fecha y hora del último inicio de sesión del usuario.
+		\item \textbf{date joined}: Nos indica una fecha y hora de cuando se creó la cuenta del usuario. 
+	\end{itemize}
 	
 \end{itemize}
 
@@ -92,37 +103,49 @@ Para comprender y entender las funciones que va a desempeñar nuestra aplicació
 	\item En primer lugar el usuario accede a la pantalla principal de la página.
 	\item Una vez dentro tiene dos opciones, registrarse e iniciar sesión o navegar sin las ventajas de ser usuario.
 	\item Si el usuario no inicia sesión podrá:
-	\subitem Seguir en Twitter a @UbuVerde.
-	\subitem Dar Me Gusta y compartir noticias de UbuVerde.
-	\subitem Visitar la página de UbuVerde (Acerca De Nosotros).
-	\subitem Ver el mapa con todos los árboles y seleccionar uno y ver sus características y fotos.
-	\subitem Ver todas las familias.
-	\subsubitem Elegir una o ver el mapa y seleccionar un árbol.
-	\subsubitem Si seleccionas una familia, la ves y eliges un género.
-	\subsubitem Una vez seleccionado el género, ves el género, la familia y eliges la especie.
-	\subsubitem Ves las características de la especie y eliges el individuo.
-	\subsubitem Ves las fotos, el mapa y las características del árbol seleccionado.
-	\subsubitem Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado.
-	\subitem Ver todos los géneros.
-	\subsubitem Elegir uno o ver el mapa y seleccionar un árbol.
-	\subsubitem Si seleccionas un género, ves la familia y el género seleccionado y eliges una especie.
-	\subsubitem Ves las características de la especie y eliges el individuo.
-	\subsubitem Ves las fotos, el mapa y las características del árbol seleccionado.
-	\subsubitem Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado.
-	\subitem Ver todas las especies.
-	\subsubitem Elegir una o ver el mapa y seleccionar un árbol.
-	\subsubitem Si seleccionas una especie, ves las características de la especie y eliges el individuo.
-	\subsubitem Ves las fotos, el mapa y las características del árbol seleccionado.
-	\subsubitem Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado.
-	\subitem Ver todos los individuos.
-	\subsubitem Ves las 5 ubicaciones y seleccionas una.
-	\subsubitem Ves el mapa con los árboles de esa ubicación y seleccionas uno.
-	\subsubitem Ves las fotos, el mapa y las características del árbol seleccionado.
+	\begin{itemize}
+		\item Seguir en Twitter a @UbuVerde.
+		\item Dar Me Gusta y compartir noticias de UbuVerde. 
+		\item Visitar la página de UbuVerde (Acerca De Nosotros). 
+		\item Ver el mapa con todos los árboles y seleccionar uno y ver sus características y fotos.
+		\item Ver todas las familias:
+		\begin{itemize}
+			\item Elegir una o ver el mapa y seleccionar un árbol.
+			\item Si seleccionas una familia, la ves y eliges un género.
+			\item Una vez seleccionado el género, ves el género, la familia y eliges la especie.
+			\item Ves las características de la especie y eliges el individuo.
+			\item Ves las fotos, el mapa y las características del árbol seleccionado.
+			\item Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado.
+		\end{itemize} 
+		\item Ver todos los géneros:
+		\begin{itemize}
+			\item Elegir uno o ver el mapa y seleccionar un árbol.
+			\item Si seleccionas un género, ves la familia y el género seleccionado y eliges una especie.
+			\item Ves las características de la especie y eliges el individuo.
+			\item Ves las fotos, el mapa y las características del árbol seleccionado.
+			\item Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado. 
+		\end{itemize}
+		\item Ver todas las especies:
+		\begin{itemize}
+			\item Elegir una o ver el mapa y seleccionar un árbol.
+			\item Si seleccionas una especie, ves las características de la especie y eliges el individuo.
+			\item Ves las fotos, el mapa y las características del árbol seleccionado.
+			\item Si seleccionas un árbol ves las características del árbol, las fotos y el mapa donde esta ubicado.
+		\end{itemize}
+		\item Ver todos los individuos:
+		\begin{itemize}
+			\item Ves las 5 ubicaciones y seleccionas una.
+			\item Ves el mapa con los árboles de esa ubicación y seleccionas uno.
+			\item Ves las fotos, el mapa y las características del árbol seleccionado.
+		\end{itemize}
+	\end{itemize}
 	\item Si el usuario inicia sesión podrá además de todas esas cosas anteriores:
-	\subitem Descargar un pdf con las características de los árboles.
-	\subitem Agregar nuevos árboles.
-	\subitem Cerrar sesión.
-
+	\begin{itemize}
+		\item Descargar un pdf con las características de los árboles.
+		\item Agregar nuevos árboles.
+		\item Cerrar sesión.
+	\end{itemize}
+	
 \end{itemize}
 
 \imagen{diseño/diagramaNavegabilidad}{Diagrama de Navegabilidad}

@@ -18,13 +18,11 @@
         <div class="tituloEspecies">
           <h1>Familias Existentes</h1>
         </div>
-
           <div class="listado" style="top: 240px;left: 250px;">
           <form name="link" ><select name="menu">
           <option selected="selected">Elige la familia deseada</option>
           {% for l in familia %}
             {% if l.idFamilia == 37 %}
-
               <option value="adoxaceas">{{l.nombreFamilia}}</option>
             {% endif %}
             {% if l.idFamilia == 3 %}

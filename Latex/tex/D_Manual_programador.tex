@@ -2,10 +2,121 @@
 
 \section{Introducción}
 
+En este apartado se va a explicar todo lo que tiene que conocer un programador para seguir con el desarrollo del proyecto, la estructura de directorios, la compilación, instalación y ejecución del proyecto y las pruebas realizadas.
+
 \section{Estructura de directorios}
 
+En este apartado se van a describir y poner en manifiesto la estructura de directorios del proyecto:
+
+\begin{itemize}
+	\item \textbf{TFG ARBUBU/}: Es la carpeta raíz, donde está contenido la documentación y la parte de programación del proyecto.
+	\begin{itemize}
+		\item \textbf{/Latex/}: Es la carpeta donde está la documentación del proyecto:
+		\begin{itemize}
+			\item \textbf{/Latex/memoria.pdf}: Es el documento que contiene la memoria del proyecto en formato .pdf
+			\item \textbf{/Latex/anexo.pdf}: Es el documento que contiene los anexos del proyecto en formato .pdf
+			\item \textbf{/Latex/img/}: Es la carpeta que contiene las imágenes utilizadas en el documento latex.
+			\item \textbf{/Latex/text/}: Es la carpeta que contiene los documentos .text utilizados tanto en la memoria como en los anexos.
+		\end{itemize}
+		\item \textbf{/Proyectos/}: Es la carpeta donde está alojado tanto el entorno virtual como la parte de programación del proyecto:
+		\begin{itemize}
+			\item \textbf{/Proyectos/Entorno}: Es la carpeta donde está ubicado el entorno virtual del proyecto.
+			\item \textbf{/Proyectos/arbubu/}: Es la carpeta donde está ubicado la programación del proyecto:
+			\begin{itemize}
+				\item \textbf{/Proyectos/arbubu/aplicaciones/}: Es la parte del código que separa una aplicación de otra, en mi caso solo tengo una, pero si tuviera más iría en este apartado y serían aplicaciones totalmente independientes.
+				\item \textbf{/Proyectos/arbubu/aplicaciones/principal/}: Contiene los distintos archivos de la aplicación:
+				\item \textbf{/Proyectos/arbubu/aplicaciones/principal/init.py}: Es un archivo vacío le dice a Python que esta carpeta es un paquete.
+				\item \textbf{/Proyectos/arbubu/aplicaciones/principal/admin.py}: Es un archivo de que contiene la configuración para poder usar la aplicación Django Admin.
+				\item \textbf{/Proyectos/arbubu/aplicaciones/principal/apps.py}: Es un archivo que contiene la configuración de nuestra aplicación.
+				\item \textbf{/Proyectos/arbubu/aplicaciones/principal/forms.py}: Es un archivo que contiene la configuración de los formularios que vamos a utilizar en nuestra aplicación.
+				\item \textbf{/Proyectos/arbubu/aplicaciones/principal/models.py}: Es un archivo que contiene las entidades que vamos a definir en nuestra aplicación web, cada uno de los modelos definidos se convierten en una tabla en nuestra base de datos. 
+				\item \textbf{/Proyectos/arbubu/aplicaciones/principal/urls.py}: Es un archivo que contiene todas las urls definidas en nuestra aplicación.
+				\item \textbf{/Proyectos/arbubu/aplicaciones/principal/views.py}: Es un archivo que contiene todas las vistas definidas en nuestra aplicación.
+				\item \textbf{/Proyectos/arbubu/arbubu/}: Es la parte del código que engloba a todas las aplicaciones y tiene las configuraciones globales.
+				\item \textbf{/Proyectos/arbubu/arbubu/init.py}: Es un archivo vacío le dice a Python que esta carpeta es un paquete.
+				\item \textbf{/Proyectos/arbubu/arbubu/settings.py}: Es un archivo que contiene todos los ajustes, registramos las aplicaciones que hemos creado, donde se ubican los ficheros estáticos, la configuración de la base de datos...
+				\item \textbf{/Proyectos/arbubu/arbubu/urls.py}: Es un archivo que contiene las urls de todas las aplicaciones creadas y del paquete de administración.
+				\item \textbf{/Proyectos/arbubu/arbubu/wsgi.py}: Es una archivo que ayuda a Django a comunicarse con el servidor web.
+				\item \textbf{/Proyectos/arbubu/static/}: Es un archivo que contiene los archivos estáticos del proyecto.
+				\item \textbf{/Proyectos/arbubu/static/css}: Contiene todas las hojas de estilos .css
+				\item \textbf{/Proyectos/arbubu/static/fonts}: Contiene los archivos fuente de los slides.
+				\item \textbf{/Proyectos/arbubu/static/imagenes}: Contiene las imágenes que vamos a utilizar en nuestra aplicación.
+				\item \textbf{/Proyectos/arbubu/static/individuosJs}: Contiene los archivos .js de cada uno de nuestros árboles.
+				\item \textbf{/Proyectos/arbubu/static/js}: Contiene los archivos .js de los slides.
+				\item \textbf{/Proyectos/arbubu/templates/}: Contiene todos los templates.
+				\item \textbf{/Proyectos/arbubu/templates/principal}: Contiene todos los templates de la aplicación "principal".
+				\item \textbf{/Proyectos/arbubu/templates/principal/especies}: Contiene los html de cada una de las especies.
+				\item \textbf{/Proyectos/arbubu/templates/principal/familias}: Contiene los html de cada una de las familias.
+				\item \textbf{/Proyectos/arbubu/templates/principal/generos}: Contiene los html de cada una de los géneros.
+				\item \textbf{/Proyectos/arbubu/templates/principal/individuos}: Contiene los html de cada una de los individuos.
+				\item \textbf{/Proyectos/arbubu/templates/principal/addIndividuo.html}: Es el archivo .html que permite añadir un nuevo individuo.
+				\item \textbf{/Proyectos/arbubu/templates/principal/especies.html}: Es el archivo .html que contiene las llamadas a cada una de las especies.
+				\item \textbf{/Proyectos/arbubu/templates/principal/familias.html}: Es el archivo .html que contiene las llamadas a cada una de las familias.
+				\item \textbf{/Proyectos/arbubu/templates/principal/generos.html}: Es el archivo .html que contiene las llamadas a cada uno de los géneros.
+				\item \textbf{/Proyectos/arbubu/templates/principal/index.html}: Es el archivo .html que contiene la pantalla principal de la aplicación.
+				\item \textbf{/Proyectos/arbubu/templates/principal/individuos.html}: Es el archivo .html que contiene las llamadas a cada una de las ubicaciones de los individuos.
+				\item \textbf{/Proyectos/arbubu/templates/principal/individuos-ciencias.html}: Es el archivo .html que contiene las llamadas a cada una de los individuos de la facultad de ciencias.
+				\item \textbf{/Proyectos/arbubu/templates/principal/individuos-educacion.html}: Es el archivo .html que contiene las llamadas a cada una de los individuos de la facultad de educación.
+				\item \textbf{/Proyectos/arbubu/templates/principal/individuos-hospital-militar.html}: Es el archivo .html que contiene las llamadas a cada una de los individuos del hospital militar.
+				\item \textbf{/Proyectos/arbubu/templates/principal/individuos-hospital-del-rey.html}: Es el archivo .html que contiene las llamadas a cada una de los individuos del hospital del rey.
+				\item \textbf{/Proyectos/arbubu/templates/principal/individuos-rio-vena.html}: Es el archivo .html que contiene las llamadas a cada una de los individuos de la facultad de río vena.
+				\item \textbf{/Proyectos/arbubu/templates/principal/iniciar-sesion.html}: Es el archivo .html que permite iniciar sesión a un usuario.
+				\item \textbf{/Proyectos/arbubu/templates/principal/usuario-form.html}: Es el archivo .html que permite registrarse a un usuario.
+				\item \textbf{/Proyectos/arbubu/db.sqlite3}: Es el archivo que guarda la base de datos de nuestro proyecto.
+				\item \textbf{/Proyectos/arbubu/manage.py}: Es un archivo usado para ejecutar comandos de administración relacionados con nuestro proyecto.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
 \section{Manual del programador}
+
+Este apartado voy a explicar las cosas que he tenido que instalar para que en un futuro, si alguien quiere mejorar la aplicación web, solo tenga que seguir los pasos aquí y marcados y seguir adelante con ello.
+
+\begin{itemize}
+	\item \textbf{Atom}: Para poder modificar el código de la aplicación lo primero que tenemos que hacer es descargar este programa \footnote{https://atom.io/}, una vez que ha sido descargado cogemos el código fuente del proyecto de la siguiente dirección \cite{Repositorio} y empezamos a instalar las librerías necesarias.
+	\imagen{manualProgramador/atom}{Descarga Atom} 
+	
+	\item \textbf{Instalar Django}: Para poder utilizar Django primero tenemos que instalarlo.
+	\imagen{manualProgramador/instalarDjango}{Instalar Django}
+	
+	\item \textbf{Python}: Para poder manejar el código tenemos que tener instalado Python \footnote{https://www.python.org/downloads/}.
+	\imagen{manualProgramador/python}{Descarga Python}
+	
+	\item \textbf{Librerías}: En nuestro caso con coger el código fuente de la dirección anteriormente citada nos valdría, pero si quieres empezar de cero un proyecto debes realizar lo siguiente:
+	
+		\begin{itemize}
+			\item \textbf{Crear Entorno Virtual}: En caso de que surja algun error en tu proyecto, solo necesitarás borrar el entorno virtual y volver a instalarlo, en cambio si no se usa entorno virtual puede que sea necesario volver a instalar todo el proyecto.
+			\imagen{manualProgramador/entornoVirtual}{Crear Entorno Virtual}
+			
+			\item \textbf{Crear Proyecto Django}: Crear un proyecto de django de la siguiente forma: 
+			\imagen{manualProgramador/crearProyectoDjango}{Crear Proyecto Django}
+			
+			\item \textbf{Crear Aplicación}: Crear distintas aplicaciones, para que así estén separadas unas de otras y sean totalmente independientes.
+			\imagen{manualProgramador/crearAplicacionPrincipal}{Crear Aplicación}
+			
+			\item \textbf{Crear Super Usuario}: Para poder manejar el sitio de administración hay que crear un super usuario.
+			\imagen{manualProgramador/crearUsuario}{Crear Super Usuario}
+			
+			\item \textbf{Instalar Pillow}: Es una librería que permite introducir fotos en la base de datos y poder trabajar con estos archivos.
+			\imagen{manualProgramador/instalarPillow}{Instalar Pillow}
+			
+		\end{itemize}
+\end{itemize}
 
 \section{Compilación, instalación y ejecución del proyecto}
 
-\section{Pruebas del sistema}
+\subsection{Compilación e instalación}
+
+Como hemos comentado anteriormente no es necesario compilar e instalar nada, lo único que se necesita es descargar el código fuente de la siguiente dirección \cite{Repositorio}.
+
+\subsection{Ejecución del proyecto}
+
+\begin{itemize}
+	\item \textbf{Activar entorno virtual}: Para trabajar con el entorno virtual creado anteriormente tenemos que activarlo y se hace así:
+	\imagen{manualProgramador/activarEntornoVirtual}{Activar Entorno Virtual}
+	
+	\item \textbf{Ejecutar proyecto}: Para poder entrar en nuestra aplicación web tenemos que hacer lo siguiente:
+	\imagen{manualProgramador/ejecutarProyecto}{Ejecutar proyecto}
+	
+	Una vez ejecutado ese comando nos dirigimos a cualquier navegador y entramos a la dirección localhost que nos muestra en la pantalla de comandos que es: http://127.0.0.1:8000 y le añadimos la pagina principal que es index, por lo que debemos ir a la siguiente dirección: http://127.0.0.1:8000/index y una vez dentro ya podemos movernos y realizar las funcionalidades de la aplicación.
+\end{itemize}
