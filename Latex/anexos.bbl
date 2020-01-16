@@ -1,8 +1,16 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Repositorio}
 Félix~Movilla Alonso.
 \newblock \url{https://github.com/fma0043/TFG_ARBUBU}, Enero 2020.
+
+\bibitem{seguridadSocial}
+Seguridad Social.
+\newblock Seguridad social: Bases y tipos de cotización 2019.
+\newblock
+  \url{http://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537},
+  2019.
+\newblock [Online; accessed 07-Oct-2019].
 
 \bibitem{MVT}
 {Uniwebsidad}.
@@ -12,10 +20,56 @@ Félix~Movilla Alonso.
   2020.
 \newblock [Online; accessed 07-Ene-2020].
 
+\bibitem{Leaflet}
+{Vladimir Agafonkin}.
+\newblock Leaflet - an open-source javascript library for mobile-friendly
+  interactive maps.
+\newblock \url{https://leafletjs.com/}, 2019.
+\newblock [Online; accessed 07-Oct-2019].
+
+\bibitem{ModeloenCascada}
+Desarrollo web.
+\newblock El modelo en cascada: desarrollo secuencial de software.
+\newblock
+  \url{https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/},
+  Marzo 2019.
+\newblock [Online; accessed 18-Sep-2019].
+
+\bibitem{Atom}
+{Wikipedia contributors}.
+\newblock Atom.
+\newblock \url{https://es.wikipedia.org/wiki/Atom_(software)}, Agosto 2019.
+\newblock [Online; accessed 5-Oct-2019].
+
 \bibitem{GitHub}
 {Wikipedia contributors}.
 \newblock Github.
 \newblock \url{https://es.wikipedia.org/wiki/GitHub}, Septiembre 2019.
 \newblock [Online; accessed 8-Oct-2019].
+
+\bibitem{gnu}
+{Wikipedia contributors}.
+\newblock Gnu general public license.
+\newblock \url{https://es.wikipedia.org/wiki/GNU_General_Public_License}, 2019.
+\newblock [Online; accessed 07-Dic-2019].
+
+\bibitem{Python}
+{Wikipedia contributors}.
+\newblock Python.
+\newblock \url{https://es.wikipedia.org/wiki/Python}, Octubre 2019.
+\newblock [Online; accessed 2-Oct-2019].
+
+\bibitem{licencia}
+{Wikipedia contributors}.
+\newblock Python software foundation license.
+\newblock
+  \url{https://es.wikipedia.org/wiki/Python_Software_Foundation_License}, 2019.
+\newblock [Online; accessed 07-Dic-2019].
+
+\bibitem{Django}
+Threespot y~Andrevv.
+\newblock Meet django.
+\newblock \url{https://www.djangoproject.com/}, 2019.
+\newblock [Online; accessed 4-Oct-2019].
 
 \end{thebibliography}

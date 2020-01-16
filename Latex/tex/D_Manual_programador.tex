@@ -120,3 +120,22 @@ Como hemos comentado anteriormente no es necesario compilar e instalar nada, lo 
 	
 	Una vez ejecutado ese comando nos dirigimos a cualquier navegador y entramos a la dirección localhost que nos muestra en la pantalla de comandos que es: http://127.0.0.1:8000 y le añadimos la pagina principal que es index, por lo que debemos ir a la siguiente dirección: http://127.0.0.1:8000/index y una vez dentro ya podemos movernos y realizar las funcionalidades de la aplicación.
 \end{itemize}
+
+\section{Pruebas del sistema} \label{pruebas}
+
+\subsection{Pruebas manuales}
+
+\begin{itemize}
+	\item \textbf{Contraseña vacía}: Si dejamos al iniciar sesión el campo de la contraseña vacío nos tiene que decir lo siguiente:
+	\imagen{manualProgramador/contraseñaVacia}{Campo contraseña vacío}
+	\item \textbf{Usuario vacío}: Si dejamos al iniciar sesión el campo del usuario vacío nos tiene que decir lo siguiente:
+	\imagen{manualProgramador/usuarioVacio}{Campo usuario vacío}
+	\item \textbf{Usuario o contraseña incorrectos}: Si los campos de usuario o contraseña son incorrectos nos debe decir lo siguiente:
+	\imagen{manualProgramador/camposIncorrectos}{Campo incorrectos}
+	\item \textbf{Email vacío}: Si dejamos al registrarse el campo del email vacío nos tiene que decir lo siguiente:
+	\imagen{manualProgramador/emailVacio}{Campo email vacío}
+	\item \textbf{Email vacío}: Si introducimos al registrarse el campo del nombre del usuario repetido nos tiene que decir lo siguiente:
+	\imagen{manualProgramador/usuarioValidado}{Usuario no disponible}
+	\item \textbf{Contraseñas distintas}: Si los campos de contraseña y confirmar contraseña son distintos nos debe decir lo siguiente:
+	\imagen{manualProgramador/contraseñasDistintas}{Contraseñas distintas}
+\end{itemize}

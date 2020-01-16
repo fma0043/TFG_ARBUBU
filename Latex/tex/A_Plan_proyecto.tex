@@ -2,10 +2,94 @@
 
 \section{Introducción}
 
+Todo proyecto considerado importante tiene que tener una buena planificación, en dicha planificación fijaremos los requisitos, el tiempo estimado y el dinero que creemos que va a costar realizar dicho proyecto.
+
+El plan de proyecto software estará contenido por una planificación temporal y un estudio de viabilidad que nos dirá si el proyecto saldrá rentable o no.
+
 \section{Planificación temporal}
+
+Como decidí seguir una metodología en cascada \cite{ModeloenCascada} el proyecto se dividió en 5 fases: 
+
+\imagen{planProyecto/modeloEnCascada}{Metodología en Cascada}
+
+\subsection{Análisis}
+
+Lo primero que se hizo fue tener una reunión con el director de Ubu Verde Luis Marcos Naveira para que me dijera una descripción detallada de los requisitos que quería para la aplicación web, en principio me dio cierta libertad a la hora de plasmar esos requisitos y me sugirió alguna página similar para que me hiciera una idea de lo que quería.
+
+Una vez que se tuvo claro los requisitos se dividió por fases la realización de dichos requisitos y se fue trabajando a medida que se iba acabando el anterior.
+
+\subsection{Diseño}
+
+Lo primero que se realizó antes de ponerme a diseñar la aplicación web fue elegir el framework \cite{Django} con el que se iba a realizar el proyecto y el lenguaje de programación \cite{Python}.
+
+Una vez que tenía claros el framework y el lenguaje de programación tuve que decidir con que IDE iba a trabajar, como ya comenté en la memoria me decanté por Atom \cite{Atom}.
+
+Lo siguiente por realizar era definir cuantas tablas o entidades íbamos a utilizar y sus respectivos campos, tras muchos cambios se dejaron cinco tablas (Familias, Géneros, Especies, Individuos y Usuarios), con las tablas no hubo tantos problemas como si los hubo en los campos de cada uno de ellas.
+
+Antes de ponernos a realizar la implementación hice unos diseños en papel de como sería o como quería que fuese el diseño de la aplicación web, luego a medida que se iba realizando ese diseño en papel se iba modificando hasta llegar al producto final.
+
+Una vez que se tenía claro los requisitos y las herramientas que iba a utilizar y como las iba a utilizar me dispuse a realizar la implementación de cada uno de los requisitos funcionales.
+
+\subsection{Implementación}
+
+\begin{enumerate}
+	\item \textbf{Control de Usuarios}: Para poder controlar a los usuarios (registro, iniciar sesión y cerrar sesión) se creó una entidad llamada Usuario que se comunica con otra entidad ya definida por el propio framework llamada User. 
+	
+	Una vez que se programó el código necesario para que funcionase correctamente se diseño un html para que se pueda ver en la aplicación web.
+	
+	\item \textbf{Cargar datos y Exportar datos}: Una vez que los miembros de Ubu Verde me pasaron los datos y las fotos de los árboles que iban a ser introducidos en la Base de Datos, me dispuse a introducir manualmente cada uno de los árboles en ella.
+	 
+	Una vez que los datos estaban guardados en la Base de Datos ya pude programar una vista con su correspondiente html para que los datos de los árboles se exportasen en pdf.
+	
+	Para que un usuario pueda cargar datos en la Base de Datos es necesario que esté registrado, por eso era necesario implementar primero el control de usuarios para luego poder introducir datos, se crea un formulario para poder introducirlos.
+	
+	\item \textbf{Visualizar datos}: Para poder visualizar los datos, primero había que introducirlos en la Base de Datos, por eso era imprescindible el anterior requisito.
+	
+	Para la visualización de los datos necesitaba una librería de código abierto, elegí Leaflet \cite{Leaflet} ya que sirve también para dispositivos móviles. Una vez programado el código necesario para introducir los datos de la Base de Datos a través de está librería escrita en JavaScript, fui introduciendo los mapas en las distintas páginas donde requería la aparición de dichos mapas.
+	
+	\item \textbf{Búsqueda de datos}: Para la búsqueda de datos se crea un menú en la página principal, que estará compuesto por Familias, Géneros, Especies e Individuos.
+	
+	Se puede empezar a buscar por cualquiera de ellos, si queremos buscar por una familia concreta iniciaremos en Familias, si es por un Género concreto por Géneros, si es por una Especie concreta por Especies y si deseamos empezar a buscar por individuos iremos a Individuos.
+	
+	Todos estos filtros de búsqueda nos van a ir arrojando datos de los modelos hasta llegar al árbol concreto que deseemos. También podemos olvidarnos de estos filtros y buscar en una zona concreta del mapa y seleccionar el árbol que queramos y visualizar sus fotos y características.
+	
+	\item \textbf{Aspecto visual}: Se ha programado de tal forma que sea posible visualizarse en distintos dispositivos de distintos tamaños, cuanto más pequeño sea el tamaño nos irá apareciendo la barra horizontal para poder desplazarnos por las distintas partes de la aplicación web.
+\end{enumerate}
+
+\subsection{Verificación}
+
+En esta fase es donde se va a ejecutar la aplicación web, para ello anteriormente hemos ido realizando distintas pruebas para comprobar que el sistema no falle, las distintas pruebas realizadas serán mostradas más adelante \ref{pruebas} 
+
+\subsection{Mantenimiento}
+
+Una vez terminado y comprobado que la aplicación funciona correctamente nos reunimos con el beneficiario de él, Luis Marcos Naveiro, para ver si todo es correcto y está al gusto del cliente.
+
+Luis nos da el visto bueno y damos por finalizado el proyecto. Con vistas puestas a posibles mejoras en un futuro.
 
 \section{Estudio de viabilidad}
 
+En este apartado se va a analizar la viabilidad económica y la viabilidad legal.
+
+
 \subsection{Viabilidad económica}
 
+Si se implantase el desarrollo en un entorno empresarial real los costes serían los siguientes:
+
+\begin{itemize}
+	\item \textbf{Costes de personal}: Teniendo en cuenta que el proyecto ha tenido una duración aproximada de 6 meses, considerando que lo lleva a cabo un desarrollador con un salario bruto de 1300\textup{\euro} mensuales contratado a tiempo parcial, con unas contingencias comunes\cite{seguridadSocial} de 28.3\%  y una retención del IRPF de 10.49\%, el salario neto será de 795.73\textup{\euro} y el coste total será de 7800\textup{\euro}.
+	
+	\item \textbf{Costes de material}: Hay que tener en cuenta el coste de hardware y coste de software, el coste del software es gratuito ya que como hemos mencionado en la memoria todas las herramientas utilizadas han sido de software libre y gratuito, el coste del hardware es la utilización de un portátil, contando que el coste del ordenador fue de 600\textup{\euro} y con una antigüedad de aproximadamente 4 años y el tiempo utilizado de 6 meses, el coste amortizado sería de 60\textup{\euro}.
+	
+	\item \textbf{Costes de material}: La suma del coste de personal y los costes de material es de 7860\textup{\euro}.
+
+\end{itemize}
+
+	Teniendo en cuenta los resultados obtenidos podemos concluir que el proyecto resultará rentable a partir de unos dos años de vida.
+	
 \subsection{Viabilidad legal}
+
+	En este apartado se expondrá la viabilidad legal del proyecto, al utilizar Python que posee licencia PSFL\cite{licencia}, es de software libre y cumple los requisitos OSI y es compatible con licencia GPL.
+	
+	Además todo el software utilizado ha sido de software libre, así que la licencia que se adapta mejor al proyecto es la licencia GNU\cite{gnu}, esta licencia permite el uso, distribución y modificación siempre y cuando no se modifique la licencia y acredite al autor.
+	
+	
