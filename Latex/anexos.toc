@@ -6,54 +6,60 @@
 \contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{1}{appendix.Alph1}%
 \contentsline {section}{\numberline {A.1}Introducción}{1}{section.Alph1.1}%
 \contentsline {section}{\numberline {A.2}Planificación temporal}{1}{section.Alph1.2}%
-\contentsline {subsection}{Análisis}{2}{section*.4}%
-\contentsline {subsection}{Diseño}{2}{section*.5}%
-\contentsline {subsection}{Implementación}{3}{section*.6}%
-\contentsline {subsection}{Verificación}{4}{section*.7}%
-\contentsline {subsection}{Mantenimiento}{4}{section*.8}%
-\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{4}{section.Alph1.3}%
-\contentsline {subsection}{Viabilidad económica}{5}{section*.9}%
-\contentsline {subsection}{Viabilidad legal}{5}{section*.10}%
-\contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{7}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}Introducción}{7}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Objetivos}{7}{section.Alph2.2}%
-\contentsline {subsection}{Objetivos Generales}{7}{section*.11}%
-\contentsline {subsection}{Objetivos Técnicos}{8}{section*.12}%
-\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{8}{section.Alph2.3}%
-\contentsline {subsection}{Requisitos funcionales}{8}{section*.13}%
-\contentsline {subsection}{Requisitos no funcionales}{9}{section*.14}%
-\contentsline {section}{\numberline {B.4}Especificación de requisitos}{10}{section.Alph2.4}%
-\contentsline {subsection}{Diagrama de Casos de Uso}{10}{section*.15}%
-\contentsline {subsection}{Descripción de Casos de Uso}{10}{section*.16}%
-\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{17}{appendix.Alph3}%
-\contentsline {section}{\numberline {C.1}Introducción}{17}{section.Alph3.1}%
-\contentsline {section}{\numberline {C.2}Diseño de datos}{17}{section.Alph3.2}%
-\contentsline {section}{\numberline {C.3}Diseño procedimental}{22}{section.Alph3.3}%
-\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{24}{section.Alph3.4}%
-\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{27}{appendix.Alph4}%
-\contentsline {section}{\numberline {D.1}Introducción}{27}{section.Alph4.1}%
-\contentsline {section}{\numberline {D.2}Estructura de directorios}{27}{section.Alph4.2}%
-\contentsline {section}{\numberline {D.3}Manual del programador}{31}{section.Alph4.3}%
-\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{34}{section.Alph4.4}%
-\contentsline {subsection}{Compilación e instalación}{34}{section*.17}%
-\contentsline {subsection}{Ejecución del proyecto}{34}{section*.18}%
-\contentsline {section}{\numberline {D.5}Pruebas del sistema}{35}{section.Alph4.5}%
-\contentsline {subsection}{Pruebas manuales}{35}{section*.19}%
-\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{39}{appendix.Alph5}%
-\contentsline {section}{\numberline {E.1}Introducción}{39}{section.Alph5.1}%
-\contentsline {section}{\numberline {E.2}Requisitos de usuarios}{39}{section.Alph5.2}%
-\contentsline {section}{\numberline {E.3}Instalación}{40}{section.Alph5.3}%
-\contentsline {section}{\numberline {E.4}Manual del usuario}{40}{section.Alph5.4}%
-\contentsline {subsection}{Registrarse}{40}{section*.20}%
-\contentsline {subsection}{Iniciar Sesión}{42}{section*.21}%
-\contentsline {subsection}{Seguir a @UbuVerde, compartir y dar Like en Facebook}{42}{section*.22}%
-\contentsline {subsection}{Visitar página UbuVerde}{42}{section*.23}%
-\contentsline {subsection}{Descargar Individuos}{43}{section*.24}%
-\contentsline {subsection}{Agregar Individuos}{44}{section*.25}%
-\contentsline {subsection}{Ver Mapa}{45}{section*.26}%
-\contentsline {subsection}{Ver Arbol}{45}{section*.27}%
-\contentsline {subsection}{Ver Familias}{46}{section*.28}%
-\contentsline {subsection}{Ver Géneros}{48}{section*.29}%
-\contentsline {subsection}{Ver Especies}{49}{section*.30}%
-\contentsline {subsection}{Ver Individuos}{50}{section*.31}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{53}{appendix*.32}%
+\contentsline {subsection}{Ciclo 1}{2}{section*.4}%
+\contentsline {subsection}{Ciclo 2}{2}{section*.5}%
+\contentsline {subsection}{Ciclo 3}{3}{section*.6}%
+\contentsline {subsection}{Ciclo 4}{3}{section*.7}%
+\contentsline {subsection}{Ciclo 5}{4}{section*.8}%
+\contentsline {subsection}{Ciclo 6}{4}{section*.9}%
+\contentsline {subsection}{Ciclo 7}{4}{section*.10}%
+\contentsline {subsection}{Ciclo 8}{5}{section*.11}%
+\contentsline {subsection}{Ciclo 9}{5}{section*.12}%
+\contentsline {subsection}{Ciclo 10}{5}{section*.13}%
+\contentsline {subsection}{Ciclo 11}{6}{section*.14}%
+\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{6}{section.Alph1.3}%
+\contentsline {subsection}{Viabilidad económica}{6}{section*.15}%
+\contentsline {subsection}{Viabilidad legal}{7}{section*.16}%
+\contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{9}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}Introducción}{9}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Objetivos}{9}{section.Alph2.2}%
+\contentsline {subsection}{Objetivos Generales}{9}{section*.17}%
+\contentsline {subsection}{Objetivos Técnicos}{10}{section*.18}%
+\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{10}{section.Alph2.3}%
+\contentsline {subsection}{Requisitos funcionales}{10}{section*.19}%
+\contentsline {subsection}{Requisitos no funcionales}{11}{section*.20}%
+\contentsline {section}{\numberline {B.4}Especificación de requisitos}{12}{section.Alph2.4}%
+\contentsline {subsection}{Diagrama de Casos de Uso}{12}{section*.21}%
+\contentsline {subsection}{Descripción de Casos de Uso}{12}{section*.22}%
+\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{19}{appendix.Alph3}%
+\contentsline {section}{\numberline {C.1}Introducción}{19}{section.Alph3.1}%
+\contentsline {section}{\numberline {C.2}Diseño de datos}{19}{section.Alph3.2}%
+\contentsline {section}{\numberline {C.3}Diseño procedimental}{24}{section.Alph3.3}%
+\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{26}{section.Alph3.4}%
+\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{29}{appendix.Alph4}%
+\contentsline {section}{\numberline {D.1}Introducción}{29}{section.Alph4.1}%
+\contentsline {section}{\numberline {D.2}Estructura de directorios}{29}{section.Alph4.2}%
+\contentsline {section}{\numberline {D.3}Manual del programador}{33}{section.Alph4.3}%
+\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{36}{section.Alph4.4}%
+\contentsline {subsection}{Compilación e instalación}{36}{section*.23}%
+\contentsline {subsection}{Ejecución del proyecto}{36}{section*.24}%
+\contentsline {section}{\numberline {D.5}Pruebas del sistema}{37}{section.Alph4.5}%
+\contentsline {subsection}{Pruebas manuales}{37}{section*.25}%
+\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{41}{appendix.Alph5}%
+\contentsline {section}{\numberline {E.1}Introducción}{41}{section.Alph5.1}%
+\contentsline {section}{\numberline {E.2}Requisitos de usuarios}{41}{section.Alph5.2}%
+\contentsline {section}{\numberline {E.3}Instalación}{42}{section.Alph5.3}%
+\contentsline {section}{\numberline {E.4}Manual del usuario}{42}{section.Alph5.4}%
+\contentsline {subsection}{Registrarse}{42}{section*.26}%
+\contentsline {subsection}{Iniciar Sesión}{44}{section*.27}%
+\contentsline {subsection}{Seguir a @UbuVerde, compartir y dar Like en Facebook}{44}{section*.28}%
+\contentsline {subsection}{Visitar página UbuVerde}{44}{section*.29}%
+\contentsline {subsection}{Descargar Individuos}{45}{section*.30}%
+\contentsline {subsection}{Agregar Individuos}{46}{section*.31}%
+\contentsline {subsection}{Ver Mapa}{47}{section*.32}%
+\contentsline {subsection}{Ver Arbol}{47}{section*.33}%
+\contentsline {subsection}{Ver Familias}{48}{section*.34}%
+\contentsline {subsection}{Ver Géneros}{50}{section*.35}%
+\contentsline {subsection}{Ver Especies}{51}{section*.36}%
+\contentsline {subsection}{Ver Individuos}{52}{section*.37}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{55}{appendix*.38}%

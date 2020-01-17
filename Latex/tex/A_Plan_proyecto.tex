@@ -8,63 +8,109 @@ El plan de proyecto software estará contenido por una planificación temporal y
 
 \section{Planificación temporal}
 
-Como decidí seguir una metodología en cascada \cite{ModeloenCascada} el proyecto se dividió en 5 fases: 
+Como decidí seguir una metodología en espiral \cite{ModeloenEspiral} el proyecto se divide en ciclos que a su vez se divide en 4 fases. 
 
-\imagen{planProyecto/modeloEnCascada}{Metodología en Cascada}
+\imagen{planProyecto/modeloEnEspiral}{Metodología en Espiral}
 
-\subsection{Análisis}
+\subsection{Ciclo 1}
 
-Lo primero que se hizo fue tener una reunión con el director de Ubu Verde Luis Marcos Naveira para que me dijera una descripción detallada de los requisitos que quería para la aplicación web, en principio me dio cierta libertad a la hora de plasmar esos requisitos y me sugirió alguna página similar para que me hiciera una idea de lo que quería.
+	\begin{enumerate}
+		\item \textbf{Planificación}: Se decide en consenso con los tutores las herramientas a utilizar.
+		\item \textbf{Análisis}: Al elegir una herramienta u otra se toman una serie de ventajas e inconvenientes y se decide optar por las que más me llaman la atención y las que considero como se explica en la memoria mas adecuadas para el proyecto.
+		\item \textbf{Implementación}: Se instalan dichas herramientas y se empieza a trastear con ellas y se visualizan manuales para el correcto aprendizaje de su funcionamiento.
+		\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que las herramientas utilizadas tras manejarlas son las correctas y se cambia de ciclo.
+	\end{enumerate}
 
-Una vez que se tuvo claro los requisitos se dividió por fases la realización de dichos requisitos y se fue trabajando a medida que se iba acabando el anterior.
 
-\subsection{Diseño}
-
-Lo primero que se realizó antes de ponerme a diseñar la aplicación web fue elegir el framework \cite{Django} con el que se iba a realizar el proyecto y el lenguaje de programación \cite{Python}.
-
-Una vez que tenía claros el framework y el lenguaje de programación tuve que decidir con que IDE iba a trabajar, como ya comenté en la memoria me decanté por Atom \cite{Atom}.
-
-Lo siguiente por realizar era definir cuantas tablas o entidades íbamos a utilizar y sus respectivos campos, tras muchos cambios se dejaron cinco tablas (Familias, Géneros, Especies, Individuos y Usuarios), con las tablas no hubo tantos problemas como si los hubo en los campos de cada uno de ellas.
-
-Antes de ponernos a realizar la implementación hice unos diseños en papel de como sería o como quería que fuese el diseño de la aplicación web, luego a medida que se iba realizando ese diseño en papel se iba modificando hasta llegar al producto final.
-
-Una vez que se tenía claro los requisitos y las herramientas que iba a utilizar y como las iba a utilizar me dispuse a realizar la implementación de cada uno de los requisitos funcionales.
-
-\subsection{Implementación}
+\subsection{Ciclo 2}
 
 \begin{enumerate}
-	\item \textbf{Control de Usuarios}: Para poder controlar a los usuarios (registro, iniciar sesión y cerrar sesión) se creó una entidad llamada Usuario que se comunica con otra entidad ya definida por el propio framework llamada User. 
-	
-	Una vez que se programó el código necesario para que funcionase correctamente se diseño un html para que se pueda ver en la aplicación web.
-	
-	\item \textbf{Cargar datos y Exportar datos}: Una vez que los miembros de Ubu Verde me pasaron los datos y las fotos de los árboles que iban a ser introducidos en la Base de Datos, me dispuse a introducir manualmente cada uno de los árboles en ella.
-	 
-	Una vez que los datos estaban guardados en la Base de Datos ya pude programar una vista con su correspondiente html para que los datos de los árboles se exportasen en pdf.
-	
-	Para que un usuario pueda cargar datos en la Base de Datos es necesario que esté registrado, por eso era necesario implementar primero el control de usuarios para luego poder introducir datos, se crea un formulario para poder introducirlos.
-	
-	\item \textbf{Visualizar datos}: Para poder visualizar los datos, primero había que introducirlos en la Base de Datos, por eso era imprescindible el anterior requisito.
-	
-	Para la visualización de los datos necesitaba una librería de código abierto, elegí Leaflet \cite{Leaflet} ya que sirve también para dispositivos móviles. Una vez programado el código necesario para introducir los datos de la Base de Datos a través de está librería escrita en JavaScript, fui introduciendo los mapas en las distintas páginas donde requería la aparición de dichos mapas.
-	
-	\item \textbf{Búsqueda de datos}: Para la búsqueda de datos se crea un menú en la página principal, que estará compuesto por Familias, Géneros, Especies e Individuos.
-	
-	Se puede empezar a buscar por cualquiera de ellos, si queremos buscar por una familia concreta iniciaremos en Familias, si es por un Género concreto por Géneros, si es por una Especie concreta por Especies y si deseamos empezar a buscar por individuos iremos a Individuos.
-	
-	Todos estos filtros de búsqueda nos van a ir arrojando datos de los modelos hasta llegar al árbol concreto que deseemos. También podemos olvidarnos de estos filtros y buscar en una zona concreta del mapa y seleccionar el árbol que queramos y visualizar sus fotos y características.
-	
-	\item \textbf{Aspecto visual}: Se ha programado de tal forma que sea posible visualizarse en distintos dispositivos de distintos tamaños, cuanto más pequeño sea el tamaño nos irá apareciendo la barra horizontal para poder desplazarnos por las distintas partes de la aplicación web.
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide empezar por crear un proyecto y añadir documentación en Latex\cite{Latex}.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se crea el proyecto en Django\cite{Django}, se crea los primeros modelos, se realiza el resumen y se añaden los objetivos del proyecto.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
 \end{enumerate}
 
-\subsection{Verificación}
+\subsection{Ciclo 3}
 
-En esta fase es donde se va a ejecutar la aplicación web, para ello anteriormente hemos ido realizando distintas pruebas para comprobar que el sistema no falle, las distintas pruebas realizadas serán mostradas más adelante \ref{pruebas} 
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide modificar los modelos.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se modifica los modelos realizados anteriormente ante las exigencias del cliente.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
+\end{enumerate}
 
-\subsection{Mantenimiento}
+\subsection{Ciclo 4}
 
-Una vez terminado y comprobado que la aplicación funciona correctamente nos reunimos con el beneficiario de él, Luis Marcos Naveiro, para ver si todo es correcto y está al gusto del cliente.
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide crear unos métodos para ser utilizados más adelante.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se crean unos métodos, pero cuando es enseñado al tutor se considera que no están bien realizados y se borran y se decide pasar a otro ciclo y dejar esto para más adelante.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases y al considerar que la creación de los métodos no eran correctos se decide dejar para más adelante y se cambia de ciclo.
+\end{enumerate}
 
-Luis nos da el visto bueno y damos por finalizado el proyecto. Con vistas puestas a posibles mejoras en un futuro.
+\subsection{Ciclo 5}
+
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide añadir el mapa y los primeros árboles.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se añade el mapa y los primeros árboles.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
+\end{enumerate}
+
+\subsection{Ciclo 6}
+
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide avanzar con el diseño de la página y seguir avanzando con la documentación.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se sigue avanzando en el diseño de la página y se crean los apartados de requisitos, técnicas metodológicas, conceptos teóricos, técnicas y herramientas y trabajos relacionados de la documentación.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
+\end{enumerate}
+
+\subsection{Ciclo 7}
+
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide crear la gestión de los usuarios.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se crea la gestión de usuarios para poder iniciar sesión, registrarse y cerrar sesión.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
+\end{enumerate}
+
+\subsection{Ciclo 8}
+
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide ir introduciendo las fotos de los modelos en la base de datos, además de diseñar las pantallas de las especies, individuos, géneros y familias.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se introduce las fotos de los modelos en la base de datos y se diseñan las pantallas de especies, individuos, géneros y familias.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
+\end{enumerate}
+
+\subsection{Ciclo 9}
+
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide ir introduciendo los árboles en los distintos mapas de la aplicación a través de ficheros javascript.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se introducen los árboles en los distintos mapas mediante llamadas a ficheros javascript.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
+\end{enumerate}
+
+\subsection{Ciclo 10}
+
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y se decide agregar una opción para añadir individuos mediante formularios y exportarlos en pdf.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se introduce una opción para que un usuario registrado pueda añadir individuos y también para que pueda descargar un pdf con los árboles y sus características y localización.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
+\end{enumerate}
+
+\subsection{Ciclo 11}
+
+\begin{enumerate}
+	\item \textbf{Planificación}: Se tiene una reunión con los tutores para ver que es lo siguiente a realizar y una vez terminada el diseño de las pantallas de aplicación se decide seguir con la documentación de los anexos.
+	\item \textbf{Análisis}: Se evalúa que lo que se va a realizar en este ciclo es lo correcto y se decide seguir con su desarrollo.
+	\item \textbf{Implementación}: Se continúa con la documentación de los anexos.
+	\item \textbf{Evaluación}: Antes de pasar a otro ciclo se revisa las otras tres fases para ver si todo ha ido correctamente, se cree que el trabajo realizado es el correcto y se cambia de ciclo.
+\end{enumerate}
 
 \section{Estudio de viabilidad}
 
@@ -90,6 +136,6 @@ Si se implantase el desarrollo en un entorno empresarial real los costes serían
 
 	En este apartado se expondrá la viabilidad legal del proyecto, al utilizar Python que posee licencia PSFL\cite{licencia}, es de software libre y cumple los requisitos OSI y es compatible con licencia GPL.
 	
-	Además todo el software utilizado ha sido de software libre, así que la licencia que se adapta mejor al proyecto es la licencia GNU\cite{gnu}, esta licencia permite el uso, distribución y modificación siempre y cuando no se modifique la licencia y acredite al autor.
+	Además todo el software utilizado ha sido de software libre, así que la licencia que se adapta mejor al proyecto es la GNU\cite{gnu}, esta licencia permite el uso, distribución y modificación siempre y cuando no se modifique la dicha licencia y acredite al autor.
 	
 	

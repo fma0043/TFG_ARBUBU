@@ -1,8 +1,16 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
 \bibitem{Repositorio}
 Félix~Movilla Alonso.
 \newblock \url{https://github.com/fma0043/TFG_ARBUBU}, Enero 2020.
+
+\bibitem{ModeloenEspiral}
+ASP~Gems José.
+\newblock Metodología de desarrollo de software (iii) – modelo en espiral.
+\newblock
+  \url{https://aspgems.com/metodologia-de-desarrollo-de-software-iii-modelo-en-espiral/},
+  Marzo 2019.
+\newblock [Online; accessed 18-Sep-2019].
 
 \bibitem{seguridadSocial}
 Seguridad Social.
@@ -12,6 +20,12 @@ Seguridad Social.
   2019.
 \newblock [Online; accessed 07-Oct-2019].
 
+\bibitem{Latex}
+{The Latex Project}.
+\newblock Latex – a document preparation system.
+\newblock \url{https://www.latex-project.org/}, Agosto 2019.
+\newblock [Online; accessed 8-Oct-2019].
+
 \bibitem{MVT}
 {Uniwebsidad}.
 \newblock El patrón de diseño mtv.
@@ -19,27 +33,6 @@ Seguridad Social.
   \url{https://uniwebsidad.com/libros/django-1-0/capitulo-5/el-patron-de-diseno-mtv},
   2020.
 \newblock [Online; accessed 07-Ene-2020].
-
-\bibitem{Leaflet}
-{Vladimir Agafonkin}.
-\newblock Leaflet - an open-source javascript library for mobile-friendly
-  interactive maps.
-\newblock \url{https://leafletjs.com/}, 2019.
-\newblock [Online; accessed 07-Oct-2019].
-
-\bibitem{ModeloenCascada}
-Desarrollo web.
-\newblock El modelo en cascada: desarrollo secuencial de software.
-\newblock
-  \url{https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/},
-  Marzo 2019.
-\newblock [Online; accessed 18-Sep-2019].
-
-\bibitem{Atom}
-{Wikipedia contributors}.
-\newblock Atom.
-\newblock \url{https://es.wikipedia.org/wiki/Atom_(software)}, Agosto 2019.
-\newblock [Online; accessed 5-Oct-2019].
 
 \bibitem{GitHub}
 {Wikipedia contributors}.
@@ -52,12 +45,6 @@ Desarrollo web.
 \newblock Gnu general public license.
 \newblock \url{https://es.wikipedia.org/wiki/GNU_General_Public_License}, 2019.
 \newblock [Online; accessed 07-Dic-2019].
-
-\bibitem{Python}
-{Wikipedia contributors}.
-\newblock Python.
-\newblock \url{https://es.wikipedia.org/wiki/Python}, Octubre 2019.
-\newblock [Online; accessed 2-Oct-2019].
 
 \bibitem{licencia}
 {Wikipedia contributors}.

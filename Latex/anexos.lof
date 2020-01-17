@@ -1,48 +1,48 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Metodología en Cascada}}{2}{figure.Alph1.1}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Metodología en Espiral}}{2}{figure.Alph1.1}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Diagrama de Casos de Uso}}{10}{figure.Alph2.1}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Diagrama de Casos de Uso}}{12}{figure.Alph2.1}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Tabla Familia}}{17}{figure.Alph3.1}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Tabla Genero}}{18}{figure.Alph3.2}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Tabla Especie}}{19}{figure.Alph3.3}%
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Tabla Individuos}}{20}{figure.Alph3.4}%
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Tabla Usuario}}{21}{figure.Alph3.5}%
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Diagrama de Navegabilidad}}{24}{figure.Alph3.6}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Tabla Familia}}{19}{figure.Alph3.1}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Tabla Genero}}{20}{figure.Alph3.2}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Tabla Especie}}{21}{figure.Alph3.3}%
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Tabla Individuos}}{22}{figure.Alph3.4}%
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Tabla Usuario}}{23}{figure.Alph3.5}%
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Diagrama de Navegabilidad}}{26}{figure.Alph3.6}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Descarga Atom}}{31}{figure.Alph4.1}%
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Instalar Django}}{32}{figure.Alph4.2}%
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Descarga Python}}{32}{figure.Alph4.3}%
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Crear Entorno Virtual}}{33}{figure.Alph4.4}%
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Crear Proyecto Django}}{33}{figure.Alph4.5}%
-\contentsline {figure}{\numberline {D.6}{\ignorespaces Crear Aplicación}}{33}{figure.Alph4.6}%
-\contentsline {figure}{\numberline {D.7}{\ignorespaces Crear Super Usuario}}{33}{figure.Alph4.7}%
-\contentsline {figure}{\numberline {D.8}{\ignorespaces Instalar Pillow}}{34}{figure.Alph4.8}%
-\contentsline {figure}{\numberline {D.9}{\ignorespaces Activar Entorno Virtual}}{34}{figure.Alph4.9}%
-\contentsline {figure}{\numberline {D.10}{\ignorespaces Ejecutar proyecto}}{35}{figure.Alph4.10}%
-\contentsline {figure}{\numberline {D.11}{\ignorespaces Campo contraseña vacío}}{35}{figure.Alph4.11}%
-\contentsline {figure}{\numberline {D.12}{\ignorespaces Campo usuario vacío}}{36}{figure.Alph4.12}%
-\contentsline {figure}{\numberline {D.13}{\ignorespaces Campo incorrectos}}{36}{figure.Alph4.13}%
-\contentsline {figure}{\numberline {D.14}{\ignorespaces Campo email vacío}}{37}{figure.Alph4.14}%
-\contentsline {figure}{\numberline {D.15}{\ignorespaces Usuario no disponible}}{37}{figure.Alph4.15}%
-\contentsline {figure}{\numberline {D.16}{\ignorespaces Contraseñas distintas}}{38}{figure.Alph4.16}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Descarga Atom}}{33}{figure.Alph4.1}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Instalar Django}}{34}{figure.Alph4.2}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Descarga Python}}{34}{figure.Alph4.3}%
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Crear Entorno Virtual}}{35}{figure.Alph4.4}%
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Crear Proyecto Django}}{35}{figure.Alph4.5}%
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Crear Aplicación}}{35}{figure.Alph4.6}%
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Crear Super Usuario}}{35}{figure.Alph4.7}%
+\contentsline {figure}{\numberline {D.8}{\ignorespaces Instalar Pillow}}{36}{figure.Alph4.8}%
+\contentsline {figure}{\numberline {D.9}{\ignorespaces Activar Entorno Virtual}}{36}{figure.Alph4.9}%
+\contentsline {figure}{\numberline {D.10}{\ignorespaces Ejecutar proyecto}}{37}{figure.Alph4.10}%
+\contentsline {figure}{\numberline {D.11}{\ignorespaces Campo contraseña vacío}}{37}{figure.Alph4.11}%
+\contentsline {figure}{\numberline {D.12}{\ignorespaces Campo usuario vacío}}{38}{figure.Alph4.12}%
+\contentsline {figure}{\numberline {D.13}{\ignorespaces Campo incorrectos}}{38}{figure.Alph4.13}%
+\contentsline {figure}{\numberline {D.14}{\ignorespaces Campo email vacío}}{39}{figure.Alph4.14}%
+\contentsline {figure}{\numberline {D.15}{\ignorespaces Usuario no disponible}}{39}{figure.Alph4.15}%
+\contentsline {figure}{\numberline {D.16}{\ignorespaces Contraseñas distintas}}{40}{figure.Alph4.16}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {E.1}{\ignorespaces PortadaSinregistro}}{40}{figure.Alph5.1}%
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Registro}}{41}{figure.Alph5.2}%
-\contentsline {figure}{\numberline {E.3}{\ignorespaces PortadaConregistro}}{41}{figure.Alph5.3}%
-\contentsline {figure}{\numberline {E.4}{\ignorespaces Iniciar Sesión}}{42}{figure.Alph5.4}%
-\contentsline {figure}{\numberline {E.5}{\ignorespaces Página UbuVerde}}{43}{figure.Alph5.5}%
-\contentsline {figure}{\numberline {E.6}{\ignorespaces PDF árboles}}{44}{figure.Alph5.6}%
-\contentsline {figure}{\numberline {E.7}{\ignorespaces Agregar árboles}}{44}{figure.Alph5.7}%
-\contentsline {figure}{\numberline {E.8}{\ignorespaces Arbol resaltado en mapa}}{45}{figure.Alph5.8}%
-\contentsline {figure}{\numberline {E.9}{\ignorespaces Pantalla Arbol}}{46}{figure.Alph5.9}%
-\contentsline {figure}{\numberline {E.10}{\ignorespaces Pantalla Familias}}{46}{figure.Alph5.10}%
-\contentsline {figure}{\numberline {E.11}{\ignorespaces Segunda Pantalla Familias}}{47}{figure.Alph5.11}%
-\contentsline {figure}{\numberline {E.12}{\ignorespaces Tercera Pantalla Familias}}{47}{figure.Alph5.12}%
-\contentsline {figure}{\numberline {E.13}{\ignorespaces Cuarta Pantalla Familias}}{48}{figure.Alph5.13}%
-\contentsline {figure}{\numberline {E.14}{\ignorespaces Pantalla Géneros}}{49}{figure.Alph5.14}%
-\contentsline {figure}{\numberline {E.15}{\ignorespaces Pantalla Especies}}{50}{figure.Alph5.15}%
-\contentsline {figure}{\numberline {E.16}{\ignorespaces Pantalla Individuos}}{51}{figure.Alph5.16}%
-\contentsline {figure}{\numberline {E.17}{\ignorespaces Segunda Pantalla Individuos}}{51}{figure.Alph5.17}%
+\contentsline {figure}{\numberline {E.1}{\ignorespaces PortadaSinregistro}}{42}{figure.Alph5.1}%
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Registro}}{43}{figure.Alph5.2}%
+\contentsline {figure}{\numberline {E.3}{\ignorespaces PortadaConregistro}}{43}{figure.Alph5.3}%
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Iniciar Sesión}}{44}{figure.Alph5.4}%
+\contentsline {figure}{\numberline {E.5}{\ignorespaces Página UbuVerde}}{45}{figure.Alph5.5}%
+\contentsline {figure}{\numberline {E.6}{\ignorespaces PDF árboles}}{46}{figure.Alph5.6}%
+\contentsline {figure}{\numberline {E.7}{\ignorespaces Agregar árboles}}{46}{figure.Alph5.7}%
+\contentsline {figure}{\numberline {E.8}{\ignorespaces Arbol resaltado en mapa}}{47}{figure.Alph5.8}%
+\contentsline {figure}{\numberline {E.9}{\ignorespaces Pantalla Arbol}}{48}{figure.Alph5.9}%
+\contentsline {figure}{\numberline {E.10}{\ignorespaces Pantalla Familias}}{48}{figure.Alph5.10}%
+\contentsline {figure}{\numberline {E.11}{\ignorespaces Segunda Pantalla Familias}}{49}{figure.Alph5.11}%
+\contentsline {figure}{\numberline {E.12}{\ignorespaces Tercera Pantalla Familias}}{49}{figure.Alph5.12}%
+\contentsline {figure}{\numberline {E.13}{\ignorespaces Cuarta Pantalla Familias}}{50}{figure.Alph5.13}%
+\contentsline {figure}{\numberline {E.14}{\ignorespaces Pantalla Géneros}}{51}{figure.Alph5.14}%
+\contentsline {figure}{\numberline {E.15}{\ignorespaces Pantalla Especies}}{52}{figure.Alph5.15}%
+\contentsline {figure}{\numberline {E.16}{\ignorespaces Pantalla Individuos}}{53}{figure.Alph5.16}%
+\contentsline {figure}{\numberline {E.17}{\ignorespaces Segunda Pantalla Individuos}}{53}{figure.Alph5.17}%
