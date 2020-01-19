@@ -102,6 +102,14 @@ Jaime.
 \newblock \url{https://www.tutorialpython.com/}, Diciembre 2014.
 \newblock [Online; accessed 7-Mayo-2019].
 
+\bibitem{ModeloenEspiral}
+ASP~Gems José.
+\newblock Metodología de desarrollo de software (iii) – modelo en espiral.
+\newblock
+  \url{https://aspgems.com/metodologia-de-desarrollo-de-software-iii-modelo-en-espiral/},
+  Marzo 2019.
+\newblock [Online; accessed 18-Sep-2019].
+
 \bibitem{Word}
 {live.com}.
 \newblock Word online.
@@ -211,14 +219,6 @@ pildorasinformaticas.
   interactive maps.
 \newblock \url{https://leafletjs.com/}, 2019.
 \newblock [Online; accessed 07-Oct-2019].
-
-\bibitem{ModeloenCascada}
-Desarrollo web.
-\newblock El modelo en cascada: desarrollo secuencial de software.
-\newblock
-  \url{https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/},
-  Marzo 2019.
-\newblock [Online; accessed 18-Sep-2019].
 
 \bibitem{Writer}
 {Wikipedia contributors}.

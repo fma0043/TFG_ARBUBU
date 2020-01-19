@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.6)  9 JAN 2020 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.6)  19 JAN 2020 20:03
 entering extended mode
 **./memoria.tex
 (memoria.tex
@@ -1024,7 +1024,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.42 	\item \textbf
-                   {Vídeo explicativo}: vídeo explicando el funcionamiento...
+                   {Vídeo explicativo}: Vídeo explicando el funcionamiento...
 [2])
 LaTeX Info: Redefining \. on input line 494.
 LaTeX Info: Redefining \% on input line 494.
@@ -1106,7 +1106,10 @@ LaTeX Info: Redefining \% on input line 496.
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
 
-(tex/4_Tecnicas_y_herramientas.tex [11
+(tex/4_Tecnicas_y_herramientas.tex
+Underfull \vbox (badness 3471) has occurred while \output is active []
+
+ [11
 
 
 
@@ -1115,62 +1118,62 @@ LaTeX Info: Redefining \% on input line 496.
 File: ./img/tecnicasYHerramientas/python.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/python.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/python.png  used on input 
-line 25.
+line 23.
 (pdftex.def)             Requested size: 344.69766pt x 116.4315pt.
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
- [12 <./img/tecnicasYHerramientas/python.png>]
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+
+[12 <./img/tecnicasYHerramientas/python.png>]
 <./img/tecnicasYHerramientas/django.png, id=678, 1204.5pt x 1204.5pt>
 File: ./img/tecnicasYHerramientas/django.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/django.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/django.png  used on input 
-line 33.
+line 31.
 (pdftex.def)             Requested size: 153.19766pt x 153.19035pt.
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
  [13 <./img/tecnicasYHerramientas/django.png (PNG copy)>]
 <./img/tecnicasYHerramientas/SQLite3.png, id=698, 590.205pt x 390.45876pt>
 File: ./img/tecnicasYHerramientas/SQLite3.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/SQLite3.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/SQLite3.png  used on input
- line 47.
+ line 45.
 (pdftex.def)             Requested size: 344.69766pt x 228.04507pt.
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
  [14 <./img/tecnicasYHerramientas/SQLite3.png>]
 <./img/tecnicasYHerramientas/atom.png, id=714, 1027.84pt x 1027.84pt>
 File: ./img/tecnicasYHerramientas/atom.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/atom.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/atom.png  used on input li
-ne 71.
+ne 69.
 (pdftex.def)             Requested size: 153.19766pt x 153.19696pt.
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
  [15 <./img/tecnicasYHerramientas/atom.png>]
 <./img/tecnicasYHerramientas/github.png, id=730, 1129.21875pt x 418.56375pt>
 File: ./img/tecnicasYHerramientas/github.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/github.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/github.png  used on input 
-line 85.
+line 84.
 (pdftex.def)             Requested size: 344.69766pt x 127.76714pt.
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
-
-[16 <./img/tecnicasYHerramientas/github.png>]
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+ [16 <./img/tecnicasYHerramientas/github.png>]
 <./img/tecnicasYHerramientas/LaTeX.png, id=747, 696.6025pt x 293.095pt>
 File: ./img/tecnicasYHerramientas/LaTeX.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/LaTeX.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/LaTeX.png  used on input l
-ine 100.
+ine 99.
 (pdftex.def)             Requested size: 153.19766pt x 64.45425pt.
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
  [17 <./img/tecnicasYHerramientas/LaTeX.png>]
 <./img/tecnicasYHerramientas/StarUml.png, id=765, 200.75pt x 200.75pt>
 File: ./img/tecnicasYHerramientas/StarUml.png Graphic file (type png)
 <use ./img/tecnicasYHerramientas/StarUml.png>
 Package pdftex.def Info: ./img/tecnicasYHerramientas/StarUml.png  used on input
- line 113.
+ line 112.
 (pdftex.def)             Requested size: 153.19766pt x 153.20871pt.
 )
 LaTeX Info: Redefining \. on input line 497.
@@ -1178,24 +1181,22 @@ LaTeX Info: Redefining \% on input line 497.
  [18 <./img/tecnicasYHerramientas/StarUml.png>]
 \openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
 
-
-(tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex [19
+ (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
+[19
 
 
 
 ]
 LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 2
 7.
-
-("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
+ ("C:\Users\felix\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 27.
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
-
-[20])
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+ [20])
 LaTeX Info: Redefining \. on input line 498.
 LaTeX Info: Redefining \% on input line 498.
  [21]
@@ -1206,20 +1207,20 @@ LaTeX Info: Redefining \% on input line 498.
 
 
 ]
-<./img/trabajosRelacionados/arbolapp.jpeg, id=822, 1027.84pt x 614.295pt>
+<./img/trabajosRelacionados/arbolapp.jpeg, id=820, 1027.84pt x 614.295pt>
 File: ./img/trabajosRelacionados/arbolapp.jpeg Graphic file (type jpg)
 <use ./img/trabajosRelacionados/arbolapp.jpeg>
 Package pdftex.def Info: ./img/trabajosRelacionados/arbolapp.jpeg  used on inpu
 t line 9.
 (pdftex.def)             Requested size: 344.69766pt x 206.00803pt.
-<./img/trabajosRelacionados/observado.png, id=825, 1016.29688pt x 496.85625pt>
+<./img/trabajosRelacionados/observado.png, id=823, 1016.29688pt x 496.85625pt>
 File: ./img/trabajosRelacionados/observado.png Graphic file (type png)
 <use ./img/trabajosRelacionados/observado.png>
 Package pdftex.def Info: ./img/trabajosRelacionados/observado.png  used on inpu
 t line 15.
 (pdftex.def)             Requested size: 344.69766pt x 168.51949pt.
  [23 <./img/trabajosRelacionados/arbolapp.jpeg>]
-<./img/trabajosRelacionados/arbolesMonumentales.png, id=833, 500.62032pt x 491.
+<./img/trabajosRelacionados/arbolesMonumentales.png, id=831, 500.62032pt x 491.
 58656pt>
 File: ./img/trabajosRelacionados/arbolesMonumentales.png Graphic file (type png
 )
@@ -1234,19 +1235,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 [24 <./img/trabajosRelacionados/observado.png>]
-<./img/trabajosRelacionados/arbolesSingulares.png, id=843, 424.58624pt x 410.28
+<./img/trabajosRelacionados/arbolesSingulares.png, id=841, 424.58624pt x 410.28
 28pt>
 File: ./img/trabajosRelacionados/arbolesSingulares.png Graphic file (type png)
 <use ./img/trabajosRelacionados/arbolesSingulares.png>
 Package pdftex.def Info: ./img/trabajosRelacionados/arbolesSingulares.png  used
- on input line 28.
+ on input line 29.
 (pdftex.def)             Requested size: 344.69766pt x 333.09727pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -1405,76 +1406,89 @@ n-
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 106--112
+[]\T1/lmr/m/n/12 (+20) ASP Gems Jo-s�.  Me-to-do-lo-g�a de desa-rro-llo de soft
+-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--112
+\T1/lmr/m/n/12 (+20) wa-re (iii)  mo-de-lo en es-pi-ral.  [][]$\T1/lmtt/m/n/12
+ https : / / aspgems . com /
+ []
+
+
+Overfull \hbox (17.21857pt too wide) in paragraph at lines 106--112
+\T1/lmtt/m/n/12 metodologia-[]de-[]desarrollo-[]de-[]software-[]iii-[]modelo-[]
+en-[]espiral/$[][]\T1/lmr/m/n/12 (-20) ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--120
 \T1/lmtt/m/n/12 detail / word-[]online / fiombgjlkfpkbhfioofeeinbehmajg ? hl = 
 es$[][]\T1/lmr/m/n/12 (+20) ,
  []
 
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 144--150
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
 []\T1/lmr/m/n/12 (+20) Kim Pham.  Web map-ping with pyt-hon and lea-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--150
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
 \T1/lmr/m/n/12 (+20) flet.  [][]$\T1/lmtt/m/n/12 https : / / programminghistori
 an . org / en / lessons /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--174
+Underfull \hbox (badness 10000) in paragraph at lines 176--182
 []\T1/lmr/m/n/12 (+20) pildorasinformaticas.  Cur-so djan-go.  [][]$\T1/lmtt/m/
 n/12 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--174
+Underfull \hbox (badness 10000) in paragraph at lines 176--182
 \T1/lmtt/m/n/12 / / www . youtube . com / watch ? v = 7XO1AzwkPPE & list =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--174
+Underfull \hbox (badness 10000) in paragraph at lines 176--182
 \T1/lmtt/m/n/12 PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB & index = 1$[][]\T1/lmr/m/n/
 12 (+20) , Ju-lio 2019.
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 189--193
+Underfull \hbox (badness 1057) in paragraph at lines 197--201
 []\T1/lmr/m/n/12 (+20) Source For-ge.  Sta-ruml.  [][]$\T1/lmtt/m/n/12 https : 
 / / sourceforge . net / projects /
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 201--207
+Underfull \hbox (badness 3009) in paragraph at lines 209--215
 \T1/lmr/m/n/12 (+20) use djan-go.  [][]$\T1/lmtt/m/n/12 https : / / www . caktu
 sgroup . com / blog / 2016 / 12 / 14 /
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 201--207
+Underfull \hbox (badness 2600) in paragraph at lines 209--215
 \T1/lmtt/m/n/12 django-[]boring-[]or-[]why-[]tech-[]startups-[]should-[]use-[]d
 jango/$[][]\T1/lmr/m/n/12 (+20) , Di-
  []
 
-LaTeX Info: Redefining \. on input line 214.
-LaTeX Info: Redefining \% on input line 214.
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 
 [31]
-Underfull \hbox (badness 1810) in paragraph at lines 216--222
-[]\T1/lmr/m/n/12 (+20) Desarrollo web.  El mo-de-lo en cas-ca-da: desa-rro-llo 
-se-cuen-cial
- []
-
-LaTeX Info: Redefining \. on input line 295.
-LaTeX Info: Redefining \% on input line 295.
+LaTeX Info: Redefining \. on input line 302.
+LaTeX Info: Redefining \% on input line 302.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -1514,7 +1528,7 @@ LaTeX Info: Redefining \% on input line 26.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 506.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: E00173A02D0C50CBA8CBC35C55FC61A9;1910.
+(rerunfilecheck)             Checksum: A44173D79BC2ACFB9BF9ED6E6BD0329A;1910.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1522,9 +1536,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 506.
  ) 
 Here is how much of TeX's memory you used:
- 13420 strings out of 492484
- 205996 string characters out of 3121602
- 378597 words of memory out of 3000000
+ 13418 strings out of 492484
+ 205974 string characters out of 3121602
+ 378598 words of memory out of 3000000
  17198 multiletter control sequences out of 15000+200000
  81022 words of font info for 109 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1545,9 +1559,9 @@ TeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Users/felix/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/felix/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/felix/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on memoria.pdf (43 pages, 3220916 bytes).
+Output written on memoria.pdf (43 pages, 3219475 bytes).
 PDF statistics:
- 1054 PDF objects out of 1200 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
+ 1050 PDF objects out of 1200 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
  22851 words of extra memory for PDF output out of 24883 (max. 10000000)
 

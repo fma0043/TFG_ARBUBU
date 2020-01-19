@@ -6,7 +6,7 @@ En este apartado se va a explicar todo lo que tiene que conocer un programador p
 
 \section{Estructura de directorios}
 
-En este apartado se van a describir y poner en manifiesto la estructura de directorios del proyecto:
+Se van a describir y poner en manifiesto la estructura de directorios del proyecto:
 
 \begin{itemize}
 	\item \textbf{TFG ARBUBU/}: Es la carpeta raíz, donde está contenido la documentación y la parte de programación del proyecto.
@@ -70,7 +70,7 @@ En este apartado se van a describir y poner en manifiesto la estructura de direc
 \end{itemize}
 \section{Manual del programador}
 
-Este apartado voy a explicar las cosas que he tenido que instalar para que en un futuro, si alguien quiere mejorar la aplicación web, solo tenga que seguir los pasos aquí y marcados y seguir adelante con ello.
+En este apartado voy a explicar las cosas que he tenido que instalar para que en un futuro, si alguien quiere mejorar la aplicación web, solo tenga que seguir los pasos aquí y marcados y seguir adelante con ello.
 
 \begin{itemize}
 	\item \textbf{Atom}: Para poder modificar el código de la aplicación lo primero que tenemos que hacer es descargar este programa \footnote{https://atom.io/}, una vez que ha sido descargado cogemos el código fuente del proyecto de la siguiente dirección \cite{Repositorio} y empezamos a instalar las librerías necesarias.
@@ -85,7 +85,7 @@ Este apartado voy a explicar las cosas que he tenido que instalar para que en un
 	\item \textbf{Librerías}: En nuestro caso con coger el código fuente de la dirección anteriormente citada nos valdría, pero si quieres empezar de cero un proyecto debes realizar lo siguiente:
 	
 		\begin{itemize}
-			\item \textbf{Crear Entorno Virtual}: En caso de que surja algun error en tu proyecto, solo necesitarás borrar el entorno virtual y volver a instalarlo, en cambio si no se usa entorno virtual puede que sea necesario volver a instalar todo el proyecto.
+			\item \textbf{Crear Entorno Virtual}: En caso de que surja algún error en tu proyecto, solo necesitarás borrar el entorno virtual y volver a instalarlo, en cambio si no se usa entorno virtual puede que sea necesario volver a instalar todo el proyecto.
 			\imagen{manualProgramador/entornoVirtual}{Crear Entorno Virtual}
 			
 			\item \textbf{Crear Proyecto Django}: Crear un proyecto de django de la siguiente forma: 
@@ -107,7 +107,7 @@ Este apartado voy a explicar las cosas que he tenido que instalar para que en un
 
 \subsection{Compilación e instalación}
 
-Como hemos comentado anteriormente no es necesario compilar e instalar nada, lo único que se necesita es descargar el código fuente de la siguiente dirección \cite{Repositorio}.
+Como hemos comentado anteriormente no es necesario compilar e instalar nada, lo único que se necesita es descargar el código fuente de la siguiente dirección \cite{Repositorio}, tanto el entorno virtual como el propio proyecto.
 
 \subsection{Ejecución del proyecto}
 
@@ -123,7 +123,7 @@ Como hemos comentado anteriormente no es necesario compilar e instalar nada, lo 
 
 \section{Pruebas del sistema} \label{pruebas}
 
-\subsection{Pruebas manuales}
+\subsection{Pruebas de aceptación}
 
 \begin{itemize}
 	\item \textbf{Contraseña vacía}: Si dejamos al iniciar sesión el campo de la contraseña vacío nos tiene que decir lo siguiente:
@@ -134,7 +134,7 @@ Como hemos comentado anteriormente no es necesario compilar e instalar nada, lo 
 	\imagen{manualProgramador/camposIncorrectos}{Campo incorrectos}
 	\item \textbf{Email vacío}: Si dejamos al registrarse el campo del email vacío nos tiene que decir lo siguiente:
 	\imagen{manualProgramador/emailVacio}{Campo email vacío}
-	\item \textbf{Email vacío}: Si introducimos al registrarse el campo del nombre del usuario repetido nos tiene que decir lo siguiente:
+	\item \textbf{Usuario no disponible}: Si introducimos al registrarse el campo del nombre del usuario repetido nos tiene que decir lo siguiente:
 	\imagen{manualProgramador/usuarioValidado}{Usuario no disponible}
 	\item \textbf{Contraseñas distintas}: Si los campos de contraseña y confirmar contraseña son distintos nos debe decir lo siguiente:
 	\imagen{manualProgramador/contraseñasDistintas}{Contraseñas distintas}

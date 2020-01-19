@@ -29,14 +29,12 @@
 \contentsline {section}{\numberline {5.2}Problemas surgidos}{20}{section.5.2}%
 \contentsline {subsection}{Elección del TFG}{20}{section*.15}%
 \contentsline {subsection}{Desconocimiento de diseño de páginas web}{21}{section*.16}%
-\contentsline {subsection}{Falta de requisitos iniciales}{21}{section*.17}%
-\contentsline {subsection}{Falta de documentos}{21}{section*.18}%
-\contentsline {chapter}{Trabajos relacionados}{23}{chapter*.19}%
+\contentsline {chapter}{Trabajos relacionados}{23}{chapter*.17}%
 \contentsline {section}{\numberline {6.1}ArbolApp}{23}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Observation}{24}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Árboles Monumentales}{24}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Árboles Singulares}{25}{section.6.4}%
-\contentsline {chapter}{Conclusiones y Líneas de trabajo futuras}{27}{chapter*.20}%
+\contentsline {chapter}{Conclusiones y Líneas de trabajo futuras}{27}{chapter*.18}%
 \contentsline {section}{\numberline {7.1}Conclusiones}{27}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{27}{section.7.2}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{29}{chapter*.21}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{29}{chapter*.19}%
